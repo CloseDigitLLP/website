@@ -1,0 +1,41 @@
+@import '../variable.module.scss';
+
+.projectSection{
+    position: relative;
+    color: #fff;
+    text-align: center;
+    background: url('../../../public/images/project-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 1;
+    padding: 70px 0;
+    &::after{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        opacity: .5;
+        background-color: #5e87eb;
+        background-image: linear-gradient(-135deg, #611bdd 0%, #5e87eb 100%);
+    }
+}
+.contentPart{
+    margin: 0 15%;
+}
+.title{
+    font-size: 35px;
+    color: #fff;
+    margin: 0;
+    font-weight: 600;
+}
+.description{
+    color: #fff;
+    font-size: 16px;
+    margin: 20px 0 30px 0;
+}

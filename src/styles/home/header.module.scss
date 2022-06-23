@@ -1,0 +1,43 @@
+@import '../variable.module.scss';
+
+.header-part{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+.navbarNav{
+    margin: auto;
+}
+.navItem:first-child .navLink{
+    margin-left: 0;
+}
+.navItem:last-child .navLink{
+    margin-right: 0;
+}
+.navLink{
+    margin-left: 15px;
+    margin-right: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: $textColor !important;
+    &.active{
+        color: $primary !important;
+    }
+    &::after{
+        display: block;
+        content: '';
+        border-bottom: 2px solid $primary;
+        transform: scaleX(0);
+        transition: transform 300ms ease-in-out;
+    }
+    &:hover{
+        color: $primary !important;
+        &::after{
+            transform: scaleX(1);
+        }
+    }
+}

@@ -1,0 +1,54 @@
+@import '../variable.module.scss';
+.aboutUs-section{
+    position: relative;
+    overflow: hidden;
+}
+.about-us-image{
+    margin-top: -85px;
+    width: 100%;
+}
+.aboutUs-content{
+
+}
+.title{
+    font-size: 24px;
+    line-height: 35px;
+    color: #16085e;
+    &::first-letter{
+        font-size: 35px;
+        margin-top: 15px;
+    }
+}
+
+.change-title{
+    color: $primary;
+}
+.description{
+    font-size: 15px;
+}
+.list{
+   list-style-type: none;
+   position: relative;
+   margin-top: 20px;
+}
+.list-item{
+    margin-bottom: 12px;
+    &::before{
+        content: "";
+        background-image: url('../../../public/images/bullet.svg');
+        height: 22px;
+        width: 22px;
+        position: absolute;
+        left: 4px;
+    }
+}
+.blank-image{
+    height: 500px;
+    width: 500px;
+    border-radius: 500px;
+    position: absolute;
+    bottom: -20%;
+    right: -10%;
+    z-index: -1;
+    background: rgba(215, 215, 215, 0.17);
+}

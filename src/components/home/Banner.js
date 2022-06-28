@@ -1,7 +1,7 @@
 import bannerStyle from '../../styles/home/banner.module.scss'
 
 
-export default function Service(){
+export default function Banner(){
     return(
         <div className={bannerStyle['home-area']}>
             <div className={bannerStyle['home-section']}>
@@ -12,7 +12,8 @@ export default function Service(){
                             <div className="typewriter">
                                 <h3 className={bannerStyle['banner-heading']}>Encourage innovation with</h3>
                             </div>
-                            <h2 className={bannerStyle['banner-title']}>Close<span className={bannerStyle['Change-title']}>Digit</span></h2>
+                            <img src="images/animated-logo.svg" alt="animated" className='animated-logo-image'></img>
+                            {/* <h2 className={bannerStyle['banner-title']}>Close<span className={bannerStyle['Change-title']}>Digit</span></h2> */}
                             <p className={bannerStyle['banner-description']}>A Group Of Software Developers And Creative Designers Who Are Connected To Deliver Best Work Out Of The Box, And Helps Clients To Convert Their Ideas To A Successful Reality.</p>
                             <button type="button" className="btn btn-primary">Get in touch <span className='btn-animation'></span></button>
                         </div>

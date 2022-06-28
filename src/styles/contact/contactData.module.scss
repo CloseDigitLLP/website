@@ -1,0 +1,125 @@
+@import '../variable.module.scss';
+
+.card{
+    background: #fff;
+    border-radius: 0.25rem;
+    border: none;
+    text-align: center;
+    height: 100%;
+    transition: all 0.2s ease-in-out;
+    padding-right: 1.6rem;
+    padding-left: 1.6rem;
+    padding-bottom: 2.8rem;
+    padding-top: 2.8rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    visibility: visible;
+    animation-delay: 0.2s;
+    animation-name: fadeInUp;
+    box-shadow: 0px 2px 25px 0px rgb(110 110 110 / 12%);
+    .titleBox {
+        position: relative;
+        padding: 20px 0;
+        font-size: 60px;
+        line-height: 1;
+        width: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: right;
+    }
+    .icon{
+        color: $primary;
+    }
+    .boxCircleLarge{
+        position: absolute;
+        border-radius: 50%;  
+        transition: all 0.3s ease-in-out;
+        left: 0;
+        bottom: 0;
+        width: 1.37em;
+        height: 1.37em; 
+        background: rgba(78,74,200,0.1);  
+    }
+    .boxCircleSmall{
+        position: absolute;
+        border-radius: 50%;  
+        transition: all 0.3s ease-in-out;
+        top: 0;
+        right: 0;
+        width: 0.59em;
+        height: 0.59em;
+        background: rgba(128,137,255,0.1);
+    }
+    .office{
+        color: $textColor;
+        font-size: 22px;
+    }
+    .address{
+        color: $textColor;
+        width: 85%;
+        font-size: 16px;
+        letter-spacing: 0.6px;
+    }
+    &:hover{
+        background: linear-gradient(-45deg, #292dc2, #0084e9);
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        box-shadow: -1px 9px 18px 0px rgb(75 81 91 / 10%);
+        .boxCircleLarge{
+            background: rgba(255,255,255,0.1);
+            transform: scale(1.2);
+        }
+        .boxCircleSmall{
+            background: rgba(255,255,255,0.2);
+            transform: translate3d(0, -35%, 0) rotate(0deg);
+        }
+        .icon{
+            color: #fff;
+            animation-name: elementor-animation-wobble-to-top-right;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+        }
+        .address,.office,a{
+            color: white;
+        }
+    }
+}
+
+@keyframes fadeInUp{
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes elementor-animation-wobble-to-top-right{
+    16.65% {
+        transform: translate(8px, -8px);
+    }
+    33.3% {
+        transform: translate(-6px, 6px);
+    }
+    49.95% {
+        transform: translate(4px, -4px);
+    }
+    66.6% {
+        transform: translate(-2px, 2px);
+    }
+    83.25% {
+        transform: translate(1px, -1px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}

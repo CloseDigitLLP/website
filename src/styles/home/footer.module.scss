@@ -1,0 +1,110 @@
+@import '../variable.module.scss';
+
+
+.footerSection{
+    position: relative;
+    color: #fff;
+    // background: url('../../../public/images/project-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    padding: 110px 0 0px 0;
+    &::after{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        // opacity: .5;
+        background-color: #5e87eb;
+        background-image: linear-gradient(-135deg, #16085e 0%, #4949dd 100%);
+        // background-image: linear-gradient(-127deg, #4949dd 0%, #16085e 100%);
+    }
+    &:after{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        padding: 0;
+        background-image: linear-gradient(-127deg, #4949dd 0%, #16085e 100%);
+        border-radius: 50% 50% 0 0/100% 100% 0 0;
+        transform: scaleX(2.2);
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+}
+.description{
+    margin: 30px 0;
+    font-size: 16px;
+    line-height: 27px;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    p{
+        max-width: 88%;
+    }
+}
+.social-icon{
+    font-size: 35px;
+    color: #fff;
+    margin-right: 16px;
+    &:hover{
+        color: $textColor;
+    }
+}
+.footer-heading{
+    font-size: 20px;
+    font-weight: 600;
+}
+.link{
+    display: block;
+    line-height: 30px;
+    font-size: 16px;
+    margin-bottom: 8px;
+    margin-left: 3px;
+    &.withoutLink{
+        cursor:default;
+        &:hover{
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    &:hover{
+        color: $textColor;
+        text-decoration: underline;
+    }
+}
+.field{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    .contact-icon{
+        margin-top: 4px;
+    }
+    .field-data{
+        margin-bottom: 0;
+        margin-left: 10px;
+        line-height: 25px;
+        text-transform: none;
+        &:hover{
+            color: $textColor;
+            text-decoration: underline;
+        }
+    }
+}
+
+.copyRightSection{
+    border-top: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+    // background-color: $textColor;
+    position: relative;
+    box-shadow: 0px 5px 24px 6px rgb(0 0 0 / 6%);
+}

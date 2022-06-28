@@ -1,0 +1,17 @@
+@import '../variable.module.scss';
+
+.contact-area{
+    position: relative;
+    &::after{
+        content: "";
+        height: 600px;
+        width: 600px;
+        border-radius: 300px;
+        position: absolute;
+        top: -28%;
+        right: -10%;
+        z-index: 1;
+        background: rgba(215, 215, 215, 0.17);
+    
+    }
+}

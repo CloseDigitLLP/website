@@ -1,5 +1,6 @@
 
-import Main from '../components/home/HomeIndex'
+import HomePage from '../components/home/HomeIndex'
+import ContactPage from '../components/contact/ContactIndex'
 
 
 
@@ -7,7 +8,8 @@ import Main from '../components/home/HomeIndex'
 export default function Home() {
   return (
     <div>
-      <Main></Main>
+      {/* <HomePage></HomePage> */}
+      <ContactPage></ContactPage>
     </div>
   )
 }

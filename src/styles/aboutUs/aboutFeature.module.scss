@@ -1,0 +1,91 @@
+@import '../variable.module.scss';
+
+
+.card{
+    position: relative;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: none;
+    text-align: center;
+    padding: 40px 20px;
+    transition: all .3s ease-out;
+    border-radius: 0.25rem;
+    box-shadow: -1px 3px 20px 0px rgb(82 90 101 / 10%);
+    cursor: pointer;
+    .icon-box{
+        color: white;
+        font-size: 30px;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+        margin: auto;
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        box-shadow: 15px 15px 50px rgb(0 0 0 / 20%);
+        animation: one-animated 8s infinite;
+        margin-bottom: 40px;
+        background: linear-gradient(90deg, $textColor, $primary);
+        width: 80px;
+        overflow: hidden;
+        position: relative;
+    }
+    &:hover{
+        background-color: #fff;
+        box-shadow: 0 0 30px 0px rgb(0 0 0 / 18%);
+        -moz-box-shadow: 0 0 30px 0px rgba(0,0,0,0.18);
+        -webkit-box-shadow: 0 0 30px 0px rgb(0 0 0 / 18%);
+        transform: translate(0, -10px);
+        -webkit-transform: translate(0, -10px);
+    }
+    .card-body{
+        padding: 0;
+        .card-title{
+            font-weight: 600;
+            font-size: 23px;
+            margin-bottom: 1rem;
+            text-transform: capitalize;
+            color: $textColor;
+            span{
+                margin-right: 8px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+@keyframes one-animated{
+    0% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        box-shadow: 15px 15px 50px rgb(0 0 0 / 20%);
+    }
+    25% {
+        border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
+    }
+    50% {
+        border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
+        box-shadow: -10px -5px 50px rgb(0 0 0 / 20%);
+    }
+    75% {
+        border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
+    }
+}
+
+
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}

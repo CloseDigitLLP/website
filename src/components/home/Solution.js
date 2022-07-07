@@ -13,7 +13,8 @@ export default function Services(){
                         <h6 className="title"><span className='change-title'>Our passion</span> to work hard and deliver excellent results. It could solve your customers and develop innovation.</h6>
                         <ul className={solutionStyle['features-list']}>
                             <li>
-                                <span className={solutionStyle['active']}>UI/UX Design</span>
+                                {/* <span className={solutionStyle['active']}>UI/UX Design</span> */}
+                                <span>UI/UX Design</span>
                             </li>
                             <li>
                                 <span>Website design</span>

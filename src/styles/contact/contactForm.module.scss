@@ -43,3 +43,34 @@
     margin: 0 auto;
     width: 14%;
 }
+
+@media screen and (min-width:1700px){
+    .contactButton{
+        width: 10%;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .contactButton{
+        width: 16%;
+    }
+}
+
+@media screen and (max-width:991px){
+    .contactButton{
+        width: 22%;
+    }
+}
+@media screen and (max-width:767px){
+    .contactButton{
+        width: 30%;
+    }
+}
+@media screen and (max-width:520px){
+    .contactButton{
+        width: 40%;
+    }
+    .description{
+        width: 100%;
+    }
+}

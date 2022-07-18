@@ -89,3 +89,16 @@
         transform: translate3d(0, 0, 0);
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .home-section{
+        margin-top: 130px;
+    }
+    .card{
+        .card-body{
+            .card-title{
+                font-size: 20px;
+            }
+        }
+  }
+}

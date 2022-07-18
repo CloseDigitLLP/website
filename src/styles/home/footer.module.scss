@@ -108,3 +108,32 @@
     position: relative;
     box-shadow: 0px 5px 24px 6px rgb(0 0 0 / 6%);
 }
+
+
+@media screen and (max-width:991px) {
+    .footerSection{
+        padding: 76px 0 0px 0;
+        &::after{
+            transform: scaleX(3);
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .footerSection{
+        &::after{
+            transform: scaleX(5);
+        }
+      .description{
+        margin: 14px 0 30px;
+      }
+    }
+}
+
+@media screen and (max-width:520px) {
+    .footerSection{
+        &::after{
+            transform: scaleX(6);
+        }
+    }
+}

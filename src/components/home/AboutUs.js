@@ -10,11 +10,11 @@ export default function AboutUs(){
             </div>
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6 col-md-12">
+                    <div className="col-lg-6 col-md-12 d-flex justify-content-center">
                         {/* <img src={'images/about-us.svg'} alt="about-us"></img> */}
-                        <img src={'images/about-us.gif'} alt="about-us" className={aboutStyle['about-us-image']}></img>
+                        <img src={'images/about-us.gif'} alt="about-us" className={`${aboutStyle['about-us-image']} cw-80`}></img>
                     </div>
-                    <div className="col-lg-6 col-md-12">
+                    <div className="col-lg-6 col-md-12 cmt-3">
                         <div className={aboutStyle['aboutUs-content']}></div>
                         <h6 className='title'><span className="change-title">Our mission </span>is to make your business better through technology.</h6>
                         <p className={aboutStyle['description']}>A team of Creative Minds designing best Apps and Website for the World. Powerful tool for your customer to help user find solution for build something great.</p>
@@ -28,7 +28,7 @@ export default function AboutUs(){
                     </div>
                 </div>
             </div>
-            <div className={aboutStyle['blank-image']}></div>
+            <div className={aboutStyle['blankImage']}></div>
         </section>
     )
 }

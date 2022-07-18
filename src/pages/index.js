@@ -10,10 +10,10 @@ import ServicePage from '../components/services/ServiceIndex'
 export default function Home() {
   return (
     <div>
-      {/* <HomePage></HomePage> */}
+      <HomePage></HomePage>
       <AboutUsPage></AboutUsPage>
       <ServicePage></ServicePage>
-      {/* <ContactPage></ContactPage> */}
+      <ContactPage></ContactPage>
           
     </div>
   )

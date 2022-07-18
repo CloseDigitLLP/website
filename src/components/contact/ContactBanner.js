@@ -10,7 +10,7 @@ export default function ContactBanner(){
         <div className={bannerStyle['home-section']}>
             <div className="container">
                 <div className="row">
-                <div className="col-md-6 d-flex">
+                <div className="col-md-12 col-lg-6 d-flex">
                     <div className={bannerStyle['banner-text']}>
                         <div className="typewriter">
                             <h3 className={bannerStyle['banner-heading']}>Encourage innovation with</h3>
@@ -30,7 +30,7 @@ export default function ContactBanner(){
                 </div>
             </div>
         </div>
-        <div className={bannerStyle['blank-image']}></div>
+        <div className={`${bannerStyle.blankImage} ${contactBanner.blankImage}`}></div>
     </div>
     );
 }

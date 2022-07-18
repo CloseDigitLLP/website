@@ -21,12 +21,16 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
         autoplay:true,
         autoplayTimeout:3000,
         autoplayHoverPause:true,
+
         991: {
-            items: 1,
+            items: 2,
+        },
+        1024:{
+            items: 2,
         },
         1280: {
             items: 3,
-        }
+        },
     }
 
 export default function ClientStory(){
@@ -41,7 +45,19 @@ export default function ClientStory(){
             <OwlCarousel
                loop
                nav={false}
-               responsive={Responsive}
+            //    responsive={Responsive}
+                responsive={{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:2
+                    },
+                    1000:{
+                        items:3
+                    }
+                }}
+                items={2}
                autoPlay={true}
                dots={false}
                autoplayTimeout={2000}

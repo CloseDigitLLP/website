@@ -1,11 +1,28 @@
+
+import { useEffect, useState } from 'react'
 import headerStyle from '../../styles/home/header.module.scss'
 
 
 export default function Header(){
+    const [stickyClass, setStickyClass] = useState('')
+    useEffect(() => {
+        if(window) {
+            window.addEventListener('scroll', stickNavbar);
+            return () => window.removeEventListener('scroll', stickNavbar);
+        }
+      }, []);
+    
+      const stickNavbar = () => {
+        if (window !== undefined) {
+          let windowHeight = window.scrollY;
+          // window height changed for the demo
+          windowHeight > 150 ? setStickyClass('sticky-nav') : setStickyClass('');
+        }
+      };
     return(
         <div className={headerStyle['header-part']}>
             <div className='container'>
-            <nav className="navbar navbar-expand-lg navbar-light">
+            <nav className={`navbar navbar-expand-lg navbar-light ${stickyClass}`}>
             <div className="container-fluid p-0">
             <a className="navbar-brand" href="#">
                 <img src={'images/logo.png'} alt="logo"></img>

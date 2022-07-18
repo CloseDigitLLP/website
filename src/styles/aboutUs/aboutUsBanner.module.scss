@@ -6,3 +6,26 @@
     height: auto;
     border-radius: 3px;
 }
+.home-section{
+    margin-top: 160px;
+}
+@media screen and (max-width: 1024px) {
+    .home-section{
+        margin-top: 130px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .banner-image{
+        width: 65%;
+        float: right;
+    }  
+}
+
+@media screen and (max-width:520px) {
+    .banner-image{
+        width: 100%;
+        float: right;
+        margin-top: 25px;
+    }  
+}

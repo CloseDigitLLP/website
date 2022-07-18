@@ -1,0 +1,159 @@
+@import '../variable.module.scss';
+
+.technology-part{
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 20px;
+}
+.technologySection{
+    padding: 50px 0 0;
+}
+.technology-part .box{
+    border: 1px solid black;
+    height: 100px;
+    width: 120px;
+    flex: 0 0 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    .f_technology{
+        background-image: url('../../../public/images/frontEnd-technology.svg');
+        background-repeat: no-repeat;
+        &.html{
+            background-position: -440px 0;
+            width: 47px;
+            height: 66px;
+            &:hover{
+                background-position: -440px -101px;
+            }
+        }
+        &.css{
+            background-position: -527px 0;
+            width: 47px;
+            height: 66px;
+            &:hover{
+                background-position: -527px -101px;
+            }
+        }
+        &.javaScript{
+            background-position: -613px 0;
+            width: 51px;
+            height: 57px;
+            &:hover{
+                background-position: -613px -110px;
+            }
+        }
+        &.angular{
+            background-position: 0 0;
+            width: 63px;
+            height: 66px;
+            &:hover{
+                background-position: 0 -101px;
+            }
+        }
+        &.reactJs{
+            background-position:-102px 0;
+            width: 75px;
+            height: 66px;
+            &:hover{
+                background-position: -102px -101px;
+            }
+        }
+        &.vueJs{
+            background-position: -217px 0;
+            width: 75px;
+            height: 66px;
+            &:hover{
+                background-position: -217px -101px;
+            }
+        }
+    }
+    .m_technology{
+        background-image: url('../../../public/images/app-development.svg');
+        background-repeat: no-repeat;
+        &.reactNative{
+            background-position: -104px 0;
+            width: 75px;
+            height: 66px;
+            &:hover{
+                background-position: -104px -101px;
+            }
+        }
+    }
+    .b_technology{
+        background-image: url('../../../public/images/backendTechnology.svg');
+        background-repeat: no-repeat;
+        &.php{
+            background-position: -1px -16px;
+            width: 66px;
+            height: 35px;
+            &:hover{
+                background-position: -1px -123px;
+            }
+        }
+        &.node{
+            background-position: -107px -19px;
+            width: 67px;
+            height: 28px;
+            &:hover{
+                background-position: -107px -127px;
+            }
+        }
+        &.laravell{
+            background-position: -304px -1px;
+            width: 79px;
+            height: 64px;
+            &:hover{
+                background-position: -304px -108px;
+            }
+        }
+        &.cognite{
+            background-position: -636px 0;
+            width: 55px;
+            height: 66px;
+            &:hover{
+                background-position: -636px -108px;
+            }
+        }
+        &.wordpress{
+            background-position: -942px 0;
+            width: 65px;
+            height: 65px;
+            &:hover{
+                background-position: -942px -108px;
+            }
+        }
+        &.wocommerce{
+            background-position: -1255px -14px;
+            width: 81px;
+            height: 49px;
+            &:hover{
+                background-position: -1255px -116px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+    .imageWidth{
+        width: 80%;
+    }  
+    .technologySection{
+        padding: 10px 0 0;
+    }
+    .technology-part .box{
+        flex: 0 0 45%;
+    }
+}
+
+@media screen and (max-width:520px){
+    .technologySection:last-child{
+        flex-direction: column-reverse;
+        margin: 25px 0;
+        .imageWidth{
+            margin-bottom: 30px;
+        }
+    }
+}

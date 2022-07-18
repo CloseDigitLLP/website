@@ -18,7 +18,7 @@ export default function Services(){
         <section className={`${footerStyle.footerSection} section-spacing`}>
             <div className='container'>
                 <div className='row'>
-                    <div className='col-md-5'>
+                    <div className='col-lg-5 col-md-12'>
                         <div className={footerStyle['footer-logo']}>
                             <img src={'images/logo-white.svg'} alt="logo"></img>
                         </div>
@@ -41,9 +41,9 @@ export default function Services(){
                             
                         </div>
                     </div>
-                    <div className='col-md-7'>
-                        <div className='row'>
-                            <div className='col-md-3'>
+                    <div className='col-lg-7 col-md-12 custom-margin-top'>
+                        <div className='row mt-md-5'>
+                            <div className='col-lg-3 col-md-4 col-sm-6'>
                                 <h6 className={footerStyle['footer-heading']}>About Us</h6>
                                 <div className={footerStyle['description']}>
                                     <a href="" className={footerStyle['link']}>About Us</a>
@@ -52,7 +52,7 @@ export default function Services(){
                                 </div>
                                
                             </div>
-                            <div className='col-md-4'>
+                            <div className='col-lg-4 col-md-4 col-sm-6'>
                                 <h6 className={footerStyle['footer-heading']}>Our Services</h6>
                                 <div className={footerStyle['description']}>
                                     <a href=""  className={`${footerStyle.link} ${footerStyle.withoutLink}`}>UI/UX Design</a>
@@ -63,7 +63,7 @@ export default function Services(){
                                     <a href=""  className={`${footerStyle.link} ${footerStyle.withoutLink}`}>Consulting</a>
                                 </div>
                             </div>
-                            <div className='col-md-5'>
+                            <div className='col-lg-5 col-md-4 col-sm-12'>
                                 <h6 className={footerStyle['footer-heading']}>Contact Information</h6>
                                 <div className={footerStyle['description']}>
                                     <div className={footerStyle['field']}>

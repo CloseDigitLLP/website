@@ -9,7 +9,7 @@ export default function Services(){
             </div>
             <div className="container">
                 <div className='row'>
-                    <div className='col-md-12 col-lg-6'>
+                    <div className='col-md-12 col-lg-6 cmt-3'>
                         <h6 className="title"><span className='change-title'>Our passion</span> to work hard and deliver excellent results. It could solve your customers and develop innovation.</h6>
                         <ul className={solutionStyle['features-list']}>
                             <li>
@@ -39,7 +39,7 @@ export default function Services(){
                             </li>
                         </ul>
                     </div>
-                    <div className='col-md-12 col-lg-6'>
+                    <div className='col-md-12 col-lg-6 d-flex justify-content-center'>
                         <img src={'images/creating_services.gif'} alt="solution-gif" className={solutionStyle['solution-banner']}></img>
                     </div>
                 </div>

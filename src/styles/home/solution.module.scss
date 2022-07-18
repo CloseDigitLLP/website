@@ -66,3 +66,36 @@
         }
     }
 }
+
+
+@media screen and (max-width: 1024px) {
+    .solution-banner{
+        margin-top: 4rem;
+    }
+    .features-list{
+        li{
+            span{
+                padding: 12px 12px;
+                padding-left: 12px;
+                font-size: 13px;
+            }
+        }
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .solution-banner{
+        margin-top: 3rem;
+        width: 70%;
+    }
+  }
+
+  @media screen and (max-width: 520px){
+    .features-list li{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .solution-banner{
+        width: 100%;
+    }
+  }

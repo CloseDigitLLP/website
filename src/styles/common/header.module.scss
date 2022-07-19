@@ -1,12 +1,13 @@
 @import '../variable.module.scss';
 
-.header-part{
+.headerPart{
     padding-top: 15px;
     padding-bottom: 15px;
     position: absolute;
     width: 100%;
     z-index: 999;
     top: 0;
+    transform: transition all 1s ease;
 }
 .navbarNav{
     margin: auto;
@@ -42,7 +43,14 @@
         }
     }
 }
-
+.logoPart{
+    width: 220px;
+}
+.stickyClass{
+    position: fixed;
+    box-shadow: 0px 2px 25px 0px rgb(110 110 110 / 12%);
+    background-color: #fff;
+}
 @media screen and (max-width:991px) {
     .navbar{
         &.sticky-nav{
@@ -66,7 +74,7 @@
 //   }
 
 @media screen and (max-width:520px) {
-    .header-part{
+    .headerPart{
         box-shadow: 0px 2px 25px 0px rgb(110 110 110 / 12%);
         background-color: #fff;
     }

@@ -36,6 +36,9 @@ a {
   &.dark-primary{
     background-color: $textColor;
   }
+  &:hover,&:focus{
+    box-shadow: none;
+  }
 }
 .btn-primary .btn-animation{
   position: absolute;
@@ -174,7 +177,13 @@ section{
   }
 }
 
-
+.sticky-nav{
+  position: fixed !important;
+  box-shadow: 0px 2px 25px 0px rgb(110 110 110 / 12%);
+  background-color: #fff;
+  top: 0;
+  transition : all 0.5s ease !important;
+}
 
 
 // @media screen and (min-width:768px){

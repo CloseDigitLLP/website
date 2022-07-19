@@ -1,4 +1,5 @@
-import footerStyle from '../../styles/home/footer.module.scss';
+import footerStyle from '../../styles/common/footer.module.scss';
+import Link from 'next/link'
 import {
    faFacebook,
    faLinkedin,
@@ -46,9 +47,18 @@ export default function Services(){
                             <div className='col-lg-3 col-md-4 col-sm-6'>
                                 <h6 className={footerStyle['footer-heading']}>About Us</h6>
                                 <div className={footerStyle['description']}>
-                                    <a href="" className={footerStyle['link']}>About Us</a>
-                                    <a href="" className={footerStyle['link']}>Projects</a>
-                                    <a href="" className={footerStyle['link']}>Our Team</a>
+                                    <Link href="/AboutUs">
+                                        <a className={footerStyle['link']}>About Us</a>
+                                    </Link>
+                                    <Link href="/Services">
+                                        <a className={footerStyle['link']}>Services</a>
+                                    </Link>
+                                    <Link href="/Technology">
+                                        <a className={footerStyle['link']}>Technology</a>   
+                                    </Link>
+                                    <Link href="/project">
+                                        <a href="" className={footerStyle['link']}>Projects</a>
+                                    </Link>
                                 </div>
                                
                             </div>
@@ -68,7 +78,7 @@ export default function Services(){
                                 <div className={footerStyle['description']}>
                                     <div className={footerStyle['field']}>
                                         <FontAwesomeIcon icon={faPhone} className={footerStyle['contact-icon']}/>
-                                        <a href="tel:+9979961576" className={footerStyle['field-data']}>+91 123456789</a>
+                                        <a href="tel:+9979961576" className={footerStyle['field-data']}>+91-9979961576</a>
                                     </div>
                                     <div className={footerStyle['field']}>
                                         <FontAwesomeIcon icon={faEnvelope} className={footerStyle['contact-icon']}/>
@@ -76,7 +86,7 @@ export default function Services(){
                                     </div>
                                     <div className={footerStyle['field']} >
                                         <FontAwesomeIcon icon={faLocationDot} className={footerStyle['contact-icon']}/>
-                                        <h6 className={footerStyle['field-data']}>801 Building Name,<br />Area name,<br/>Ahmedabad, 380061<br /></h6>
+                                        <h6 className={footerStyle['field-data']}>C-503, PNTC Building,<br />Satellite, Ahmedabad<br/> 380015<br /></h6>
                                     </div>
                                 </div>
                             </div>

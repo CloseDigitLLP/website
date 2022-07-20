@@ -133,7 +133,11 @@ section{
     max-width: 1260px;
   }  
 }
-
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 900px;
+  }  
+}
 @media screen and (max-width: 768px) {
   .animated-logo-image {
     max-width: 48%;
@@ -156,7 +160,11 @@ section{
     margin: 40px 0;
   }
 }
-
+@media screen and (max-width:768px) {
+  .container {
+    max-width: 720px;
+  }
+}
 @media screen and (max-width: 767px){
   .container{
     padding-right: var(--bs-gutter-x, 1.5rem);
@@ -185,9 +193,72 @@ section{
   transition : all 0.5s ease !important;
 }
 
+.navbar{
+ 
+  .navbar-toggler{
+    border: 0;
+    margin-top: -5px;
+    img{
+      width: 30px;
+    }
+    &:focus{
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+  .navbar-collapse{
+    background-color: #fff;
+    position: fixed;
+    width: 400px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: rgb(110 110 110 / 12%) 0px 2px 25px 0px;
+    padding: 15px 30px;
+    &.show{
+      transform: translateX(0px);
+      transition: transform .3s;
+      .body-overlay{
+        position: fixed;
+        content: "";
+        height: 100%;
+        top: 0;
+        right: 0;
+        width: 100%;
+        transition: 0.2s;
+        background: rgba(0, 0, 0, 0.5) !important;
+        -webkit-backdrop-filter: blur(3px) !important;
+        backdrop-filter: blur(3px) !important;
+        display: block;
+        overflow: hidden;
+      }
+    }
+  }
+  .navbar-collapse.collapsing{
+    height: 100% !important;
+    transform: translateX(-487px);
+    transition: transform .3s;
+  }
+} 
 
-// @media screen and (min-width:768px){
-//   .container {
-//     max-width: 760px;
-//   }
-// }
+@media screen and (max-width:520px) {
+  .navbar{
+    .navbar-collapse{
+      width: 70%;
+    }
+  }
+}
+
+
+@media screen and (min-width:992px) {
+  .navbar .navbar-collapse {
+    background-color: transparent;
+    position: initial;
+    width: auto;
+    height: auto;
+    top: initial;
+    left: initial;
+    box-shadow: none;
+    padding: 0;
+  }
+}

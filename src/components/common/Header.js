@@ -37,28 +37,37 @@ export default function Header(){
                     </a>
                 </Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
+                <img src={'images/menu.svg'} alt="menu"></img>
             </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
+            <div className="navbar-collapse collapse" id="navbarNav">
+                {/* <div className='body-overlay'></div> */}
                 <ul className={`${headerStyle.navbarNav} navbar-nav`}>
+
+                    <li className={`${headerStyle.mobileLogo}`}>
+                        <Link href="/">
+                            <a className="navbar-brand" href="#">
+                                <img src={'images/CloseDigit-lg.svg'} alt="logo" className={`${headerStyle.logoPart}`}></img>
+                            </a>
+                        </Link>
+                    </li>
                     <li className={`${headerStyle.navItem} nav-item`}>
                         <Link href="/">
                             <a className={`${headerStyle.navLink} ${router.pathname === '/' ? headerStyle.active : ''} nav-link`} aria-current="page" href="#">Home</a>
                         </Link>
                     </li>
-                    <li className="nav-item">
+                    <li className={`${headerStyle.navItem} nav-item`}>
                         <Link href="/AboutUs">
                             <a className={`${headerStyle.navLink} ${router.pathname === '/AboutUs' ? headerStyle.active : ''} nav-link`} >About Us</a>
                         </Link>
                     </li>
-                    <li className="nav-item">
+                    <li className={`${headerStyle.navItem} nav-item`}>
                         <Link href="/Services">
                             <a className={`${headerStyle.navLink} ${router.pathname === '/Services' ? headerStyle.active : ''} nav-link`} >Services</a>
                         </Link>
                     </li>
-                    <li className="nav-item">
-                        {/* <a className={`${headerStyle.navLink} nav-link`} >Work</a> */}
-                    </li>
+                    {/* <li className={`${headerStyle.navItem} nav-item`}>
+                        <a className={`${headerStyle.navLink} nav-link`} >Work</a>
+                    </li> */}
                 </ul>
                 <div className="other-option">
                     {/* <button type="button" className="btn btn-primary">Contact Us <span className='btn-animation'></span></button> */}

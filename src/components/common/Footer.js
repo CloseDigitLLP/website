@@ -43,7 +43,7 @@ export default function Services(){
                         </div>
                     </div>
                     <div className='col-lg-7 col-md-12 custom-margin-top'>
-                        <div className='row mt-md-5'>
+                        <div className='row'>
                             <div className='col-lg-3 col-md-4 col-sm-6'>
                                 <h6 className={footerStyle['footer-heading']}>About Us</h6>
                                 <div className={footerStyle['description']}>

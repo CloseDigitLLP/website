@@ -72,7 +72,7 @@ export default function ClientStory(){
                        </div>
                        <div className={`${clientStoryStyle.clientImage}`}>
                            <div className={`${clientStoryStyle.imagePart}`}>
-                               <img src="images/david.jpg" alt="client-image" className={`${clientStoryStyle.image}`} />
+                               <img src="images/David.jpg" alt="client-image" className={`${clientStoryStyle.image}`} />
                            </div>
                            <div>
                                <h6>David Ozersky</h6>

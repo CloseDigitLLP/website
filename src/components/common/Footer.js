@@ -78,15 +78,15 @@ export default function Services(){
                                 <div className={footerStyle['description']}>
                                     <div className={footerStyle['field']}>
                                         <FontAwesomeIcon icon={faPhone} className={footerStyle['contact-icon']}/>
-                                        <a href="tel:+9979961576" className={footerStyle['field-data']}>+91-9979961576</a>
+                                        <a href="tel:+9979961576" className={footerStyle['fieldData']}>+91-9979961576</a>
                                     </div>
                                     <div className={footerStyle['field']}>
                                         <FontAwesomeIcon icon={faEnvelope} className={footerStyle['contact-icon']}/>
-                                        <a href="mailto:amakadiya98@gmail.com" className={footerStyle['field-data']}>sales@closedigit.com</a>
+                                        <a href="mailto:amakadiya98@gmail.com" className={footerStyle['fieldData']}>sales@closedigit.com</a>
                                     </div>
                                     <div className={footerStyle['field']} >
                                         <FontAwesomeIcon icon={faLocationDot} className={footerStyle['contact-icon']}/>
-                                        <h6 className={footerStyle['field-data']}>C-503, PNTC Building,<br />Satellite, Ahmedabad<br/> 380015<br /></h6>
+                                        <h6 className={`${footerStyle.fieldData} ${footerStyle.fieldDataAddress}`}>C-503, PNTC Building,<br />Satellite, Ahmedabad<br/> 380015<br /></h6>
                                     </div>
                                 </div>
                             </div>

@@ -87,13 +87,18 @@
     .contact-icon{
         margin-top: 4px;
     }
-    .field-data{
+    .fieldData{
         margin-bottom: 0;
         margin-left: 10px;
         line-height: 25px;
         text-transform: none;
+        &.fieldDataAddress{
+            &:hover{
+                text-decoration: none;
+            }
+        }
         &:hover{
-            color: $textColor;
+            color: #fff;
             text-decoration: underline;
         }
     }

@@ -30,7 +30,7 @@ export default function Services(){
                             <a href="">
                                 <FontAwesomeIcon icon={faFacebook} className={footerStyle['social-icon']}/>
                             </a>
-                            <a href="">
+                            <a href="https://www.linkedin.com/company/close-digit/">
                                 <FontAwesomeIcon icon={faLinkedin} className={footerStyle['social-icon']}/>
                             </a>
                             <a href="">

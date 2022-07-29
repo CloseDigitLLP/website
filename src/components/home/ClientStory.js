@@ -68,15 +68,15 @@ export default function ClientStory(){
                    <div className={`${clientStoryStyle.testimonialBlock}`}>
                        <div className={`${clientStoryStyle.testimonialImage}`}>
                            <span className={`${clientStoryStyle.quote}`}>“</span>
-                           <p>Exercitation ullamco laboris nisi ut aliquip exea commod consequat. Duis aute irure dolor in reprehenderit.</p>
+                           <p>Excellent management and delivery. They provide information, thoughts, and ideas so we can produce a better project.</p>
                        </div>
                        <div className={`${clientStoryStyle.clientImage}`}>
                            <div className={`${clientStoryStyle.imagePart}`}>
-                               <img src="images/client.jpg" alt="client-image" className={`${clientStoryStyle.image}`} />
+                               <img src="images/david.jpg" alt="client-image" className={`${clientStoryStyle.image}`} />
                            </div>
                            <div>
-                               <h6>Aditi Makadiya</h6>
-                               <small>Co-Founder</small>
+                               <h6>David Ozersky</h6>
+                               <small>Mensanta,CTO</small>
                            </div>
                        </div>
                    </div>
@@ -85,15 +85,15 @@ export default function ClientStory(){
                    <div className={`${clientStoryStyle.testimonialBlock}`}>
                        <div className={`${clientStoryStyle.testimonialImage}`}>
                            <span className={`${clientStoryStyle.quote}`}>“</span>
-                           <p>Exercitation ullamco laboris nisi ut aliquip exea commod consequat. Duis aute irure dolor in reprehenderit.</p>
+                           <p>It was a positive experience. very thankful developers who are skilled and persistent. reachable at any moment and accessible.</p>
                        </div>
                        <div className={`${clientStoryStyle.clientImage}`}>
                            <div className={`${clientStoryStyle.imagePart}`}>
-                               <img src="images/client.jpg" alt="client-image" className={`${clientStoryStyle.image}`} />
+                               <img src="images/client-2.jpg" alt="client-image" className={`${clientStoryStyle.image}`} />
                            </div>
                            <div>
-                               <h6>Aditi Makadiya</h6>
-                               <small>Co-Founder</small>
+                               <h6>Harsh Goel</h6>
+                               <small>Proptech,CEO</small>
                            </div>
                        </div>
                    </div>
@@ -102,15 +102,15 @@ export default function ClientStory(){
                    <div className={`${clientStoryStyle.testimonialBlock}`}>
                        <div className={`${clientStoryStyle.testimonialImage}`}>
                            <span className={`${clientStoryStyle.quote}`}>“</span>
-                           <p>Exercitation ullamco laboris nisi ut aliquip exea commod consequat. Duis aute irure dolor in reprehenderit.</p>
+                           <p>We were astounded by their efficiency, cost-effectiveness, and working style. Being able to work with them has been enjoyable.</p>
                        </div>
                        <div className={`${clientStoryStyle.clientImage}`}>
                            <div className={`${clientStoryStyle.imagePart}`}>
                                <img src="images/client.jpg" alt="client-image" className={`${clientStoryStyle.image}`} />
                            </div>
                            <div>
-                               <h6>Aditi Makadiya</h6>
-                               <small>Co-Founder</small>
+                               <h6>Peter Tuskrey</h6>
+                               <small>Head IT</small>
                            </div>
                        </div>
                    </div>

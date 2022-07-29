@@ -32,6 +32,9 @@ export default function ServiceTechnology(){
                             <div className={technology['box']}>
                                 <div className={`${technology.f_technology} ${technology.vueJs}`}></div>
                             </div>
+                            <div className={technology['box']}>
+                                <div className={`${technology.f_technology} ${technology.uiux}`}></div>
+                            </div>
                         </div>
                        
                     </div>

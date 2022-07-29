@@ -31,7 +31,7 @@ return(
                             <FontAwesomeIcon icon={faLightbulb} />
                         </div>
                         <h3 className={aboutFeature['card-title']}><span>Best</span>Understanding</h3>
-                        <p>we run a successful remote for ready to use content for startups business technology or agency</p>
+                        <p>We are aware that in order to live up to our commitment, we must adopt entirely new methods of operation and make sustainability a key component of our output.</p>
                     </div>
                 </div>
             </div>
@@ -42,7 +42,7 @@ return(
                             <FontAwesomeIcon icon={faUsersViewfinder} />
                         </div>
                         <h3 className={aboutFeature['card-title']}><span>Customer</span>Focused</h3>
-                        <p>we run a successful remote for ready to use content for startups business technology or agency</p>
+                        <p>By merging technology, concepts, and abilities, we assist today's enterprises in being ready for the future. Committed to providing the greatest level of quality and service.</p>
                     </div>
                 </div>
             </div>
@@ -52,8 +52,8 @@ return(
                         <div className={aboutFeature['icon-box']}>
                             <FontAwesomeIcon icon={faClock} />
                         </div>
-                        <h3 className={aboutFeature['card-title']}><span>Available</span>When you are</h3>
-                        <p>we run a successful remote for ready to use content for startups business technology or agency</p>
+                        <h3 className={aboutFeature['card-title']}><span>Available</span>when needed</h3>
+                        <p>Offer customers effective Products, Services and Develop business growth that go above and beyond their expectations. Capable of providing service whenever a consumer needs it</p>
                     </div>
                 </div>
             </div>

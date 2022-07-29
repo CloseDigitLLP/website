@@ -14,8 +14,8 @@ export default function AboutBanner(){
                         </div>
                         <img src="images/animated-logo.svg" alt="animated" className='animated-logo-image'></img>
                         {/* <h2 className={bannerStyle['banner-title']}>Close<span className={bannerStyle['Change-title']}>Digit</span></h2> */}
-                        <p className={bannerStyle['banner-description']}>A Group Of Software Developers And Creative Designers Who Are Connected To Deliver Best Work Out Of The Box, And Helps Clients To Convert Their Ideas To A Successful Reality.</p>
-                        <p className={bannerStyle['banner-description']}>Make your business rich with the CloseDigit Powerful tool for your customer to help user find solution for build something great.</p>
+                        <p className={bannerStyle['banner-description']}>A group of creative designers and software developers who work together to provide the best work possible and assist clients in turning their concepts into successful realities.</p>
+                        <p className={bannerStyle['banner-description']}>Make your company wealthy by using CloseDigit's effective tool to assist users in finding solutions to create something truly wonderful.</p>
                         <button type="button" className="btn btn-primary">Contact Us<span className='btn-animation'></span></button>
                     </div>
                     

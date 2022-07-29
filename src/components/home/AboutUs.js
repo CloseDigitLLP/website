@@ -17,8 +17,8 @@ export default function AboutUs(){
                     <div className="col-lg-6 col-md-12 cmt-3">
                         <div className={aboutStyle['aboutUs-content']}></div>
                         <h6 className='title'><span className="change-title">Our mission </span>is to make your business better through technology.</h6>
-                        <p className={aboutStyle['description']}>A team of Creative Minds designing best Apps and Website for the World. Powerful tool for your customer to help user find solution for build something great.</p>
-                        <p className={aboutStyle['description']}>Our team works hand in hand with the client and make sure that the product that they are working on not only becomes success but also leaves an impression on the user being easy to use and keeping in mind the interest of its users.</p>
+                        <p className={aboutStyle['description']}>A team of Creative Minds designing best Apps and Website for the World. An effective tool for your customers to uncover solutions for creating something amazing.</p>
+                        <p className={aboutStyle['description']}>Our team collaborates closely with the client to ensure that the product they are developing not only succeeds but also leaves a positive user experience by being simple to use and considering the needs of its consumers.</p>
                         <ul className={aboutStyle['list']}>
                             <li className={aboutStyle['list-item']}>Deliver Exclusive design</li>
                             <li className={aboutStyle['list-item']}>Best development</li>

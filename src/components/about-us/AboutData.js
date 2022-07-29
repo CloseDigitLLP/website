@@ -12,7 +12,7 @@ export default function AboutData(){
             <div className="col-lg-4 col-md-12">
                 <h6 className="title"><span class="change-title">Our Mission</span></h6>
                 <p className={aboutUsData['description']} >
-                Skillfully applying the most sought-after, fast-growing pertinent technology to yield total solutions in the most critical business areas.
+                Effectively utilising the most in-demand, rapidly expanding relevant technology to produce complete solutions in the most important business domains.
                 </p>
             </div>
             <div className="col-lg-4 col-md-12 d-flex justify-content-center">
@@ -21,7 +21,7 @@ export default function AboutData(){
             <div className="col-lg-4 col-md-12">
             <h6 className="title"><span class="change-title">Our Vision</span></h6>
                 <p className={aboutUsData['description']} >
-                    Consistently deliver ingenious, comprehensive, efficient, cost-effective business solutions through IT for the global market by creating a professionally stimulating and happy environment for our team where professionals thrive alongside the growth of our company.
+                Deliver innovative, thorough, effective, and affordable business solutions using IT on a consistent basis for the worldwide market while fostering a positive work environment for our team that supports the expansion of our firm.
                 </p>
             </div>
         </div>

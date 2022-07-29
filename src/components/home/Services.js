@@ -1,9 +1,10 @@
 import servicesStyle from '../../styles/home/services.module.scss'
 import {
-    faClone,
-    faChartPie,
-    faBox,
-    faCog,
+    faPaintBrush,
+    faCode,
+    faLaptopCode,
+    faCloudUploadAlt,
+    faMobileScreenButton,
     faShieldAlt,
     faLifeRing,
   } from "@fortawesome/free-solid-svg-icons";
@@ -21,37 +22,38 @@ export default function Services(){
                 <div className="col-md-6 col-lg-4 mb-4">
                     <div className={`${servicesStyle.serviceCard} card`}>
                         <div className={servicesStyle['icon']}>
-                            <FontAwesomeIcon icon={faClone} />
+                        <FontAwesomeIcon icon={faPaintBrush} />
                         </div>
-                        <h3 className={`${servicesStyle.cardHeading} mb-3`}>Exclusive Design</h3>
-                        <p className={`${servicesStyle.description}`}>We provide quick and detailed answers for your awesome business.</p>
+                        <h3 className={`${servicesStyle.cardHeading} mb-3`}>UI/UX Design</h3>
+                        <p className={`${servicesStyle.description}`}>we provide comprehensive UI/UX services that include branding and promotional graphics.</p>
                     </div>
                 </div>
                 <div className="col-md-6 col-lg-4 mb-4">
                     <div className={`${servicesStyle.serviceCard} card`}>
                         <div className={servicesStyle['icon']}>
-                        <FontAwesomeIcon icon={faBox} />
+                        <FontAwesomeIcon icon={faLaptopCode} />
                         </div>
-                        <h3 className={`${servicesStyle.cardHeading} mb-3`}>Responsive Layout</h3>
-                        <p className={`${servicesStyle.description}`}>We provide quick and detailed answers for your awesome business.</p>
+                        <h3 className={`${servicesStyle.cardHeading} mb-3`}>Website/APP Design</h3>
+                        <p className={`${servicesStyle.description}`}>We create cross-platform compatible responsive websites and adaptive designs.</p>
                     </div>
                 </div>
                 <div className="col-md-6 col-lg-4 mb-4">
                     <div className={`${servicesStyle.serviceCard} card`}>
                         <div className={servicesStyle['icon']}>
-                            <FontAwesomeIcon icon={faChartPie} />
+                            <FontAwesomeIcon icon={faCode} />
                         </div>
-                        <h3 className={`${servicesStyle.cardHeading} mb-3`}>Easy to Customize</h3>
-                        <p className={`${servicesStyle.description}`}>We provide quick and detailed answers for your awesome business.</p>
+                        <h3 className={`${servicesStyle.cardHeading} mb-3`}>Web Development</h3>
+                        <p className={`${servicesStyle.description}`}>We create cutting-edge online applications that enable real-time user collaboration.</p>
                     </div>
                 </div>
+                
                 <div className="col-md-6 col-lg-4 mb-4">
                     <div className={`${servicesStyle.serviceCard} card`}>
                         <div className={servicesStyle['icon']}>
-                           <FontAwesomeIcon icon={faCog} />
+                           <FontAwesomeIcon icon={faMobileScreenButton}/>
                         </div>
-                        <h3 className={`${servicesStyle.cardHeading} mb-3`}>Customization</h3>
-                        <p className={`${servicesStyle.description}`}>We provide quick and detailed answers for your awesome business.</p>
+                        <h3 className={`${servicesStyle.cardHeading} mb-3`}>App Development</h3>
+                        <p className={`${servicesStyle.description}`}>Across a variety of industrial verticals, we are developing, evaluating, and enhancing next-generation solutions.</p>
                     </div>
                 </div>
                 <div className="col-md-6 col-lg-4 mb-4">
@@ -59,19 +61,20 @@ export default function Services(){
                         <div className={servicesStyle['icon']}>
                            <FontAwesomeIcon icon={faShieldAlt}/>
                         </div>
-                        <h3 className={`${servicesStyle.cardHeading} mb-3`}>Secure Services</h3>
-                        <p className={`${servicesStyle.description}`}>We provide quick and detailed answers for your awesome business.</p>
+                        <h3 className={`${servicesStyle.cardHeading} mb-3`}>Quality Assurance</h3>
+                        <p className={`${servicesStyle.description}`}>Offers advanced software testing services, and has testing staff that is committed to improving quality.</p>
                     </div>
                 </div>
                 <div className="col-md-6 col-lg-4 mb-4">
                     <div className={`${servicesStyle.serviceCard} card`}>
                         <div className={servicesStyle['icon']}>
-                           <FontAwesomeIcon icon={faLifeRing}/>
+                           <FontAwesomeIcon icon={faCloudUploadAlt}/>
                         </div>
-                        <h3 className={`${servicesStyle.cardHeading} mb-3`}>Custom Support</h3>
-                        <p className={`${servicesStyle.description}`}>We provide quick and detailed answers for your awesome business.</p>
+                        <h3 className={`${servicesStyle.cardHeading} mb-3`}>Cloud & Devops</h3>
+                        <p className={`${servicesStyle.description}`}>Performance for apps of the highest order while hosting your IT infrastructure online.</p>
                     </div>
                 </div>
+               
             </div>
             </div>
             

@@ -68,6 +68,14 @@
                 background-position: -217px -101px;
             }
         }
+        &.uiux{
+          background-position: -703px 0;
+          width: 84px;
+          height: 57px;
+          &:hover{
+            background-position: -703px -109px;
+          }
+        }
     }
     .m_technology{
         background-image: url('../../../public/images/app-development.svg');

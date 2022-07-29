@@ -14,22 +14,22 @@ export default function Services(){
                         <ul className={solutionStyle['features-list']}>
                             <li>
                                 {/* <span className={solutionStyle['active']}>UI/UX Design</span> */}
-                                <span>UI/UX Design</span>
+                                <span>Design</span>
                             </li>
                             <li>
-                                <span>Website design</span>
+                                <span>Development</span>
                             </li>
                             <li>
-                                <span>Web development</span>
+                                <span>Data Handling</span>
                             </li>
                             <li>
-                                <span>App development</span>
+                                <span>Management</span>
                             </li>
                             <li>
-                                <span>E-Commerce Development</span>
+                                <span>Consulting</span>
                             </li>
                             <li>
-                                <span>WordPress Development</span>
+                                <span>Customization</span>
                             </li>
                             <li>
                                 <span>Managed IT Service</span>

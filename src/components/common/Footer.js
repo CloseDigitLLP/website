@@ -24,7 +24,7 @@ export default function Services(){
                             <img src={'images/logo-white.svg'} alt="logo"></img>
                         </div>
                         <div className={footerStyle['description']}>
-                            <p>A Group Of Software Developers And Creative Designers Who Are Connected To Deliver Best Work Out Of The Box, And Helps Clients To Convert Their Ideas To A Successful Reality.</p>
+                            <p>A group of creative designers and software developers who work together to provide the best work possible and assist clients in turning their concepts into successful realities.</p>
                         </div>
                         <div className={footerStyle['social-button']}>
                             <a href="">
@@ -82,7 +82,7 @@ export default function Services(){
                                     </div>
                                     <div className={footerStyle['field']}>
                                         <FontAwesomeIcon icon={faEnvelope} className={footerStyle['contact-icon']}/>
-                                        <a href="mailto:amakadiya98@gmail.com" className={footerStyle['field-data']}>closeDigit9@gmail.com</a>
+                                        <a href="mailto:amakadiya98@gmail.com" className={footerStyle['field-data']}>sales@closedigit.com</a>
                                     </div>
                                     <div className={footerStyle['field']} >
                                         <FontAwesomeIcon icon={faLocationDot} className={footerStyle['contact-icon']}/>

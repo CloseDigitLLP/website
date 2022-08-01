@@ -2,10 +2,13 @@
 .aboutUs-section{
     position: relative;
     overflow: hidden;
+    margin-bottom: 0;
 }
 .about-us-image{
-    margin-top: -85px;
-    width: 100%;
+    margin-top: -50px !important;
+    width: 100% !important;
+    margin: 0;
+    max-height: initial !important;
 }
 .aboutUs-content{
 

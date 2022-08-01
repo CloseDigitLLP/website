@@ -1,4 +1,5 @@
 import aboutUsData from '../../styles/aboutUs/aboutData.module.scss'
+import Image from 'next/image'
 
 export default function AboutData(){
     return(
@@ -16,7 +17,14 @@ export default function AboutData(){
                 </p>
             </div>
             <div className="col-lg-4 col-md-12 d-flex justify-content-center">
-                <img src="images/mission-vision.png" alt="vision-mission"  className={aboutUsData['mission-vision-img']}/>
+                <Image
+                    src={require('../../assets/images/mission-vision.png')}
+                    alt="vision-mission"
+                    width={400}
+                    height={250}
+                    className={aboutUsData['mission-vision-img']}
+                    quality={100}
+                />
             </div>
             <div className="col-lg-4 col-md-12">
             <h6 className="title"><span class="change-title">Our Vision</span></h6>

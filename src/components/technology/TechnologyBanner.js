@@ -2,7 +2,7 @@ import bannerStyle from '../../styles/home/banner.module.scss'
 import Image from 'next/image'
 
 
-export default function Banner(){
+export default function TechnologyBanner(){
     return(
         <div className={bannerStyle['home-area']}>
             <div className={bannerStyle['home-section']}>
@@ -21,14 +21,14 @@ export default function Banner(){
                                 className="animated-logo-image"
                             />
                             {/* <h2 className={bannerStyle['banner-title']}>Close<span className={bannerStyle['Change-title']}>Digit</span></h2> */}
-                            <p className={bannerStyle['banner-description']}>A group of creative designers and software developers who work together to provide the best work possible and assist clients in turning their concepts into successful realities.</p>
+                            <p className={bannerStyle['banner-description']}>Business issue solving is ingrained in our DNA. Frontend Army also possesses the necessary technical know-how to make this happen. Your software development project needs the necessary resources, and we have them. You have the idea. We have the resources.</p>
                             <button type="button" className="btn btn-primary">Get in touch <span className='btn-animation'></span></button>
                         </div>
                         
                         </div>
                         <div className="col-lg-6 col-md-12">
                             <Image
-                                src={require('../../assets/images/home-banner.png')}
+                                src={require('../../assets/images/technologyBanner.png')}
                                 alt="Banner"
                                 width={600}
                                 height={550}

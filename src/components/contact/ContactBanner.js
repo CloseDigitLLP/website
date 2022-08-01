@@ -1,6 +1,6 @@
 import bannerStyle from '../../styles/home/banner.module.scss';
 import contactBanner from '../../styles/contact/contactBanner.module.scss';
-
+import Image from 'next/image'
 
 export default function ContactBanner(){
     return(
@@ -15,8 +15,13 @@ export default function ContactBanner(){
                         <div className="typewriter">
                             <h3 className={bannerStyle['banner-heading']}>Encourage innovation with</h3>
                         </div>
-
-                        <img src="images/animated-logo.svg" alt="animated" className='animated-logo-image'></img>
+                            <Image
+                                src={require('../../assets/images/animated-logo.svg')}
+                                alt="Animated"
+                                width={300}
+                                height={70}
+                                className="animated-logo-image"
+                            />
                        
                         {/* <h2 className={bannerStyle['banner-title']}>Close<span className={bannerStyle['Change-title']}>Digit</span></h2> */}
                         <p className={bannerStyle['banner-description']}>We Are Help To Grow Your Business. Increase Your Revenue Average Using Our Smart Solutions.</p>
@@ -25,7 +30,13 @@ export default function ContactBanner(){
                     
                     </div>
                     <div className="col-md-12 col-lg-6">
-                        <img src={'images/contactUs.gif'} alt="banner" className={bannerStyle['banner-image']}></img>
+                            <Image
+                                src={require('../../assets/images/contactUs.gif')}
+                                alt="banner"
+                                width={600}
+                                height={450}
+                                className={bannerStyle['banner-image']}
+                            />
                     </div>
                 </div>
             </div>

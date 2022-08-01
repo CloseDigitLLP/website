@@ -1,14 +1,8 @@
 import aboutFeature from '../../styles/aboutUs/aboutFeature.module.scss'
 import {
-    faClone,
     faLightbulb,
     faClock,
     faUsersViewfinder,
-    faChartPie,
-    faBox,
-    faCog,
-    faShieldAlt,
-    faLifeRing,
   } from "@fortawesome/free-solid-svg-icons";
   import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 

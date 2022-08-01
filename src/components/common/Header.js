@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import headerStyle from '../../styles/common/header.module.scss'
-
+import Image from 'next/image'
 
 export default function Header(){
 
@@ -33,12 +33,24 @@ export default function Header(){
             <div className="container-fluid p-0">
                 <Link href="/">
                     <a className="navbar-brand" href="#">
-                        <img src={'images/CloseDigit-lg.svg'} alt="logo" className={`${headerStyle.logoPart}`}></img>
+                         <Image
+                                src={require('../../assets/images/CloseDigit-lg.svg')}
+                                alt="logo" 
+                                width={220}
+                                height={30}
+                                className={`${headerStyle.logoPart}`}
+                            />
                     </a>
                 </Link>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <img src={'images/menu.svg'} alt="menu"></img>
-            </button>
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <Image
+                                src={require('../../assets/images/menu.svg')}
+                                alt="logo"
+                                width={30}
+                                height={28}
+                                className="menu"
+                            />
+                        </button>
             <div className="navbar-collapse collapse" id="navbarNav">
                 {/* <div className='body-overlay'></div> */}
                 <ul className={`${headerStyle.navbarNav} navbar-nav`}>
@@ -46,7 +58,13 @@ export default function Header(){
                     <li className={`${headerStyle.mobileLogo}`}>
                         <Link href="/">
                             <a className="navbar-brand" href="#">
-                                <img src={'images/CloseDigit-lg.svg'} alt="logo" className={`${headerStyle.logoPart}`}></img>
+                            <Image
+                                src={require('../../assets/images/CloseDigit-lg.svg')}
+                                alt="logo" 
+                                width={220}
+                                height={30}
+                                className={`${headerStyle.logoPart}`}
+                            />
                             </a>
                         </Link>
                     </li>
@@ -63,6 +81,11 @@ export default function Header(){
                     <li className={`${headerStyle.navItem} nav-item`}>
                         <Link href="/Services">
                             <a className={`${headerStyle.navLink} ${router.pathname === '/Services' ? headerStyle.active : ''} nav-link`} >Services</a>
+                        </Link>
+                    </li>
+                    <li className={`${headerStyle.navItem} nav-item`}>
+                        <Link href="/Services">
+                            <a className={`${headerStyle.navLink} ${router.pathname === '/Technology' ? headerStyle.active : ''} nav-link`} >Technology</a>
                         </Link>
                     </li>
                     {/* <li className={`${headerStyle.navItem} nav-item`}>

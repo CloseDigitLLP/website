@@ -1,4 +1,5 @@
 import technology from '../../styles/service/serviceTechnology.module.scss'
+import Image from 'next/image'
 
 export default function ServiceTechnology(){
     return(
@@ -10,7 +11,13 @@ export default function ServiceTechnology(){
             <div className="container">
                 <div className={`${technology.technologySection} row align-items-center`}>
                     <div className="col-md-6 col-sm-12 d-flex justify-content-center">
-                        <img src="images/frontEndTechnology3.gif" alt="frontend-technology" className={`${technology.imageWidth}`}></img>
+                        <Image
+                            src={require('../../assets/images/frontEndTechnology3.gif')}
+                            alt="frontend-technology"
+                            width={500}
+                            height={500}
+                            className={`${technology.imageWidth}`}
+                        />
                     </div>
                     <div className="col-md-6 col-sm-12">
                         <div className={technology['technology-part']}>
@@ -65,7 +72,13 @@ export default function ServiceTechnology(){
                     </div>
                     <div className="col-md-6 col-sm-12">
                         <div className='d-flex justify-content-center'>
-                            <img src="images/backendTechnology3.gif" alt="frontend-technology" className={`${technology.imageWidth}`}></img>
+                        <Image
+                            src={require('../../assets/images/backendTechnology3.gif')}
+                            alt="backend-technology"
+                            width={440}
+                            height={450}
+                            className={`${technology.imageWidth}`}
+                        />
                         </div>
                         
                     </div>

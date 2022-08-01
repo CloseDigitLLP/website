@@ -1,4 +1,5 @@
 import solutionStyle from '../../styles/home/solution.module.scss'
+import Image from 'next/image'
 
 export default function Services(){
     return(
@@ -40,7 +41,14 @@ export default function Services(){
                         </ul>
                     </div>
                     <div className='col-md-12 col-lg-6 d-flex justify-content-center'>
-                        <img src={'images/creating_services.gif'} alt="solution-gif" className={solutionStyle['solution-banner']}></img>
+                        <Image
+                            src={require('../../assets/images/creating_services.gif')}
+                            alt="solution-gif"
+                            width={600}
+                            height={400}
+                            className={solutionStyle['solution-banner']}
+                            quality={100}
+                        />
                     </div>
                 </div>
             </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import clientStoryStyle from '../../styles/home/clientStory.module.scss'
 import dynamic from 'next/dynamic';
+import Image from 'next/image'
 
 var $ = require('jquery');
 if (typeof window !== 'undefined') {
@@ -72,7 +73,14 @@ export default function ClientStory(){
                        </div>
                        <div className={`${clientStoryStyle.clientImage}`}>
                            <div className={`${clientStoryStyle.imagePart}`}>
-                               <img src="images/David.jpg" alt="client-image" className={`${clientStoryStyle.image}`} />
+                                <Image
+                                    src={require('../../assets/images/David.jpg')}
+                                    alt="client-image" 
+                                    width={50}
+                                    height={50}
+                                    className={`${clientStoryStyle.image}`}
+                                    quality={100}
+                                />
                            </div>
                            <div>
                                <h6>David Ozersky</h6>
@@ -89,7 +97,14 @@ export default function ClientStory(){
                        </div>
                        <div className={`${clientStoryStyle.clientImage}`}>
                            <div className={`${clientStoryStyle.imagePart}`}>
-                               <img src="images/client-2.jpg" alt="client-image" className={`${clientStoryStyle.image}`} />
+                                <Image
+                                    src={require('../../assets/images/client-2.jpg')}
+                                    alt="client-image" 
+                                    width={50}
+                                    height={50}
+                                    className={`${clientStoryStyle.image}`}
+                                    quality={100}
+                                />
                            </div>
                            <div>
                                <h6>Harsh Goel</h6>
@@ -106,45 +121,18 @@ export default function ClientStory(){
                        </div>
                        <div className={`${clientStoryStyle.clientImage}`}>
                            <div className={`${clientStoryStyle.imagePart}`}>
-                               <img src="images/client.jpg" alt="client-image" className={`${clientStoryStyle.image}`} />
+                                <Image
+                                    src={require('../../assets/images/client.jpg')}
+                                    alt="client-image" 
+                                    width={50}
+                                    height={50}
+                                    className={`${clientStoryStyle.image}`}
+                                    quality={100}
+                                />
                            </div>
                            <div>
                                <h6>Peter Tuskrey</h6>
                                <small>Head IT</small>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               <div className='item'>
-                   <div className={`${clientStoryStyle.testimonialBlock}`}>
-                       <div className={`${clientStoryStyle.testimonialImage}`}>
-                           <span className={`${clientStoryStyle.quote}`}>“</span>
-                           <p>Exercitation ullamco laboris nisi ut aliquip exea commod consequat. Duis aute irure dolor in reprehenderit.</p>
-                       </div>
-                       <div className={`${clientStoryStyle.clientImage}`}>
-                           <div className={`${clientStoryStyle.imagePart}`}>
-                               <img src="images/client.jpg" alt="client-image" className={`${clientStoryStyle.image}`} />
-                           </div>
-                           <div>
-                               <h6>Aditi Makadiya</h6>
-                               <small>Co-Founder</small>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               <div className='item'>
-                   <div className={`${clientStoryStyle.testimonialBlock}`}>
-                       <div className={`${clientStoryStyle.testimonialImage}`}>
-                           <span className={`${clientStoryStyle.quote}`}>“</span>
-                           <p>Exercitation ullamco laboris nisi ut aliquip exea commod consequat. Duis aute irure dolor in reprehenderit.</p>
-                       </div>
-                       <div className={`${clientStoryStyle.clientImage}`}>
-                           <div className={`${clientStoryStyle.imagePart}`}>
-                               <img src="images/client.jpg" alt="client-image" className={`${clientStoryStyle.image}`} />
-                           </div>
-                           <div>
-                               <h6>Aditi Makadiya</h6>
-                               <small>Co-Founder</small>
                            </div>
                        </div>
                    </div>

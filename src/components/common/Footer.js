@@ -1,5 +1,6 @@
 import footerStyle from '../../styles/common/footer.module.scss';
 import Link from 'next/link'
+import Image from 'next/image'
 import {
    faFacebook,
    faLinkedin,
@@ -21,29 +22,35 @@ export default function Services(){
                 <div className='row'>
                     <div className='col-lg-5 col-md-12'>
                         <div className={footerStyle['footer-logo']}>
-                            <img src={'images/logo-white.svg'} alt="logo"></img>
+                        <Image
+                                src={require('../../assets/images/logo-white.svg')}
+                                alt="logo"
+                                width={150}
+                                height={20}
+                                className="animated-logo-image"
+                            />
                         </div>
                         <div className={footerStyle['description']}>
                             <p>A group of creative designers and software developers who work together to provide the best work possible and assist clients in turning their concepts into successful realities.</p>
                         </div>
                         <div className={footerStyle['social-button']}>
-                            <a href="">
+                            {/* <a href="">
                                 <FontAwesomeIcon icon={faFacebook} className={footerStyle['social-icon']}/>
-                            </a>
+                            </a> */}
                             <a href="https://www.linkedin.com/company/close-digit/">
                                 <FontAwesomeIcon icon={faLinkedin} className={footerStyle['social-icon']}/>
                             </a>
-                            <a href="">
+                            {/* <a href="">
                                 <FontAwesomeIcon icon={faTwitter} className={footerStyle['social-icon']}/>
-                            </a>
-                            <a href="">
+                            </a> */}
+                            <a href="https://www.instagram.com/closedigit__it/">
                                 <FontAwesomeIcon icon={faInstagram} className={footerStyle['social-icon']}/>
                             </a>
                             
                         </div>
                     </div>
                     <div className='col-lg-7 col-md-12 custom-margin-top'>
-                        <div className='row'>
+                        <div className='row mt-sm-5'>
                             <div className='col-lg-3 col-md-4 col-sm-6'>
                                 <h6 className={footerStyle['footer-heading']}>About Us</h6>
                                 <div className={footerStyle['description']}>
@@ -56,9 +63,9 @@ export default function Services(){
                                     <Link href="/Technology">
                                         <a className={footerStyle['link']}>Technology</a>   
                                     </Link>
-                                    <Link href="/project">
+                                    {/* <Link href="/project">
                                         <a href="" className={footerStyle['link']}>Projects</a>
-                                    </Link>
+                                    </Link> */}
                                 </div>
                                
                             </div>

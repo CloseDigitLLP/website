@@ -1,4 +1,5 @@
 import bannerStyle from '../../styles/home/banner.module.scss'
+import Image from 'next/image'
 
 
 export default function Banner(){
@@ -12,7 +13,13 @@ export default function Banner(){
                             <div className="typewriter">
                                 <h3 className={bannerStyle['banner-heading']}>Encourage innovation with</h3>
                             </div>
-                            <img src="images/animated-logo.svg" alt="animated" className='animated-logo-image'></img>
+                            <Image
+                                src={require('../../assets/images/animated-logo.svg')}
+                                alt="Animated"
+                                width={300}
+                                height={50}
+                                className="animated-logo-image"
+                            />
                             {/* <h2 className={bannerStyle['banner-title']}>Close<span className={bannerStyle['Change-title']}>Digit</span></h2> */}
                             <p className={bannerStyle['banner-description']}>A group of creative designers and software developers who work together to provide the best work possible and assist clients in turning their concepts into successful realities.</p>
                             <button type="button" className="btn btn-primary">Get in touch <span className='btn-animation'></span></button>
@@ -20,7 +27,14 @@ export default function Banner(){
                         
                         </div>
                         <div className="col-lg-6 col-md-12">
-                            <img src={'images/home-banner.png'} alt="banner" className={bannerStyle['banner-image']}></img>
+                            <Image
+                                src="/images/home-banner.png"
+                                alt="Banner"
+                                width={600}
+                                height={550}
+                                className={bannerStyle['banner-image']}
+                                quality={100}
+                            />
                         </div>
                     </div>
                 </div>

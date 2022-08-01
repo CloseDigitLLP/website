@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ 
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Isolation_Mode" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="22px" height="24.149px" viewBox="26.416 30.251 22 24.149"
+	 style="enable-background:new 26.416 30.251 22 24.149;" xml:space="preserve">
+<g>
+	<g>
+		
+			<image style="overflow:visible;opacity:0.1;" width="25" height="27" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAbCAYAAACJISRoAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
+GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAhhJREFUeNrUltlLw0AQxrPpha0X
+Fm09EBS8HvqgqPig4vGHi2/i8eSDF6J4oRXvi57xG/lWhmA0DSK48GPTbjLfzOxkNsYJP4yaPV57
+YR6MhTQu9yVAGjTxumHvgtZcGsyADpCj0Cu4ArfgBVRAPSiyoEjEeBK0gm4wCqbAPOdB0MZ7bNpC
+i9jUpGl8jEYXwCyYACOgH/QysoxPrMbZ+0pEey9GJsESmAPj9L6L6xJFFuRBjxJLUKSsxD5FDAWy
+9H4aLIIZMAQ6lZEYSYEWJdbNa8N9egNVEYqrKDI0uMwUDdPzJq6bL9LqL4w8hSWCEriQqOJ8IK6i
+kDQV+DtJQz+VtxVLsgCk6k7BjRVxGHqeIgP0KvVDiQcVTBeLoo3CxqYhwQ3NqdI0TuPDRpSyAo5K
+hVHhJiIKBL7kbgMdIPJwnT8Y/1rE+07E+wXjFbaVirXn+hZLqm1HERDjDzwGHq2QqwRk8RwUeV7U
+GoisTgflTT8CO+CS/328pcbX+tPsRXG1bgLK254jbzQqxjfBOjjm//WYL12vXKiwg9rT0fWJWeNl
+pkX61BZYAWvggJmp6lZvDxsRuGPKrtmyy6pIdHqf6P0u2ACrjOCQAp8bbwJ6TzO7cD/bf4FzH1Mp
+4mf0eBvscy+KNkV6P02IDwgtJkdvO7gHexQ5YUt/DqrMP/laMSE7qstqS3EfayzP6nfGo3TdyF+Q
+7wIMAE2elsUUyckiAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 25.416 29.7754)">
+		</image>
+		<g>
+			<g>
+				<path style="fill:#0588C5;" d="M45.096,36.89c-0.101-0.148-0.234-0.278-0.413-0.381l-6.881-3.989
+					c-0.597-0.346-1.308-0.311-1.855,0.029c-0.036,0.019-0.071,0.037-0.106,0.06l-6.728,4.245c-0.247,0.156-0.423,0.362-0.539,0.597
+					c-0.207,0.314-0.328,0.697-0.327,1.102v7.922c0.001,0.203,0.033,0.398,0.091,0.578c0.092,0.391,0.322,0.736,0.708,0.96
+					l7.102,3.997c0.149,0.088,0.305,0.147,0.464,0.188c0.458,0.142,0.961,0.103,1.393-0.168l6.613-4.281
+					c0.588-0.309,0.97-0.966,0.967-1.689V38.15C45.585,37.655,45.4,37.211,45.096,36.89z"/>
+			</g>
+		</g>
+	</g>
+	<path style="fill:#E7EFF2;" d="M40.341,40.02c-0.042-0.062-0.098-0.116-0.173-0.16l-2.881-1.67c-0.25-0.145-0.548-0.13-0.777,0.012
+		c-0.015,0.008-0.03,0.016-0.044,0.025l-2.817,1.778c-0.104,0.065-0.177,0.151-0.226,0.25c-0.087,0.131-0.137,0.292-0.137,0.461
+		v3.317c0,0.085,0.014,0.166,0.038,0.242c0.039,0.163,0.134,0.309,0.296,0.401l2.974,1.674c0.063,0.037,0.127,0.062,0.195,0.079
+		c0.191,0.06,0.402,0.042,0.583-0.071l2.77-1.792c0.245-0.129,0.405-0.404,0.404-0.707v-3.312
+		C40.546,40.341,40.469,40.155,40.341,40.02z"/>
+</g>
+</svg>

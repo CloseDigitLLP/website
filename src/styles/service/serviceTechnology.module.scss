@@ -18,7 +18,8 @@
     align-items: center;
     cursor: pointer;
     .f_technology{
-        background-image: url('../../../public/images/frontEnd-technology.svg');
+        // background-image: url('../../../public/images/frontEnd-technology.svg');
+        background-image: url('../../assets/images/frontEnd-technology.svg');
         background-repeat: no-repeat;
         &.html{
             background-position: -440px 0;
@@ -78,7 +79,8 @@
         }
     }
     .m_technology{
-        background-image: url('../../../public/images/app-development.svg');
+        // background-image: url('../../../public/images/app-development.svg');
+        background-image: url('../../assets/images/app-development.svg');
         background-repeat: no-repeat;
         &.reactNative{
             background-position: -104px 0;
@@ -90,7 +92,8 @@
         }
     }
     .b_technology{
-        background-image: url('../../../public/images/backendTechnology.svg');
+        // background-image: url('../../../public/images/backendTechnology.svg');
+        background-image: url('../../assets/images/backendTechnology.svg');
         background-repeat: no-repeat;
         &.php{
             background-position: -1px -16px;

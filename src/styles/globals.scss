@@ -39,6 +39,11 @@ a {
   &:hover,&:focus{
     box-shadow: none;
   }
+  &:active{
+    &:focus{
+      box-shadow: none;
+    }
+  }
 }
 .btn-primary .btn-animation{
   position: absolute;

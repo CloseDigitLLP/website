@@ -84,7 +84,7 @@ export default function Header(){
                         </Link>
                     </li>
                     <li className={`${headerStyle.navItem} nav-item`}>
-                        <Link href="/Services">
+                        <Link href="/Technology">
                             <a className={`${headerStyle.navLink} ${router.pathname === '/Technology' ? headerStyle.active : ''} nav-link`} >Technology</a>
                         </Link>
                     </li>

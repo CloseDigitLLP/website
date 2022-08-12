@@ -1,23 +1,40 @@
 @import '../variable.module.scss';
 
-.testimonialBlock{
+.namePart {
+    height: 40PX;
+    width: 40px;
+    background-color: #4949dd;
+    color: white;
+    font-weight: 500;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.testimonialBlock {
     border-radius: 4px;
     background-color: #fff;
     box-shadow: 0px 5px 24px 6px rgb(0 0 0 / 6%);
     padding: 45px 40px;
     margin: 30px 24px 40px;
     position: relative;
-    .testimonialImage{
+
+    .testimonialImage {
         padding-bottom: 1.5rem;
         background-color: #fff;
-        .quote{
+
+        .quote {
             position: absolute;
             top: 30px;
             font-size: 124px;
             opacity: 0.2;
             line-height: 130px;
         }
-        p{
+
+        p {
             margin-top: 50px;
             margin-bottom: 10px;
             font-size: 15px;
@@ -27,12 +44,15 @@
             font-weight: 400;
         }
     }
-    .clientImage{
+
+    .clientImage {
         display: flex;
         align-items: center;
-        .imagePart{
+
+        .imagePart {
             margin-right: 1rem;
-            .image{
+
+            .image {
                 display: inline-block;
                 width: 50px;
                 max-width: 100%;
@@ -40,13 +60,15 @@
                 border-radius: 50%;
             }
         }
-        h6{
+
+        h6 {
             font-weight: 600;
             font-size: 1rem;
             color: $textColor;
             line-height: 1.2;
         }
-        small{
+
+        small {
             color: #575a7b;
         }
     }

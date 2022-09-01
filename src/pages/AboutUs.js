@@ -1,7 +1,14 @@
 import AboutUsPage from '../components/about-us/AboutIndex'
+import Head from 'next/head'
 
 export default function AboutUs() {
   return (
-      <AboutUsPage></AboutUsPage>
+    <>
+      <Head>
+        <title>About Us | closedigit</title>
+      </Head>
+      <AboutUsPage>
+      </AboutUsPage>
+    </>
   )
 }

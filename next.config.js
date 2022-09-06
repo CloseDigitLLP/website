@@ -8,13 +8,22 @@ const nextConfig = {
     reactStrickMode: true,
     webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
         config.plugins.push(
-         new webpack.ProvidePlugin({
-            $: 'jquery',
-            jQuery: 'jquery',
-            'window.jQuery': 'jquery',
-        })
-      );
-     return config;
+            new webpack.ProvidePlugin({
+                $: 'jquery',
+                jQuery: 'jquery',
+                'window.jQuery': 'jquery',
+            })
+        );
+        return config;
     },
+    env: {
+        apiKey: "AIzaSyDSWru3F2drKh56l4cJGzCGqBAW40fw4Gg",
+        authDomain: "close-digit-llp.firebaseapp.com",
+        projectId: "close-digit-llp",
+        storageBucket: "close-digit-llp.appspot.com",
+        messagingSenderId: "378701596349",
+        appId: "1:378701596349:web:43a6b2262251d4c84e99d4",
+        measurementId: "G-KS4MF284YH"
+    }
 };
 module.exports = nextConfig;

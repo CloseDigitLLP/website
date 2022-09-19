@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Contact Us | closedigit</title>
+        <title>Contact Us | CloseDigit</title>
       </Head>
       <ContactPage></ContactPage>
     </>

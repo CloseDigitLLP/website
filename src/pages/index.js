@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home | closedigit</title>
+        <title>Home | CloseDigit</title>
       </Head>
       <HomePage></HomePage>
     </>

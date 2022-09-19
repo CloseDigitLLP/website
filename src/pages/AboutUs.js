@@ -5,7 +5,7 @@ export default function AboutUs() {
   return (
     <>
       <Head>
-        <title>About Us | closedigit</title>
+        <title>About Us | CloseDigit</title>
       </Head>
       <AboutUsPage>
       </AboutUsPage>

@@ -6,7 +6,7 @@ export default function Service() {
   return (
     <>
       <Head>
-        <title>Technology | closedigit</title>
+        <title>Technology | CloseDigit</title>
       </Head>
       <TechnologyPage></TechnologyPage>
     </>

@@ -5,13 +5,17 @@ import { yupResolver } from '@hookform/resolvers/yup'
 import 'yup-phone'
 import { db } from '../../../firebase'
 import { addDoc, collection } from 'firebase/firestore'
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import axios from 'axios'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
+import { BeatLoader } from 'react-spinners'
 
 
-export default function ContactData(){
+export default function ContactData() {
 
     const submitBtnRef = useRef()
+    const [isLoading, setIsLoading] = useState(false)
 
     const schema = yup.object().shape({
         name: yup.string().required(),
@@ -21,23 +25,26 @@ export default function ContactData(){
         description: yup.string().required()
     })
 
-    const { register, handleSubmit, formState:{errors} } = useForm({
+    const { register, handleSubmit, formState: { errors } } = useForm({
         resolver: yupResolver(schema)
     });
 
     const onSubmit = async (data) => {
-        try{
-            submitBtnRef.current.disabled = true
+        setIsLoading(true)
+        try {
             const docRef = await addDoc(collection(db, "users"), data)
-            submitBtnRef.current.disabled = false
-            axios.post('/api/nodemailer', data).then(response => console.log(response.data))
-        }catch(e){
+            await axios.post('/api/nodemailer', data).then((response) => {
+                console.log(response.data); toast.success("Data saved successfully!")
+            })
+        } catch (e) {
             console.log(e)
-            submitBtnRef.current.disabled = false
+            toast.error("Data couldn't be saved")
+        } finally {
+            setIsLoading(false)
         }
     }
 
-    return(
+    return (
         <section className={`${contactForm.contactForm} section-spacing `}>
             <div className="section-title-part">
                 <p className="back-title">Get in touch</p>
@@ -88,9 +95,14 @@ export default function ContactData(){
                             </div>
                         </div>
                     </div>
-                    <button ref={submitBtnRef} type="submit" className={`${contactForm.contactButton} btn btn-primary`}>Get in touch <span className='btn-animation'></span></button>
+                    {isLoading
+                        ?
+                        <div style={{ margin: "0 auto", width: "14%", display: "flex", justifyContent: "center", alignItems: "center" }} ><BeatLoader color="#4949dd" size={8} /></div>
+                        :
+                        <button ref={submitBtnRef} type="submit" className={`${contactForm.contactButton} btn btn-primary`}>Get in touch <span className='btn-animation'></span></button>
+                    }
                 </form>
-               
+                <ToastContainer />
             </div>
         </section>
     )

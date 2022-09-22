@@ -14,6 +14,7 @@ const transporter = nodemailer.createTransport({
 })
 
 export default function handler(req, res) {
+  return res.send({ message: 'Success' })
   const mailOptions = {
     from: 'info@closedigit.com',
     to: 'contact@closedigit.com',

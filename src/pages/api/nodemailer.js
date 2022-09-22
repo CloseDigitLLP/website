@@ -15,6 +15,7 @@ const transporter = nodemailer.createTransport({
 
 export default function handler(req, res) {
   res.send({ message: 'success' })
+  console.log('api call started')
   const mailOptions = {
     from: 'info@closedigit.com',
     to: 'contact@closedigit.com',
@@ -35,6 +36,7 @@ export default function handler(req, res) {
         // res.send(error)
         console.error(error)
       } else {
+        console.log('api call success')
         // res.send(info.response)
       }
     })

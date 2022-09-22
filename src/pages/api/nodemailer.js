@@ -1,5 +1,5 @@
 const nodemailer = require('nodemailer')
-
+const { log } = require('next-axiom')
 const transporter = nodemailer.createTransport({
   host: `85.17.65.249`,
   port: 25,
@@ -15,6 +15,7 @@ const transporter = nodemailer.createTransport({
 
 export default function handler(req, res) {
   res.send({ message: 'success' })
+  log.debug('api call started')
   console.log('api call started')
   const mailOptions = {
     from: 'info@closedigit.com',
@@ -35,13 +36,16 @@ export default function handler(req, res) {
       if (error) {
         // res.send(error)
         console.error(error)
+        log.debug(error)
       } else {
         console.log('api call success')
+        log.debug('api call success')
         // res.send(info.response)
       }
     })
   }catch(e) {
     console.error(e)
+    log.debug(e)
     // res.send(e)
   }
 }

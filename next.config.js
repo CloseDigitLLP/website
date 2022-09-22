@@ -1,4 +1,6 @@
 const webpack = require("webpack");
+const { withAxiom } = require('next-axiom');
+
 const nextConfig = {
     eslint: {
         // Warning: This allows production builds to successfully complete even if
@@ -26,4 +28,4 @@ const nextConfig = {
         measurementId: "G-KS4MF284YH"
     }
 };
-module.exports = nextConfig;
+module.exports = withAxiom(nextConfig);

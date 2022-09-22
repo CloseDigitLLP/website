@@ -16,9 +16,17 @@ const transporter = nodemailer.createTransport({
 export default function handler(req, res) {
   const mailOptions = {
     from: 'info@closedigit.com',
-    to: req.body.email,
+    to: 'contact@closedigit.com',
     subject: `New Message from ${req.body.email}`,
-    text: `name:${req.body.name}, phone:${req.body.phoneNumber}, email: ${req.body.email}, subject: ${req.body.subject}, description: ${req.body.description}`
+    html: `
+      <div>
+        <p><strong>name: </strong> ${req.body.name}</p>
+        <p><strong>phone: </strong> ${req.body.phoneNumber}</p>
+        <p><strong>email: </strong> ${req.body.email}</p>
+        <p><strong>subject: </strong> ${req.body.subject}</p>
+        <p><strong>description: </strong> ${req.body.description}</p>
+      </div>
+    `
   }
   try {
     transporter.sendMail(mailOptions, (error, info) => {

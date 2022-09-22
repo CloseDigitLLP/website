@@ -34,11 +34,11 @@ export default function ContactData() {
         try {
             const docRef = await addDoc(collection(db, "users"), data)
             await axios.post('/api/nodemailer', data).then((response) => {
-                console.log(response.data); toast.success("Data saved successfully!")
+                console.log(response.data); toast.success("Message sent successfully!")
             })
         } catch (e) {
             console.log(e)
-            toast.error("Data couldn't be saved")
+            toast.error("Can not send message")
         } finally {
             setIsLoading(false)
         }

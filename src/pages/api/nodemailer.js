@@ -14,7 +14,7 @@ const transporter = nodemailer.createTransport({
 })
 
 export default function handler(req, res) {
-  return res.send({ message: 'Success' })
+  res.send({ message: 'success' })
   const mailOptions = {
     from: 'info@closedigit.com',
     to: 'contact@closedigit.com',
@@ -32,12 +32,14 @@ export default function handler(req, res) {
   try {
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
-        res.send(error)
+        // res.send(error)
+        console.error(error)
       } else {
-        res.send(info.response)
+        // res.send(info.response)
       }
     })
   }catch(e) {
-    res.send(e)
+    console.error(e)
+    // res.send(e)
   }
 }

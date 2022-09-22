@@ -15,6 +15,7 @@ import { BeatLoader } from 'react-spinners'
 export default function ContactData() {
 
     const submitBtnRef = useRef()
+    const formRef = useRef()
     const [isLoading, setIsLoading] = useState(false)
 
     const schema = yup.object().shape({
@@ -36,6 +37,7 @@ export default function ContactData() {
             await axios.post('/api/nodemailer', data).then((response) => {
                 console.log(response.data); toast.success("Message sent successfully!")
             })
+            formRef.current.reset()
         } catch (e) {
             console.log(e)
             toast.error("Can not send message")
@@ -54,11 +56,11 @@ export default function ContactData() {
                 <div className={`${contactForm.description} `}>
                     <p className={`mx-auto mb-0`}>We are available 24/7 by e-mail and phone. You can also ask a question about our services through our contact form.  </p>
                 </div>
-                <form className={`${contactForm.Form} row`} onSubmit={handleSubmit(onSubmit)}>
+                <form ref={formRef} className={`${contactForm.Form} row`} onSubmit={handleSubmit(onSubmit)}>
                     <div className={`col-md-6 col-12`}>
                         <div className={`${contactForm.formGroup}`}>
                             <div className={`${contactForm.formField}`}>
-                                <input type='text' className={`${contactForm.formControl}`} placeholder="Your name here" {...register("name")} />
+                                <input type='text' className={`${contactForm.formControl}`} disabled={isLoading} placeholder="Your name here" {...register("name")} />
                                 <p>{errors.name?.message}</p>
                             </div>
                         </div>
@@ -66,7 +68,7 @@ export default function ContactData() {
                     <div className={`col-md-6 col-12`}>
                         <div className={`${contactForm.formGroup}`}>
                             <div className={`${contactForm.formField}`}>
-                                <input type='text' className={`${contactForm.formControl}`} placeholder="Your email here" {...register('email')} />
+                                <input type='text' className={`${contactForm.formControl}`} disabled={isLoading} placeholder="Your email here" {...register('email')} />
                                 <p>{errors.email?.message}</p>
                             </div>
                         </div>
@@ -74,7 +76,7 @@ export default function ContactData() {
                     <div className={`col-md-6 col-12`}>
                         <div className={`${contactForm.formGroup}`}>
                             <div className={`${contactForm.formField}`}>
-                                <input type='text' className={`${contactForm.formControl}`} placeholder="Your subject here" {...register('subject')} />
+                                <input type='text' className={`${contactForm.formControl}`} disabled={isLoading} placeholder="Your subject here" {...register('subject')} />
                                 <p>{errors.subject?.message}</p>
                             </div>
                         </div>
@@ -82,7 +84,7 @@ export default function ContactData() {
                     <div className={`col-md-6 col-12`}>
                         <div className={`${contactForm.formGroup}`}>
                             <div className={`${contactForm.formField}`}>
-                                <input type='number' className={`${contactForm.formControl}`} placeholder="Your phone number" {...register('phoneNumber')} />
+                                <input type='number' className={`${contactForm.formControl}`} disabled={isLoading} placeholder="Your phone number" {...register('phoneNumber')} />
                                 <p>{errors.phoneNumber?.message}</p>
                             </div>
                         </div>
@@ -90,7 +92,7 @@ export default function ContactData() {
                     <div className={`col-md-12 col-12`}>
                         <div className={`${contactForm.formGroup}`}>
                             <div className={`${contactForm.formField}`}>
-                                <textarea type='text' className={`${contactForm.formControl} ${contactForm.formControlArea}`} rows="4" placeholder="Description" {...register('description')} />
+                                <textarea type='text' className={`${contactForm.formControl} ${contactForm.formControlArea}`} disabled={isLoading} rows="4" placeholder="Description" {...register('description')} />
                                 <p>{errors.description?.message}</p>
                             </div>
                         </div>

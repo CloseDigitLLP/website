@@ -28,6 +28,7 @@ export default function Header(){
       };
     return(
         <div className={`${headerStyle.headerPart} ${stickyClass}`}>
+       
             <div className='container'>
             <nav className={`navbar navbar-expand-lg navbar-light`}>
             <div className="container-fluid p-0">
@@ -52,7 +53,7 @@ export default function Header(){
                             />
                         </button>
             <div className="navbar-collapse collapse" id="navbarNav">
-                {/* <div className='body-overlay'></div> */}
+                 <div className='body-overlay' data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"></div> 
                 <ul className={`${headerStyle.navbarNav} navbar-nav`}>
 
                     <li className={`${headerStyle.mobileLogo}`}>
@@ -68,24 +69,24 @@ export default function Header(){
                             </a>
                         </Link>
                     </li>
-                    <li className={`${headerStyle.navItem} nav-item`}>
-                        <Link href="/">
-                            <a className={`${headerStyle.navLink} ${router.pathname === '/' ? headerStyle.active : ''} nav-link`} aria-current="page" href="#">Home</a>
+                    <li className={`${headerStyle.navItem} nav-item`} data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <Link href="/" >
+                            <span className={`${headerStyle.navLink} ${router.pathname === '/' ? headerStyle.active : ''} nav-link`} aria-current="page" href="#">Home</span>
                         </Link>
                     </li>
-                    <li className={`${headerStyle.navItem} nav-item`}>
+                    <li className={`${headerStyle.navItem} nav-item`} data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <Link href="/AboutUs">
-                            <a className={`${headerStyle.navLink} ${router.pathname === '/AboutUs' ? headerStyle.active : ''} nav-link`} >About Us</a>
+                            <span className={`${headerStyle.navLink} ${router.pathname === '/AboutUs' ? headerStyle.active : ''} nav-link`} >About Us</span>
                         </Link>
                     </li>
-                    <li className={`${headerStyle.navItem} nav-item`}>
+                    <li className={`${headerStyle.navItem} nav-item`} data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <Link href="/Services">
-                            <a className={`${headerStyle.navLink} ${router.pathname === '/Services' ? headerStyle.active : ''} nav-link`} >Services</a>
+                            <span className={`${headerStyle.navLink} ${router.pathname === '/Services' ? headerStyle.active : ''} nav-link`} >Services</span>
                         </Link>
                     </li>
-                    <li className={`${headerStyle.navItem} nav-item`}>
+                    <li className={`${headerStyle.navItem} nav-item`} data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <Link href="/Technology">
-                            <a className={`${headerStyle.navLink} ${router.pathname === '/Technology' ? headerStyle.active : ''} nav-link`} >Technology</a>
+                            <span className={`${headerStyle.navLink} ${router.pathname === '/Technology' ? headerStyle.active : ''} nav-link`} >Technology</span>
                         </Link>
                     </li>
                     {/* <li className={`${headerStyle.navItem} nav-item`}>
@@ -94,8 +95,8 @@ export default function Header(){
                 </ul>
                 <div className="other-option">
                     {/* <button type="button" className="btn btn-primary">Contact Us <span className='btn-animation'></span></button> */}
-                    <Link href="/Contact">
-                    <button type="button" className="btn btn-primary">Contact Us <span className='btn-animation'></span></button>
+                    <Link href="/contact">
+                    <button  data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" type="button" className="btn btn-primary">Contact Us <span className='btn-animation'></span></button>
                     </Link>
                 </div>
                 

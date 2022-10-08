@@ -25,6 +25,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
+        <meta name='keywords' content='closedigit, closedigitllp, llp, closedigit llp, close digit, close digit llp, close, digit, app, application, web, ui, ux, node, react, website, webapp, mobile, mobileapp, software, development, coding, building, javascript, 8780595907, rajan, rajan vasani, aditi, aditi makadiya, rajanvasani9@gmail.com' />
       </Head>
       <Header></Header>
       <Component {...pageProps} />

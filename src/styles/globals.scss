@@ -297,6 +297,16 @@ section {
     box-shadow: none;
     padding: 0;
   }
+
+  .navbar {
+    .navbar-collapse.collapsing {
+      transform: translateX(0px);
+    }
+  }
+
+  .navbar-collapse .body-overlay {
+    display: none;
+  }
 }
 
 .owl-stage {

@@ -7,6 +7,7 @@ export default function Home() {
     <>
       <Head>
         <title>Home | CloseDigit</title>
+        <meta name="description" content="A group of creative designers and software developers who work together to provide the best work possible and assist clients in turning their concepts into successful realities." />
       </Head>
       <HomePage></HomePage>
     </>

@@ -39,7 +39,7 @@ export default function ContactData(){
                                 <div className={`${contactData.boxCircleSmall}`}></div>
                             </div>
                             <h3 className={`${contactData.office} mb-3`}>Let's Talk</h3>
-                            <p className={`${contactData.address} mb-0 w-90 w-md-75 w-lg-100 mx-auto`}><strong>Phone:</strong><a href="tel:+919979961576">+91-9979961576</a> </p>
+                            <p className={`${contactData.address} mb-0 w-90 w-md-75 w-lg-100 mx-auto`}><strong>Phone:</strong><a href="tel:+918780595907">+91-8780595907</a> </p>
                         </div>
                     </div>
                 </div>

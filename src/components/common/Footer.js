@@ -85,7 +85,7 @@ export default function Services(){
                                 <div className={footerStyle['description']}>
                                     <div className={footerStyle['field']}>
                                         <FontAwesomeIcon icon={faPhone} className={footerStyle['contact-icon']}/>
-                                        <a href="tel:+9979961576" className={footerStyle['fieldData']}>+91-9979961576</a>
+                                        <a href="tel:+8780595907" className={footerStyle['fieldData']}>+91-8780595907</a>
                                     </div>
                                     <div className={footerStyle['field']}>
                                         <FontAwesomeIcon icon={faEnvelope} className={footerStyle['contact-icon']}/>

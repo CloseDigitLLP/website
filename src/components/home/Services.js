@@ -25,7 +25,7 @@ export default function Services(){
                         <FontAwesomeIcon icon={faPaintBrush} />
                         </div>
                         <h3 className={`${servicesStyle.cardHeading} mb-3`}>UI/UX Design</h3>
-                        <p className={`${servicesStyle.description}`}>we provide comprehensive UI/UX services that include branding and promotional graphics.</p>
+                        <p className={`${servicesStyle.description}`}>We provide comprehensive UI/UX services that include branding and promotional graphics.</p>
                     </div>
                 </div>
                 <div className="col-md-6 col-lg-4 mb-4">
@@ -33,7 +33,7 @@ export default function Services(){
                         <div className={servicesStyle['icon']}>
                         <FontAwesomeIcon icon={faLaptopCode} />
                         </div>
-                        <h3 className={`${servicesStyle.cardHeading} mb-3`}>Website/APP Design</h3>
+                        <h3 className={`${servicesStyle.cardHeading} mb-3`}>Website/App Design</h3>
                         <p className={`${servicesStyle.description}`}>We create cross-platform compatible responsive websites and adaptive designs.</p>
                     </div>
                 </div>

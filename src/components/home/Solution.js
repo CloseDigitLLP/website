@@ -6,7 +6,7 @@ export default function Services(){
         <section className={`${solutionStyle.solutionSection} section-spacing`}>
             <div className="section-title-part">
                 <p className="back-title">Provide solution</p>
-                <h5 className="section-title">Provide Creative Solution</h5>
+                <h5 className="section-title">We Provide Creative Solutions</h5>
             </div>
             <div className="container">
                 <div className='row'>

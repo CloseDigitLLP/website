@@ -50,7 +50,7 @@ background: linear-gradient(127deg, rgba(39,24,117,1) 0%, rgba(73,73,221,1) 70%)
     margin: 30px 0;
     font-size: 16px;
     line-height: 27px;
-    text-transform: capitalize;
+    // text-transform: capitalize;
     letter-spacing: 0.5px;
     p{
         max-width: 88%;
@@ -76,6 +76,7 @@ background: linear-gradient(127deg, rgba(39,24,117,1) 0%, rgba(73,73,221,1) 70%)
     margin-left: 3px;
     &.withoutLink{
         cursor:default;
+        text-transform: capitalize;
         &:hover{
             color: #fff;
             text-decoration: none;

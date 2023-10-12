@@ -1,0 +1,52 @@
+{
+  "reviews": [
+    {
+      "name": "David Ozersky",
+      "image_path": "images/client/David.jpeg",
+      "comment": "Excellent management and delivery. They provide information, thoughts, and ideas so we can produce a better project.",
+      "position": "CEO"
+    },
+    {
+      "name": "Hashem",
+      "image_path": "images/client/hasem.png",
+      "comment": "Aditi and her team is so responsive and get the job done as required… no matter how many revisions I through at her she does the job successfully",
+      "position": "Founder & Chief Evangelist"
+    },
+    {
+      "name": "Ibukun Bello",
+      "image_path": "images/client/ibukun.jpeg",
+      "comment": "Excellent communication and fantastic work. I will recommend Aditi to anyone that wants a fast, clean code and beautiful pixel perfect design.",
+      "position": "CTO"
+    },
+    {
+      "name": "Massimo Ivaldi",
+      "image_path": "",
+      "comment": "Great communication, very fast, job completed to the highest standard, will definitely work with CloseDigit again.",
+      "position": "Full Stack Developer"
+    },
+    {
+      "name": "Sean Freitas",
+      "image_path": "images/client/sean.jpeg",
+      "comment": "We are very happy to work with Rajan, it is very easy to get along with him, his work is very good and the deadlines are very short. Is very fast. We will hire him again for other jobs.",
+      "position": "web developer"
+    },
+    {
+      "name": "Mohammed Nadeem",
+      "image_path": "",
+      "comment": "Excellent, working with web designer express was great. Thanks to their knowledge and determination our website looks great and functions really good. I am recommend anyone that is looking for a custom website to give them a call and speak to Gus",
+      "position": "CEO"
+    },
+    {
+      "name": "William Cook",
+      "image_path": "",
+      "comment": "Impressive quality work in a short time. We will definitely work with Closedigit again on other projects",
+      "position": "Associate Professor,"
+    },
+    {
+      "name": "Vlas Zubenko",
+      "image_path": "images/client/VIas.jpeg",
+      "comment": "Rajan is an exceptional Full stack developer, consistently delivering high-quality code and displaying a keen eye for design. His work is a true testament to his expertise and dedication in the field.",
+      "position": "Frontend developer"
+    }
+  ]
+}

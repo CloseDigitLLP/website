@@ -134,6 +134,28 @@ section {
   max-width: 60% !important;
 }
 
+.combineImage{
+  width: 100%;
+}
+.culture-part-image{
+  background-image: url('../assets/images/gandr-collage.jpg');
+  background-repeat: repeat;
+  position: relative;
+    width: 10000px;
+    height: 100vh;
+    -webkit-animation: hero-left-marquee-new 100s linear infinite;
+    -moz-animation: hero-left-marquee-new 100s linear infinite;
+    animation: hero-left-marquee-new 100s linear infinite;
+}
+
+@keyframes hero-left-marquee-new  {
+  0% {
+    transform: translate3d(0, 0, 0);
+}
+100% {
+    transform: translate3d(-5760px, 0, 0);
+  }
+}
 
 @media screen and (min-width:1700px) {
   .container {

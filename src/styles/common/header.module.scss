@@ -21,8 +21,8 @@
 .navLink{
     margin-left: 15px;
     margin-right: 15px;
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 500 !important;
+    font-size: 18px !important;
     text-transform: capitalize;
     cursor: pointer;
     color: $textColor !important;

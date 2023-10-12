@@ -90,7 +90,9 @@ export default function Header(){
                         </Link>
                     </li>
                     {/* <li className={`${headerStyle.navItem} nav-item`}>
-                        <a className={`${headerStyle.navLink} nav-link`} >Work</a>
+                        <Link href="/Work">
+                            <span className={`${headerStyle.navLink} ${router.pathname === '/Work' ? headerStyle.active : ''} nav-link`} >Work</span>
+                        </Link>
                     </li> */}
                 </ul>
                 <div className="other-option">

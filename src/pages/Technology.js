@@ -2,7 +2,7 @@ import TechnologyPage from '../components/technology/TechnologyIndex'
 import Head from 'next/head'
 
 
-export default function Service() {
+export default function Technology() {
   return (
     <>
       <Head>

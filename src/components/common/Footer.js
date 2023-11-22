@@ -93,7 +93,7 @@ export default function Services(){
                                     </div>
                                     <div className={footerStyle['field']} >
                                         <FontAwesomeIcon icon={faLocationDot} className={footerStyle['contact-icon']}/>
-                                        <h6 className={`${footerStyle.fieldData} ${footerStyle.fieldDataAddress}`}>C-503, PNTC Building,<br />Satellite, Ahmedabad<br/> 380015<br /></h6>
+                                        <h6 className={`${footerStyle.fieldData} ${footerStyle.fieldDataAddress}`}>301 - Agarwal Mall,<br />Opp. Sola Bhagwat Gate, Ahmedabad<br/> 380060<br /></h6>
                                     </div>
                                 </div>
                             </div>

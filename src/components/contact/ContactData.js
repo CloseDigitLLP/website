@@ -26,7 +26,7 @@ export default function ContactData(){
                                 <div className={`${contactData.boxCircleSmall}`}></div>
                             </div>
                             <h3 className={`${contactData.office} mb-3`}>Visit Our Office</h3>
-                            <p className={`${contactData.address} mb-0 w-90 w-md-75 w-lg-100 mx-auto`}>C-503 PNTC Building, Satellite, Ahmedabad 380015.</p>
+                            <p className={`${contactData.address} mb-0 w-90 w-md-75 w-lg-100 mx-auto`}>301, Agarwal Mall, Sola, Ahmedabad 380060.</p>
                         </div>
                     </div>
                 </div>

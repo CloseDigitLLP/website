@@ -101,12 +101,10 @@ export default function Header(){
                     <button  data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" type="button" className="btn btn-primary">Contact Us <span className='btn-animation'></span></button>
                     </Link>
                 </div>
-                
             </div>
             </div>
             </nav>
             </div>
-            
         </div>
         
     )

@@ -8,7 +8,7 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import Header from '../components/common/Header'
 import Footer from '../components/common/Footer'
 import '../styles/globals.scss';
-import { SpeedInsights } from "@vercel/speed-insights/next"
+// import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from '@vercel/analytics/react';
 
 function MyApp({ Component, pageProps }) {
@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Header></Header>
       <Component {...pageProps} />
-      <SpeedInsights />
+      {/* <SpeedInsights /> */}
       <Analytics />
       <Footer></Footer>
     </>

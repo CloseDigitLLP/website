@@ -5,6 +5,7 @@ import Services from "./Services";
 import Solution from './Solution';
 import Project from './Project';
 import ClientStory from "./ClientStory";
+import FaqPart from "./Faq";
 
 export default function Main(){
     return(
@@ -15,5 +16,6 @@ export default function Main(){
         <Solution></Solution>
         <Project></Project>
         <ClientStory></ClientStory>
+        <FaqPart></FaqPart>
     </>)
 }

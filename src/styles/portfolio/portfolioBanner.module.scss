@@ -1,0 +1,131 @@
+@import '../variable.module.scss';
+
+.home-area{
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    height: 650px;
+    // background: url('../../../public/images/home-bg.jpg');
+    background-image: url('../../assets/images/home-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home-section{
+    margin-top: 100px;
+}
+.banner-image{
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+.blankImage{
+    height: 500px;
+    width: 500px;
+    border-radius: 500px;
+    position: absolute;
+    bottom: -20%;
+    left: -10%;
+    z-index: -1;
+    background: rgb(215, 215, 215, 0.17);
+}
+.banner-text{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner-title{
+    font-size: 55px;
+    font-weight: 700;
+    color: $textColor;
+    line-height: 70px;
+    margin: 10px 0;
+    overflow: hidden; 
+    white-space: nowrap; 
+    letter-spacing: 0;
+    animation: 
+      typing 5s steps(60, end),
+      blink-caret .5s step-end infinite;
+}
+.Change-title{
+    color: $primary;
+}
+ /* The typing effect */
+ @keyframes typing {
+    from { width: 0 }
+    to { 
+      width: 100%;
+    }
+  }
+
+
+.banner-description{
+    font-size: 16px;
+    max-width: 80%;
+    line-height: 28px;
+    margin-left: 8px;
+    margin-bottom: 20px;
+}
+.banner-heading{
+    color: $textColor ;
+    font-size: 30px;
+    margin-bottom: 0;
+    overflow: hidden; 
+    white-space: nowrap; 
+    letter-spacing: 0;
+    animation: 
+      typing 1.5s steps(60, end),
+      blink-caret .5s step-end infinite;
+  }
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { 
+      width: 100%;
+    }
+  }
+ 
+  
+  @media screen and (max-width: 1024px) {
+    .home-area{
+      height: 550px;
+    }
+  }
+  @media screen and (max-width: 991px){
+    .home-area{
+      height: auto;
+    }
+    .banner-image{
+      width: 80%;
+      float: right;
+    }
+  }
+  @media screen and (max-width: 768px){
+    .banner-image{
+      width: 70%;
+    }
+  }
+  @media screen and (max-width: 520px){
+    .banner-image{
+      width: 100%;
+    }
+    .banner-heading{
+      font-size: 25px;
+    }
+    .home-section{
+      margin-top: 130px;
+    }
+    .banner-description{
+      max-width: 100%;
+    }
+    .blankImage{
+      height: 300px;
+      width: 300px;
+      border-radius: 200px;
+      position: absolute;
+      bottom: -38%;
+      left: -10%;
+      z-index: 0;
+    }
+  }

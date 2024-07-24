@@ -58,31 +58,50 @@ export default function OurWork() {
                     <Tabs
                         defaultActiveKey="All"
                         id="uncontrolled-tab-example"
-                        className="mb-3">
+                        className={portfolioWorkStyle["tab-bar"]}>
                         <Tab eventKey="All" title="All Work">
                             <div ref={triggerRefs[0]} className={portfolioWorkStyle['brand-part']}>
                                 <div id={portfolioWorkStyle["animate1"]}
                                     className={portfolioWorkStyle["imgBox"]}
                                     ref={animateRefs[0]}>
-                                        <Image
-                                            src={require('../../assets/images/vaid.png')}
-                                            alt="Animated"
-                                            className="animated-logo-image"
-                                        />
-                                    <h3>VAID</h3>
-                                    <p>UI/UX Design, Reactive Native, Angular Js, MongoDB</p>
+                                    <Image
+                                        src={require('../../assets/images/vaid.png')}
+                                        alt="Animated"
+                                        className={portfolioWorkStyle['brand-img']}
+                                    />
+                                    <div className={portfolioWorkStyle['brand-info']}>
+                                        <h3>VAID</h3>
+                                        <div className={portfolioWorkStyle['tech-logo']}>
+                                                <div><Image src={require('../../assets/images/work/technology-icons/uiux.svg')} alt="logo" width={30} height={30} /></div>
+                                                <div><Image src={require('../../assets/images/work/technology-icons/react.svg')} alt="logo" width={30} height={30} /></div>
+                                                <div><Image src={require('../../assets/images/work/technology-icons/pwa.svg')} alt="logo" width={30} height={30} /></div>
+                                                <div><Image src={require('../../assets/images/work/technology-icons/firebase.svg')} alt="logo" width={30} height={30} /></div>
+                                                <div><Image src={require('../../assets/images/work/technology-icons/redux.svg')} alt="logo" width={30} height={30} /></div>
+                                                <div><Image src={require('../../assets/images/work/technology-icons/mysql.svg')} alt="logo" width={40} height={35} /></div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div id={portfolioWorkStyle["animate2"]}
                                     ref={animateRefs[1]}
                                     className={portfolioWorkStyle["imgBox1"]}>
-                                        <Link href="/Camelab">
-                                            <Image
-                                                src={require('../../assets/images/Camelab.png')}
-                                                alt="Animated"
-                                                className="animated-logo-image"
-                                            />
-                                        </Link>
-                                    <h3>Camelab</h3>
+                                    <Link href="/Camelab">
+                                        <Image
+                                            src={require('../../assets/images/Camelab.png')}
+                                            alt="Animated"
+                                            className={portfolioWorkStyle['brand-img']}
+                                        />
+                                    </Link>
+                                    <div className={portfolioWorkStyle['brand-info']}>
+                                        <h3>Camelab</h3>
+                                        <div className={portfolioWorkStyle['tech-logo']}>
+                                                <div><Image src={require('../../assets/images/work/technology-icons/uiux.svg')} alt="logo" width={30} height={30} /></div>
+                                                <div><Image src={require('../../assets/images/work/technology-icons/react.svg')} alt="logo" width={30} height={30} /></div>
+                                                <div><Image src={require('../../assets/images/work/technology-icons/pwa.svg')} alt="logo" width={30} height={30} /></div>
+                                                <div><Image src={require('../../assets/images/work/technology-icons/firebase.svg')} alt="logo" width={30} height={30} /></div>
+                                                <div><Image src={require('../../assets/images/work/technology-icons/redux.svg')} alt="logo" width={30} height={30} /></div>
+                                                <div><Image src={require('../../assets/images/work/technology-icons/mysql.svg')} alt="logo" width={40} height={35} /></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div ref={triggerRefs[1]} className={portfolioWorkStyle['brand-part']}>
@@ -91,7 +110,7 @@ export default function OurWork() {
                                     <Image
                                         src={require('../../assets/images/Hontrel.png')}
                                         alt="Animated"
-                                        className="animated-logo-image"
+                                        className={portfolioWorkStyle['brand-img']}
                                     />
                                     <h3>Hontrel</h3>
                                 </div>
@@ -100,7 +119,7 @@ export default function OurWork() {
                                     <Image
                                         src={require('../../assets/images/Superior.png')}
                                         alt="Animated"
-                                        className="animated-logo-image"
+                                        className={portfolioWorkStyle['brand-img']}
                                     />
                                     <h3>Superior</h3>
                                 </div>
@@ -111,7 +130,7 @@ export default function OurWork() {
                                     <Image
                                         src={require('../../assets/images/Datasync.png')}
                                         alt="Animated"
-                                        className="animated-logo-image"
+                                        className={portfolioWorkStyle['brand-img']}
                                     />
                                     <h3>Datasync</h3>
                                 </div>
@@ -120,7 +139,7 @@ export default function OurWork() {
                                     <Image
                                         src={require('../../assets/images/Schenk.png')}
                                         alt="Animated"
-                                        className="animated-logo-image"
+                                        className={portfolioWorkStyle['brand-img']}
                                     />
                                     <h3>Schenk</h3>
                                 </div>
@@ -131,7 +150,7 @@ export default function OurWork() {
                                     <Image
                                         src={require('../../assets/images/PaydayDepot.png')}
                                         alt="Animated"
-                                        className="animated-logo-image"
+                                        className={portfolioWorkStyle['brand-img']}
                                     />
                                     <h3>Payday Depot</h3>
                                 </div>
@@ -140,7 +159,7 @@ export default function OurWork() {
                                     <Image
                                         src={require('../../assets/images/Delivery.png')}
                                         alt="Animated"
-                                        className="animated-logo-image"
+                                        className={portfolioWorkStyle['brand-img']}
                                     />
                                     <h3>Delivery</h3>
                                 </div>
@@ -151,7 +170,7 @@ export default function OurWork() {
                                     <Image
                                         src={require('../../assets/images/GuptaGroup.png')}
                                         alt="Animated"
-                                        className="animated-logo-image"
+                                        className={portfolioWorkStyle['brand-img']}
                                     />
                                     <h3>Gupta Group</h3>
                                 </div>
@@ -160,7 +179,7 @@ export default function OurWork() {
                                     <Image
                                         src={require('../../assets/images/PracticePlus.png')}
                                         alt="Animated"
-                                        className="animated-logo-image"
+                                        className={portfolioWorkStyle['brand-img']}
                                     />
                                     <h3>Practice Plus</h3>
                                 </div>
@@ -171,7 +190,7 @@ export default function OurWork() {
                                     <Image
                                         src={require('../../assets/images/Commbitz.png')}
                                         alt="Animated"
-                                        className="animated-logo-image"
+                                        className={portfolioWorkStyle['brand-img']}
                                     />
                                     <h3>Commbitz</h3>
                                 </div>
@@ -180,7 +199,7 @@ export default function OurWork() {
                                     <Image
                                         src={require('../../assets/images/Allure.png')}
                                         alt="Animated"
-                                        className="animated-logo-image"
+                                        className={portfolioWorkStyle['brand-img']}
                                     />
                                     <h3>Allure</h3>
                                 </div>
@@ -191,7 +210,7 @@ export default function OurWork() {
                                     <Image
                                         src={require('../../assets/images/Snbla.png')}
                                         alt="Animated"
-                                        className="animated-logo-image"
+                                        className={portfolioWorkStyle['brand-img']}
                                     />
                                     <h3>Snbla</h3>
                                 </div>
@@ -200,7 +219,7 @@ export default function OurWork() {
                                     <Image
                                         src={require('../../assets/images/FellingBetterNow.png')}
                                         alt="Animated"
-                                        className="animated-logo-image"
+                                        className={portfolioWorkStyle['brand-img']}
                                     />
                                     <h3>FellingBetterNow</h3>
                                 </div>
@@ -211,7 +230,7 @@ export default function OurWork() {
                                     <Image
                                         src={require('../../assets/images/Directory.png')}
                                         alt="Animated"
-                                        className="animated-logo-image"
+                                        className={portfolioWorkStyle['brand-img']}
                                     />
                                     <h3>Directory</h3>
                                 </div>
@@ -220,7 +239,7 @@ export default function OurWork() {
                                     <Image
                                         src={require('../../assets/images/Camplinq.png')}
                                         alt="Animated"
-                                        className="animated-logo-image"
+                                        className={portfolioWorkStyle['brand-img']}
                                     />
                                     <h3>Camplinq</h3>
                                 </div>
@@ -246,34 +265,34 @@ export default function OurWork() {
                 </div>
 
                 <div className={portfolioWorkStyle["trusted-brands-section"]}>
-                <div><Image
+                    <div><Image
                         src={require('../../assets/images/shopify.svg')}
                         alt="Animated"
-                        className="animated-logo-image"
+                        className={portfolioWorkStyle['brand-img']}
                     /></div>
                     <div><Image
                         src={require('../../assets/images/google.svg')}
                         alt="Animated"
-                        className="animated-logo-image"
+                        className={portfolioWorkStyle['brand-img']}
                     /></div>
                     <div><Image
                         src={require('../../assets/images/pintrest.svg')}
                         alt="Animated"
-                        className="animated-logo-image"
+                        className={portfolioWorkStyle['brand-img']}
                     /></div>
                     <div><Image
                         src={require('../../assets/images/stripe.svg')}
                         alt="Animated"
-                        className="animated-logo-image"
+                        className={portfolioWorkStyle['brand-img']}
                     /></div>
                     <div><Image
                         src={require('../../assets/images/reddit.svg')}
                         alt="Animated"
-                        className="animated-logo-image"
+                        className={portfolioWorkStyle['brand-img']}
                     />
                     </div>
                 </div>
-                </div>
+            </div>
         </section>
     )
 }

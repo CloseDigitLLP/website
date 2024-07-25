@@ -1,35 +1,22 @@
 @import '../variable.module.scss';
 
 
-
-.imgBox {
-    vertical-align: top;
-    position: relative;
-    overflow: hidden;
+.project-title {
+    opacity: 0;
+    transition: 0.5s all ease;
 }
 
+
+
 .brand-info {
-    padding: 25px;
+    padding: 7px 25px;
     transition: 0.5s all ease;
     transform: translateY(0px);
     opacity: 0;
     margin-top: -100px;
+    background: inherit;
+    background-image: linear-gradient(60deg, rgba(238, 237, 235, .6) 40%, rgba(238, 237, 235, .7) 43%, rgba(238, 237, 235, .6) 46%, rgba(238, 237, 235, .7) 89%, rgba(238, 237, 235, .6));
 }
-
-.imgBox:hover .brand-info {
-    transform: translateY(-100px);
-    opacity: 1;
-    background-color: #FFFFFF;
-    // background-image: linear-gradient(60deg, rgba(255, 255, 255, .6) 80%, rgba(255, 255, 255, .7) 83%, rgba(255, 255, 255, .6) 86%, rgba(255, 255, 255, .7) 89%, rgba(255, 255, 255, .6));
-}
-
-.imgBox1:hover .brand-info {
-    transform: translateY(-100px);
-    opacity: 1;
-    background-color: #FFFFFF;
-    // background-image: linear-gradient(60deg, rgba(255, 255, 255, .6) 80%, rgba(255, 255, 255, .7) 83%, rgba(255, 255, 255, .6) 86%, rgba(255, 255, 255, .7) 89%, rgba(255, 255, 255, .6));
-}
-
 
 .tab-section {
     justify-content: center;
@@ -62,29 +49,37 @@
 }
 
 
-.brand-part .brand-info h3 {
+.brand-part h3 {
     font-size: 24px;
     font-weight: 600;
     color: #16085E;
+    margin-top: 50px;
 }
 
 .tech-logo {
     display: flex !important;
-    column-gap: 15px;
+    column-gap: 20px;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-// .brand-info {
-//     display: none;
-// }
+.tech-logo img {
+    margin-bottom: 0px !important;
+}
 
-// #animate1:hover .brand-info {
-//     display: block !important;
-// }
+.tech-logo p {
+    opacity: 1;
+    font-size: 10px;
+    margin-bottom: 0px;
+}
 
 .title-part {
     margin: 80px 0 32px 0;
 }
-
 
 .loader {
     text-align: center;
@@ -97,6 +92,10 @@
     align-items: center;
 }
 
+.brand-part img{
+    width:100% !important;
+    height: auto !important;
+}
 
 // scoll magic
 #animate1 {
@@ -293,95 +292,143 @@
 }
 
 
-// h2 and p
-// #animate1.scale-up h3,
-// #animate1.scale-up .tech-logo{
-//     display: block !important;
-//     transition: 0.5s ease-out;
-// }
-
-// #animate2.scale-up h3,
-// #animate2.scale-up .tech-logo {
-//     display: block !important;
-//     transition: 0.5s ease-out;
-// }
-
-// #animate3.scale-up h3,
-// #animate3.scale-up .tech-logo {
-//     display: block !important;
-// }
-
-// #animate4.scale-up h3,
-// #animate4.scale-up .tech-logo {
-//     display: block !important;
-// }
-
-// #animate5.scale-up h3,
-// #animate5.scale-up .tech-logo {
-//     display: block !important;
-// }
-
-// #animate6.scale-up h3,
-// #animate6.scale-up .tech-logo {
-//     display: block !important;
-// }
-
-// #animate7.scale-up h3,
-// #animate7.scale-up .tech-logo {
-//     display: block !important;
-// }
-
-// #animate8.scale-up h3,
-// #animate8.scale-up .tech-logo {
-//     display: block !important;
-// }
-
-// #animate9.scale-up h3,
-// #animate9.scale-up .tech-logo {
-//     display: block !important;
-// }
-
-// #animate10.scale-up h3,
-// #animate10.scale-up .tech-logo {
-//     display: block !important;
-// }
-
-// #animate11.scale-up h3,
-// #animate11.scale-up .tech-logo {
-//     display: block !important;
-// }
-
-// #animate12.scale-up h3,
-// #animate12.scale-up .tech-logo {
-//     display: block !important;
-// }
-
-// #animate13.scale-up h3,
-// #animate13.scale-up .tech-logo {
-//     display: block !important;
-// }
-
-// #animate14.scale-up h3,
-// #animate14.scale-up .tech-logo {
-//     display: block !important;
-// }
-
-// #animate15.scale-up h3,
-// #animate15.scale-up .tech-logo {
-//     display: block !important;
-// }
-
-// #animate16.scale-up h3,
-// #animate16.scale-up .tech-logo {
-//     display: block !important;
-// }
 
 
 
 
+// hover effect
+.imgBox:hover+.project-title {
+    opacity: 1;
+}
+.imgBox1:hover+.project-title {
+    opacity: 1;
+}
+.imgBox2:hover+.project-title {
+    opacity: 1;
+}
+.imgBox3:hover+.project-title {
+    opacity: 1;
+}
+.imgBox4:hover+.project-title {
+    opacity: 1;
+}
+.imgBox5:hover+.project-title {
+    opacity: 1;
+}
+.imgBox6:hover+.project-title {
+    opacity: 1;
+}
+.imgBox7:hover+.project-title {
+    opacity: 1;
+}
+.imgBox8:hover+.project-title {
+    opacity: 1;
+}
+.imgBox9:hover+.project-title {
+    opacity: 1;
+}
+.imgBox10:hover+.project-title {
+    opacity: 1;
+}
+.imgBox11:hover+.project-title {
+    opacity: 1;
+}
+.imgBox12:hover+.project-title {
+    opacity: 1;
+}
+.imgBox13:hover+.project-title {
+    opacity: 1;
+}
+.imgBox14:hover+.project-title {
+    opacity: 1;
+}
+.imgBox15:hover+.project-title {
+    opacity: 1;
+}
 
 
-// 
+
+
+.imgBox:hover .brand-info {
+    transform: translateY(20px);
+    opacity: 1;
+}
+
+.imgBox1:hover .brand-info {
+    transform: translateY(20px);
+    opacity: 1;
+}
+.imgBox2:hover .brand-info {
+    transform: translateY(20px);
+    opacity: 1;
+}
+.imgBox3:hover .brand-info {
+    transform: translateY(20px);
+    opacity: 1;
+}
+.imgBox4:hover .brand-info {
+    transform: translateY(20px);
+    opacity: 1;
+}
+.imgBox5:hover .brand-info {
+    transform: translateY(20px);
+    opacity: 1;
+}
+.imgBox6:hover .brand-info {
+    transform: translateY(20px);
+    opacity: 1;
+}
+.imgBox7:hover .brand-info {
+    transform: translateY(20px);
+    opacity: 1;
+}
+.imgBox8:hover .brand-info {
+    transform: translateY(20px);
+    opacity: 1;
+}
+.imgBox9:hover .brand-info {
+    transform: translateY(20px);
+    opacity: 1;
+}
+.imgBox10:hover .brand-info {
+    transform: translateY(20px);
+    opacity: 1;
+}
+.imgBox11:hover .brand-info {
+    transform: translateY(20px);
+    opacity: 1;
+}
+.imgBox12:hover .brand-info {
+    transform: translateY(20px);
+    opacity: 1;
+}
+.imgBox13:hover .brand-info {
+    transform: translateY(20px);
+    opacity: 1;
+}
+.imgBox14:hover .brand-info {
+    transform: translateY(20px);
+    opacity: 1;
+}
+.imgBox15:hover .brand-info {
+    transform: translateY(20px);
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:1024px) {
     .trusted-brands-section {

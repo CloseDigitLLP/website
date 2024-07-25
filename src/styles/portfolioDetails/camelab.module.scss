@@ -1,0 +1,211 @@
+@import '../variable.module.scss';
+
+// banner section 
+
+.camelab-section .banner-section {
+    margin-top: 174px;
+}
+
+.banner-section .banner-heading-section {
+    margin-left: 86px;
+    width: 80%;
+}
+
+.main-heading {
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: $textColor;
+}
+
+.main-heading span {
+    color: #F4783C;
+}
+
+.banner-section .banner-text-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.banner-section .banner-text-part .banner-text {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    text-align: left;
+    width: 82%;
+    color: #212529;
+}
+
+.banner-section .banner-img-part {
+    margin-top: 64px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.banner-section .banner-img-part .laptop-img {
+    // left: 10% !important;
+    width: 100% !important;
+    height: auto !important;
+    z-index: 1;
+    transition: transform 1s ease-out;
+}
+
+.banner-section .banner-img-part .mobile-img-section {
+    z-index: 10;
+}
+
+.banner-section .banner-img-part .mobile-img-section span {
+    right: 60% !important;
+    top: 16% !important
+}
+
+.banner-section .banner-img-part .mobile-img {
+    width: 100% !important;
+    height: auto !important;
+    transition: transform 1s ease-out;
+}
+
+
+// banner animation
+
+.initial-laptop {
+    transform: translateX(-100%);
+    /* Start off-screen to the left */
+}
+
+.animate-laptop {
+    transform: translateX(0);
+    /* End position */
+}
+
+.initial-mobile {
+    transform: translateX(100%);
+    /* Start off-screen to the right */
+}
+
+.animate-mobile {
+    transform: translateX(0);
+    /* End position */
+}
+
+
+// showcase section 
+
+.camelab-section .showcase-section {
+    margin-top: 144px;
+}
+
+.showcase-section .showcase-heading-section {
+    width: 60%;
+}
+
+// technology section
+
+.camelab-section .technology-section {
+    margin-top: 150px;
+}
+
+.technology-section .technology-heading-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.technology-section .technology-row {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:144px;
+}
+
+.technology-section .technology-row .technology {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.technology .technology-text {
+    align-self: center;
+    margin-top: 24px;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    text-align: center;
+}
+
+
+// feature section 
+
+.camelab-section .feature-section {
+    background-color: #F5F5F7;
+    padding: 80px 0px;
+}
+
+.feature-section .feature-heading-section {
+    width: 40%;
+}
+
+.feature-section .feature-card-section {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px
+}
+
+.feature-card-section .feature-card-row {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.feature-card-row .feature-card {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+
+.feature-card-row .feature-card1 {
+    padding: 24px 40px 0px 24px;
+}
+
+.feature-card-row .feature-card1 .text-part {
+    padding-top: 25px;
+}
+
+.feature-card-row .feature-card2 {
+    padding: 50px 0px 80px 24px;
+}
+
+.feature-card-row .feature-card3 {
+    padding: 24px 80px 24px 0px;
+}
+
+.feature-card-row .feature-card3 .text-part {
+    padding-top: 90px;
+}
+
+.feature-card-row .feature-card .card-text {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0.002em;
+    text-align: left;
+    color: #212529;
+}
+
+.feature-card-row .feature-card .card-text span {
+    color: #6E6E73;
+}

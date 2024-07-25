@@ -1,6 +1,6 @@
 
 import Head from 'next/head'
-import Camelab from '../components/portfolioDetails/camelab'
+import Camelab from '../components/portfolioDetails/Camelab'
 
 export default function AboutUs() {
     return (

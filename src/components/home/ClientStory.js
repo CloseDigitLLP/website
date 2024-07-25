@@ -23,6 +23,7 @@ function getInitials(name) {
 
 export default function ClientStory() {
     return (
+       
         <section className={`${clientStoryStyle.clientStorySection} section-spacing`}>
             <div className="section-title-part">
                 <p className="back-title">Our Clients Review</p>

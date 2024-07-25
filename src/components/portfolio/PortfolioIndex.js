@@ -1,13 +1,13 @@
 import React from 'react'
-import PortfolioBanner from './portfolioBanner'
-import OurWork from './ourWork'
+import PortfolioBanner from './PortfolioBanner'
 import Project from '../technology/Project'
+import OurWorkContent from './PortfolioOurWork'
 
 export default function PortfolioPage() {
   return (
     <>
       <PortfolioBanner/>
-      <OurWork/>
+     <OurWorkContent/>
       <Project/>
     </>
   )

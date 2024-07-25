@@ -6,13 +6,9 @@ import { useEffect, useRef } from 'react';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 
-const ScrollMagic = dynamic(() => import('scrollmagic'), { ssr: false });
-const debugAddIndicators = dynamic(
-    () => import('scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators'),
-    { ssr: false }
-);
 
-export default function OurWork() {
+
+export default function OurWorkContent() {
     const triggerRefs = Array.from({ length: 8 }, () => useRef(null));
     const animateRefs = Array.from({ length: 16 }, () => useRef(null));
 
@@ -485,8 +481,6 @@ export default function OurWork() {
                                                 </div>
                                             </div>
                                         </Link>
-
-
                                     </div>
                                     <h3 className={portfolioWorkStyle["project-title"]}>Camplinq</h3>
                                 </div>

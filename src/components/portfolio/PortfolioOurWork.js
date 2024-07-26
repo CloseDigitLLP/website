@@ -7,8 +7,6 @@ import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import UiUxTab from './tabContent/UIUX';
 
-
-
 export default function OurWorkContent() {
     const animateRefs = Array.from({ length: 16 }, () => useRef(null));
     const triggerRefs = Array.from({ length: 16 }, () => useRef(null));
@@ -55,7 +53,7 @@ export default function OurWorkContent() {
                                     <div id={portfolioWorkStyle["animate"]}
                                         className={portfolioWorkStyle["imgBox"]}
                                         ref={animateRefs[0]}>
-                                        <Link href="/">
+                                        <Link href="/Vaid">
                                             <div>
                                                 <div>
                                                     <Image

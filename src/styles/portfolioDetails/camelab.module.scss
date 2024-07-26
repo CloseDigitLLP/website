@@ -4,10 +4,13 @@
 
 .camelab-section .banner-section {
     margin-top: 174px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .banner-section .banner-heading-section {
-    margin-left: 86px;
+    // margin-left: 86px;
     width: 80%;
 }
 
@@ -15,7 +18,6 @@
     font-family: Poppins;
     font-size: 48px;
     font-weight: 600;
-    line-height: 58px;
     letter-spacing: 0.01em;
     text-align: left;
     color: $textColor;
@@ -30,15 +32,14 @@
     justify-content: center;
     align-items: center;
     margin-top: 64px;
+    width: 82%;
 }
 
 .banner-section .banner-text-part .banner-text {
     font-family: Poppins;
     font-size: 24px;
     font-weight: 500;
-    line-height: 34px;
     text-align: left;
-    width: 82%;
     color: #212529;
 }
 
@@ -107,6 +108,73 @@
     width: 60%;
 }
 
+.showcase-section .slider-part {
+    margin-top: 64px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+
+}
+
+.slider-part .slider-card {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.slider-card .slider-img-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 530px;
+}
+
+.slider-card .slider-text-part {
+    margin-top: 30px;
+    min-height: 130px;
+}
+
+.slider-card .slider-text-part .slider-text {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.37400001287460327px;
+    text-align: left;
+    color: #212529;
+}
+
+.slider-part .circle-btn {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background-color: transparent;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    display: none;
+}
+
+.slider-part:hover .circle-btn {
+    display: block;
+}
+
+.slider-part .circle-btn:hover {
+    transform: scale(1.2);
+}
+
+.slider-part .left-btn {
+    background-image: url('../../assets//images/work/2024/camelab/sliderRightButton.svg');
+    position: absolute;
+    top: 30%;
+    left: 2%;
+}
+
+.slider-part .right-btn {
+    background-image: url('../../assets//images/work/2024/camelab/sliderLeftButton.svg');
+    position: absolute;
+    right: 2%;
+    top: 30%;
+}
+
 // technology section
 
 .camelab-section .technology-section {
@@ -126,7 +194,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom:144px;
+    margin-bottom: 144px;
 }
 
 .technology-section .technology-row .technology {
@@ -142,7 +210,6 @@
     font-family: Poppins;
     font-size: 24px;
     font-weight: 500;
-    line-height: 34px;
     text-align: center;
 }
 
@@ -208,4 +275,95 @@
 
 .feature-card-row .feature-card .card-text span {
     color: #6E6E73;
+}
+
+
+// media queries 
+
+@media only screen and (max-width: 992px) {
+    .main-heading {
+        font-size: 44px;
+    }
+
+    .banner-section .banner-heading-section {
+        width: 100%;
+    }
+
+    .banner-section .banner-img-part {
+        width: 80%;
+        margin: auto;
+        margin-top: 44px;
+    }
+
+    .banner-section .banner-text-part {
+        margin-top: 44px;
+        width: 100%;
+    }
+
+    .banner-section .banner-text-part .banner-text {
+        font-size: 20px;
+    }
+
+    .camelab-section .showcase-section {
+        margin-top: 80px;
+    }
+
+    .showcase-section .showcase-heading-section {
+        width: 100%;
+    }
+    
+    .showcase-section .slider-part{
+        margin-top: 44px;
+    }
+
+    .slider-card .slider-text-part {
+        min-height: 150px;
+    }
+
+    .camelab-section .technology-section {
+        margin-top: 80px;
+    }
+
+    .technology .technology-text {
+        margin-top: 16px;
+        font-size: 20px;
+    }
+
+    .technology-section .technology-row {
+        margin-top: 44px;
+        margin-bottom: 80px;
+    }
+
+    .feature-section .feature-heading-section {
+        width: 100%;
+    }
+
+    .feature-card-section .feature-card-row {
+       flex-wrap: wrap;
+    }
+
+    .feature-card-row .feature-card1 {
+        padding: 24px 40px 0px 60px;
+    }
+
+    .feature-card-row .feature-card2 {
+        padding: 50px 0px 40px 24px;
+    }
+
+    .feature-card-row .feature-card3 {
+        padding: 24px 40px 24px 0px;
+    }
+
+    .feature-card-row .feature-card3 .text-part {
+        padding-top: 0px;
+    }
+    
+    .feature-card-row .feature-card .card-text {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .technology-section .technology-row .technology img{
+        width: 65% !important;
+    }
 }

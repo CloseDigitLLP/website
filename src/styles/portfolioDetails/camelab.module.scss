@@ -32,7 +32,6 @@
     justify-content: center;
     align-items: center;
     margin-top: 64px;
-    width: 82%;
 }
 
 .banner-section .banner-text-part .banner-text {
@@ -41,6 +40,7 @@
     font-weight: 500;
     text-align: left;
     color: #212529;
+    width: 82%;
 }
 
 .banner-section .banner-img-part {
@@ -137,7 +137,6 @@
     font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
-    line-height: 26px;
     letter-spacing: -0.37400001287460327px;
     text-align: left;
     color: #212529;
@@ -213,6 +212,35 @@
     text-align: center;
 }
 
+// code-craft section 
+.camelab-section .codecraft-section{
+    margin-bottom: 144px;
+}
+
+.codecraft-section .codecraft-grid-section {
+    margin-top: 64px;
+}
+
+.codecraft-grid-section .codecraft-text-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.codecraft-grid-section .codecraft-text-part .codecraft-text {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    color: #212529;
+}
+
+.codecraft-grid-section .codecraft-img-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 // feature section 
 
@@ -245,6 +273,16 @@
 
 .feature-card-row .feature-card1 {
     padding: 24px 40px 0px 24px;
+}
+
+.feature-card-row .feature-card1 .image-part{
+    display: flex;
+    justify-content: center;
+}
+
+.feature-card1 .img-part img {
+    width: 100% !important;
+    height: auto !important;
 }
 
 .feature-card-row .feature-card1 .text-part {
@@ -280,7 +318,7 @@
 
 // media queries 
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1025px) {
     .main-heading {
         font-size: 44px;
     }
@@ -297,11 +335,11 @@
 
     .banner-section .banner-text-part {
         margin-top: 44px;
-        width: 100%;
     }
 
     .banner-section .banner-text-part .banner-text {
         font-size: 20px;
+        width: 100%;
     }
 
     .camelab-section .showcase-section {
@@ -311,17 +349,25 @@
     .showcase-section .showcase-heading-section {
         width: 100%;
     }
-    
-    .showcase-section .slider-part{
+
+    .showcase-section .slider-part {
         margin-top: 44px;
     }
 
     .slider-card .slider-text-part {
-        min-height: 150px;
+        min-height: 200px;
+    }
+
+    .slider-part .left-btn {
+        top: 22%;
+    }
+
+    .slider-part .right-btn {
+        top: 22%;
     }
 
     .camelab-section .technology-section {
-        margin-top: 80px;
+        margin-top: 50px;
     }
 
     .technology .technology-text {
@@ -339,7 +385,7 @@
     }
 
     .feature-card-section .feature-card-row {
-       flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 
     .feature-card-row .feature-card1 {
@@ -354,16 +400,266 @@
         padding: 24px 40px 24px 0px;
     }
 
+    .feature-section .feature-card-section {
+        margin-top: 44px;
+    }
+
     .feature-card-row .feature-card3 .text-part {
         padding-top: 0px;
     }
-    
+
     .feature-card-row .feature-card .card-text {
         font-size: 18px;
         line-height: 32px;
     }
 
-    .technology-section .technology-row .technology img{
+    .technology-section .technology-row .technology img {
         width: 65% !important;
+    }
+
+    .camelab-section .feature-section {
+        padding: 60px 0px;
+    }
+
+    .camelab-section .codecraft-section{
+        margin-bottom: 80px;
+    }
+
+    .codecraft-section .codecraft-grid-section {
+        margin-top: 44px;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .codecraft-grid-section .codecraft-img-part{
+        margin-top: 44px;
+    }
+
+}
+
+@media only screen and (max-width: 769px) {
+
+    .camelab-section .banner-section {
+        margin-top: 140px;
+    }
+
+    .main-heading {
+        font-size: 36px;
+    }
+
+    .banner-section .banner-img-part {
+        margin-top: 36px;
+    }
+
+    .banner-section .banner-text-part {
+        margin-top: 36px;
+    }
+
+    .banner-section .banner-text-part .banner-text {
+        font-size: 16px;
+    }
+
+    .camelab-section .showcase-section {
+        margin-top: 60px;
+    }
+
+    .showcase-section .slider-part {
+        margin-top: 36px;
+    }
+
+    .slider-card .slider-text-part .slider-text {
+        font-size: 14px;
+    }
+
+    .slider-part .left-btn {
+        top: 17%;
+    }
+
+    .slider-part .right-btn {
+        top: 17%;
+    }
+
+    .camelab-section .technology-section {
+        margin-top: 60px;
+    }
+
+    .technology .technology-text {
+        margin-top: 16px;
+        font-size: 16px;
+    }
+
+    .technology-section .technology-row {
+        margin-top: 36px;
+        margin-bottom: 60px;
+    }
+
+    .technology-section .technology-row .technology img {
+        width: 55% !important;
+    }
+
+    .feature-card-row .feature-card .card-text {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .codecraft-grid-section .codecraft-text-part .codecraft-text{
+        font-size: 18px;
+    }
+
+    .camelab-section .codecraft-section{
+        margin-bottom: 60px;
+    }
+
+    .codecraft-section .codecraft-grid-section {
+        margin-top: 36px;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    .slider-card .slider-text-part {
+        min-height: 100px;
+    }
+
+    .slider-part .left-btn {
+        top: 33%;
+    }
+
+    .slider-part .right-btn {
+        top: 33%;
+    }
+
+}
+
+@media only screen and (max-width: 621px) {
+    .main-heading {
+        font-size: 32px;
+    }
+
+    .banner-section .banner-text-part .banner-text {
+        font-size: 14px;
+    }
+
+    .feature-card-row .feature-card .card-text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .technology .technology-text {
+        margin-top: 12px;
+        font-size: 12px;
+    }
+
+    .technology-section .technology-row .technology img {
+        width: 46% !important;
+    }
+
+    .camelab-section .technology-section {
+        margin-top: 40px;
+    }
+
+    .technology-section .technology-row {
+        margin-top: 28px;
+        margin-bottom: 40px;
+    }
+
+    .camelab-section .feature-section {
+        padding: 40px 0px;
+    }
+
+    .feature-section .feature-card-section {
+        margin-top: 36px;
+    }
+
+    .slider-part .left-btn {
+        top: 28%;
+    }
+
+    .slider-part .right-btn {
+        top: 28%;
+    }
+
+    .codecraft-grid-section .codecraft-text-part .codecraft-text{
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .feature-card-row .feature-card1 {
+        padding: 20px 30px 0px 30px;
+    }
+
+    .feature-card-row .feature-card .card-text {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .feature-card-row .feature-card2 {
+        padding: 30px 0px 30px 24px;
+    }
+
+    .feature-card-row .feature-card3 {
+        padding: 30px 24px 30px 0px;
+    }
+
+    .main-heading {
+        font-size: 28px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .slider-part .left-btn {
+        top: 22%;
+    }
+
+    .slider-part .right-btn {
+        top: 22%;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .main-heading {
+        font-size: 24px;
+    }
+
+    .banner-section .banner-text-part .banner-text {
+        font-size: 12px;
+    }
+
+    .slider-card .slider-text-part .slider-text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .feature-card-row .feature-card .card-text {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .feature-card-row .feature-card1 {
+        padding: 16px 20px 0px 20px;
+    }
+
+    .feature-card-row .feature-card2 {
+        padding: 20px 0px 10px 24px;
+    }
+
+    .feature-card-row .feature-card3 {
+        padding: 20px 24px 10px 0px;
+    }
+
+    .technology .technology-text {
+        margin-top: 8px;
+        font-size: 8px;
+    }
+
+    .camelab-section .showcase-section {
+        margin-top: 40px;
+    }
+
+    .codecraft-grid-section .codecraft-text-part .codecraft-text{
+        font-size: 12px;
     }
 }

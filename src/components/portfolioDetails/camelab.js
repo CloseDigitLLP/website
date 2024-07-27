@@ -40,7 +40,7 @@ const options = {
         1000: {
             items: 2,
         },
-        1800:{
+        1800: {
             items: 3
         }
     },
@@ -217,6 +217,33 @@ export default function Camelab() {
                                 <p className={CamelabStyle['technology-text']}>
                                     React Native
                                 </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* code craft section  */}
+                <div className={CamelabStyle['codecraft-section']}>
+                    <div className='container'>
+                        <div className={CamelabStyle['codecraft-heading-section']}>
+                            <h2 className={CamelabStyle['main-heading']}>
+                                Codecraft: <br />
+                                <span>Camelab's</span> journey in Development
+                            </h2>
+                        </div>
+                        <div className={CamelabStyle['codecraft-grid-section']}>
+                            <div className='row'>
+                                <div className={`col-lg-6 col-sm-12 ${CamelabStyle['codecraft-text-part']}`}>
+                                    <p className={CamelabStyle['codecraft-text']}>
+                                        the brand detail page offers comprehensive insights into selected Content  videos. Brands can review video details, creator profiles, engagement metrics, and payment statuses, facilitating informed decisions and seamless collaboration with creators for impactful brand video opportunities.
+                                    </p>
+                                </div>
+                                <div className={`col-lg-6 col-sm-12 ${CamelabStyle['codecraft-img-part']}`}>
+                                    <Image
+                                        src={require('../../assets/images/work/2024/camelab/blankLaptop.png')}
+                                        alt='code craft image'
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>

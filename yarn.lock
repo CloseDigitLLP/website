@@ -800,6 +800,11 @@
   resolved "https://registry.npmjs.org/@types/google-libphonenumber/-/google-libphonenumber-7.4.23.tgz"
   integrity sha512-C3ydakLTQa8HxtYf9ge4q6uT9krDX8smSIxmmW3oACFi5g5vv6T068PRExF7UyWbWpuYiDG8Nm24q2X5XhcZWw==
 
+"@types/gsap@^1.20.1":
+  version "1.20.2"
+  resolved "https://registry.npmjs.org/@types/gsap/-/gsap-1.20.2.tgz"
+  integrity sha512-i9nUsnS32+VTgoX5IlaCYukJpCoB3c6h3bZvO67aIRdb3z8NFTWgeUDpQutLyb1ujowp6nw37qLQNvEowqq8yw==
+
 "@types/json5@^0.0.29":
   version "0.0.29"
   resolved "https://registry.npmjs.org/@types/json5/-/json5-0.0.29.tgz"
@@ -3772,6 +3777,13 @@ scheduler@^0.23.0:
   integrity sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==
   dependencies:
     loose-envify "^1.1.0"
+
+scrollmagic-plugin-gsap@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/scrollmagic-plugin-gsap/-/scrollmagic-plugin-gsap-1.0.4.tgz"
+  integrity sha512-OLeo4J6V9wvnRP03/LJkgb5qkHIOzSckWX3hJ+Hh3uPJIfwttxCRRr4+w16WHPCQwZidUA9eEbtKeR7kyjdHVg==
+  dependencies:
+    "@types/gsap" "^1.20.1"
 
 scrollmagic@^2.0.8:
   version "2.0.8"

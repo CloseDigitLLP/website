@@ -14,7 +14,12 @@ const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
     ssr: false,
 });
 
+const ScrollMagic = dynamic(() => import('scrollmagic'), { ssr: false });
+
 const options = {
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
     margin: 20,
     loop: true,
     rtl: true,
@@ -22,7 +27,6 @@ const options = {
     nav: true,
     navClass: [`${CamelabStyle['circle-btn']} ${CamelabStyle['left-btn']}`, `${CamelabStyle['circle-btn']} ${CamelabStyle['right-btn']}`],
     dots: false,
-    autoplay: false,
     stagePadding: 0,
     responsive: {
         0: {
@@ -48,10 +52,103 @@ const options = {
 
 export default function Camelab() {
 
+    const controller = useRef(null);
+
     useEffect(() => {
         document.querySelector(`.${CamelabStyle['laptop-img']}`).classList.add(CamelabStyle['animate-laptop']);
         document.querySelector(`.${CamelabStyle['mobile-img']}`).classList.add(CamelabStyle['animate-mobile']);
 
+
+    }, []);
+
+    useEffect(() => {
+        const ScrollMagic = require('scrollmagic');
+        controller.current = new ScrollMagic.Controller();
+
+        new ScrollMagic.Scene({
+            triggerElement: '#codecraft-text-part-1',
+            triggerHook: 0.5,
+            duration: '50%'
+        })
+            .on('enter', () => {
+                document.getElementById('craft-img1').style.display = 'block';
+                document.getElementById('craft-img2').style.display = 'none';
+                document.getElementById('craft-img3').style.display = 'none';
+
+            })
+            .addTo(controller.current);
+
+        new ScrollMagic.Scene({
+            triggerElement: '#codecraft-text-part-1',
+            triggerHook: 0.3,
+            duration: '70%',
+        })
+            .on('enter', () => {
+                document.getElementById('codecraft-text-part-1').style.opacity = 0;
+            })
+            .on('leave', () => {
+                document.getElementById('codecraft-text-part-1').style.opacity = 1; // Reset opacity when leaving
+            })
+            .addTo(controller.current);
+
+
+        new ScrollMagic.Scene({
+            triggerElement: '#codecraft-text-part-2',
+            triggerHook: 0.5,
+            duration: '50%'
+        })
+            .on('enter', () => {
+                document.getElementById('craft-img1').style.display = 'none';
+                document.getElementById('craft-img2').style.display = 'block';
+                document.getElementById('craft-img3').style.display = 'none';
+            })
+            .addTo(controller.current);
+
+        new ScrollMagic.Scene({
+            triggerElement: '#codecraft-text-part-2',
+            triggerHook: 0.3,
+            duration: '70%',
+        })
+            .on('enter', () => {
+                document.getElementById('codecraft-text-part-2').style.opacity = 0;
+            })
+            .on('leave', () => {
+                document.getElementById('codecraft-text-part-2').style.opacity = 1;
+            })
+            .addTo(controller.current);
+
+        new ScrollMagic.Scene({
+            triggerElement: '#codecraft-text-part-3',
+            triggerHook: 0.5,
+            duration: '50%'
+        })
+            .on('enter', () => {
+                document.getElementById('craft-img1').style.display = 'none';
+                document.getElementById('craft-img2').style.display = 'none';
+                document.getElementById('craft-img3').style.display = 'block';
+            })
+            .addTo(controller.current);
+
+        new ScrollMagic.Scene({
+            triggerElement: '#codecraft-text-part-3',
+            triggerHook: 0.4,
+            duration: '100%',
+        })
+            .on('enter', () => {
+                //   document.getElementById('codecraft-text-part-3').style.opacity = 0;
+                document.getElementById('craft-heading').style.position = 'relative'
+            })
+            .on('leave', () => {
+                //   document.getElementById('codecraft-text-part-3').style.opacity = 1; 
+                document.getElementById('craft-heading').style.position = 'sticky'
+            })
+            .addTo(controller.current);
+
+
+        // Initially hide all images except the first one
+        document.getElementById('craft-img1').style.display = 'block';
+        document.getElementById('craft-img2').style.display = 'none';
+        document.getElementById('craft-img3').style.display = 'none';
     }, []);
 
     return (
@@ -103,7 +200,7 @@ export default function Camelab() {
                     </div>
                     <div className={CamelabStyle['slider-part']}>
 
-                        <OwlCarousel className={`${CamelabStyle['owlcarousel']} ${CamelabStyle['review-owlcarousel']}`} rtl={true} navText={["", ""]}  {...options}>
+                        <OwlCarousel className={`${CamelabStyle['owlcarousel']} ${CamelabStyle['review-owlcarousel']}`} navText={["", ""]}  {...options}>
                             <div className={CamelabStyle['slider-card']}>
                                 <div className={CamelabStyle['slider-img-part']}>
                                     <Image
@@ -222,10 +319,11 @@ export default function Camelab() {
                     </div>
                 </div>
 
-                {/* code craft section  */}
+
+                {/* code craft section */}
                 <div className={CamelabStyle['codecraft-section']}>
                     <div className='container'>
-                        <div className={CamelabStyle['codecraft-heading-section']}>
+                        <div className={CamelabStyle['codecraft-heading-section']} id='craft-heading'>
                             <h2 className={CamelabStyle['main-heading']}>
                                 Codecraft: <br />
                                 <span>Camelab's</span> journey in Development
@@ -234,20 +332,62 @@ export default function Camelab() {
                         <div className={CamelabStyle['codecraft-grid-section']}>
                             <div className='row'>
                                 <div className={`col-lg-6 col-sm-12 ${CamelabStyle['codecraft-text-part']}`}>
-                                    <p className={CamelabStyle['codecraft-text']}>
-                                        the brand detail page offers comprehensive insights into selected Content  videos. Brands can review video details, creator profiles, engagement metrics, and payment statuses, facilitating informed decisions and seamless collaboration with creators for impactful brand video opportunities.
-                                    </p>
+                                    <div id="codecraft-text-part-1">
+                                        <p className={CamelabStyle['codecraft-text']}>
+                                            The brand detail page offers comprehensive insights into selected Content videos. Brands can review video details, creator profiles, engagement metrics, and payment statuses, facilitating informed decisions and seamless collaboration with creators for impactful brand video opportunities.
+                                        </p>
+                                    </div>
+                                    <div className={CamelabStyle['spacing']}></div>
+                                    <div id="codecraft-text-part-2">
+                                        <p className={CamelabStyle['codecraft-text']}>
+                                            The brand detail page offers comprehensive insights into selected Content videos. Brands can review video details, creator profiles, engagement metrics, and payment statuses, facilitating informed decisions and seamless collaboration with creators for impactful brand video opportunities.
+                                        </p>
+                                    </div>
+                                    <div className={CamelabStyle['spacing']}></div>
+                                    <div id="codecraft-text-part-3">
+                                        <p className={CamelabStyle['codecraft-text']}>
+                                            The brand detail page offers comprehensive insights into selected Content videos. Brands can review video details, creator profiles, engagement metrics, and payment statuses, facilitating informed decisions and seamless collaboration with creators for impactful brand video opportunities.
+                                        </p>
+                                    </div>
+                                    <div className={`${CamelabStyle['spacing']} ${CamelabStyle['spacing-last']}`}></div>
                                 </div>
                                 <div className={`col-lg-6 col-sm-12 ${CamelabStyle['codecraft-img-part']}`}>
-                                    <Image
-                                        src={require('../../assets/images/work/2024/camelab/blankLaptop.png')}
-                                        alt='code craft image'
-                                    />
+                                    <div className={CamelabStyle['sticky-part']}>
+                                        <Image
+                                            src={require('../../assets/images/work/2024/camelab/blankLaptop.png')}
+                                            alt='code craft image'
+                                            className={CamelabStyle['laptop-screen']}
+                                            id='blank-laptop'
+                                        />
+
+                                        <div id="craft-img1" className={`${CamelabStyle['overlay-image-screen-part']} ${CamelabStyle['image1-div']} code-craft-image`}>
+                                            <Image
+                                                src={require('../../assets/images/work/2024/camelab/codeCraftImg2.png')}
+                                                alt='code Craft Img1'
+                                                className={CamelabStyle['code-craft-image']}
+                                            />
+                                        </div>
+                                        <div id="craft-img2" className={`${CamelabStyle['overlay-image-screen-part']} ${CamelabStyle['image2-div']} code-craft-image`}>
+                                            <Image
+                                                src={require('../../assets/images/work/2024/camelab/codeCraftImg1.png')}
+                                                alt='code Craft Img2'
+                                                className={CamelabStyle['code-craft-image']}
+                                            />
+                                        </div>
+                                        <div id="craft-img3" className={`${CamelabStyle['overlay-image-screen-part']} ${CamelabStyle['image3-div']} code-craft-image`}>
+                                            <Image
+                                                src={require('../../assets/images/work/2024/camelab/codeCraftImg3.png')}
+                                                alt='code Craft Img3'
+                                                className={CamelabStyle['code-craft-image']}
+                                            />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
 
                 {/* feature section  */}
                 <div className={CamelabStyle['feature-section']}>
@@ -313,3 +453,4 @@ export default function Camelab() {
         </>
     );
 }
+

@@ -48,7 +48,7 @@ export default function OurWorkContent() {
                         id="uncontrolled-tab-example"
                         className={portfolioWorkStyle["tab-bar"]}>
                         <Tab eventKey="All" title="All Work">
-                            <div  className={portfolioWorkStyle['brand-part']}>
+                            <div className={portfolioWorkStyle['brand-part']}>
                                 <div ref={triggerRefs[0]}>
                                     <div id={portfolioWorkStyle["animate"]}
                                         className={portfolioWorkStyle["imgBox"]}
@@ -107,7 +107,7 @@ export default function OurWorkContent() {
                                 </div>
 
                             </div>
-                            <div  className={`${portfolioWorkStyle['brand-part']} ${portfolioWorkStyle['reverse']}`}>
+                            <div className={`${portfolioWorkStyle['brand-part']} ${portfolioWorkStyle['reverse']}`}>
                                 <div ref={triggerRefs[2]}>
                                     <div id={portfolioWorkStyle["animate2"]}
                                         className={portfolioWorkStyle["imgBox2"]}
@@ -162,7 +162,7 @@ export default function OurWorkContent() {
                                     </div>
                                 </div>
                             </div>
-                            <div  className={portfolioWorkStyle['brand-part']}>
+                            <div className={portfolioWorkStyle['brand-part']}>
                                 <div ref={triggerRefs[4]}>
                                     <div id={portfolioWorkStyle["animate4"]}
                                         className={portfolioWorkStyle["imgBox4"]}
@@ -217,7 +217,7 @@ export default function OurWorkContent() {
                                 </div>
                             </div>
 
-                            <div  className={`${portfolioWorkStyle['brand-part']} ${portfolioWorkStyle['reverse']}`}>
+                            <div className={`${portfolioWorkStyle['brand-part']} ${portfolioWorkStyle['reverse']}`}>
                                 <div ref={triggerRefs[6]}>
                                     <div id={portfolioWorkStyle["animate6"]}
                                         className={portfolioWorkStyle["imgBox6"]}
@@ -273,7 +273,7 @@ export default function OurWorkContent() {
                                 </div>
                             </div>
 
-                            <div  className={portfolioWorkStyle['brand-part']}>
+                            <div className={portfolioWorkStyle['brand-part']}>
                                 <div ref={triggerRefs[8]}>
                                     <div id={portfolioWorkStyle["animate8"]}
                                         className={portfolioWorkStyle["imgBox8"]}
@@ -331,7 +331,7 @@ export default function OurWorkContent() {
                                     </div>
                                 </div>
                             </div>
-                            <div  className={`${portfolioWorkStyle['brand-part']} ${portfolioWorkStyle['reverse']}`}>
+                            <div className={`${portfolioWorkStyle['brand-part']} ${portfolioWorkStyle['reverse']}`}>
                                 <div ref={triggerRefs[10]}>
                                     <div id={portfolioWorkStyle["animate10"]}
                                         className={portfolioWorkStyle["imgBox10"]}
@@ -393,7 +393,7 @@ export default function OurWorkContent() {
                                 </div>
                             </div>
 
-                            <div  className={portfolioWorkStyle['brand-part']}>
+                            <div className={portfolioWorkStyle['brand-part']}>
                                 <div ref={triggerRefs[12]}>
                                     <div id={portfolioWorkStyle["animate12"]}
                                         className={portfolioWorkStyle["imgBox12"]}
@@ -449,7 +449,7 @@ export default function OurWorkContent() {
                                     </div>
                                 </div>
                             </div>
-                            <div  className={`${portfolioWorkStyle['brand-part']} ${portfolioWorkStyle['reverse']}`}>
+                            <div className={`${portfolioWorkStyle['brand-part']} ${portfolioWorkStyle['reverse']}`}>
                                 <div ref={triggerRefs[14]}>
                                     <div id={portfolioWorkStyle["animate14"]}
                                         className={portfolioWorkStyle["imgBox14"]}
@@ -509,7 +509,7 @@ export default function OurWorkContent() {
                             </div>
                         </Tab>
                         <Tab eventKey="UI/UX" title="UI/UX Design">
-                        <UiUxTab/>
+                            <UiUxTab />
                         </Tab>
                         <Tab eventKey="Web" title="Web Development/Design">
                             Web Development/Design

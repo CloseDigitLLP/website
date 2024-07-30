@@ -1,4 +1,4 @@
-.banner-section {
+.bannerSection {
     padding: 80px 0 140px 0;
     margin-top: 100px;
 
@@ -9,11 +9,17 @@
         padding: 0 100px;
     }
 
-    .banner-img img {
+    .bannerImg img {
         width: 100% !important;
+        height: auto !important;
     }
 
-    .banner-img {
+    .phoneImg {
+        width: 500px;
+        height: 500px;
+    }
+
+    .bannerImg {
         position: relative;
         margin: 64px 0;
         display: flex;
@@ -22,10 +28,19 @@
         align-items: center;
     }
 
-    .phone-img {
-        position: sticky !important;
-        top: 0px !important;
-        z-index: 10 !important;
+    .bgImg {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        background-image: url(../../assets/images/work/2024/vaid/vaid-banner1.png);
+    }
+
+    .phoneImg {
+        position: absolute !important;
+        z-index: 120;
+        width: 100% !important;
+        height: auto !important;
     }
 
     h3 {
@@ -49,3 +64,140 @@
 
     }
 }
+
+// magic scroll
+.overflowHidden {
+    overflow: hidden;
+}
+
+.scrollMain {
+    display: flex;
+    width: 200%;
+    flex-wrap: nowrap;
+    height: 100vh;
+}
+
+.singleSection {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    padding-bottom: 40px;
+    margin-left: 10%;
+}
+
+.horiImgContainer {
+    display: flex;
+    column-gap: 80px;
+}
+
+.imgContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px !important;
+}
+
+.imgContent p {
+    text-align: center;
+    margin-top: 25px;
+    width: 100%;
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.imgContent img {
+    width: 215px !important;
+    height: auto !important;
+}
+
+.bgRed {
+    background-color: #db3e3e;
+}
+
+.bgGreen {
+    background-color: green;
+}
+
+.bgGray {
+    background-color: #ccc;
+}
+
+.bgOrange {
+    background-color: orange;
+}
+
+.box {
+    width: 250px;
+    height: 500px;
+    margin: 0 0 10px 0;
+    background-color: rebeccapurple;
+}
+
+
+
+// horizontal scroll
+// .carousel-container {
+//     position: relative;
+//     height: 300vh;
+//     background-color: #1a1a1a;
+//     /* Equivalent to bg-neutral-900 */
+// }
+
+// .sticky-container {
+//     position: sticky;
+//     top: 100px !important;
+//     display: flex;
+//     height: 100vh;
+// }
+
+// .carousel {
+//     display: flex;
+//     gap: 1rem;
+//     /* Equivalent to gap-4 */
+// }
+
+// .card {
+//     position: relative;
+//     height: 450px;
+//     width: 450px;
+//     overflow: hidden;
+//     background-color: #e0e0e0;
+//     /* Equivalent to bg-neutral-200 */
+// }
+
+// .card-image {
+//     position: absolute;
+//     inset: 0;
+//     z-index: 0;
+//     transition: transform 0.3s;
+//     transform: scale(1);
+// }
+
+// .card:hover .card-image {
+//     transform: scale(1.1);
+//     /* Equivalent to group-hover:scale-110 */
+// }
+
+// .card-content {
+//     position: absolute;
+//     inset: 0;
+//     z-index: 10;
+//     display: grid;
+//     place-content: center;
+// }
+
+// .card-title {
+//     background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+//     padding: 2rem;
+//     font-size: 3rem;
+//     /* Equivalent to text-6xl */
+//     font-weight: 900;
+//     /* Equivalent to font-black */
+//     text-transform: uppercase;
+//     color: #ffffff;
+//     /* Equivalent to text-white */
+//     backdrop-filter: blur(10px);
+//     /* Equivalent to backdrop-blur-lg */
+// }

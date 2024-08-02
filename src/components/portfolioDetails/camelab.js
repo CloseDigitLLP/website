@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import CamelabStyle from '../../styles/portfolioDetails/camelab.module.scss';
 import Image from 'next/image';
 import 'owl.carousel/dist/assets/owl.carousel.css';
@@ -15,11 +15,12 @@ const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
 });
 
 const ScrollMagic = dynamic(() => import('scrollmagic'), { ssr: false });
+const ScrollMagicController = dynamic(() => import('scrollmagic').then(mod => mod.Controller), { ssr: false });
 
 const options = {
     autoplay: true,
     autoplayTimeout: 2000,
-    autoplayHoverPause: true,
+    autoplayHoverPause: false,
     margin: 20,
     loop: true,
     rtl: true,
@@ -53,6 +54,10 @@ const options = {
 export default function Camelab() {
 
     const controller = useRef(null);
+    const text = 'Innovative Features in Camelab';
+    const [displayedText, setDisplayedText] = useState('');
+    const [textLength, setTextLength] = useState(0);
+    const [typingStarted, setTypingStarted] = useState(false);
 
     useEffect(() => {
         document.querySelector(`.${CamelabStyle['laptop-img']}`).classList.add(CamelabStyle['animate-laptop']);
@@ -144,12 +149,71 @@ export default function Camelab() {
             })
             .addTo(controller.current);
 
-
-        // Initially hide all images except the first one
         document.getElementById('craft-img1').style.display = 'block';
         document.getElementById('craft-img2').style.display = 'none';
         document.getElementById('craft-img3').style.display = 'none';
+
+        new ScrollMagic.Scene({
+            triggerElement: '#feature-heading',
+            triggerHook: 0.8,
+            reverse: false
+        })
+        .on('enter', () => setTypingStarted(true))
+        .addTo(controller.current);
     }, []);
+
+    useEffect(() => {
+
+        const ScrollMagic = require('scrollmagic');
+        const controller = new ScrollMagic.Controller();
+
+        const section = document.querySelector('#technology-section');
+        const elements = document.querySelectorAll('.technology');
+
+        if (!section || elements.length === 0) {
+            console.log('Section or elements not found');
+            console.log(section , 'section')
+            console.log(elements, 'elements')
+            return;
+        }
+
+        elements.forEach((el, index) => {
+            new ScrollMagic.Scene({
+                triggerElement: section, 
+                triggerHook: 0.9,
+                duration: '50%', 
+                offset: index * 100, 
+            })
+            .on('enter', () => {
+                el.style.opacity = '1';
+                el.style.transform = 'translateY(0)';
+                el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            })
+            // .on('leave', () => {
+            //     el.style.opacity = '0';
+            //     el.style.transform = 'translateY(50px)';
+            //     el.style.transition = 'opacity 0.6s ease-in, transform 0.6s ease-in';
+            // })
+            .addTo(controller);
+        });
+
+        return () => {
+            controller.destroy();
+        };
+    }, []);
+
+
+  
+
+    useEffect(() => {
+        if (typingStarted && textLength < text.length) {
+            const timeoutId = setTimeout(() => {
+                setDisplayedText((prev) => prev + text.charAt(textLength));
+                setTextLength((prev) => prev + 1);
+            }, 80);
+            return () => clearTimeout(timeoutId);
+        }
+    }, [typingStarted, text, textLength]);
 
     return (
         <>
@@ -259,7 +323,7 @@ export default function Camelab() {
                 </div>
 
                 {/* tools and technology section  */}
-                <div className={CamelabStyle['technology-section']}>
+                <div className={CamelabStyle['technology-section']} id='technology-section'>
                     <div className='container'>
                         <div className={CamelabStyle['technology-heading-section']}>
                             <h2 className={CamelabStyle['main-heading']}>
@@ -267,7 +331,7 @@ export default function Camelab() {
                             </h2>
                         </div>
                         <div className={CamelabStyle['technology-row']}>
-                            <div className={CamelabStyle['technology']}>
+                            <div className={`technology ${CamelabStyle['technology']}`}>
                                 <Image
                                     src={require('../../assets/images/work/2024/tech icons/react.svg')}
                                 />
@@ -275,7 +339,7 @@ export default function Camelab() {
                                     React
                                 </p>
                             </div>
-                            <div className={CamelabStyle['technology']}>
+                            <div className={`technology ${CamelabStyle['technology']}`}>
                                 <Image
                                     src={require('../../assets/images/work/2024/tech icons/mysql.svg')}
                                 />
@@ -283,7 +347,7 @@ export default function Camelab() {
                                     MySQL
                                 </p>
                             </div>
-                            <div className={CamelabStyle['technology']}>
+                            <div className={`technology ${CamelabStyle['technology']}`}>
                                 <Image
                                     src={require('../../assets/images/work/2024/tech icons/redux.svg')}
                                 />
@@ -291,7 +355,7 @@ export default function Camelab() {
                                     Redux
                                 </p>
                             </div>
-                            <div className={CamelabStyle['technology']}>
+                            <div className={`technology ${CamelabStyle['technology']}`}>
                                 <Image
                                     src={require('../../assets/images/work/2024/tech icons/muitheme.svg')}
                                 />
@@ -299,7 +363,7 @@ export default function Camelab() {
                                     MUI Theme
                                 </p>
                             </div>
-                            <div className={CamelabStyle['technology']}>
+                            <div className={`technology ${CamelabStyle['technology']}`}>
                                 <Image
                                     src={require('../../assets/images/work/2024/tech icons/firebase.svg')}
                                 />
@@ -307,7 +371,7 @@ export default function Camelab() {
                                     Firebase
                                 </p>
                             </div>
-                            <div className={CamelabStyle['technology']}>
+                            <div className={`technology ${CamelabStyle['technology']}`}>
                                 <Image
                                     src={require('../../assets/images/work/2024/tech icons/react.svg')}
                                 />
@@ -331,7 +395,7 @@ export default function Camelab() {
                         </div>
                         <div className={CamelabStyle['codecraft-grid-section']}>
                             <div className='row'>
-                                <div className={`col-lg-6 col-sm-12 ${CamelabStyle['codecraft-text-part']}`}>
+                                <div className={`col-lg-6 ${CamelabStyle['codecraft-text-part']}`}>
                                     <div id="codecraft-text-part-1">
                                         <p className={CamelabStyle['codecraft-text']}>
                                             The brand detail page offers comprehensive insights into selected Content videos. Brands can review video details, creator profiles, engagement metrics, and payment statuses, facilitating informed decisions and seamless collaboration with creators for impactful brand video opportunities.
@@ -340,18 +404,16 @@ export default function Camelab() {
                                     <div className={CamelabStyle['spacing']}></div>
                                     <div id="codecraft-text-part-2">
                                         <p className={CamelabStyle['codecraft-text']}>
-                                            The brand detail page offers comprehensive insights into selected Content videos. Brands can review video details, creator profiles, engagement metrics, and payment statuses, facilitating informed decisions and seamless collaboration with creators for impactful brand video opportunities.
-                                        </p>
+                                            the admin interface displays a list of submitted Content videos for review. Admins can efficiently select or reject submissions based on quality, relevance to brand requirements, and alignment with campaign objectives, ensuring curated content that enhances brand engagement and creator satisfaction.                                        </p>
                                     </div>
                                     <div className={CamelabStyle['spacing']}></div>
                                     <div id="codecraft-text-part-3">
                                         <p className={CamelabStyle['codecraft-text']}>
-                                            The brand detail page offers comprehensive insights into selected Content videos. Brands can review video details, creator profiles, engagement metrics, and payment statuses, facilitating informed decisions and seamless collaboration with creators for impactful brand video opportunities.
-                                        </p>
+                                            In the Camelab, brands can seamlessly browse and select compelling User-Generated Content (UGC) uploaded by creators through the mobile application. This feature facilitates easy identification and acquisition of engaging videos that align with brand objectives, ensuring a straightforward process for integrating impactful content into brand campaigns.                                        </p>
                                     </div>
                                     <div className={`${CamelabStyle['spacing']} ${CamelabStyle['spacing-last']}`}></div>
                                 </div>
-                                <div className={`col-lg-6 col-sm-12 ${CamelabStyle['codecraft-img-part']}`}>
+                                <div className={`col-lg-6 ${CamelabStyle['codecraft-img-part']}`}>
                                     <div className={CamelabStyle['sticky-part']}>
                                         <Image
                                             src={require('../../assets/images/work/2024/camelab/blankLaptop.png')}
@@ -385,16 +447,67 @@ export default function Camelab() {
                                 </div>
                             </div>
                         </div>
+
+                        <div className={CamelabStyle['codecraft-mobile-section']}>
+                            <div className={CamelabStyle['code-craft-section']}>
+                                <div className={CamelabStyle['codecraft-img-part']}>
+                                    <div className='codecraft-mobile-img'>
+                                        <Image
+                                            src={require('../../assets/images/work/2024/camelab/codecraft-mobile-img1.png')}
+                                            alt='code-craft image'
+                                        />
+                                    </div>
+                                </div>
+                                <div className={CamelabStyle['codecraft-text-part']}>
+                                    <p className={CamelabStyle['codecraft-text']}>
+                                        The brand detail page offers comprehensive insights into selected Content videos. Brands can review video details, creator profiles, engagement metrics, and payment statuses, facilitating informed decisions and seamless collaboration with creators for impactful brand video opportunities.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className={CamelabStyle['code-craft-section']}>
+
+                                <div className={CamelabStyle['codecraft-text-part']}>
+                                    <p className={CamelabStyle['codecraft-text']}>
+                                        the admin interface displays a list of submitted Content videos for review. Admins can efficiently select or reject submissions based on quality, relevance to brand requirements, and alignment with campaign objectives, ensuring curated content that enhances brand engagement and creator satisfaction.
+                                    </p>
+                                </div>
+                                <div className={CamelabStyle['codecraft-img-part']}>
+                                    <div className='codecraft-mobile-img'>
+                                        <Image
+                                            src={require('../../assets/images/work/2024/camelab/codecraft-mobile-img2.png')}
+                                            alt='code-craft image'
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={CamelabStyle['code-craft-section']}>
+                                <div className={CamelabStyle['codecraft-img-part']}>
+                                    <div className='codecraft-mobile-img'>
+                                        <Image
+                                            src={require('../../assets/images/work/2024/camelab/codecraft-mobile-img3.png')}
+                                            alt='code-craft image'
+                                        />
+                                    </div>
+                                </div>
+                                <div className={CamelabStyle['codecraft-text-part']}>
+                                    <p className={CamelabStyle['codecraft-text']}>
+                                        In the Camelab, brands can seamlessly browse and select compelling User-Generated Content (UGC) uploaded by creators through the mobile application. This feature facilitates easy identification and acquisition of engaging videos that align with brand objectives, ensuring a straightforward process for integrating impactful content into brand campaigns.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
 
                 {/* feature section  */}
                 <div className={CamelabStyle['feature-section']}>
                     <div className='container'>
                         <div className={CamelabStyle['feature-heading-section']}>
-                            <h2 className={CamelabStyle['main-heading']}>
+                            {/* <h2 className={CamelabStyle['main-heading']}>
                                 Innovative Features in <span>Camelab</span>
+                            </h2> */}
+                            <h2 className={CamelabStyle['main-heading']} id='feature-heading'>
+                                {displayedText}<span className={CamelabStyle.blinkingCursor}>|</span>
                             </h2>
                         </div>
                         <div className={CamelabStyle['feature-card-section']}>

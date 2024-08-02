@@ -1,203 +1,387 @@
-.bannerSection {
-    padding: 80px 0 140px 0;
-    margin-top: 100px;
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0 100px;
-    }
-
-    .bannerImg img {
+@media screen and (max-width:1400px) {
+    .bannerSection p {
         width: 100% !important;
-        height: auto !important;
     }
 
-    .phoneImg {
-        width: 500px;
-        height: 500px;
+    .mobileBanner {
+        display: block !important;
+        padding: 50px 0;
+
+        img{
+            width: 100% !important;
+            height: auto !important;
+        }
     }
 
-    .bannerImg {
+    .bgImg {
+        display: none !important;
+    }
+
+    .bannerSection .content {
+        padding: 0px !important;
+    }
+    .horiScrollSection{
+        display: none !important;
+    }
+    .phoneImg-mobileView{
+        display: flex !important;
+        gap: 15px;
+    }
+
+    .phoneImg-mobileView div:nth-child(4){
+        scale: 1.3;
         position: relative;
-        margin: 64px 0;
+        z-index: 10;
+    }
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+    .mainSection {
+        @keyframes body {
+            0% {
+                background-position: 0 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0 50%;
+            }
+        }
+    }
+
+
+
+    .bannerSection {
+        padding: 80px 0 140px 0;
+        margin-top: 100px;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 100px;
+        }
+
+        .mobileBanner {
+            display: none;
+        }
+        .phoneImg-mobileView{
+            display: none;
+        }
+
+        .bannerImg img {
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        .phoneImg {
+            width: 500px;
+            height: 500px;
+        }
+
+        .bannerImg {
+            position: relative;
+            margin: 64px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bgImg {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            width: 100%;
+            background-image: url(../../assets/images/work/2024/vaid/vaid-banner1.png);
+        }
+
+        .phoneImg {
+            position: absolute !important;
+            z-index: 120;
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        h3 {
+            font-family: Poppins;
+            font-size: 48px;
+            font-weight: 600;
+            text-align: left;
+            color: #16085E;
+        }
+
+        h3 span {
+            color: #4BD659;
+        }
+
+        p {
+            font-family: "Poppins";
+            font-size: 24px;
+            font-weight: 500;
+            text-align: left;
+            color: #212529;
+            width: 60%;
+            margin-left: auto;
+        }
+
+       
+    }
+
+    .phoneImg-mobileView{
+        display: none;
+    }
+
+    // magic scroll
+
+    .horiScrollSection {
+        .overflowHidden {
+            overflow: hidden;
+        }
+
+        .scrollMain {
+            display: flex;
+            width: 200% !important;
+            flex-wrap: nowrap;
+            height: 100vh !important;
+        }
+
+        .singleSection {
+            width: 100%;
+            overflow: hidden;
+            height: 70vh !important;
+            padding-bottom: 40px;
+            margin-left: 10%;
+            margin-top: 25px;
+        }
+
+        .horiImgContainer {
+            display: flex;
+            column-gap: 80px;
+        }
+
+        .imgContent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 300px !important;
+        }
+
+        .imgContent p {
+            text-align: center;
+            margin-top: 25px;
+            width: 100%;
+            font-family: "Poppins";
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .imgContent img {
+            width: 215px !important;
+            height: auto !important;
+        }
+    }
+
+
+    .mainheading {
+        font-family: "Poppins";
+        font-size: 48px;
+        font-weight: 600;
+        text-align: left;
+        color: #16085E;
+        margin-bottom: 64px;
+    }
+
+    .mainheading span {
+        color: #4BD659;
+    }
+
+
+    .vaidCardsSection {
+        padding: 144px 0;
+
+        .vaidcards {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 32px;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .cardbody {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            padding: 32px;
+            border-radius: 16px;
+
+        }
+
+        .leftTextPart {
+            align-items: start;
+            display: flex;
+        }
+
+        .rightTextPart {
+            align-items: end;
+            display: flex;
+        }
+
+        .Imgcard {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding: 32px;
+            border-radius: 16px;
+        }
+
+
+        h6 {
+            font-family: "Poppins";
+            font-size: 20px;
+            font-weight: 500;
+            color: #212529;
+            line-height: 30px;
+        }
+
+        h6 span {
+            color: #6E6E73EE;
+        }
+    }
+
+
+    // technology section
+
+
+    .technology-section {
+        width: 70%;
+        margin: 150px auto auto auto;
+    }
+
+    .technology-section .technology-heading-section {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .technology-section .technology-row {
+        margin-top: 64px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .technology-section .technology-row .technology {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .bgImg {
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        width: 100%;
-        background-image: url(../../assets/images/work/2024/vaid/vaid-banner1.png);
-    }
-
-    .phoneImg {
-        position: absolute !important;
-        z-index: 120;
-        width: 100% !important;
-        height: auto !important;
-    }
-
-    h3 {
+    .technology .technology-text {
+        align-self: center;
+        margin-top: 24px;
         font-family: Poppins;
-        font-size: 48px;
-        font-weight: 600;
-        text-align: left;
-        color: #16085E;
-    }
-
-    h3 span {
-        color: #4BD659;
-    }
-
-    p {
-        font-family: "Poppins";
         font-size: 24px;
         font-weight: 500;
-        text-align: left;
-        color: #212529;
+        text-align: center;
+    }
+
+
+
+
+    .sliderSection {
+        padding: 80px 0;
+        background-color: #F5F5F7;
+
+        .slider-item {
+            display: flex;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            border-radius: 16px;
+            background-color: #FFFFFF;
+        }
+
+        .imgPart {
+            overflow: hidden;
+        }
+
+        .imgPart img {
+            margin-bottom: -100px !important;
+        }
+
+        .slider-item {
+            padding: 50px 40px 0px 40px;
+        }
+
+        h6 {
+            font-family: "Poppins";
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0.002em;
+            text-align: left;
+            color: #919EAB;
+        }
+
+        h6 span {
+            font-weight: 500;
+            color: #212529;
+        }
+    }
+
+    @media screen and (max-width:1025px){
+        .bannerSection{
+            h3{
+                font-size: 44px;
+            }
+            p{
+                font-size: 20px;
+            }
+
+            .mobileBanner {
+                display: block !important;
+                padding: 50px 0;
+        
+                img{
+                    width: 100% !important;
+                    height: auto !important;
+                }
+            }
+        }
+
+        .mainheading {
+            font-size: 44px;
+        }
+
+        .vaidCardsSection{
+            h6{
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+
+        .sliderSection{
+            h6{
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            .slider-item {
+                padding: 25px 20px 0px 25px;
+            }
+        }
 
     }
-}
-
-// magic scroll
-.overflowHidden {
-    overflow: hidden;
-}
-
-.scrollMain {
-    display: flex;
-    width: 200%;
-    flex-wrap: nowrap;
-    height: 100vh;
-}
-
-.singleSection {
-    width: 100%;
-    overflow: hidden;
-    height: 100%;
-    padding-bottom: 40px;
-    margin-left: 10%;
-}
-
-.horiImgContainer {
-    display: flex;
-    column-gap: 80px;
-}
-
-.imgContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 300px !important;
-}
-
-.imgContent p {
-    text-align: center;
-    margin-top: 25px;
-    width: 100%;
-    font-family: "Poppins";
-    font-size: 14px;
-    font-weight: 400;
-
-}
-
-.imgContent img {
-    width: 215px !important;
-    height: auto !important;
-}
-
-.bgRed {
-    background-color: #db3e3e;
-}
-
-.bgGreen {
-    background-color: green;
-}
-
-.bgGray {
-    background-color: #ccc;
-}
-
-.bgOrange {
-    background-color: orange;
-}
-
-.box {
-    width: 250px;
-    height: 500px;
-    margin: 0 0 10px 0;
-    background-color: rebeccapurple;
-}
-
-
-
-// horizontal scroll
-// .carousel-container {
-//     position: relative;
-//     height: 300vh;
-//     background-color: #1a1a1a;
-//     /* Equivalent to bg-neutral-900 */
-// }
-
-// .sticky-container {
-//     position: sticky;
-//     top: 100px !important;
-//     display: flex;
-//     height: 100vh;
-// }
-
-// .carousel {
-//     display: flex;
-//     gap: 1rem;
-//     /* Equivalent to gap-4 */
-// }
-
-// .card {
-//     position: relative;
-//     height: 450px;
-//     width: 450px;
-//     overflow: hidden;
-//     background-color: #e0e0e0;
-//     /* Equivalent to bg-neutral-200 */
-// }
-
-// .card-image {
-//     position: absolute;
-//     inset: 0;
-//     z-index: 0;
-//     transition: transform 0.3s;
-//     transform: scale(1);
-// }
-
-// .card:hover .card-image {
-//     transform: scale(1.1);
-//     /* Equivalent to group-hover:scale-110 */
-// }
-
-// .card-content {
-//     position: absolute;
-//     inset: 0;
-//     z-index: 10;
-//     display: grid;
-//     place-content: center;
-// }
-
-// .card-title {
-//     background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
-//     padding: 2rem;
-//     font-size: 3rem;
-//     /* Equivalent to text-6xl */
-//     font-weight: 900;
-//     /* Equivalent to font-black */
-//     text-transform: uppercase;
-//     color: #ffffff;
-//     /* Equivalent to text-white */
-//     backdrop-filter: blur(10px);
-//     /* Equivalent to backdrop-blur-lg */
-// }

@@ -18,7 +18,7 @@ const ScrollMagic = dynamic(() => import('scrollmagic'), { ssr: false });
 const ScrollMagicController = dynamic(() => import('scrollmagic').then(mod => mod.Controller), { ssr: false });
 
 const options = {
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 2000,
     autoplayHoverPause: false,
     margin: 20,
@@ -31,22 +31,22 @@ const options = {
     stagePadding: 0,
     responsive: {
         0: {
-            items: 1,
+            items: 1.2,
         },
         400: {
-            items: 1,
+            items: 1.5,
         },
         600: {
-            items: 1,
+            items: 1.5,
         },
         700: {
-            items: 2,
+            items: 2.2,
         },
         1000: {
-            items: 2,
+            items: 2.2,
         },
-        1800: {
-            items: 3
+        1600: {
+            items: 2.5
         }
     },
 };

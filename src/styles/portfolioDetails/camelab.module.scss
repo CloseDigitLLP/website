@@ -681,11 +681,16 @@
         margin-top: 36px;
     }
 
+    .slider-part .slider-card{
+        margin-left:8px;
+        margin-right:8px;
+    }
+
 }
 
 @media only screen and (max-width: 700px) {
     .slider-card .slider-text-part {
-        min-height: 100px;
+        min-height: 200px;
     }
 
     .slider-part .left-btn {
@@ -767,6 +772,11 @@
         flex-direction: column-reverse !important;
     }
 
+    .slider-part .slider-card{
+        margin-left:4px;
+        margin-right:4px;
+    }
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -804,6 +814,10 @@
 
     .slider-part .right-btn {
         top: 22%;
+    }
+
+    .slider-card .slider-text-part .slider-text {
+        font-size: 12px;
     }
 }
 

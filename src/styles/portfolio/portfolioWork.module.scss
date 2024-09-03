@@ -1,16 +1,20 @@
 @import '../variable.module.scss';
 
-
+.project-info.showDetails{
+    opacity: 1 !important;
+    scale: 1 !important;
+}
 
 .brand-part .project-info {
     opacity: 0;
+    scale: 0.7;
     transition: 0.5s all ease;
 }
 
 .brand-part .project-info .project-title {
     background: inherit;
     margin-top: -55px;
-    backdrop-filter: blur(13px);
+    backdrop-filter: blur(4px);
     background: #ffffff77;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
@@ -284,69 +288,69 @@
 
 
 // hover effect title
-.imgBox:hover+.project-info {
-    opacity: 1;
-}
+// .imgBox:hover+.project-info {
+//     opacity: 1;
+// }
 
-.imgBox1:hover+.project-info {
-    opacity: 1;
-}
+// .imgBox1:hover+.project-info {
+//     opacity: 1;
+// }
 
-.imgBox2:hover+.project-info {
-    opacity: 1;
-}
+// .imgBox2:hover+.project-info {
+//     opacity: 1;
+// }
 
-.imgBox3:hover+.project-info {
-    opacity: 1;
-}
+// .imgBox3:hover+.project-info {
+//     opacity: 1;
+// }
 
-.imgBox4:hover+.project-info {
-    opacity: 1;
-}
+// .imgBox4:hover+.project-info {
+//     opacity: 1;
+// }
 
-.imgBox5:hover+.project-info {
-    opacity: 1;
-}
+// .imgBox5:hover+.project-info {
+//     opacity: 1;
+// }
 
-.imgBox6:hover+.project-info {
-    opacity: 1;
-}
+// .imgBox6:hover+.project-info {
+//     opacity: 1;
+// }
 
-.imgBox7:hover+.project-info {
-    opacity: 1;
-}
+// .imgBox7:hover+.project-info {
+//     opacity: 1;
+// }
 
-.imgBox8:hover+.project-info {
-    opacity: 1;
-}
+// .imgBox8:hover+.project-info {
+//     opacity: 1;
+// }
 
-.imgBox9:hover+.project-info {
-    opacity: 1;
-}
+// .imgBox9:hover+.project-info {
+//     opacity: 1;
+// }
 
-.imgBox10:hover+.project-info {
-    opacity: 1;
-}
+// .imgBox10:hover+.project-info {
+//     opacity: 1;
+// }
 
-.imgBox11:hover+.project-info {
-    opacity: 1;
-}
+// .imgBox11:hover+.project-info {
+//     opacity: 1;
+// }
 
-.imgBox12:hover+.project-info {
-    opacity: 1;
-}
+// .imgBox12:hover+.project-info {
+//     opacity: 1;
+// }
 
-.imgBox13:hover+.project-info {
-    opacity: 1;
-}
+// .imgBox13:hover+.project-info {
+//     opacity: 1;
+// }
 
-.imgBox14:hover+.project-info {
-    opacity: 1;
-}
+// .imgBox14:hover+.project-info {
+//     opacity: 1;
+// }
 
-.imgBox15:hover+.project-info {
-    opacity: 1;
-}
+// .imgBox15:hover+.project-info {
+//     opacity: 1;
+// }
 
 
 
@@ -411,9 +415,6 @@
         justify-content: center;
         align-items: center;
         gap: 10px;
-    }
-    .brand-part .project-info {
-        opacity: 1 !important;
     }
     .brand-part .brand-info {
         padding: 0 16px;

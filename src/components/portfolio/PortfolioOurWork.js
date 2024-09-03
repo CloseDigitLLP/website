@@ -10,6 +10,7 @@ import UiUxTab from './tabContent/UIUX';
 export default function OurWorkContent() {
     const animateRefs = Array.from({ length: 16 }, () => useRef(null));
     const triggerRefs = Array.from({ length: 16 }, () => useRef(null));
+    const showRef = Array.from({ length: 16 }, () => useRef(null));
 
     useEffect(() => {
         const initializeScrollMagic = async () => {
@@ -31,9 +32,57 @@ export default function OurWorkContent() {
                     scene.destroy(true);
                 };
             });
+            showRef.forEach((showRef, index) => {
+                const scene = new ScrollMagic.Scene({
+                    triggerElement: triggerRefs[index].current,
+                    duration: 500,
+                    triggerHook: 0.7
+                })
+                    .setClassToggle(showRef.current, portfolioWorkStyle['showDetails'])
+                    .addIndicators()
+                    .addTo(controller);
+                return () => {
+                    controller.destroy(true);
+                    scene.destroy(true);
+                };
+            });
         };
         initializeScrollMagic();
     }, []);
+
+
+    const projectPairs = [
+        [
+            {
+                id: "animate",
+                title: "VAID",
+                href: "/Vaid",
+                imgSrc: require('../../assets/images/Work/2024/Vaid.png'),
+                tech: [
+                    { src: require('../../assets/images/work/technology-icons/uiux.svg'), name: "UI-UX" },
+                    { src: require('../../assets/images/work/technology-icons/reactnative.svg'), name: "React Native" },
+                    { src: require('../../assets/images/work/technology-icons/firebase.svg'), name: "Firebase" },
+                    { src: require('../../assets/images/work/technology-icons/firestore.svg'), name: "Firestore" },
+                    { src: require('../../assets/images/work/technology-icons/mysql.svg'), name: "My SQL" }
+                ]
+            },
+            {
+                id: "animate1",
+                title: "Camelab",
+                href: "/Camelab",
+                imgSrc: require('../../assets/images/Work/2024/Camelab.png'),
+                tech: [
+                    { src: require('../../assets/images/work/technology-icons/uiux.svg'), name: "UI-UX" },
+                    { src: require('../../assets/images/work/technology-icons/react.svg'), name: "React" },
+                    { src: require('../../assets/images/work/technology-icons/reactnative.svg'), name: "React Native" },
+                    { src: require('../../assets/images/work/technology-icons/firebase.svg'), name: "Firebase" },
+                    { src: require('../../assets/images/work/technology-icons/mysql.svg'), name: "My SQL" },
+                    { src: require('../../assets/images/work/technology-icons/paypal.svg'), name: "Paypal" }
+                ]
+            }
+        ],
+        // Add more pairs as needed
+    ];
 
     return (
         <section className={`section-spacing`}>
@@ -48,8 +97,46 @@ export default function OurWorkContent() {
                         id="uncontrolled-tab-example"
                         className={portfolioWorkStyle["tab-bar"]}>
                         <Tab eventKey="All" title="All Work">
-                            <div className={portfolioWorkStyle['brand-part']}>
-                                <div ref={triggerRefs[0]}>
+                            <div>
+                                {projectPairs.map((pair, pairIndex) => (
+                                    <div key={pairIndex} className={portfolioWorkStyle['brand-part']}>
+                                        {pair.map((project, index) => (
+                                            <div key={index} ref={triggerRefs[pairIndex * 2 + index]} className='main-content'>
+                                                <div id={portfolioWorkStyle[project.id]}
+                                                    className={portfolioWorkStyle[`imgBox${pairIndex * 2 + index}`]}
+                                                    ref={animateRefs[pairIndex * 2 + index]}>
+                                                    <Link href={project.href}>
+                                                        <div>
+                                                            <Image
+                                                                src={project.imgSrc}
+                                                                alt="Animated"
+                                                                className={portfolioWorkStyle['brand-img']}
+                                                            />
+                                                        </div>
+                                                    </Link>
+                                                </div>
+                                                <div ref={showRef[pairIndex * 2 + index]} className={portfolioWorkStyle["project-info"]}>
+                                                    <h3 className={portfolioWorkStyle["project-title"]}>{project.title}</h3>
+                                                    <div className={portfolioWorkStyle['brand-info']}>
+                                                        <div className={portfolioWorkStyle['tech-logo']}>
+                                                            {project.tech.map((techItem, techIndex) => (
+                                                                <div key={techIndex} className={portfolioWorkStyle['logo']}>
+                                                                    <Image src={techItem.src} alt={techItem.name} width={24} height={24} />
+                                                                    <p>{techItem.name}</p>
+                                                                </div>
+                                                            ))}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                ))}
+                            </div>
+
+
+                            {/* <div className={portfolioWorkStyle['brand-part']}>
+                                <div ref={triggerRefs[0]} className='main-content'>
                                     <div id={portfolioWorkStyle["animate"]}
                                         className={portfolioWorkStyle["imgBox"]}
                                         ref={animateRefs[0]}>
@@ -65,7 +152,7 @@ export default function OurWorkContent() {
                                             </div>
                                         </Link>
                                     </div>
-                                    <div className={portfolioWorkStyle["project-info"]}>
+                                    <div ref={showRef[0]} className={portfolioWorkStyle["project-info"]}>
                                         <h3 className={portfolioWorkStyle["project-title"]}>VAID</h3>
                                         <div className={portfolioWorkStyle['brand-info']}>
                                             <div className={portfolioWorkStyle['tech-logo']}>
@@ -90,7 +177,7 @@ export default function OurWorkContent() {
                                             </div>
                                         </Link>
                                     </div>
-                                    <div className={portfolioWorkStyle["project-info"]}>
+                                    <div ref={showRef[1]} className={portfolioWorkStyle["project-info"]}>
                                         <h3 className={portfolioWorkStyle["project-title"]}>Camelab</h3>
                                         <div className={portfolioWorkStyle['brand-info']}>
                                             <div className={portfolioWorkStyle['tech-logo']}>
@@ -103,11 +190,9 @@ export default function OurWorkContent() {
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
-
-                            </div>
-                            <div className={`${portfolioWorkStyle['brand-part']} ${portfolioWorkStyle['reverse']}`}>
+                            </div> */}
+                            {/* <div className={`${portfolioWorkStyle['brand-part']} ${portfolioWorkStyle['reverse']}`}>
                                 <div ref={triggerRefs[2]}>
                                     <div id={portfolioWorkStyle["animate2"]}
                                         className={portfolioWorkStyle["imgBox2"]}
@@ -122,7 +207,7 @@ export default function OurWorkContent() {
                                             </div>
                                         </Link>
                                     </div>
-                                    <div className={portfolioWorkStyle["project-info"]}>
+                                    <div ref={showRef[2]} className={portfolioWorkStyle["project-info"]}>
                                         <h3 className={portfolioWorkStyle["project-title"]}>Hontrel</h3>
                                         <div className={portfolioWorkStyle['brand-info']}>
                                             <div className={portfolioWorkStyle['tech-logo']}>
@@ -148,7 +233,7 @@ export default function OurWorkContent() {
                                             </div>
                                         </Link>
                                     </div>
-                                    <div className={portfolioWorkStyle["project-info"]}>
+                                    <div ref={showRef[3]} className={portfolioWorkStyle["project-info"]}>
                                         <h3 className={portfolioWorkStyle["project-title"]}>Superior</h3>
                                         <div className={portfolioWorkStyle['brand-info']}>
                                             <div className={portfolioWorkStyle['tech-logo']}>
@@ -177,7 +262,7 @@ export default function OurWorkContent() {
                                             </div>
                                         </Link>
                                     </div>
-                                    <div className={portfolioWorkStyle["project-info"]}>
+                                    <div ref={showRef[4]} className={portfolioWorkStyle["project-info"]}>
                                         <h3 className={portfolioWorkStyle["project-title"]}>Datasync</h3>
                                         <div className={portfolioWorkStyle['brand-info']}>
                                             <div className={portfolioWorkStyle['tech-logo']}>
@@ -203,7 +288,7 @@ export default function OurWorkContent() {
                                             </div>
                                         </Link>
                                     </div>
-                                    <div className={portfolioWorkStyle["project-info"]}>
+                                    <div ref={showRef[5]} className={portfolioWorkStyle["project-info"]}>
                                         <h3 className={portfolioWorkStyle["project-title"]}>Schenk</h3>
                                         <div className={portfolioWorkStyle['brand-info']}>
                                             <div className={portfolioWorkStyle['tech-logo']}>
@@ -216,7 +301,6 @@ export default function OurWorkContent() {
                                     </div>
                                 </div>
                             </div>
-
                             <div className={`${portfolioWorkStyle['brand-part']} ${portfolioWorkStyle['reverse']}`}>
                                 <div ref={triggerRefs[6]}>
                                     <div id={portfolioWorkStyle["animate6"]}
@@ -232,7 +316,7 @@ export default function OurWorkContent() {
                                             </div>
                                         </Link>
                                     </div>
-                                    <div className={portfolioWorkStyle["project-info"]}>
+                                    <div ref={showRef[6]} className={portfolioWorkStyle["project-info"]}>
                                         <h3 className={portfolioWorkStyle["project-title"]}>Payday Depot</h3>
                                         <div className={portfolioWorkStyle['brand-info']}>
                                             <div className={portfolioWorkStyle['tech-logo']}>
@@ -260,7 +344,7 @@ export default function OurWorkContent() {
                                             </div>
                                         </Link>
                                     </div>
-                                    <div className={portfolioWorkStyle["project-info"]}>
+                                    <div ref={showRef[7]} className={portfolioWorkStyle["project-info"]}>
                                         <h3 className={portfolioWorkStyle["project-title"]}>Delivery</h3>
                                         <div className={portfolioWorkStyle['brand-info']}>
                                             <div className={portfolioWorkStyle['tech-logo']}>
@@ -272,7 +356,6 @@ export default function OurWorkContent() {
                                     </div>
                                 </div>
                             </div>
-
                             <div className={portfolioWorkStyle['brand-part']}>
                                 <div ref={triggerRefs[8]}>
                                     <div id={portfolioWorkStyle["animate8"]}
@@ -289,7 +372,7 @@ export default function OurWorkContent() {
                                         </Link>
 
                                     </div>
-                                    <div className={portfolioWorkStyle["project-info"]}>
+                                    <div ref={showRef[8]} className={portfolioWorkStyle["project-info"]}>
                                         <h3 className={portfolioWorkStyle["project-title"]}>Gupta Group</h3>
                                         <div className={portfolioWorkStyle['brand-info']}>
                                             <div className={portfolioWorkStyle['tech-logo']}>
@@ -317,7 +400,7 @@ export default function OurWorkContent() {
                                             </div>
                                         </Link>
                                     </div>
-                                    <div className={portfolioWorkStyle["project-info"]}>
+                                    <div ref={showRef[9]} className={portfolioWorkStyle["project-info"]}>
                                         <h3 className={portfolioWorkStyle["project-title"]}>Practice Plus</h3>
                                         <div className={portfolioWorkStyle['brand-info']}>
                                             <div className={portfolioWorkStyle['tech-logo']}>
@@ -347,7 +430,7 @@ export default function OurWorkContent() {
                                             </div>
                                         </Link>
                                     </div>
-                                    <div className={portfolioWorkStyle["project-info"]}>
+                                    <div ref={showRef[10]} className={portfolioWorkStyle["project-info"]}>
                                         <h3 className={portfolioWorkStyle["project-title"]}>Commbitz</h3>
                                         <div className={portfolioWorkStyle['brand-info']}>
                                             <div className={portfolioWorkStyle['tech-logo']}>
@@ -378,7 +461,7 @@ export default function OurWorkContent() {
                                             </div>
                                         </Link>
                                     </div>
-                                    <div className={portfolioWorkStyle["project-info"]}>
+                                    <div ref={showRef[11]} className={portfolioWorkStyle["project-info"]}>
                                         <h3 className={portfolioWorkStyle["project-title"]}>Allure</h3>
                                         <div className={portfolioWorkStyle['brand-info']}>
                                             <div className={portfolioWorkStyle['tech-logo']}>
@@ -392,7 +475,6 @@ export default function OurWorkContent() {
                                     </div>
                                 </div>
                             </div>
-
                             <div className={portfolioWorkStyle['brand-part']}>
                                 <div ref={triggerRefs[12]}>
                                     <div id={portfolioWorkStyle["animate12"]}
@@ -408,7 +490,7 @@ export default function OurWorkContent() {
                                             </div>
                                         </Link>
                                     </div>
-                                    <div className={portfolioWorkStyle["project-info"]}>
+                                    <div ref={showRef[12]} className={portfolioWorkStyle["project-info"]}>
                                         <h3 className={portfolioWorkStyle["project-title"]}>Snbla</h3>
                                         <div className={portfolioWorkStyle['brand-info']}>
                                             <div className={portfolioWorkStyle['tech-logo']}>
@@ -424,7 +506,7 @@ export default function OurWorkContent() {
                                     <div id={portfolioWorkStyle["animate13"]}
                                         className={portfolioWorkStyle["imgBox13"]}
                                         ref={animateRefs[13]}>
-                                        <Link href="/">
+                                        <Link href="/FBN">
                                             <div>
                                                 <Image
                                                     src={require('../../assets/images/Work/2024/FellingBetterNow.png')}
@@ -434,7 +516,7 @@ export default function OurWorkContent() {
                                             </div>
                                         </Link>
                                     </div>
-                                    <div className={portfolioWorkStyle["project-info"]}>
+                                    <div ref={showRef[13]} className={portfolioWorkStyle["project-info"]}>
                                         <h3 className={portfolioWorkStyle["project-title"]}>FellingBetterNow</h3>
                                         <div className={portfolioWorkStyle['brand-info']}>
                                             <div className={portfolioWorkStyle['tech-logo']}>
@@ -465,7 +547,7 @@ export default function OurWorkContent() {
                                             </div>
                                         </Link>
                                     </div>
-                                    <div className={portfolioWorkStyle["project-info"]}>
+                                    <div ref={showRef[14]} className={portfolioWorkStyle["project-info"]}>
                                         <h3 className={portfolioWorkStyle["project-title"]}>Directory</h3>
                                         <div className={portfolioWorkStyle['brand-info']}>
                                             <div className={portfolioWorkStyle['tech-logo']}>
@@ -493,7 +575,7 @@ export default function OurWorkContent() {
                                             </div>
                                         </Link>
                                     </div>
-                                    <div className={portfolioWorkStyle["project-info"]}>
+                                    <div ref={showRef[15]} className={portfolioWorkStyle["project-info"]}>
                                         <h3 className={portfolioWorkStyle["project-title"]}>Camplinq</h3>
                                         <div className={portfolioWorkStyle['brand-info']}>
                                             <div className={portfolioWorkStyle['tech-logo']}>
@@ -506,7 +588,7 @@ export default function OurWorkContent() {
                                     </div>
                                 </div>
 
-                            </div>
+                            </div> */}
                         </Tab>
                         <Tab eventKey="UI/UX" title="UI/UX Design">
                             <UiUxTab />

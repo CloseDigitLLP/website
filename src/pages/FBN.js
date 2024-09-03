@@ -1,16 +1,15 @@
 
 import Head from 'next/head'
-import Camelab from '../components/portfolioDetails/Camelab'
+import FBN from '../components/portfolioDetails/FBN'
 
-export default function AboutUs() {
+export default function FBNPage() {
     return (
         <>
             <Head>
-                <title>About Us | CloseDigit</title>
+                <title>FBNPage | CloseDigit</title>
                 <meta name="description" content="Make your company wealthy by using CloseDigit's effective tool to assist users in finding solutions to create something truly wonderful." />
             </Head>
-            <Camelab>
-            </Camelab>
+            <FBN />
         </>
     )
 }

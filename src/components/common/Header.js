@@ -10,7 +10,7 @@ export default function Header() {
 
   useEffect(() => {
     if (window) {
-      const nonStickyPages = ['/Portfolio', '/Vaid'];
+      const nonStickyPages = ['/Portfolio', '/Vaid','/FBN'];
       if (!nonStickyPages.includes(router.pathname)) {
         window.addEventListener('scroll', stickNavbar);
       }

@@ -30,16 +30,16 @@ export default function Vaid() {
     stagePadding: 0,
     responsive: {
       0: {
-        items: 2,
+        items: 1,
       },
       400: {
-        items: 2,
+        items: 1.2,
       },
       600: {
-        items: 2,
+        items: 1.2,
       },
       700: {
-        items: 2.2,
+        items: 2.1,
       },
       1000: {
         items: 2.2,
@@ -63,17 +63,20 @@ export default function Vaid() {
       gsap.registerPlugin(ScrollTrigger);
 
       const screenWidth = window.innerWidth;
-      const endValue = screenWidth > 1900 ? "bottom center" : "center center";
-      const xPercentValue = screenWidth > 1920 ? -300 : -40;
+      const endValue = screenWidth > 1915 ? "bottom center" : "center center";
+      const xPercentValue = screenWidth > 1915 ? -40 : -40;
+      const yPercentValue = screenWidth > 1400 ? 150 : 80;
 
       const sections = sectionsRef.current;
       const phoneSection = phoneImgRef.current;
       const scrollContainer = document.querySelector(`.${vaidStyle.scrollMain}`);
       const paragraphSection = document.querySelector(`.${vaidStyle.content} p`);
 
+
       if (phoneSection && scrollContainer && paragraphSection) {
         gsapContext = gsap.context(() => {
           gsap.to(phoneSection, {
+            y: yPercentValue,
             xPercent: xPercentValue,
             scale: 0.8,
             ease: 'none',
@@ -127,6 +130,7 @@ export default function Vaid() {
                 alt="Animated"
               />
             </div>
+
             <div className={vaidStyle.bgImg}>
               <div className={vaidStyle.bannerImg} ref={phoneImgRef}>
                 <div>
@@ -225,57 +229,55 @@ export default function Vaid() {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
 
 
       <section className={vaidStyle['phoneImg-mobileView']}>
-      <div> <Image
-          src={require('../../assets/images/work/2024/vaid/vaid-img1.png')}
-          alt="Animated"
-          className={vaidStyle.phoneImg}
-        />
-      </div>
-      <div> <Image
+        <div>
+          <Image
+            src={require('../../assets/images/work/2024/vaid/vaid-img1.png')}
+            alt="Animated"
+            className={vaidStyle.phoneImg}
+          />
+        </div>
+        <div> <Image
           src={require('../../assets/images/work/2024/vaid/vaid-img2.png')}
           alt="Animated"
           className={vaidStyle.phoneImg}
         />
-      </div>
-      <div> <Image
+        </div>
+        <div> <Image
           src={require('../../assets/images/work/2024/vaid/vaid-img3.png')}
           alt="Animated"
           className={vaidStyle.phoneImg}
         />
-      </div>
-      <div> <Image
+        </div>
+        <div> <Image
           src={require('../../assets/images/work/2024/vaid/vaid-img4.png')}
           alt="Animated"
           className={vaidStyle.phoneImg}
         />
-      </div>
-      <div> <Image
+        </div>
+        <div> <Image
           src={require('../../assets/images/work/2024/vaid/vaid-img5.png')}
           alt="Animated"
           className={vaidStyle.phoneImg}
         />
-      </div>
-      <div> <Image
+        </div>
+        <div> <Image
           src={require('../../assets/images/work/2024/vaid/vaid-img6.png')}
           alt="Animated"
           className={vaidStyle.phoneImg}
         />
-      </div>
-      <div> <Image
+        </div>
+        <div> <Image
           src={require('../../assets/images/work/2024/vaid/vaid-img7.png')}
           alt="Animated"
           className={vaidStyle.phoneImg}
         />
-      </div>
-       
-        
+        </div>
       </section>
 
 
@@ -335,14 +337,14 @@ export default function Vaid() {
           <div className={vaidStyle['vaidcards']}>
             <div className={vaidStyle['cardbody']}>
               <div className="row">
-                <div className="col-md-6">
+                <div className="col-6">
                   <Image
                     src={require('../../assets/images/work/2024/vaid/vaidCardImg1.png')}
                     alt="Animated"
                   />
                 </div>
 
-                <div className={`col-md-6 ${vaidStyle.leftTextPart}`}>
+                <div className={`col-6 ${vaidStyle.leftTextPart}`}>
                   <div>
                     <h6>Message data management System with Smart Contracts. <span>We specialize in integrating secure data and privacy of messages, ensuring smooth conversations between two people.</span> </h6>
                   </div>
@@ -351,17 +353,16 @@ export default function Vaid() {
             </div>
             <div className={vaidStyle['cardbody']}>
               <div className="row">
-                <div className="col-md-6">
+                <div className={`col-6 ${vaidStyle.rightTextPart}`}>
+                  <div>
+                    <h6>Message data management System with Smart Contracts. <span>We specialize in integrating secure data and privacy of messages, ensuring smooth conversations between two people.</span> </h6>
+                  </div>
+                </div>
+                <div className="col-6">
                   <Image
                     src={require('../../assets/images/work/2024/vaid/vaidCardImg1.png')}
                     alt="Animated"
                   />
-                </div>
-
-                <div className={`col-md-6 ${vaidStyle.rightTextPart}`}>
-                  <div>
-                    <h6>Message data management System with Smart Contracts. <span>We specialize in integrating secure data and privacy of messages, ensuring smooth conversations between two people.</span> </h6>
-                  </div>
                 </div>
               </div>
             </div>
@@ -374,22 +375,22 @@ export default function Vaid() {
       <section className={vaidStyle['sliderSection']}>
         <div className="container">
           <h3 className={vaidStyle['mainheading']}>
-            Innovative Features <br /> <span>in VAID</span>
+            Innovative Features <br /><span>in VAID</span>
           </h3>
           {/* OwlCarousel */}
         </div>
         <OwlCarousel className={`${vaidStyle['owlcarousel']} ${vaidStyle['review-owlcarousel']}`} navText={["", ""]}  {...options}>
           <div className={`${vaidStyle['slider-item']}`}>
             <div className="row">
-              <div className="col-sm-6">
+              <div className="col-lg-6">
                 <div className={vaidStyle['imgPart']}>
                   <Image
-                    src={require('../../assets/images/work/2024/vaid/sliderImg1.svg')}
+                    src={require('../../assets/images/work/2024/vaid/sliderImg1.png')}
                     alt="Animated"
                   />
                 </div>
               </div>
-              <div className="col-sm-6">
+              <div className="col-lg-6">
                 <h6>
                   <span>Client Detail Page</span> <br />
                   it shows the client's location and project details for efficient management. It also features to create threads and submit evidence for streamlined communication and updates.
@@ -399,15 +400,15 @@ export default function Vaid() {
           </div>
           <div className={`${vaidStyle['slider-item']}`}>
             <div className="row">
-              <div className="col-sm-6">
+              <div className="col-lg-6">
                 <h6>
                   <span>Submit Evidencewhere</span> <br /> where you can click to add photos, show location on the photos, and include descriptions so client can easily know about the work.
                 </h6>
               </div>
-              <div className="col-sm-6">
+              <div className="col-lg-6">
                 <div className={vaidStyle['imgPart']}>
                   <Image
-                    src={require('../../assets/images/work/2024/vaid/sliderImg1.svg')}
+                    src={require('../../assets/images/work/2024/vaid/sliderImg2.png')}
                     alt="Animated"
                   />
                 </div>
@@ -416,15 +417,15 @@ export default function Vaid() {
           </div>
           <div className={`${vaidStyle['slider-item']}`}>
             <div className="row">
-              <div className="col-sm-6">
+              <div className="col-lg-6">
                 <div className={vaidStyle['imgPart']}>
                   <Image
-                    src={require('../../assets/images/work/2024/vaid/sliderImg1.svg')}
+                    src={require('../../assets/images/work/2024/vaid/sliderImg1.png')}
                     alt="Animated"
                   />
                 </div>
               </div>
-              <div className="col-sm-6">
+              <div className="col-lg-6">
                 <h6>
                   <span>Timer</span> <br />
                   function for employees allows them to select a client and start a timer. It tracks all in and out times according to the timer, providing a detailed log of work hours.

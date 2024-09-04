@@ -34,6 +34,8 @@ function MyApp({ Component, pageProps }) {
       {/* <SpeedInsights /> */}
       <Analytics />
       <Footer></Footer>
+
+     
     </>
   )
 }

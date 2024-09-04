@@ -1,0 +1,127 @@
+.mainSection {
+    margin-top: 100px;
+}
+
+.bannerSection .sectionContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bannerSection h3 {
+    font-family: "Poppins";
+    font-size: 48px;
+    font-weight: 600;
+    text-align: left;
+    width: 50%;
+    color: #16085E;
+    margin: 60px auto 60px 130px;
+
+}
+
+.bannerSection h3 span {
+    color: #33CA8F;
+}
+
+.bannerSection p {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    color: #212529;
+    margin-top: 60px;
+}
+
+
+
+// technology section
+
+
+.technology-section {
+    width: 70%;
+    margin: 150px auto auto auto;
+}
+
+.technology-section .technology-heading-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.technology-section .technology-row {
+    margin-top: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:40px ;
+}
+
+.technology-section .technology-row .technology {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.technology .technology-text {
+    align-self: center;
+    margin-top: 24px;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    color: #212529;
+}
+
+
+.vaidCardsSection {
+    padding: 144px 0;
+
+    .vaidcards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .cardbody {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        padding: 32px;
+        border-radius: 16px;
+
+    }
+
+    .leftTextPart {
+        align-items: start;
+        display: flex;
+    }
+
+    .rightTextPart {
+        align-items: end;
+        display: flex;
+    }
+
+    .Imgcard {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 32px;
+        border-radius: 16px;
+    }
+
+
+    h6 {
+        font-family: "Poppins";
+        font-size: 20px;
+        font-weight: 500;
+        color: #212529;
+        line-height: 30px;
+    }
+
+    h6 span {
+        color: #6E6E73EE;
+    }
+}

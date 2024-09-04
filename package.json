@@ -14,6 +14,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",
+    "@gsap/react": "^2.1.1",
     "@hookform/resolvers": "^2.9.7",
     "@vercel/analytics": "^1.2.1",
     "@vercel/speed-insights": "^1.0.10",
@@ -21,7 +22,11 @@
     "bootstrap": "^5.3.3",
     "dotenv": "^16.0.2",
     "firebase": "^9.9.4",
+<<<<<<< HEAD
     "gsap": "^3.12.5",
+=======
+    "framer-motion": "^11.3.19",
+>>>>>>> 0e967d9e535b899b85e55ef7d37321cd81254765
     "install": "^0.13.0",
     "jquery": "^3.7.1",
     "next": "12.1.6",
@@ -34,6 +39,7 @@
     "react-dom": "18.2.0",
     "react-grid-gallery": "^1.0.0",
     "react-hook-form": "^7.34.2",
+    "react-horizontal-scrolling-menu": "^7.1.1",
     "react-owl-carousel": "^2.3.3",
     "react-parallax-tilt": "^1.7.232",
     "react-scrollmagic": "^2.3.0",
@@ -47,6 +53,7 @@
   "devDependencies": {
     "eslint": "8.18.0",
     "eslint-config-next": "12.1.6",
+    "file-loader": "^6.2.0",
     "sass": "^1.52.3"
   }
 }

@@ -1,33 +1,28 @@
 @import '../variable.module.scss';
 
-
-
-.imgBox {
-    vertical-align: top;
-    position: relative;
-    overflow: hidden;
+.project-info.showDetails{
+    opacity: 1 !important;
+    scale: 1 !important;
 }
 
-.brand-info {
-    padding: 25px;
-    transition: 0.5s all ease;
-    transform: translateY(0px);
+.brand-part .project-info {
     opacity: 0;
-    margin-top: -100px;
+    scale: 0.7;
+    transition: 0.5s all ease;
 }
 
-.imgBox:hover .brand-info {
-    transform: translateY(-100px);
-    opacity: 1;
-    background-color: #FFFFFF;
-    // background-image: linear-gradient(60deg, rgba(255, 255, 255, .6) 80%, rgba(255, 255, 255, .7) 83%, rgba(255, 255, 255, .6) 86%, rgba(255, 255, 255, .7) 89%, rgba(255, 255, 255, .6));
+.brand-part .project-info .project-title {
+    background: inherit;
+    margin-top: -55px;
+    backdrop-filter: blur(4px);
+    background: #ffffff77;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
 }
 
-.imgBox1:hover .brand-info {
-    transform: translateY(-100px);
-    opacity: 1;
-    background-color: #FFFFFF;
-    // background-image: linear-gradient(60deg, rgba(255, 255, 255, .6) 80%, rgba(255, 255, 255, .7) 83%, rgba(255, 255, 255, .6) 86%, rgba(255, 255, 255, .7) 89%, rgba(255, 255, 255, .6));
+
+.brand-part .brand-info {
+    padding: 0 16px;
 }
 
 
@@ -54,41 +49,38 @@
     margin: 0 0 16px 0 !important;
 }
 
-.brand-bgBox {
-    background-color: #212529;
-    border-radius: 16px;
-    width: 100%;
-    max-height: 350px;
-}
-
-
-.brand-part .brand-info h3 {
+.brand-part h3 {
     font-size: 24px;
     font-weight: 600;
     color: #16085E;
+    padding: 10px;
 }
 
-.tech-logo {
+.brand-part .tech-logo p {
+    font-size: 10px;
+    margin-bottom: 0px;
+    color: black;
+}
+
+.brand-part .tech-logo {
     display: flex !important;
-    column-gap: 15px;
+    column-gap: 20px;
 }
 
-// .brand-info {
-//     display: none;
-// }
+.brand-part .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-// #animate1:hover .brand-info {
-//     display: block !important;
-// }
+.brand-part .tech-logo img {
+    margin-bottom: 0px !important;
+}
+
 
 .title-part {
     margin: 80px 0 32px 0;
-}
-
-
-.loader {
-    text-align: center;
-    margin: 20px 0;
 }
 
 .trusted-brands-section {
@@ -97,13 +89,27 @@
     align-items: center;
 }
 
+.brand-part img {
+    width: 100% !important;
+    height: auto !important;
+}
 
 // scoll magic
-#animate1 {
+#animate {
     transition: 0.5s ease-out;
     transform: scale(0.9) !important;
     opacity: 0.3;
+}
+#animate.scale-up {
+    transform: scale(1) !important;
+    transition: 0.5s ease-out;
+    opacity: 1;
+}
 
+#animate1 {
+    transition: 0.5s ease-out;
+    transform: scale(0.9) !important;
+    opacity: 0.5;
 }
 
 #animate1.scale-up {
@@ -280,100 +286,70 @@
     opacity: 1;
 }
 
-#animate16 {
-    transition: 0.5s ease-out;
-    transform: scale(0.9) !important;
-    opacity: 0.5;
-}
 
-#animate16.scale-up {
-    transform: scale(1) !important;
-    transition: 0.5s ease-out;
-    opacity: 1;
-}
-
-
-// h2 and p
-// #animate1.scale-up h3,
-// #animate1.scale-up .tech-logo{
-//     display: block !important;
-//     transition: 0.5s ease-out;
+// hover effect title
+// .imgBox:hover+.project-info {
+//     opacity: 1;
 // }
 
-// #animate2.scale-up h3,
-// #animate2.scale-up .tech-logo {
-//     display: block !important;
-//     transition: 0.5s ease-out;
+// .imgBox1:hover+.project-info {
+//     opacity: 1;
 // }
 
-// #animate3.scale-up h3,
-// #animate3.scale-up .tech-logo {
-//     display: block !important;
+// .imgBox2:hover+.project-info {
+//     opacity: 1;
 // }
 
-// #animate4.scale-up h3,
-// #animate4.scale-up .tech-logo {
-//     display: block !important;
+// .imgBox3:hover+.project-info {
+//     opacity: 1;
 // }
 
-// #animate5.scale-up h3,
-// #animate5.scale-up .tech-logo {
-//     display: block !important;
+// .imgBox4:hover+.project-info {
+//     opacity: 1;
 // }
 
-// #animate6.scale-up h3,
-// #animate6.scale-up .tech-logo {
-//     display: block !important;
+// .imgBox5:hover+.project-info {
+//     opacity: 1;
 // }
 
-// #animate7.scale-up h3,
-// #animate7.scale-up .tech-logo {
-//     display: block !important;
+// .imgBox6:hover+.project-info {
+//     opacity: 1;
 // }
 
-// #animate8.scale-up h3,
-// #animate8.scale-up .tech-logo {
-//     display: block !important;
+// .imgBox7:hover+.project-info {
+//     opacity: 1;
 // }
 
-// #animate9.scale-up h3,
-// #animate9.scale-up .tech-logo {
-//     display: block !important;
+// .imgBox8:hover+.project-info {
+//     opacity: 1;
 // }
 
-// #animate10.scale-up h3,
-// #animate10.scale-up .tech-logo {
-//     display: block !important;
+// .imgBox9:hover+.project-info {
+//     opacity: 1;
 // }
 
-// #animate11.scale-up h3,
-// #animate11.scale-up .tech-logo {
-//     display: block !important;
+// .imgBox10:hover+.project-info {
+//     opacity: 1;
 // }
 
-// #animate12.scale-up h3,
-// #animate12.scale-up .tech-logo {
-//     display: block !important;
+// .imgBox11:hover+.project-info {
+//     opacity: 1;
 // }
 
-// #animate13.scale-up h3,
-// #animate13.scale-up .tech-logo {
-//     display: block !important;
+// .imgBox12:hover+.project-info {
+//     opacity: 1;
 // }
 
-// #animate14.scale-up h3,
-// #animate14.scale-up .tech-logo {
-//     display: block !important;
+// .imgBox13:hover+.project-info {
+//     opacity: 1;
 // }
 
-// #animate15.scale-up h3,
-// #animate15.scale-up .tech-logo {
-//     display: block !important;
+// .imgBox14:hover+.project-info {
+//     opacity: 1;
 // }
 
-// #animate16.scale-up h3,
-// #animate16.scale-up .tech-logo {
-//     display: block !important;
+// .imgBox15:hover+.project-info {
+//     opacity: 1;
 // }
 
 
@@ -381,7 +357,15 @@
 
 
 
-// 
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:1024px) {
     .trusted-brands-section {
@@ -392,20 +376,36 @@
     }
 }
 
-@media screen and (max-width:520px) {
-    .brand-part .brand-info h3 {
-        font-size: 10px;
+@media screen and (max-width:991px) {
+    .brand-part h3 {
+        font-size: 20px;
     }
 
-    .brand-part p {
-        font-size: 7px;
+    .brand-part .project-info .project-title {
+        margin-top: -44px;
     }
 
     .brand-part {
-        column-gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: 14px;
         margin-bottom: 0px;
     }
+    .brand-part .brand-info {
+        padding: 0 16px;
+        margin-bottom: 50px;
+    }
 
+    // .brand-part.reverse{
+    //     flex-wrap: wrap-reverse;
+    // }
+}
+
+
+
+
+@media screen and (max-width:520px) {
     .trusted-brands-section img {
         max-width: 90% !important;
     }
@@ -415,5 +415,24 @@
         justify-content: center;
         align-items: center;
         gap: 10px;
+    }
+    .brand-part .brand-info {
+        padding: 0 16px;
+        margin-bottom: 35px;
+    }
+    .brand-part h3 {
+        font-size: 18px;
+    }
+    .brand-part .tech-logo p {
+        font-size: 8px;
+    }
+    .brand-part .tech-logo img{
+        width: 20px !important;
+        height: 20px !important;
+    }
+    .brand-part .tech-logo {
+       flex-wrap: wrap;
+        column-gap: 16px;
+        row-gap: 10px;
     }
 }

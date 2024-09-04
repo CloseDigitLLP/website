@@ -1,52 +1,263 @@
 {
+    "projectPairs": [
+      
+            {
+                "id": "animate",
+                "title": "VAID",
+                "href": "/Vaid",
+                "imgSrc": "images/work/2024/Vaid.png",
+                "category":["design","web","app"],
+                "tech": [
+                    { "src": "images/work/technology-icons/uiux.svg", "name": "UI-UX" },
+                    { "src": "images/work/technology-icons/reactnative.svg", "name": "React Native" },
+                    { "src": "images/work/technology-icons/firebase.svg", "name": "Firebase" },
+                    { "src": "images/work/technology-icons/firestore.svg", "name": "Firestore" },
+                    { "src": "images/work/technology-icons/mysql.svg", "name": "My SQL" }
+                ]
+            },
+            {
+                "id": "animate1",
+                "title": "Camelab",
+                "href": "/Camelab",
+                "imgSrc": "images/work/2024/Camelab.png",
+                "category":["design","web","app"],
+                "tech": [
+                    { "src": "images/work/technology-icons/uiux.svg", "name": "UI-UX" },
+                    { "src": "images/work/technology-icons/react.svg", "name": "React" },
+                    { "src": "images/work/technology-icons/reactnative.svg", "name": "React Native" },
+                    { "src": "images/work/technology-icons/firebase.svg", "name": "Firebase" },
+                    { "src": "images/work/technology-icons/mysql.svg", "name": "My SQL" },
+                    { "src": "images/work/technology-icons/paypal.svg", "name": "Paypal" }
+                ]
+            },
+            {
+                "id": "animate2",
+                "title": "Hontrel",
+                "href": "/",
+                "imgSrc": "images/work/2024/Hontrel.png",
+                "category":["web"],
+                "tech": [
+                    { "src": "images/work/technology-icons/wordpress.svg", "name": "Wordpress" },
+                    { "src": "images/work/technology-icons/elementor.svg", "name": "Elementor" },
+                    { "src": "images/work/technology-icons/godaddy.svg", "name": "Godaddy" }
+                ]
+            },
+            {
+                "id": "animate3",
+                "title": "Superior",
+                "href": "/",
+                "imgSrc": "images/work/2024/Superior.png",
+                "category":["web","design"],
+                "tech": [
+                    { "src": "images/work/technology-icons/uiux.svg", "name": "UI-UX" },
+                    { "src": "images/work/technology-icons/html.svg", "name": "HTML" },
+                    { "src": "images/work/technology-icons/scss.svg", "name": "SCSS" },
+                    { "src": "images/work/technology-icons/bootstrap.svg", "name": "Bootstrap" },
+                    { "src": "images/work/technology-icons/css.svg", "name": "CSS" }
+                ]
+            },
+            {
+                "id": "animate4",
+                "title": "Datasync",
+                "href": "/",
+                "imgSrc": "images/work/2024/Datasync.png",
+                "category":["web"],
+                "tech": [
+                    { "src": "images/work/technology-icons/react.svg", "name": "React" },
+                    { "src": "images/work/technology-icons/material.svg", "name": "Material" },
+                    { "src": "images/work/technology-icons/firebase.svg", "name": "Firebase" },
+                    { "src": "images/work/technology-icons/github.svg", "name": "Github" }
+                ]
+            },
+            {
+                "id": "animate5",
+                "title": "Schenk",
+                "href": "/",
+                "imgSrc": "images/work/2024/Schenk.png",
+                "tech": [
+                    { "src": "images/work/technology-icons/uiux.svg", "name": "UI-UX" },
+                    { "src": "images/work/technology-icons/firebase.svg", "name": "Firebase" },
+                    { "src": "images/work/technology-icons/html.svg", "name": "HTML" },
+                    { "src": "images/work/technology-icons/css.svg", "name": "CSS" },
+                    { "src": "images/work/technology-icons/bootstrap.svg", "name": "Bootstrap" }
+                ]
+            },
+            {
+                "id": "animate6",
+                "title": "Payday Depot",
+                "href": "/",
+                "imgSrc": "images/work/2024/PaydayDepot.png",
+                "tech": [
+                    { "src": "images/work/technology-icons/html.svg", "name": "HTML" },
+                    { "src": "images/work/technology-icons/css.svg", "name": "CSS" },
+                    { "src": "images/work/technology-icons/bootstrap.svg", "name": "Bootstrap" },
+                    { "src": "images/work/technology-icons/github.svg", "name": "Github" }
+                ]
+            },
+            {
+                "id": "animate7",
+                "title": "Delivery",
+                "href": "/",
+                "imgSrc": "images/work/2024/Delivery.png",
+                "tech": [
+                    { "src": "images/work/technology-icons/react.svg", "name": "React" },
+                    { "src": "images/work/technology-icons/ReactBootstrap.svg", "name": "React Bootstrap" },
+                    { "src": "images/work/technology-icons/firebase.svg", "name": "Firebase" }
+                ]
+            },
+            {
+                "id": "animate8",
+                "title": "Gupta Group",
+                "href": "/",
+                "imgSrc": "images/work/2024/GuptaGroup.png",
+                "tech": [
+                    { "src": "images/work/technology-icons/uiux.svg", "name": "UI-UX" },
+                    { "src": "images/work/technology-icons/html.svg", "name": "HTML" },
+                    { "src": "images/work/technology-icons/tailwind.svg", "name": "Tailwind" },
+                    { "src": "images/work/technology-icons/github.svg", "name": "Github" }
+                ]
+            },
+            {
+                "id": "animate9",
+                "title": "Practice Plus",
+                "href": "/",
+                "imgSrc": "images/work/2024/PracticePlus.png",
+                "tech": [
+                    { "src": "images/work/technology-icons/uiux.svg", "name": "UI-UX" },
+                    { "src": "images/work/technology-icons/bootstrap.svg", "name": "Bootstrap" },
+                    { "src": "images/work/technology-icons/firebase.svg", "name": "Firebase" },
+                    { "src": "images/work/technology-icons/wordpress.svg", "name": "Wordpress" },
+                    { "src": "images/work/technology-icons/owl.png", "name": "Owl-carousel" }
+                ]
+            },
+            {
+                "id": "animate10",
+                "title": "Commbitz",
+                "href": "/",
+                "imgSrc": "images/work/2024/Commbitz.png",
+                "tech": [
+                    { "src": "images/work/technology-icons/uiux.svg", "name": "UI-UX" },
+                    { "src": "images/work/technology-icons/nextjs.svg", "name": "NextJS" },
+                    { "src": "images/work/technology-icons/tailwind.svg", "name": "Tailwind" },
+                    { "src": "images/work/technology-icons/redux.svg", "name": "Redux" },
+                    { "src": "images/work/technology-icons/nodejs.svg", "name": "Node" },
+                    { "src": "images/work/technology-icons/firestore.svg", "name": "Firestore" },
+                    { "src": "images/work/technology-icons/firebase.svg", "name": "Firebase" }
+                ]
+            },
+            {
+                "id": "animate11",
+                "title": "Allure",
+                "href": "/",
+                "imgSrc": "images/work/2024/Allure.png",
+                "tech": [
+                    { "src": "images/work/technology-icons/uiux.svg", "name": "UI-UX" },
+                    { "src": "images/work/technology-icons/html.svg", "name": "HTML" },
+                    { "src": "images/work/technology-icons/css.svg", "name": "CSS" },
+                    { "src": "images/work/technology-icons/bootstrap.svg", "name": "Bootstrap" },
+                    { "src": "images/work/technology-icons/github.svg", "name": "Github" }
+                ]
+            },
+            {
+                "id": "animate12",
+                "title": "Snbla",
+                "href": "/",
+                "imgSrc": "images/work/2024/Snbla.png",
+                "tech": [
+                    { "src": "images/work/technology-icons/uiux.svg", "name": "UI-UX" },
+                    { "src": "images/work/technology-icons/html.svg", "name": "HTML" },
+                    { "src": "images/work/technology-icons/wordpress.svg", "name": "Wordpress" },
+                    { "src": "images/work/technology-icons/elementor.svg", "name": "Elementor" }
+                ]
+            },
+            {
+                "id": "animate13",
+                "title": "FellingBetterNow",
+                "href": "/FBN",
+                "imgSrc": "images/work/2024/FellingBetterNow.png",
+                "tech": [
+                    { "src": "images/work/technology-icons/nextjs.svg", "name": "NextJS" },
+                    { "src": "images/work/technology-icons/firebase.svg", "name": "Firebase" },
+                    { "src": "images/work/technology-icons/firestore.svg", "name": "Firestore" },
+                    { "src": "images/work/technology-icons/redux.svg", "name": "Redux" },
+                    { "src": "images/work/technology-icons/aws.svg", "name": "AWS" },
+                    { "src": "images/work/technology-icons/express.svg", "name": "ExpressJS" }
+                ]
+            },
+            {
+                "id": "animate14",
+                "title": "Directory",
+                "href": "/",
+                "imgSrc": "images/work/2024/Directory.png",
+                "tech": [
+                    { "src": "images/work/technology-icons/uiux.svg", "name": "UI-UX" },
+                    { "src": "images/work/technology-icons/react.svg", "name": "React" },
+                    { "src": "images/work/technology-icons/pwa.svg", "name": "PWA" },
+                    { "src": "images/work/technology-icons/firebase.svg", "name": "Firebase" },
+                    { "src": "images/work/technology-icons/redux.svg", "name": "Redux" },
+                    { "src": "images/work/technology-icons/mysql.svg", "name": "MySQL" }
+                ]
+            },
+            {
+                "id": "animate15",
+                "title": "Camplinq",
+                "href": "/",
+                "imgSrc": "images/work/2024/Camplinq.png",
+                "tech": [
+                    { "src": "images/work/technology-icons/html.svg", "name": "HTML" },
+                    { "src": "images/work/technology-icons/css.svg", "name": "CSS" },
+                    { "src": "images/work/technology-icons/bootstrap.svg", "name": "Bootstrap" },
+                    { "src": "images/work/technology-icons/js.svg", "name": "JavaScript" }
+                ]
+            }
+    ],
     "techdata": {
-      "camelab": [
-        {
-          "name": "React",
-          "icon": "images/work/2024/tech-icons/react.svg"
-        },
-        {
-          "name": "MySQL",
-          "icon": "images/work/2024/tech-icons/mysql.svg"
-        },
-        {
-          "name": "Redux",
-          "icon": "images/work/2024/tech-icons/redux.svg"
-        },
-        {
-          "name": "MUI Theme",
-          "icon": "images/work/2024/tech-icons/muitheme.svg"
-        },
-        {
-          "name": "Firebase",
-          "icon": "images/work/2024/tech-icons/firebase.svg"
-        },
-        {
-          "name": "React Native",
-          "icon": "images/work/2024/tech-icons/react.svg"
-        }
-      ],
-      "snbla": []
+        "camelab": [
+            {
+                "name": "React",
+                "icon": "images/work/2024/tech-icons/react.svg"
+            },
+            {
+                "name": "MySQL",
+                "icon": "images/work/2024/tech-icons/mysql.svg"
+            },
+            {
+                "name": "Redux",
+                "icon": "images/work/2024/tech-icons/redux.svg"
+            },
+            {
+                "name": "MUI Theme",
+                "icon": "images/work/2024/tech-icons/muitheme.svg"
+            },
+            {
+                "name": "Firebase",
+                "icon": "images/work/2024/tech-icons/firebase.svg"
+            },
+            {
+                "name": "React Native",
+                "icon": "images/work/2024/tech-icons/react.svg"
+            }
+        ],
+        "snbla": []
     },
-    "sliderdata":{
-      "camelab":[
-        {
-          "image": "images/work/2024/camelab/camelabSliderImg1.png",
-          "text": "Camelab admin dashboard provides comprehensive insights into creator submissions and brand selections of User-Generated Content (UGC). It tracks video uploads, categorization, brand engagements, and creator payments seamlessly."
-        },
-        {
-          "image": "images/work/2024/camelab/camelabSliderImg2.png",
-          "text": "The Camelab mobile app's detail page offers brands a comprehensive view of uploaded Content. It showcases video details, creator information, and engagement metrics, facilitating seamless selection and collaboration with creators for impactful brand campaigns."
-        },
-        {
-          "image": "images/work/2024/camelab/camelabSliderImg3.png",
-          "text": "Creating a new campaign on Camelab involves brands outlining their campaign goals and target audience demographics. They then specify criteria for desired Content and set a budget."
-        },
-        {
-          "image": "images/work/2024/camelab/camelabSliderImg4.png",
-          "text": "The Camelab mobile dashboard empowers creators with filters to manage submissions, track uploads and earnings, view brand selections, and handle rejections, ensuring streamlined and transparent engagement."
-        }
-      ]
+    "sliderdata": {
+        "camelab": [
+            {
+                "image": "images/work/2024/camelab/camelabSliderImg1.png",
+                "text": "Camelab admin dashboard provides comprehensive insights into creator submissions and brand selections of User-Generated Content (UGC). It tracks video uploads, categorization, brand engagements, and creator payments seamlessly."
+            },
+            {
+                "image": "images/work/2024/camelab/camelabSliderImg2.png",
+                "text": "The Camelab mobile app's detail page offers brands a comprehensive view of uploaded Content. It showcases video details, creator information, and engagement metrics, facilitating seamless selection and collaboration with creators for impactful brand campaigns."
+            },
+            {
+                "image": "images/work/2024/camelab/camelabSliderImg3.png",
+                "text": "Creating a new campaign on Camelab involves brands outlining their campaign goals and target audience demographics. They then specify criteria for desired Content and set a budget."
+            },
+            {
+                "image": "images/work/2024/camelab/camelabSliderImg4.png",
+                "text": "The Camelab mobile dashboard empowers creators with filters to manage submissions, track uploads and earnings, view brand selections, and handle rejections, ensuring streamlined and transparent engagement."
+            }
+        ]
     }
-  }
-  
+}

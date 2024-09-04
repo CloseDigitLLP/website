@@ -23,6 +23,7 @@ function getInitials(name) {
 
 export default function ClientStory() {
     return (
+       
         <section className={`${clientStoryStyle.clientStorySection} section-spacing`}>
             <div className="section-title-part">
                 <p className="back-title">Our Clients Review</p>
@@ -100,7 +101,6 @@ export default function ClientStory() {
                                             </div>
                                             <div className={`${clientStoryStyle.ClientName}`}>
                                                 <h6>{review.name}</h6>
-
                                                 <h6 className={`${clientStoryStyle.position}`}>{review.position}</h6>
                                             </div>
                                         </div>

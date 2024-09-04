@@ -1,6 +1,6 @@
 
 import Head from 'next/head'
-import Vaid from '../components/portfolioDetails/Vaid'
+import Camelab from '../components/portfolioDetails/camelab'
 
 export default function VaidPage() {
     return (
@@ -9,7 +9,7 @@ export default function VaidPage() {
                 <title>VaidPage | CloseDigit</title>
                 <meta name="description" content="Make your company wealthy by using CloseDigit's effective tool to assist users in finding solutions to create something truly wonderful." />
             </Head>
-          <Vaid/>
+          <Camelab/>
         </>
     )
 }

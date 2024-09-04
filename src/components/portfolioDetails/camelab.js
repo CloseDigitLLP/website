@@ -4,6 +4,9 @@ import Image from 'next/image';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import dynamic from 'next/dynamic';
+import TechnologySection from './portfolioDetailsCommon/technologySection';
+import data from '../../resources/portfolioDetails.json'
+import Slider from './portfolioDetailsCommon/slider';
 
 const $ = require("jquery");
 if (typeof window !== "undefined") {
@@ -62,8 +65,6 @@ export default function Camelab() {
     useEffect(() => {
         document.querySelector(`.${CamelabStyle['laptop-img']}`).classList.add(CamelabStyle['animate-laptop']);
         document.querySelector(`.${CamelabStyle['mobile-img']}`).classList.add(CamelabStyle['animate-mobile']);
-
-
     }, []);
 
     useEffect(() => {
@@ -162,48 +163,45 @@ export default function Camelab() {
         .addTo(controller.current);
     }, []);
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        const ScrollMagic = require('scrollmagic');
-        const controller = new ScrollMagic.Controller();
+    //     const ScrollMagic = require('scrollmagic');
+    //     const controller = new ScrollMagic.Controller();
 
-        const section = document.querySelector('#technology-section');
-        const elements = document.querySelectorAll('.technology');
+    //     const section = document.querySelector('#technology-section');
+    //     const elements = document.querySelectorAll('.technology');
 
-        if (!section || elements.length === 0) {
-            console.log('Section or elements not found');
-            console.log(section , 'section')
-            console.log(elements, 'elements')
-            return;
-        }
+    //     if (!section || elements.length === 0) {
+    //         console.log('Section or elements not found');
+    //         console.log(section , 'section')
+    //         console.log(elements, 'elements')
+    //         return;
+    //     }
 
-        elements.forEach((el, index) => {
-            new ScrollMagic.Scene({
-                triggerElement: section, 
-                triggerHook: 0.9,
-                duration: '50%', 
-                offset: index * 100, 
-            })
-            .on('enter', () => {
-                el.style.opacity = '1';
-                el.style.transform = 'translateY(0)';
-                el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-            })
-            // .on('leave', () => {
-            //     el.style.opacity = '0';
-            //     el.style.transform = 'translateY(50px)';
-            //     el.style.transition = 'opacity 0.6s ease-in, transform 0.6s ease-in';
-            // })
-            .addTo(controller);
-        });
+    //     elements.forEach((el, index) => {
+    //         new ScrollMagic.Scene({
+    //             triggerElement: section, 
+    //             triggerHook: 0.9,
+    //             duration: '50%', 
+    //             offset: index * 100, 
+    //         })
+    //         .on('enter', () => {
+    //             el.style.opacity = '1';
+    //             el.style.transform = 'translateY(0)';
+    //             el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+    //         })
+    //         // .on('leave', () => {
+    //         //     el.style.opacity = '0';
+    //         //     el.style.transform = 'translateY(50px)';
+    //         //     el.style.transition = 'opacity 0.6s ease-in, transform 0.6s ease-in';
+    //         // })
+    //         .addTo(controller);
+    //     });
 
-        return () => {
-            controller.destroy();
-        };
-    }, []);
-
-
-  
+    //     return () => {
+    //         controller.destroy();
+    //     };
+    // }, []);
 
     useEffect(() => {
         if (typingStarted && textLength < text.length) {
@@ -262,7 +260,7 @@ export default function Camelab() {
                             </h2>
                         </div>
                     </div>
-                    <div className={CamelabStyle['slider-part']}>
+                    {/* <div className={CamelabStyle['slider-part']}>
 
                         <OwlCarousel className={`${CamelabStyle['owlcarousel']} ${CamelabStyle['review-owlcarousel']}`} navText={["", ""]}  {...options}>
                             <div className={CamelabStyle['slider-card']}>
@@ -317,13 +315,14 @@ export default function Camelab() {
                                     </p>
                                 </div>
                             </div>
-                        </OwlCarousel>
+                        </OwlCarousel> */}
+                        <Slider slides={data.sliderdata.camelab}/>
 
-                    </div>
+                    {/* </div> */}
                 </div>
 
                 {/* tools and technology section  */}
-                <div className={CamelabStyle['technology-section']} id='technology-section'>
+                {/* <div className={CamelabStyle['technology-section']} id='technology-section'>
                     <div className='container'>
                         <div className={CamelabStyle['technology-heading-section']}>
                             <h2 className={CamelabStyle['main-heading']}>
@@ -381,8 +380,8 @@ export default function Camelab() {
                             </div>
                         </div>
                     </div>
-                </div>
-
+                </div> */}
+                <TechnologySection data={data.techdata.camelab}/>
 
                 {/* code craft section */}
                 <div className={CamelabStyle['codecraft-section']}>

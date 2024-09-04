@@ -215,27 +215,107 @@
         "camelab": [
             {
                 "name": "React",
-                "icon": "images/work/2024/tech-icons/react.svg"
+                "icon": "images/work/2024/tech-icons/React.svg"
             },
             {
                 "name": "MySQL",
-                "icon": "images/work/2024/tech-icons/mysql.svg"
+                "icon": "images/work/2024/tech-icons/MySQL.svg"
             },
             {
                 "name": "Redux",
-                "icon": "images/work/2024/tech-icons/redux.svg"
+                "icon": "images/work/2024/tech-icons/Redux.svg"
             },
             {
                 "name": "MUI Theme",
-                "icon": "images/work/2024/tech-icons/muitheme.svg"
+                "icon": "images/work/2024/tech-icons/MUITheme.svg"
             },
             {
                 "name": "Firebase",
-                "icon": "images/work/2024/tech-icons/firebase.svg"
+                "icon": "images/work/2024/tech-icons/Firebase.svg"
             },
             {
                 "name": "React Native",
-                "icon": "images/work/2024/tech-icons/react.svg"
+                "icon": "images/work/2024/tech-icons/ReactNative.svg"
+            }
+        ],
+        "FBN":[
+            {
+                "name": "Next JS",
+                "icon": "images/work/2024/tech-icons/NextJS.svg"
+            },
+            {
+                "name": "Firebase",
+                "icon": "images/work/2024/tech-icons/Firebase.svg"
+            },
+            {
+                "name": "Redux",
+                "icon": "images/work/2024/tech-icons/Redux.svg"
+            },
+            {
+                "name": "AWS",
+                "icon": "images/work/2024/tech-icons/AWS.svg"
+            },
+            {
+                "name": "Express JS",
+                "icon": "images/work/2024/tech-icons/ExpressJS.svg"
+            },
+            {
+                "name": "Material UI",
+                "icon": "images/work/2024/tech-icons/MaterialUI.svg"
+            },
+
+            {
+                "name": "React Native",
+                "icon": "images/work/2024/tech-icons/ReactNative.svg"
+            },
+            {
+                "name": "React",
+                "icon": "images/work/2024/tech-icons/React.svg"
+            },
+            {
+                "name": "MongoDB",
+                "icon": "images/work/2024/tech-icons/MongoDB.svg"
+            },
+            {
+                "name": "Azure",
+                "icon": "images/work/2024/tech-icons/Azure.svg"
+            },
+            {
+                "name": "Pdfmake",
+                "icon": "images/work/2024/tech-icons/Pdfmake.svg"
+            },
+            {
+                "name": "Node",
+                "icon": "images/work/2024/tech-icons/Node.svg"
+            },
+            {
+                "name": "Styled Components",
+                "icon": "images/work/2024/tech-icons/StyledComponents.svg"
+            },
+
+            {
+                "name": "Redis",
+                "icon": "images/work/2024/tech-icons/Redis.svg"
+            },
+            {
+                "name": "Chart JS",
+                "icon": "images/work/2024/tech-icons/ChartJS.svg"
+            },
+            {
+                "name": "MySQL",
+                "icon": "images/work/2024/tech-icons/MySQL.svg"
+            },
+            {
+                "name": "Kubernetes",
+                "icon": "images/work/2024/tech-icons/Kubernetes.svg"
+            },
+            {
+                "name": "Sequelize",
+                "icon": "images/work/2024/tech-icons/Sequelize.svg"
+            },
+            {
+                "name": "Git",
+                "icon": "images/work/2024/tech-icons/Git.svg"
             }
         ],
         "snbla": []

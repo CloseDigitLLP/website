@@ -1,6 +1,8 @@
 import React from 'react'
 import fbnStyles from '../../styles/portfolioDetails/fbn.module.scss';
 import Image from 'next/image';
+import TechnologySection from './portfolioDetailsCommon/technologySection';
+import data from '../../resources/portfolioDetails.json'
 
 
 
@@ -26,8 +28,9 @@ export default function FBN() {
 
 
             {/* tools and technology section  */}
+            <TechnologySection data={data.techdata.FBN}/>
 
-            <div className={fbnStyles['technology-section']}>
+            {/* <div className={fbnStyles['technology-section']}>
                 <div className='container'>
                     <div className={fbnStyles['technology-heading-section']}>
                         <h2 className={fbnStyles['main-heading']}>
@@ -37,7 +40,7 @@ export default function FBN() {
                     <div className={fbnStyles['technology-row']}>
                         <div className={fbnStyles['technology']}>
                             <Image
-                                src={require('../../assets/images/work/technology-icons/tech/NextJS.png')}
+                                src={require('../../assets/images/work/technology-icons/tech/NextJS.svg')}
                             />
                             <p className={fbnStyles['technology-text']}>
                                 Next JS
@@ -45,7 +48,7 @@ export default function FBN() {
                         </div>
                         <div className={fbnStyles['technology']}>
                             <Image
-                                src={require('../../assets/images/work/technology-icons/tech/Firebase.png')}
+                                src={require('../../assets/images/work/technology-icons/tech/Firebase.svg')}
                             />
                             <p className={fbnStyles['technology-text']}>
                                 Firebase
@@ -53,7 +56,7 @@ export default function FBN() {
                         </div>
                         <div className={fbnStyles['technology']}>
                             <Image
-                                src={require('../../assets/images/work/technology-icons/tech/Redux.png')}
+                                src={require('../../assets/images/work/technology-icons/tech/Redux.svg')}
                             />
                             <p className={fbnStyles['technology-text']}>
                                 Redux
@@ -61,7 +64,7 @@ export default function FBN() {
                         </div>
                         <div className={fbnStyles['technology']}>
                             <Image
-                                src={require('../../assets/images/work/technology-icons/tech/AWS.png')}
+                                src={require('../../assets/images/work/technology-icons/tech/AWS.svg')}
                             />
                             <p className={fbnStyles['technology-text']}>
                                 AWS
@@ -70,7 +73,7 @@ export default function FBN() {
 
                         <div className={fbnStyles['technology']}>
                             <Image
-                                src={require('../../assets/images/work/technology-icons/tech/ExpressJS.png')}
+                                src={require('../../assets/images/work/technology-icons/tech/ExpressJS.svg')}
                             />
                             <p className={fbnStyles['technology-text']}>
                                 Express JS
@@ -78,7 +81,7 @@ export default function FBN() {
                         </div>
                         <div className={fbnStyles['technology']}>
                             <Image
-                                src={require('../../assets/images/work/technology-icons/tech/MaterialUI.png')}
+                                src={require('../../assets/images/work/technology-icons/tech/MaterialUI.svg')}
                             />
                             <p className={fbnStyles['technology-text']}>
                                 Material UI
@@ -86,7 +89,7 @@ export default function FBN() {
                         </div>
                         <div className={fbnStyles['technology']}>
                             <Image
-                                src={require('../../assets/images/work/technology-icons/tech/ReactNative.png')}
+                                src={require('../../assets/images/work/technology-icons/tech/ReactNative.svg')}
                             />
                             <p className={fbnStyles['technology-text']}>
                                 React Native
@@ -94,7 +97,7 @@ export default function FBN() {
                         </div>
                         <div className={fbnStyles['technology']}>
                             <Image
-                                src={require('../../assets/images/work/technology-icons/tech/React.png')}
+                                src={require('../../assets/images/work/technology-icons/tech/React.svg')}
                             />
                             <p className={fbnStyles['technology-text']}>
                                 React
@@ -103,7 +106,7 @@ export default function FBN() {
 
                         <div className={fbnStyles['technology']}>
                             <Image
-                                src={require('../../assets/images/work/technology-icons/tech/MongoDB.png')}
+                                src={require('../../assets/images/work/technology-icons/tech/MongoDB.svg')}
                             />
                             <p className={fbnStyles['technology-text']}>
                                 MongoDB
@@ -111,7 +114,7 @@ export default function FBN() {
                         </div>
                         <div className={fbnStyles['technology']}>
                             <Image
-                                src={require('../../assets/images/work/technology-icons/tech/Azure.png')}
+                                src={require('../../assets/images/work/technology-icons/tech/Azure.svg')}
                             />
                             <p className={fbnStyles['technology-text']}>
                                 Azure
@@ -119,7 +122,7 @@ export default function FBN() {
                         </div>
                         <div className={fbnStyles['technology']}>
                             <Image
-                                src={require('../../assets/images/work/technology-icons/tech/Pdfmake.png')}
+                                src={require('../../assets/images/work/technology-icons/tech/Pdfmake.svg')}
                             />
                             <p className={fbnStyles['technology-text']}>
                                 Pdfmake
@@ -127,7 +130,7 @@ export default function FBN() {
                         </div>
                         <div className={fbnStyles['technology']}>
                             <Image
-                                src={require('../../assets/images/work/technology-icons/tech/Node.png')}
+                                src={require('../../assets/images/work/technology-icons/tech/Node.svg')}
                             />
                             <p className={fbnStyles['technology-text']}>
                                 Node
@@ -136,7 +139,7 @@ export default function FBN() {
 
                         <div className={fbnStyles['technology']}>
                             <Image
-                                src={require('../../assets/images/work/technology-icons/tech/StyledComponents.png')}
+                                src={require('../../assets/images/work/technology-icons/tech/StyledComponents.svg')}
                             />
                             <p className={fbnStyles['technology-text']}>
                                 Styled Components
@@ -144,7 +147,7 @@ export default function FBN() {
                         </div>
                         <div className={fbnStyles['technology']}>
                             <Image
-                                src={require('../../assets/images/work/technology-icons/tech/Redis.png')}
+                                src={require('../../assets/images/work/technology-icons/tech/Redis.svg')}
                             />
                             <p className={fbnStyles['technology-text']}>
                                 Redis
@@ -152,7 +155,7 @@ export default function FBN() {
                         </div>
                         <div className={fbnStyles['technology']}>
                             <Image
-                                src={require('../../assets/images/work/technology-icons/tech/ChartJS.png')}
+                                src={require('../../assets/images/work/technology-icons/tech/ChartJS.svg')}
                             />
                             <p className={fbnStyles['technology-text']}>
                                 Chart JS
@@ -160,7 +163,7 @@ export default function FBN() {
                         </div>
                         <div className={fbnStyles['technology']}>
                             <Image
-                                src={require('../../assets/images/work/technology-icons/tech/MySQL.png')}
+                                src={require('../../assets/images/work/technology-icons/tech/MySQL.svg')}
                             />
                             <p className={fbnStyles['technology-text']}>
                                 MySQL
@@ -169,7 +172,7 @@ export default function FBN() {
 
                         <div className={fbnStyles['technology']}>
                             <Image
-                                src={require('../../assets/images/work/technology-icons/tech/Kubernetes.png')}
+                                src={require('../../assets/images/work/technology-icons/tech/Kubernetes.svg')}
                             />
                             <p className={fbnStyles['technology-text']}>
                                 Kubernetes
@@ -177,7 +180,7 @@ export default function FBN() {
                         </div>
                         <div className={fbnStyles['technology']}>
                             <Image
-                                src={require('../../assets/images/work/technology-icons/tech/Sequelize.png')}
+                                src={require('../../assets/images/work/technology-icons/tech/Sequelize.svg')}
                             />
                             <p className={fbnStyles['technology-text']}>
                                 Sequelize
@@ -185,7 +188,7 @@ export default function FBN() {
                         </div>
                         <div className={fbnStyles['technology']}>
                             <Image
-                                src={require('../../assets/images/work/technology-icons/tech/Git.png')}
+                                src={require('../../assets/images/work/technology-icons/tech/Git.svg')}
                             />
                             <p className={fbnStyles['technology-text']}>
                                 Git
@@ -194,7 +197,7 @@ export default function FBN() {
 
                     </div>
                 </div>
-            </div>
+            </div> */}
 
 
             {/* Additional Content */}

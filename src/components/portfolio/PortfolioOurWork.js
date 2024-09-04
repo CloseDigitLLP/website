@@ -6,7 +6,7 @@ import { useEffect, useRef } from 'react';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import data from "../../resources/portfolioDetails.json"
-import TabBarContent from './TabBarContent';
+import TabBarContent from './TabBarProjects';
 
 const groupIntoPairs = (projects) => {
     let pairs = [];

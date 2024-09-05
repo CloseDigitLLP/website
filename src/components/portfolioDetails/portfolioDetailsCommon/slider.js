@@ -5,8 +5,8 @@ import Image from 'next/image';
 import styles from '../../../styles/portfolioDetails/portfolioDetailsCommon.module.scss';
 
 const options = {
-  autoplay: false,
-  autoplayTimeout: 2000,
+  autoplay: true,
+  autoplayTimeout: 3000,
   autoplayHoverPause: false,
   margin: 20,
   loop: true,

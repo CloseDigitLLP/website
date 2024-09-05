@@ -338,6 +338,24 @@
                 "image": "images/work/2024/camelab/camelabSliderImg4.png",
                 "text": "The Camelab mobile dashboard empowers creators with filters to manage submissions, track uploads and earnings, view brand selections, and handle rejections, ensuring streamlined and transparent engagement."
             }
+        ],
+        "FBN": [
+            {
+                "image": "images/work/2024/fbn/fbnSliderImg1.png",
+                "text": "FeelingBetterNow® offers a gold-standard, easy-to-use online mental health risk assessment with instant results. Ensure your privacy while accessing personalized self-care plans and mental health resources. Revisit anytime to monitor your progress."
+            },
+            {
+                "image": "images/work/2024/fbn/fbnSliderImg2.png",
+                "text": "With FeelingBetterNow®, you can view your mental health assessment results instantly. This immediate feedback allows you to quickly understand your mental well-being and take prompt action with personalized self-care plans and resources."
+            },
+            {
+                "image": "images/work/2024/fbn/fbnSliderImg3.png",
+                "text": "Start by completing the online mental health risk assessment with easy-to-answer questions. Once submitted, view your results instantly for a clear overview of your mental well-being. Use the insights to access personalized self-care plans and resources, and revisit the assessment as needed to track your progress."
+            },
+            {
+                "image": "images/work/2024/fbn/fbnSliderImg4.png",
+                "text": "After viewing your results, you'll receive a personalized self-care plan with actionable steps, resources, and medication guidance tailored to your needs. This plan helps you improve your mental well-being, including recommendations for medications if necessary. Track your progress and adjust your plan as needed."
+            }
         ]
     }
 }

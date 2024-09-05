@@ -1,5 +1,6 @@
 .mainSection {
     margin-top: 100px;
+    background-color: #DFFFF3;
 }
 
 .bannerSection .sectionContent {
@@ -29,7 +30,8 @@
     font-weight: 400;
     text-align: left;
     color: #212529;
-    margin-top: 60px;
+    margin-top: -150px;
+    z-index: 100;
 }
 
 
@@ -55,7 +57,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap:40px ;
+    gap: 40px;
 }
 
 .technology-section .technology-row .technology {
@@ -93,7 +95,7 @@
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         padding: 32px;
         border-radius: 16px;
-
+        background: linear-gradient(to bottom, #ffffffcc 0%, #ffffff00 100%);
     }
 
     .leftTextPart {
@@ -123,5 +125,72 @@
 
     h6 span {
         color: #6E6E73EE;
+    }
+}
+
+.mainheading {
+    font-family: "Poppins";
+    font-size: 48px;
+    font-weight: 600;
+    text-align: left;
+    color: #16085E;
+    margin-bottom: 64px;
+}
+
+.mainheading span {
+    color: #4BD659;
+}
+
+
+
+// 
+
+
+.blobContainer {
+    padding: 40px;
+    overflow: hidden;
+    width: 100%;
+    filter: blur(1px);
+}
+
+.techSection {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+// 
+
+.innovativeSection {
+    padding: 80px 0;
+    margin-bottom: -80px;
+
+    background-image: url(../../assets/images/work/2024/fbn/fbn-bg.png);
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table;
+
+    .innovativeCard {
+        background-color: #DFFFF3;
+        border-radius: 16px;
+        padding: 100px 24px 0 24px;
+        margin-bottom: 32px;
+    }
+
+    .innovativeCard p {
+        font-family: "Poppins";
+        font-size: 20px;
+        font-weight: 400;
+        color: #6E6E73EE;
+        margin-top: 25px;
+        width: 94%;
+    }
+
+    .innovativeCard p span {
+        color: #212529;
+        font-weight: 500;
     }
 }

@@ -6,7 +6,7 @@ export default function VaidPage() {
     return (
         <>
             <Head>
-                <title>VaidPage | CloseDigit</title>
+                <title>CamelabPage | CloseDigit</title>
                 <meta name="description" content="Make your company wealthy by using CloseDigit's effective tool to assist users in finding solutions to create something truly wonderful." />
             </Head>
           <Camelab/>

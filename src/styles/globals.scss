@@ -629,7 +629,7 @@ section {
 }
 
 .animated {
-  visibility: visible;
+  visibility: visible !important;
   animation-fill-mode: both;
   animation-duration: 1.6s;
   animation-play-state: running;

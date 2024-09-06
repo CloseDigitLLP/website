@@ -1,0 +1,146 @@
+@import '../variable.module.scss';
+
+// banner section 
+
+.schenk-section .banner-section {
+    margin-top: 174px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.banner-section .banner-heading-section {
+    // margin-left: 86px;
+    width: 85%;
+}
+
+.main-heading {
+    font-family: 'Poppins';
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: $textColor;
+}
+
+.main-heading span {
+    color: #DC9941;
+}
+
+.banner-section .banner-text-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.banner-section .banner-text-part .banner-text {
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 500;
+    text-align: left;
+    color: #212529;
+    width: 82%;
+}
+
+.banner-section .banner-img-part {
+    margin-top: 64px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.banner-section .banner-img-part .laptop-img {
+    // left: 10% !important;
+    width: 100% !important;
+    height: auto !important;
+    z-index: 1;
+    transition: transform 1s ease-out;
+}
+
+.banner-section .banner-img-part .mobile-img-section {
+    z-index: 10;
+}
+
+.banner-section .banner-img-part .mobile-img-section span {
+    right: 60% !important;
+    top: 16% !important
+}
+
+.banner-section .banner-img-part .mobile-img {
+    width: 100% !important;
+    height: auto !important;
+    transition: transform 1s ease-out;
+}
+
+// banner animation
+
+.initial-laptop {
+    transform: translateX(-100%);
+    /* Start off-screen to the left */
+}
+
+.animate-laptop {
+    transform: translateX(0);
+    /* End position */
+}
+
+.initial-mobile {
+    transform: translateX(100%);
+    /* Start off-screen to the right */
+}
+
+.animate-mobile {
+    transform: translateX(0);
+    /* End position */
+}
+
+// show case section 
+.schenk-section .showcase-section {
+    margin-top: 144px;
+}
+
+.showcase-section .showcase-heading-section {
+    width: 80%;
+}
+
+// feature section
+
+.feature-section h2 span{
+    font-weight: 100;
+    font-size: 50px;
+    color: #2E3A59;
+    display: inline-block; 
+    -webkit-animation: blink 1s step-end infinite;
+    -moz-animation: blink 1s step-end infinite;
+    -ms-animation: blink 1s step-end infinite;
+    -o-animation: blink 1s step-end infinite;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        color: transparent;
+    }
+    50% {
+        color: #2E3A59;
+    }
+}
+
+.feature-section .feature-text-part p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+}
+
+.schenk-section .feature-section {
+    background-color: #F5F5F7;
+    padding: 80px 0px;
+}
+
+.feature-section .feature-content-section{
+    margin-top: 64px;
+}

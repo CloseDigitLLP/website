@@ -318,6 +318,28 @@
                 "icon": "images/work/2024/tech-icons/Git.svg"
             }
         ],
+        "schenk": [
+            {
+                "name": "ScrollJS",
+                "icon": "images/work/2024/tech-icons/ScrollJS.svg"
+            },
+            {
+                "name": "UI/UX",
+                "icon": "images/work/2024/tech-icons/UIUX.svg"
+            },
+            {
+                "name": "Bootstrap",
+                "icon": "images/work/2024/tech-icons/Bootstrap.svg"
+            },
+            {
+                "name": "Firebase",
+                "icon": "images/work/2024/tech-icons/Firebase.svg"
+            },
+            {
+                "name": "CanvasJS",
+                "icon": "images/work/2024/tech-icons/CanvasJS.svg"
+            }
+        ],
         "snbla": []
     },
     "sliderdata": {
@@ -338,6 +360,25 @@
                 "image": "images/work/2024/camelab/camelabSliderImg4.png",
                 "text": "The Camelab mobile dashboard empowers creators with filters to manage submissions, track uploads and earnings, view brand selections, and handle rejections, ensuring streamlined and transparent engagement."
             }
+        ],
+        "schenk": [
+            {
+                "image": "images/work/2024/schenk/schenkSliderImg1.png",
+                "text": "Our website design for Schenk Construction Group features a clean, modern layout that highlights our services and projects. With intuitive navigation and clear calls to action, it offers a seamless user experience and showcases our commitment to quality."
+            },
+            {
+                "image": "images/work/2024/schenk/schenkSliderImg2.png",
+                "text": "This About Us page design showcases our team's expertise and commitment through a clean layout and engaging visuals, highlighting our mission and services in a clear, professional manner."
+            },
+            {
+                "image": "images/work/2024/schenk/schenkSliderImg3.png",
+                "text": "This Our Latest Project page features a visually engaging layout that highlights our most recent work. With high-quality images and concise project details, it effectively showcases our capabilities and the success of our latest endeavors."
+            },
+            {
+                "image": "images/work/2024/schenk/schenkSliderImg4.png",
+                "text": "This Our Team page design offers a professional and inviting look, featuring team members’ profiles with high-quality photos and brief bios. It highlights each member's expertise and role, giving visitors insight into the skilled professionals behind Schenk Construction Group."
+            }
         ]
+
     }
 }

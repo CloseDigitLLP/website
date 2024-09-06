@@ -1,3 +1,4 @@
+@import '../variable.module.scss';
 // technology section 
 
 .technology-section {
@@ -109,6 +110,15 @@
     top: 30%;
 }
 
+// main heading 
+.main-heading {
+    font-family: 'Poppins';
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: $textColor;
+}
 
 // mediaQueries 
 @media only screen and (max-width: 1025px) {

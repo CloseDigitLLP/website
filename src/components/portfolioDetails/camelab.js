@@ -1,58 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import CamelabStyle from '../../styles/portfolioDetails/camelab.module.scss';
 import Image from 'next/image';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
 import dynamic from 'next/dynamic';
 import TechnologySection from './portfolioDetailsCommon/technologySection';
 import data from '../../resources/portfolioDetails.json'
 import Slider from './portfolioDetailsCommon/slider';
 
-const $ = require("jquery");
-if (typeof window !== "undefined") {
-    window.$ = window.jQuery = require("jquery");
-}
-
-const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
-    ssr: false,
-});
-
 const ScrollMagic = dynamic(() => import('scrollmagic'), { ssr: false });
 const ScrollMagicController = dynamic(() => import('scrollmagic').then(mod => mod.Controller), { ssr: false });
-
-const options = {
-    autoplay: false,
-    autoplayTimeout: 2000,
-    autoplayHoverPause: false,
-    margin: 20,
-    loop: true,
-    rtl: true,
-    responsiveClass: true,
-    nav: true,
-    navClass: [`${CamelabStyle['circle-btn']} ${CamelabStyle['left-btn']}`, `${CamelabStyle['circle-btn']} ${CamelabStyle['right-btn']}`],
-    dots: false,
-    stagePadding: 0,
-    responsive: {
-        0: {
-            items: 1.2,
-        },
-        400: {
-            items: 1.5,
-        },
-        600: {
-            items: 1.5,
-        },
-        700: {
-            items: 2.2,
-        },
-        1000: {
-            items: 2.2,
-        },
-        1600: {
-            items: 2.5
-        }
-    },
-};
 
 export default function Camelab() {
 
@@ -159,49 +114,9 @@ export default function Camelab() {
             triggerHook: 0.8,
             reverse: false
         })
-        .on('enter', () => setTypingStarted(true))
-        .addTo(controller.current);
+            .on('enter', () => setTypingStarted(true))
+            .addTo(controller.current);
     }, []);
-
-    // useEffect(() => {
-
-    //     const ScrollMagic = require('scrollmagic');
-    //     const controller = new ScrollMagic.Controller();
-
-    //     const section = document.querySelector('#technology-section');
-    //     const elements = document.querySelectorAll('.technology');
-
-    //     if (!section || elements.length === 0) {
-    //         console.log('Section or elements not found');
-    //         console.log(section , 'section')
-    //         console.log(elements, 'elements')
-    //         return;
-    //     }
-
-    //     elements.forEach((el, index) => {
-    //         new ScrollMagic.Scene({
-    //             triggerElement: section, 
-    //             triggerHook: 0.9,
-    //             duration: '50%', 
-    //             offset: index * 100, 
-    //         })
-    //         .on('enter', () => {
-    //             el.style.opacity = '1';
-    //             el.style.transform = 'translateY(0)';
-    //             el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-    //         })
-    //         // .on('leave', () => {
-    //         //     el.style.opacity = '0';
-    //         //     el.style.transform = 'translateY(50px)';
-    //         //     el.style.transition = 'opacity 0.6s ease-in, transform 0.6s ease-in';
-    //         // })
-    //         .addTo(controller);
-    //     });
-
-    //     return () => {
-    //         controller.destroy();
-    //     };
-    // }, []);
 
     useEffect(() => {
         if (typingStarted && textLength < text.length) {
@@ -260,128 +175,14 @@ export default function Camelab() {
                             </h2>
                         </div>
                     </div>
-                    {/* <div className={CamelabStyle['slider-part']}>
 
-                        <OwlCarousel className={`${CamelabStyle['owlcarousel']} ${CamelabStyle['review-owlcarousel']}`} navText={["", ""]}  {...options}>
-                            <div className={CamelabStyle['slider-card']}>
-                                <div className={CamelabStyle['slider-img-part']}>
-                                    <Image
-                                        src={require('../../assets/images/work/2024/camelab/camelabSliderImg1.png')}
-                                        alt="camelab slider image"
-                                    />
-                                </div>
-                                <div className={CamelabStyle['slider-text-part']}>
-                                    <p className={CamelabStyle['slider-text']}>
-                                        Camelab admin dashboard provides comprehensive insights into creator submissions and brand selections of User-Generated Content (UGC). It tracks video uploads, categorization, brand engagements, and creator payments seamlessly.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className={CamelabStyle['slider-card']}>
-                                <div className={CamelabStyle['slider-img-part']}>
-                                    <Image
-                                        src={require('../../assets/images/work/2024/camelab/camelabSliderImg2.png')}
-                                        alt="camelab slider image"
-                                    />
-                                </div>
-                                <div className={CamelabStyle['slider-text-part']}>
-                                    <p className={CamelabStyle['slider-text']}>
-                                        The Camelab mobile app's detail page offers brands a comprehensive view of uploaded Content. It showcases video details, creator information, and engagement metrics, facilitating seamless selection and collaboration with creators for impactful brand campaigns.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className={CamelabStyle['slider-card']}>
-                                <div className={CamelabStyle['slider-img-part']}>
-                                    <Image
-                                        src={require('../../assets/images/work/2024/camelab/camelabSliderImg3.png')}
-                                        alt="camelab slider image"
-                                    />
-                                </div>
-                                <div className={CamelabStyle['slider-text-part']}>
-                                    <p className={CamelabStyle['slider-text']}>
-                                        Creating a new campaign on Camelab involves brands outlining their campaign goals and target audience demographics. They then specify criteria for desired Content and set a budget.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className={CamelabStyle['slider-card']}>
-                                <div className={CamelabStyle['slider-img-part']}>
-                                    <Image
-                                        src={require('../../assets/images/work/2024/camelab/camelabSliderImg4.png')}
-                                        alt="camelab slider image"
-                                    />
-                                </div>
-                                <div className={CamelabStyle['slider-text-part']}>
-                                    <p className={CamelabStyle['slider-text']}>
-                                        The Camelab mobile dashboard empowers creators with filters to manage submissions, track uploads and earnings, view brand selections, and handle rejections, ensuring streamlined and transparent engagement.
-                                    </p>
-                                </div>
-                            </div>
-                        </OwlCarousel> */}
-                        <Slider slides={data.sliderdata.camelab}/>
+                    <Slider slides={data.sliderdata.camelab} />
 
-                    {/* </div> */}
                 </div>
 
                 {/* tools and technology section  */}
-                {/* <div className={CamelabStyle['technology-section']} id='technology-section'>
-                    <div className='container'>
-                        <div className={CamelabStyle['technology-heading-section']}>
-                            <h2 className={CamelabStyle['main-heading']}>
-                                Tools & Technology
-                            </h2>
-                        </div>
-                        <div className={CamelabStyle['technology-row']}>
-                            <div className={`technology ${CamelabStyle['technology']}`}>
-                                <Image
-                                    src={require('../../assets/images/work/2024/tech icons/react.svg')}
-                                />
-                                <p className={CamelabStyle['technology-text']}>
-                                    React
-                                </p>
-                            </div>
-                            <div className={`technology ${CamelabStyle['technology']}`}>
-                                <Image
-                                    src={require('../../assets/images/work/2024/tech icons/mysql.svg')}
-                                />
-                                <p className={CamelabStyle['technology-text']}>
-                                    MySQL
-                                </p>
-                            </div>
-                            <div className={`technology ${CamelabStyle['technology']}`}>
-                                <Image
-                                    src={require('../../assets/images/work/2024/tech icons/redux.svg')}
-                                />
-                                <p className={CamelabStyle['technology-text']}>
-                                    Redux
-                                </p>
-                            </div>
-                            <div className={`technology ${CamelabStyle['technology']}`}>
-                                <Image
-                                    src={require('../../assets/images/work/2024/tech icons/muitheme.svg')}
-                                />
-                                <p className={CamelabStyle['technology-text']}>
-                                    MUI Theme
-                                </p>
-                            </div>
-                            <div className={`technology ${CamelabStyle['technology']}`}>
-                                <Image
-                                    src={require('../../assets/images/work/2024/tech icons/firebase.svg')}
-                                />
-                                <p className={CamelabStyle['technology-text']}>
-                                    Firebase
-                                </p>
-                            </div>
-                            <div className={`technology ${CamelabStyle['technology']}`}>
-                                <Image
-                                    src={require('../../assets/images/work/2024/tech icons/react.svg')}
-                                />
-                                <p className={CamelabStyle['technology-text']}>
-                                    React Native
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
-                <TechnologySection data={data.techdata.camelab}/>
+            
+                <TechnologySection data={data.techdata.camelab} />
 
                 {/* code craft section */}
                 <div className={CamelabStyle['codecraft-section']}>
@@ -502,9 +303,6 @@ export default function Camelab() {
                 <div className={CamelabStyle['feature-section']}>
                     <div className='container'>
                         <div className={CamelabStyle['feature-heading-section']}>
-                            {/* <h2 className={CamelabStyle['main-heading']}>
-                                Innovative Features in <span>Camelab</span>
-                            </h2> */}
                             <h2 className={CamelabStyle['main-heading']} id='feature-heading'>
                                 {displayedText}<span className={CamelabStyle.blinkingCursor}>|</span>
                             </h2>

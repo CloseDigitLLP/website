@@ -1,12 +1,18 @@
 
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import Image from 'next/image';
 import CommonStyle from '../../../styles/portfolioDetails/portfolioDetailsCommon.module.scss';
 import $ from 'jquery';
 
 
 const TechnologySection = ({ data }) => {
+  const [isLoading, setIsLoading] = useState(true);
 
+  useEffect(() => {
+    if (data && data.length > 0) {
+      setIsLoading(false);
+    }
+  }, [data]);
   
   useEffect(() => {
     const doAnimations = () => {

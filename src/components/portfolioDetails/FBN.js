@@ -1,20 +1,44 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import fbnStyles from '../../styles/portfolioDetails/fbn.module.scss';
 import Image from 'next/image';
 import TechnologySection from './portfolioDetailsCommon/technologySection';
 import data from '../../resources/portfolioDetails.json'
 import Slider from './portfolioDetailsCommon/slider';
-
+import $ from 'jquery';
 
 
 export default function FBN() {
+
+    useEffect(() => {
+        const doAnimations = () => {
+            const offset = $(window).scrollTop() + $(window).height();
+            const $animatables = $('.animatable');
+
+            if ($animatables.length === 0) {
+                $(window).off('scroll', doAnimations);
+            }
+
+            $animatables.each(function () {
+                const $animatable = $(this);
+                if (($animatable.offset().top + $animatable.height() - 150) < offset) {
+                    $animatable.removeClass('animatable').addClass('animated');
+                }
+            });
+        };
+
+        $(window).on('scroll', doAnimations);
+        $(window).trigger('scroll');
+        return () => {
+            $(window).off('scroll', doAnimations);
+        };
+    }, []);
     return (
         <div className={fbnStyles.mainSection}>
             <div className={fbnStyles.bannerSection}>
                 <div className="container">
-                    <div className={fbnStyles.sectionContent}>
-                        <h3>Achieve Mental Clarity
-                            <span> with FeelingBetterNow®</span>
+                    <div className={`${fbnStyles.sectionContent}`}>
+                        <h3>Achieve Mental Clarity with
+                            <span>FeelingBetterNow®</span>
                         </h3>
                         <div>
                             <Image
@@ -22,39 +46,122 @@ export default function FBN() {
                                 alt="Animated"
                             />
                         </div>
-
                         <p>FeelingBetterNow® offers a comprehensive online mental health risk assessment that is easy to use and recognized as the gold standard in mental health evaluation. Instantly view your results while being assured of your privacy, confidentiality, and anonymity. Take proactive steps with personalized self-care plans and access a wealth of mental health resources. You can return as often as you wish to track your progress and stay on top of your mental well-being.</p>
                     </div>
                 </div>
             </div>
-
-            <Slider slides={data.sliderdata.FBN} />
+            <div className='animatable fadeInDown'>
+                <Slider slides={data.sliderdata.FBN} />
+            </div>
 
 
             {/* tools and technology section  */}
+            <div className='animatable fadeInDown'>
+            <div className={fbnStyles.MovingTechnologySection}>
+                <div className={fbnStyles.movingSection}>
+                    <div className={fbnStyles.movingContainer}>
+                        <div className={fbnStyles.content}>
+                            <Image className={fbnStyles.movingImg}
+                                src={require('../../assets/images/work/2024/fbn/tech-img1.svg')}
+                                alt="Animated"
+                            />
+                            <Image className={`${fbnStyles.movingImg}`}
+                                src={require('../../assets/images/work/2024/fbn/tech-img2.svg')}
+                                alt="Animated"
+                            />
+                            <Image className={fbnStyles.movingImg}
+                                src={require('../../assets/images/work/2024/fbn/tech-img3.svg')}
+                                alt="Animated"
+                            />
+                            <Image className={fbnStyles.movingImg}
+                                src={require('../../assets/images/work/2024/fbn/tech-img4.svg')}
+                                alt="Animated"
+                            />
+                            <Image className={fbnStyles.movingImg}
+                                src={require('../../assets/images/work/2024/fbn/tech-img5.svg')}
+                                alt="Animated"
+                            />
+                            <Image className={fbnStyles.movingImg}
+                                src={require('../../assets/images/work/2024/fbn/tech-img6.svg')}
+                                alt="Animated"
+                            />
+                            <Image className={fbnStyles.movingImg}
+                                src={require('../../assets/images/work/2024/fbn/tech-img7.svg')}
+                                alt="Animated"
+                            />
+                            <Image className={fbnStyles.movingImg}
+                                src={require('../../assets/images/work/2024/fbn/tech-img8.svg')}
+                                alt="Animated"
+                            />
+                            <Image className={fbnStyles.movingImg}
+                                src={require('../../assets/images/work/2024/fbn/tech-img9.svg')}
+                                alt="Animated"
+                            />
+                            <Image className={fbnStyles.movingImg}
+                                src={require('../../assets/images/work/2024/fbn/tech-img10.svg')}
+                                alt="Animated"
+                            />
 
-
-            {/* <div className={fbnStyles.blobBG}>
-                <div className={fbnStyles.blobContainer}>
+                        </div>
+                    </div>
                 </div>
+                <div className={fbnStyles.movingSection}>
+                    <div className={fbnStyles.movingContainer2}>
+                        <div className={fbnStyles.content}>
 
-                <div className={fbnStyles.techSection}>
-                    <TechnologySection data={data.techdata.FBN} />
+                            <Image className={fbnStyles.movingImg}
+                                src={require('../../assets/images/work/2024/fbn/tech-img11.svg')}
+                                alt="Animated"
+                            />
+                            <Image className={fbnStyles.movingImg}
+                                src={require('../../assets/images/work/2024/fbn/tech-img12.svg')}
+                                alt="Animated"
+                            />
+                            <Image className={fbnStyles.movingImg}
+                                src={require('../../assets/images/work/2024/fbn/tech-img13.svg')}
+                                alt="Animated"
+                            />
+                            <Image className={fbnStyles.movingImg}
+                                src={require('../../assets/images/work/2024/fbn/tech-img14.svg')}
+                                alt="Animated"
+                            />
+                            <Image className={fbnStyles.movingImg}
+                                src={require('../../assets/images/work/2024/fbn/tech-img15.svg')}
+                                alt="Animated"
+                            />
+                            <Image className={fbnStyles.movingImg}
+                                src={require('../../assets/images/work/2024/fbn/tech-img16.svg')}
+                                alt="Animated"
+                            />
+                            <Image className={fbnStyles.movingImg}
+                                src={require('../../assets/images/work/2024/fbn/tech-img17.svg')}
+                                alt="Animated"
+                            />
+                            <Image className={fbnStyles.movingImg}
+                                src={require('../../assets/images/work/2024/fbn/tech-img18.svg')}
+                                alt="Animated"
+                            />
+                            <Image className={fbnStyles.movingImg}
+                                src={require('../../assets/images/work/2024/fbn/tech-img19.svg')}
+                                alt="Animated"
+                            />
+                        </div>
+                    </div>
                 </div>
-            </div> */}
+            </div>
+            </div>
 
-            <TechnologySection data={data.techdata.FBN} />
 
             {/* Additional Content */}
             <section className={fbnStyles['vaidCardsSection']}>
                 <div className="container">
-                    <div>
+                    <div className='animatable bounceInRight'>
                         <h3 className={fbnStyles['mainheading']}>Codecraft: <br /><span>FellingBetterNow</span> journey in Development</h3>
                     </div>
                     <div className={fbnStyles['vaidcards']}>
                         <div className={fbnStyles['cardbody']}>
-                            <div className="row">
-                                <div className="col-6">
+                            <div className="row animatable bounceInLeft">
+                                <div className="col-6 ">
                                     <Image
                                         src={require('../../assets/images/work/2024/fbn/fbn-card1.png')}
                                         alt="Animated"
@@ -69,7 +176,7 @@ export default function FBN() {
                             </div>
                         </div>
                         <div className={fbnStyles['cardbody']}>
-                            <div className="row">
+                            <div className="row animatable bounceInRight">
                                 <div className={`col-6 ${fbnStyles.rightTextPart}`}>
                                     <div>
                                         <h6>Message data management System with Smart Contracts. <span>We specialize in integrating secure data and privacy of messages, ensuring smooth conversations between two people.</span> </h6>
@@ -94,7 +201,7 @@ export default function FBN() {
                     </div>
 
                     <div className={fbnStyles['innovativeCard']}>
-                        <div className="row">
+                        <div className={`${fbnStyles['reverseRow']} row`}>
                             <div className="col-md-5 d-flex">
                                 <Image
                                     src={require('../../assets/images/work/2024/fbn/innovative-img1.png')}
@@ -121,10 +228,6 @@ export default function FBN() {
                     </div>
                 </div>
             </section>
-
-
-
-
         </div>
     )
 }

@@ -79,6 +79,7 @@
 
 
 .vaidCardsSection {
+    overflow: hidden;
     padding: 144px 0;
 
     .vaidcards {
@@ -141,25 +142,82 @@
     color: #4BD659;
 }
 
-
-
 // 
-
-
-.blobContainer {
-    padding: 40px;
-    overflow: hidden;
+.MovingTechnologySection {
     width: 100%;
-    filter: blur(1px);
+    margin-top: 100px;
+    padding: 30px 0;
+    height: 200px;
 }
 
-.techSection {
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-}
+.movingSection {
+    overflow-x: hidden;
+    width: 100%;
 
-// 
+    .movingContainer {
+        display: flex;
+        justify-content: flex-start;
+        animation: scroll 15s linear infinite;
+    }
+
+    .movingContainer2 {
+        display: flex;
+        justify-content: flex-start;
+        animation: scroll1 15s linear infinite;
+    }
+
+    .content {
+        display: flex;
+        gap: 25px;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+
+        .movingImg {
+            width: 100% !important;
+            height: 100% !important;
+        }
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    @keyframes scroll1 {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(100%);
+        }
+    }
+}
+.slider{
+    height: 50px;
+    overflow: hidden;
+  }
+
+.slidAnim {
+    animation: slide 5s linear infinite;
+}
+@keyframes slide {
+    0% { transform: translateY(-300px); }
+    5% { transform: translateY(-300px); }
+    33% { transform: translateY(-200px); }
+    38% { transform: translateY(-200px); }
+    66% { transform: translateY(-100px); }
+    71% { transform: translateY(-100px); }
+    100% { transform: translateY(0px); }
+  }
+
 
 .innovativeSection {
     padding: 80px 0;
@@ -192,5 +250,127 @@
     .innovativeCard p span {
         color: #212529;
         font-weight: 500;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .bannerSection h3 {
+        font-size: 32px;
+        width: 70%;
+        margin: 40px auto 40px 48px;
+    }
+
+    .bannerSection p {
+        font-size: 20px;
+        margin-top: -190px;
+    }
+
+    .mainheading {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .innovativeSection .innovativeCard p {
+        font-size: 18px;
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .innovativeSection .innovativeCard {
+        padding: 60px 24px 0 24px;
+        margin-bottom: 25px;
+    }
+
+    .vaidCardsSection {
+        padding: 60px 0;
+    }
+
+    .vaidCardsSection h6 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .vaidCardsSection .cardbody {
+        padding: 20px;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    .bannerSection p {
+        font-size: 20px;
+        margin-top: -130px;
+    }
+
+    .vaidCardsSection .vaidcards {
+        flex-wrap: wrap;
+    }
+
+    .vaidCardsSection h6 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .reverseRow {
+        flex-direction: column-reverse;
+    }
+
+    .movingSection {
+        width: 150%;
+    }
+
+    .MovingTechnologySection {
+        margin-top: 0px;
+    }
+
+}
+
+@media screen and (max-width:520px) {
+    .bannerSection h3 {
+        font-size: 26px;
+        width: 100%;
+        margin: 30px auto 30px 0px;
+    }
+
+    .bannerSection p {
+        font-size: 16px;
+        margin-top: -50px;
+    }
+
+    .vaidCardsSection h6 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .vaidCardsSection {
+        padding: 30px 0;
+    }
+
+    .vaidCardsSection .cardbody {
+        padding: 14px;
+        border-radius: 6px;
+    }
+
+    .movingSection {
+        width: 270%;
+    }
+
+    .mainheading {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .innovativeSection .innovativeCard p {
+        font-size: 16px;
+    }
+
+    .innovativeSection .innovativeCard {
+        padding: 20px 20px 0 20px;
+        margin-bottom: 25px;
+        border-radius: 6px;
+    }
+
+    .innovativeSection {
+        padding: 50px 0;
     }
 }

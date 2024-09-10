@@ -521,7 +521,7 @@ export default function Camelab() {
                                         </div>
                                         <div className={`${CamelabStyle['text-part']} col-6`}>
                                             <p className={CamelabStyle['card-text']}>
-                                                Integrated Payment System when win any campaign. < span>For creators shows details only when a creator wins a campaign, including information about the reward and selection status.          </span>
+                                                Integrated Payment System when win any campaign. <span> For creators shows details only when a creator wins a campaign, including information about the reward and selection status. </span>
                                             </p>
                                         </div>
                                     </div>

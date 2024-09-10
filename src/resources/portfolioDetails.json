@@ -209,6 +209,18 @@
                     { "src": "images/work/technology-icons/bootstrap.svg", "name": "Bootstrap" },
                     { "src": "images/work/technology-icons/js.svg", "name": "JavaScript" }
                 ]
+            },
+            {
+                "id": "animate16",
+                "title": "JV Construction",
+                "href": "/JVConstruction",
+                "imgSrc": "images/work/2024/jv.png",
+                "tech": [
+                    { "src": "images/work/technology-icons/html.svg", "name": "HTML" },
+                    { "src": "images/work/technology-icons/css.svg", "name": "CSS" },
+                    { "src": "images/work/technology-icons/bootstrap.svg", "name": "Bootstrap" },
+                    { "src": "images/work/technology-icons/js.svg", "name": "JavaScript" }
+                ]
             }
     ],
     "techdata": {
@@ -318,7 +330,24 @@
                 "icon": "images/work/2024/tech-icons/Git.svg"
             }
         ],
-        "snbla": []
+        "jv": [
+            {
+                "name": "UI/UX",
+                "icon": "images/work/2024/tech-icons/UIUX.svg"
+            },
+            {
+                "name": "Figma",
+                "icon": "images/work/2024/tech-icons/Figma.svg"
+            },
+            {
+                "name": "Adobe Illustrator",
+                "icon": "images/work/2024/tech-icons/AdobeIllustrator.svg"
+            },
+            {
+                "name": "Adobe XD",
+                "icon": "images/work/2024/tech-icons/AdobeXD.svg"
+            }
+        ]
     },
     "sliderdata": {
         "camelab": [

@@ -1,3 +1,83 @@
+// header spacing
+.mainSection {
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+// banner text
+
+.bannerPrimaryText {
+    font-family: "Poppins";
+    font-size: 48px;
+    font-weight: 600;
+    text-align: left;
+    color: #16085E;
+    margin: 60px 0;
+    padding-left: 60px;
+}
+
+.bannerSecondaryText {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    color: #212529;
+}
+
+
+// heading
+.mainheading {
+    font-family: "Poppins";
+    font-size: 48px;
+    font-weight: 600;
+    text-align: left;
+    color: #16085E;
+    margin-bottom: 64px;
+}
+
+@media screen and (max-width:991px) {
+    .mainheading {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    .bannerPrimaryText {
+        font-size: 32px;
+        margin: 40px 0;
+        padding-left: 40px;
+    }
+
+    .bannerSecondaryText {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .bannerSecondaryText {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width:520px) {
+    .mainheading {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .bannerPrimaryText {
+        font-size: 26px;
+        margin: 30px 0;
+        padding-left: 0px;
+    }
+
+    .bannerSecondaryText {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
 // technology section 
 
 .technology-section {
@@ -240,3 +320,5 @@
     }
 
 }
+
+

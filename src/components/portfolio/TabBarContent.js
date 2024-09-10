@@ -13,9 +13,9 @@ const groupIntoPairs = (projects) => {
     return pairs;
 }
 export default function TabBarContent() {
-    const animateRefs = Array.from({ length: 16 }, () => useRef(null));
-    const triggerRefs = Array.from({ length: 16 }, () => useRef(null));
-    const showRef = Array.from({ length: 16 }, () => useRef(null));
+    const animateRefs = Array.from({ length: 17 }, () => useRef(null));
+    const triggerRefs = Array.from({ length: 17 }, () => useRef(null));
+    const showRef = Array.from({ length: 17 }, () => useRef(null));
 
     useEffect(() => {
         const initializeScrollMagic = async () => {

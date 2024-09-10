@@ -1,13 +1,16 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import fbnStyles from '../../styles/portfolioDetails/fbn.module.scss';
 import Image from 'next/image';
-import TechnologySection from './portfolioDetailsCommon/technologySection';
+import portfolioDetailsCommon from '../../styles/portfolioDetails/portfolioDetailsCommon.module.scss';
 import data from '../../resources/portfolioDetails.json'
 import Slider from './portfolioDetailsCommon/slider';
 import $ from 'jquery';
 
 
 export default function FBN() {
+    const [displayedText, setDisplayedText] = useState('');
+    const [textLength, setTextLength] = useState(0);
+    const text = 'Improve Mental Health Outcomes for your organization with FeelingBetterNow®';
 
     useEffect(() => {
         const doAnimations = () => {
@@ -32,159 +35,138 @@ export default function FBN() {
             $(window).off('scroll', doAnimations);
         };
     }, []);
+
+
+    useEffect(() => {
+        if (textLength < text.length) {
+            const timeoutId = setTimeout(() => {
+                setDisplayedText((prev) => prev + text.charAt(textLength));
+                setTextLength((prev) => prev + 1);
+            }, 80);
+            return () => clearTimeout(timeoutId);
+        } else if (textLength === text.length) {
+
+            const resetTimeoutId = setTimeout(() => {
+                setDisplayedText('');
+                setTextLength(0);
+            }, 1000);
+            return () => clearTimeout(resetTimeoutId);
+        }
+    }, [ text, textLength]);
+
     return (
-        <div className={fbnStyles.mainSection}>
-            <div className={fbnStyles.bannerSection}>
-                <div className="container">
-                    <div className={`${fbnStyles.sectionContent}`}>
-                        <h3>Achieve Mental Clarity with
-                            <span>FeelingBetterNow®</span>
-                        </h3>
-                        <div>
-                            <Image
+        <div className={portfolioDetailsCommon.mainSection}>
+            <div className={fbnStyles.FBNMain}>
+                <div className={fbnStyles.bannerSection}>
+                    <div className="container">
+                        <div className={`${fbnStyles.sectionContent}`}>
+                            <h3 className={portfolioDetailsCommon.bannerPrimaryText}>Achieve Mental Clarity with
+                                <span> FeelingBetterNow®</span>
+                            </h3>
+                            <div className={fbnStyles.bannerImg}>
+                                {/* <Image
                                 src={require('../../assets/images/work/2024/fbn/gif5.gif')}
                                 alt="Animated"
-                            />
-                        </div>
-                        <p>FeelingBetterNow® offers a comprehensive online mental health risk assessment that is easy to use and recognized as the gold standard in mental health evaluation. Instantly view your results while being assured of your privacy, confidentiality, and anonymity. Take proactive steps with personalized self-care plans and access a wealth of mental health resources. You can return as often as you wish to track your progress and stay on top of your mental well-being.</p>
-                    </div>
-                </div>
-            </div>
-            <div className='animatable fadeInDown'>
-                <Slider slides={data.sliderdata.FBN} />
-            </div>
-
-
-            {/* tools and technology section  */}
-            <div className='animatable fadeInDown'>
-            <div className={fbnStyles.MovingTechnologySection}>
-                <div className={fbnStyles.movingSection}>
-                    <div className={fbnStyles.movingContainer}>
-                        <div className={fbnStyles.content}>
-                            <Image className={fbnStyles.movingImg}
-                                src={require('../../assets/images/work/2024/fbn/tech-img1.svg')}
-                                alt="Animated"
-                            />
-                            <Image className={`${fbnStyles.movingImg}`}
-                                src={require('../../assets/images/work/2024/fbn/tech-img2.svg')}
-                                alt="Animated"
-                            />
-                            <Image className={fbnStyles.movingImg}
-                                src={require('../../assets/images/work/2024/fbn/tech-img3.svg')}
-                                alt="Animated"
-                            />
-                            <Image className={fbnStyles.movingImg}
-                                src={require('../../assets/images/work/2024/fbn/tech-img4.svg')}
-                                alt="Animated"
-                            />
-                            <Image className={fbnStyles.movingImg}
-                                src={require('../../assets/images/work/2024/fbn/tech-img5.svg')}
-                                alt="Animated"
-                            />
-                            <Image className={fbnStyles.movingImg}
-                                src={require('../../assets/images/work/2024/fbn/tech-img6.svg')}
-                                alt="Animated"
-                            />
-                            <Image className={fbnStyles.movingImg}
-                                src={require('../../assets/images/work/2024/fbn/tech-img7.svg')}
-                                alt="Animated"
-                            />
-                            <Image className={fbnStyles.movingImg}
-                                src={require('../../assets/images/work/2024/fbn/tech-img8.svg')}
-                                alt="Animated"
-                            />
-                            <Image className={fbnStyles.movingImg}
-                                src={require('../../assets/images/work/2024/fbn/tech-img9.svg')}
-                                alt="Animated"
-                            />
-                            <Image className={fbnStyles.movingImg}
-                                src={require('../../assets/images/work/2024/fbn/tech-img10.svg')}
-                                alt="Animated"
-                            />
-
+                                /> */}
+                                <h2>
+                                    {displayedText}
+                                </h2>
+                            </div>
+                            <p className={portfolioDetailsCommon.bannerSecondaryText}>FeelingBetterNow® offers a comprehensive online mental health risk assessment that is easy to use and recognized as the gold standard in mental health evaluation. Instantly view your results while being assured of your privacy, confidentiality, and anonymity. Take proactive steps with personalized self-care plans and access a wealth of mental health resources. You can return as often as you wish to track your progress and stay on top of your mental well-being.</p>
                         </div>
                     </div>
                 </div>
-                <div className={fbnStyles.movingSection}>
-                    <div className={fbnStyles.movingContainer2}>
-                        <div className={fbnStyles.content}>
-
-                            <Image className={fbnStyles.movingImg}
-                                src={require('../../assets/images/work/2024/fbn/tech-img11.svg')}
-                                alt="Animated"
-                            />
-                            <Image className={fbnStyles.movingImg}
-                                src={require('../../assets/images/work/2024/fbn/tech-img12.svg')}
-                                alt="Animated"
-                            />
-                            <Image className={fbnStyles.movingImg}
-                                src={require('../../assets/images/work/2024/fbn/tech-img13.svg')}
-                                alt="Animated"
-                            />
-                            <Image className={fbnStyles.movingImg}
-                                src={require('../../assets/images/work/2024/fbn/tech-img14.svg')}
-                                alt="Animated"
-                            />
-                            <Image className={fbnStyles.movingImg}
-                                src={require('../../assets/images/work/2024/fbn/tech-img15.svg')}
-                                alt="Animated"
-                            />
-                            <Image className={fbnStyles.movingImg}
-                                src={require('../../assets/images/work/2024/fbn/tech-img16.svg')}
-                                alt="Animated"
-                            />
-                            <Image className={fbnStyles.movingImg}
-                                src={require('../../assets/images/work/2024/fbn/tech-img17.svg')}
-                                alt="Animated"
-                            />
-                            <Image className={fbnStyles.movingImg}
-                                src={require('../../assets/images/work/2024/fbn/tech-img18.svg')}
-                                alt="Animated"
-                            />
-                            <Image className={fbnStyles.movingImg}
-                                src={require('../../assets/images/work/2024/fbn/tech-img19.svg')}
-                                alt="Animated"
-                            />
-                        </div>
-                    </div>
+                <div className='animatable fadeInDown'>
+                    <Slider slides={data.sliderdata.FBN} />
                 </div>
-            </div>
-            </div>
-
-
-            {/* Additional Content */}
-            <section className={fbnStyles['vaidCardsSection']}>
-                <div className="container">
-                    <div className='animatable bounceInRight'>
-                        <h3 className={fbnStyles['mainheading']}>Codecraft: <br /><span>FellingBetterNow</span> journey in Development</h3>
-                    </div>
-                    <div className={fbnStyles['vaidcards']}>
-                        <div className={fbnStyles['cardbody']}>
-                            <div className="row animatable bounceInLeft">
-                                <div className="col-6 ">
-                                    <Image
-                                        src={require('../../assets/images/work/2024/fbn/fbn-card1.png')}
+                {/* tools and technology section  */}
+                <div className='animatable fadeInDown'>
+                    <div className={fbnStyles.MovingTechnologySection}>
+                        <div className={fbnStyles.movingSection}>
+                            <div className={fbnStyles.movingContainer}>
+                                <div className={fbnStyles.content}>
+                                    <Image className={fbnStyles.movingImg}
+                                        src={require('../../assets/images/work/2024/fbn/tech-img1.svg')}
                                         alt="Animated"
                                     />
-                                </div>
+                                    <Image className={`${fbnStyles.movingImg}`}
+                                        src={require('../../assets/images/work/2024/fbn/tech-img2.svg')}
+                                        alt="Animated"
+                                    />
+                                    <Image className={fbnStyles.movingImg}
+                                        src={require('../../assets/images/work/2024/fbn/tech-img3.svg')}
+                                        alt="Animated"
+                                    />
+                                    <Image className={fbnStyles.movingImg}
+                                        src={require('../../assets/images/work/2024/fbn/tech-img4.svg')}
+                                        alt="Animated"
+                                    />
+                                    <Image className={fbnStyles.movingImg}
+                                        src={require('../../assets/images/work/2024/fbn/tech-img5.svg')}
+                                        alt="Animated"
+                                    />
+                                    <Image className={fbnStyles.movingImg}
+                                        src={require('../../assets/images/work/2024/fbn/tech-img6.svg')}
+                                        alt="Animated"
+                                    />
+                                    <Image className={fbnStyles.movingImg}
+                                        src={require('../../assets/images/work/2024/fbn/tech-img7.svg')}
+                                        alt="Animated"
+                                    />
+                                    <Image className={fbnStyles.movingImg}
+                                        src={require('../../assets/images/work/2024/fbn/tech-img8.svg')}
+                                        alt="Animated"
+                                    />
+                                    <Image className={fbnStyles.movingImg}
+                                        src={require('../../assets/images/work/2024/fbn/tech-img9.svg')}
+                                        alt="Animated"
+                                    />
+                                    <Image className={fbnStyles.movingImg}
+                                        src={require('../../assets/images/work/2024/fbn/tech-img10.svg')}
+                                        alt="Animated"
+                                    />
 
-                                <div className={`col-6 ${fbnStyles.leftTextPart}`}>
-                                    <div>
-                                        <h6>Message data management System with Smart Contracts. <span>We specialize in integrating secure data and privacy of messages, ensuring smooth conversations between two people.</span> </h6>
-                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className={fbnStyles['cardbody']}>
-                            <div className="row animatable bounceInRight">
-                                <div className={`col-6 ${fbnStyles.rightTextPart}`}>
-                                    <div>
-                                        <h6>Message data management System with Smart Contracts. <span>We specialize in integrating secure data and privacy of messages, ensuring smooth conversations between two people.</span> </h6>
-                                    </div>
-                                </div>
-                                <div className="col-6">
-                                    <Image
-                                        src={require('../../assets/images/work/2024/fbn/fbn-card2.png')}
+                        <div className={fbnStyles.movingSection}>
+                            <div className={fbnStyles.movingContainer2}>
+                                <div className={fbnStyles.content}>
+
+                                    <Image className={fbnStyles.movingImg}
+                                        src={require('../../assets/images/work/2024/fbn/tech-img11.svg')}
+                                        alt="Animated"
+                                    />
+                                    <Image className={fbnStyles.movingImg}
+                                        src={require('../../assets/images/work/2024/fbn/tech-img12.svg')}
+                                        alt="Animated"
+                                    />
+                                    <Image className={fbnStyles.movingImg}
+                                        src={require('../../assets/images/work/2024/fbn/tech-img13.svg')}
+                                        alt="Animated"
+                                    />
+                                    <Image className={fbnStyles.movingImg}
+                                        src={require('../../assets/images/work/2024/fbn/tech-img14.svg')}
+                                        alt="Animated"
+                                    />
+                                    <Image className={fbnStyles.movingImg}
+                                        src={require('../../assets/images/work/2024/fbn/tech-img15.svg')}
+                                        alt="Animated"
+                                    />
+                                    <Image className={fbnStyles.movingImg}
+                                        src={require('../../assets/images/work/2024/fbn/tech-img16.svg')}
+                                        alt="Animated"
+                                    />
+                                    <Image className={fbnStyles.movingImg}
+                                        src={require('../../assets/images/work/2024/fbn/tech-img17.svg')}
+                                        alt="Animated"
+                                    />
+                                    <Image className={fbnStyles.movingImg}
+                                        src={require('../../assets/images/work/2024/fbn/tech-img18.svg')}
+                                        alt="Animated"
+                                    />
+                                    <Image className={fbnStyles.movingImg}
+                                        src={require('../../assets/images/work/2024/fbn/tech-img19.svg')}
                                         alt="Animated"
                                     />
                                 </div>
@@ -192,42 +174,82 @@ export default function FBN() {
                         </div>
                     </div>
                 </div>
-            </section>
+                {/* Additional Content */}
+                <section className={fbnStyles['vaidCardsSection']}>
+                    <div className="container">
+                        <div className='animatable bounceInRight'>
+                            <h3 className={portfolioDetailsCommon['mainheading']}>Codecraft: <br /><span>FellingBetterNow</span> journey in Development</h3>
+                        </div>
+                        <div className={fbnStyles['vaidcards']}>
+                            <div className={fbnStyles['cardbody']}>
+                                <div className="row animatable bounceInLeft">
+                                    <div className="col-6 ">
+                                        <Image
+                                            src={require('../../assets/images/work/2024/fbn/fbn-card1.png')}
+                                            alt="Animated"
+                                        />
+                                    </div>
 
-            <section className={fbnStyles['innovativeSection']}>
-                <div className="container">
-                    <div>
-                        <h3 className={fbnStyles['mainheading']}>Innovative Features in <br /><span>FellingBetterNow</span></h3>
-                    </div>
-
-                    <div className={fbnStyles['innovativeCard']}>
-                        <div className={`${fbnStyles['reverseRow']} row`}>
-                            <div className="col-md-5 d-flex">
-                                <Image
-                                    src={require('../../assets/images/work/2024/fbn/innovative-img1.png')}
-                                    alt="Animated"
-                                />
+                                    <div className={`col-6 ${fbnStyles.leftTextPart}`}>
+                                        <div>
+                                            <h6>Message data management System with Smart Contracts. <span>We specialize in integrating secure data and privacy of messages, ensuring smooth conversations between two people.</span> </h6>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="col-md-7">
-                                <p>After viewing your results, you'll get a personalized self-care plan and a PDF report. The report uses<span> red for high risk, yellow for moderate risk, and green for low risk.</span> It includes actionable steps, resources, and medication guidance.</p>
+                            <div className={fbnStyles['cardbody']}>
+                                <div className="row animatable bounceInRight">
+                                    <div className={`col-6 ${fbnStyles.rightTextPart}`}>
+                                        <div>
+                                            <h6>Message data management System with Smart Contracts. <span>We specialize in integrating secure data and privacy of messages, ensuring smooth conversations between two people.</span> </h6>
+                                        </div>
+                                    </div>
+                                    <div className="col-6">
+                                        <Image
+                                            src={require('../../assets/images/work/2024/fbn/fbn-card2.png')}
+                                            alt="Animated"
+                                        />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div className={fbnStyles['innovativeCard']}>
-                        <div className="row">
-                            <div className="col-md-7">
-                                <p>After viewing your results, you'll get a personalized self-care plan and a PDF report. The report uses<span> red for high risk, yellow for moderate risk, and green for low risk.</span> It includes actionable steps, resources, and medication guidance.</p>
+                </section>
+                <section className={fbnStyles['innovativeSection']}>
+                    <div className="container">
+                        <div>
+                            <h3 className={portfolioDetailsCommon['mainheading']}>Innovative Features in <br /><span>FellingBetterNow</span></h3>
+                        </div>
+
+                        <div className={fbnStyles['innovativeCard']}>
+                            <div className={`${fbnStyles['reverseRow']} row`}>
+                                <div className="col-md-5 d-flex">
+                                    <Image
+                                        src={require('../../assets/images/work/2024/fbn/innovative-img1.png')}
+                                        alt="Animated"
+                                    />
+                                </div>
+                                <div className="col-md-7">
+                                    <p>After viewing your results, you'll get a personalized self-care plan and a PDF report. The report uses<span> red for high risk, yellow for moderate risk, and green for low risk.</span> It includes actionable steps, resources, and medication guidance.</p>
+                                </div>
                             </div>
-                            <div className="col-md-5 d-flex">
-                                <Image
-                                    src={require('../../assets/images/work/2024/fbn/innovative-img2.png')}
-                                    alt="Animated"
-                                />
+                        </div>
+                        <div className={fbnStyles['innovativeCard']}>
+                            <div className="row">
+                                <div className="col-md-7">
+                                    <p>After viewing your results, you'll get a personalized self-care plan and a PDF report. The report uses<span> red for high risk, yellow for moderate risk, and green for low risk.</span> It includes actionable steps, resources, and medication guidance.</p>
+                                </div>
+                                <div className="col-md-5 d-flex">
+                                    <Image
+                                        src={require('../../assets/images/work/2024/fbn/innovative-img2.png')}
+                                        alt="Animated"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </div>
     )
 }

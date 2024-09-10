@@ -17,47 +17,7 @@ const groupIntoPairs = (projects) => {
 };
 
 export default function OurWorkContent() {
-    const animateRefs = Array.from({ length: 16 }, () => useRef(null));
-    const triggerRefs = Array.from({ length: 16 }, () => useRef(null));
-    const showRef = Array.from({ length: 16 }, () => useRef(null));
 
-    useEffect(() => {
-        const initializeScrollMagic = async () => {
-            const { default: ScrollMagic } = await import('scrollmagic');
-            await import('scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators');
-
-            const controller = new ScrollMagic.Controller();
-            animateRefs.forEach((animateRef, index) => {
-                const scene = new ScrollMagic.Scene({
-                    triggerElement: triggerRefs[index].current,
-                    duration: 500,
-                    triggerHook: 0.7
-                })
-                    .setClassToggle(animateRef.current, portfolioWorkStyle['scale-up'])
-                    .addIndicators()
-                    .addTo(controller);
-                return () => {
-                    controller.destroy(true);
-                    scene.destroy(true);
-                };
-            });
-            showRef.forEach((showRef, index) => {
-                const scene = new ScrollMagic.Scene({
-                    triggerElement: triggerRefs[index].current,
-                    duration: 500,
-                    triggerHook: 0.7
-                })
-                    .setClassToggle(showRef.current, portfolioWorkStyle['showDetails'])
-                    .addIndicators()
-                    .addTo(controller);
-                return () => {
-                    controller.destroy(true);
-                    scene.destroy(true);
-                };
-            });
-        };
-        initializeScrollMagic();
-    }, []);
 
     const projectPairs = groupIntoPairs(data.projectPairs.flat());
     return (

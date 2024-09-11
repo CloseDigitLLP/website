@@ -10,7 +10,7 @@ import $ from 'jquery';
 export default function FBN() {
     const [displayedText, setDisplayedText] = useState('');
     const [textLength, setTextLength] = useState(0);
-    const text = 'Improve Mental Health Outcomes for your organization with FeelingBetterNow®';
+    const typeText = 'Improve Mental Health Outcomes for your organization with FeelingBetterNow®';
 
     useEffect(() => {
         const doAnimations = () => {
@@ -38,21 +38,20 @@ export default function FBN() {
 
 
     useEffect(() => {
-        if (textLength < text.length) {
+        if (textLength < typeText.length) {
             const timeoutId = setTimeout(() => {
-                setDisplayedText((prev) => prev + text.charAt(textLength));
+                setDisplayedText((prev) => prev + typeText.charAt(textLength));
                 setTextLength((prev) => prev + 1);
             }, 80);
             return () => clearTimeout(timeoutId);
-        } else if (textLength === text.length) {
-
+        } else if (textLength === typeText.length) {
             const resetTimeoutId = setTimeout(() => {
                 setDisplayedText('');
                 setTextLength(0);
             }, 1000);
             return () => clearTimeout(resetTimeoutId);
         }
-    }, [ text, textLength]);
+    }, [textLength]);
 
     return (
         <div className={portfolioDetailsCommon.mainSection}>

@@ -181,33 +181,36 @@ export default function FBN() {
                         </div>
                         <div className={fbnStyles['vaidcards']}>
                             <div className={fbnStyles['cardbody']}>
-                                <div className="row animatable bounceInLeft">
-                                    <div className="col-6 ">
-                                        <Image
-                                            src={require('../../assets/images/work/2024/fbn/fbn-card1.png')}
-                                            alt="Animated"
-                                        />
-                                    </div>
-
-                                    <div className={`col-6 ${fbnStyles.leftTextPart}`}>
-                                        <div>
-                                            <h6>Message data management System with Smart Contracts. <span>We specialize in integrating secure data and privacy of messages, ensuring smooth conversations between two people.</span> </h6>
+                                <div className={`${fbnStyles.mainCard}animatable bounceInLeft`} >
+                                    <div className={`${fbnStyles.cardone}`}>
+                                        <div className={fbnStyles.cardContent}>
+                                            <h4>Personalized Health Tips and Medication Advice.</h4>
+                                            <p>
+                                                The AI-generated report provides precise health tips and medication recommendations tailored to your individual responses, addressing your specific needs and conditions.
+                                            </p>
+                                            <Image className={fbnStyles.movingImg}
+                                                src={require('../../assets/images/work/2024/fbn/fbn-mobile1.svg')}
+                                                alt="Animated"
+                                            />
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
                             <div className={fbnStyles['cardbody']}>
-                                <div className="row animatable bounceInRight">
-                                    <div className={`col-6 ${fbnStyles.rightTextPart}`}>
-                                        <div>
-                                            <h6>Message data management System with Smart Contracts. <span>We specialize in integrating secure data and privacy of messages, ensuring smooth conversations between two people.</span> </h6>
+                                <div className={`${fbnStyles.mainCard}animatable bounceInLeft`} >
+                                    <div className={`${fbnStyles.cardtwo}`}>
+                                        <div className={fbnStyles.cardContent}>
+                                            <h4>Expert-Reviewed Recommendations.</h4>
+                                            <p>
+                                                The report, reviewed by over 33 healthcare professionals, provides accurate recommendations. You'll receive tailored health tips and medication advice to improve your mental well-being.
+                                            </p>
+                                            <Image className={fbnStyles.movingImg}
+                                                src={require('../../assets/images/work/2024/fbn/fbn-mobile2.svg')}
+                                                alt="Animated"
+                                            />
                                         </div>
-                                    </div>
-                                    <div className="col-6">
-                                        <Image
-                                            src={require('../../assets/images/work/2024/fbn/fbn-card2.png')}
-                                            alt="Animated"
-                                        />
+
                                     </div>
                                 </div>
                             </div>

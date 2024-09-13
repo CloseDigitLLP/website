@@ -1,6 +1,6 @@
 
 import Head from 'next/head'
-import FBN from '../components/portfolioDetails/FBN'
+import FBN from '../components/portfolioDetails/fbn'
 
 export default function FBNPage() {
     return (

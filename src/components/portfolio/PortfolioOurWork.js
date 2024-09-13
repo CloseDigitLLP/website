@@ -2,7 +2,7 @@ import portfolioWorkStyle from '../../styles/portfolio/portfolioWork.module.scss
 import Image from 'next/image'
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
-import { useEffect, useRef } from 'react';
+import  React ,{ useEffect,useState } from 'react';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import data from "../../resources/portfolioDetails.json"
@@ -18,9 +18,9 @@ const groupIntoPairs = (projects) => {
 
 export default function OurWorkContent() {
 
-
     const projectPairs = groupIntoPairs(data.projectPairs.flat());
     return (
+        <>
         <section className={`section-spacing`}>
             <div className="section-title-part">
                 <p className="back-title">Our Work</p>
@@ -33,16 +33,16 @@ export default function OurWorkContent() {
                         id="uncontrolled-tab-example"
                         className={portfolioWorkStyle["tab-bar"]}>
                         <Tab eventKey="All" title="All Work">
-                         <TabBarContent/>
+                            <TabBarContent />
                         </Tab>
                         <Tab eventKey="UI/UX" title="UI/UX Design">
-                        <TabBarContent/>
+                            <TabBarContent />
                         </Tab>
                         <Tab eventKey="Web" title="Web Development/Design">
-                        <TabBarContent/>
+                            <TabBarContent />
                         </Tab>
                         <Tab eventKey="App" title="App Development/Design">
-                        <TabBarContent/>
+                            <TabBarContent />
                         </Tab>
                     </Tabs>
                 </div>
@@ -84,5 +84,6 @@ export default function OurWorkContent() {
                 </div>
             </div>
         </section>
+            </>
     )
 }

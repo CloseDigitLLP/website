@@ -296,6 +296,16 @@
     transition: 0.5s ease-out;
     opacity: 1;
 }
+#animate17 {
+    transition: 0.5s ease-out;
+    transform: scale(0.9) !important;
+    opacity: 0.5;
+}
+#animate17.scale-up {
+    transform: scale(1) !important;
+    transition: 0.5s ease-out;
+    opacity: 1;
+}
 
 // hover effect title
 // .imgBox:hover+.project-info {

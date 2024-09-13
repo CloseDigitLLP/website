@@ -1,6 +1,6 @@
 
 import Head from 'next/head'
-import Vaid from '../components/portfolioDetails/Vaid'
+import Vaid from '../components/portfolioDetails/vaid'
 
 export default function VaidPage() {
     return (

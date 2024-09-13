@@ -13,9 +13,9 @@ const groupIntoPairs = (projects) => {
     return pairs;
 }
 export default function TabBarContent() {
-    const animateRefs = Array.from({ length: 17 }, () => useRef(null));
-    const triggerRefs = Array.from({ length: 17 }, () => useRef(null));
-    const showRef = Array.from({ length: 17 }, () => useRef(null));
+    const animateRefs = Array.from({ length: 18 }, () => useRef(null));
+    const triggerRefs = Array.from({ length: 18 }, () => useRef(null));
+    const showRef = Array.from({ length: 18 }, () => useRef(null));
 
     useEffect(() => {
         const initializeScrollMagic = async () => {
@@ -26,7 +26,7 @@ export default function TabBarContent() {
             animateRefs.forEach((animateRef, index) => {
                 const scene = new ScrollMagic.Scene({
                     triggerElement: triggerRefs[index].current,
-                    duration: 500,
+                    duration: 600,
                     triggerHook: 0.7
                 })
                     .setClassToggle(animateRef.current, portfolioWorkStyle['scale-up'])
@@ -40,7 +40,7 @@ export default function TabBarContent() {
             showRef.forEach((showRef, index) => {
                 const scene = new ScrollMagic.Scene({
                     triggerElement: triggerRefs[index].current,
-                    duration: 500,
+                    duration: 600,
                     triggerHook: 0.7
                 })
                     .setClassToggle(showRef.current, portfolioWorkStyle['showDetails'])

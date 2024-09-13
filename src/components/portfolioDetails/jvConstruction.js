@@ -7,7 +7,6 @@ import data from '../../resources/portfolioDetails.json'
 import TechnologySection from './portfolioDetailsCommon/technologySection';
 
 
-
 const options = {
   items: 1,
   autoplay: true,
@@ -30,6 +29,7 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 export default function JVConstruction() {
+
   const processImgRef1 = useRef(null);
   const processImgRef2 = useRef(null);
   const processImgRef3 = useRef(null);
@@ -118,45 +118,79 @@ export default function JVConstruction() {
 
   return (
     <div className={portfolioDetailsCommon.mainSection}>
-      <div className={JVStyle.bannerSection}>
-        <div className="container">
-          <div className={`${JVStyle.sectionContent}`}>
-            <h3 className={portfolioDetailsCommon.bannerPrimaryText}>Comprehensive Home Renovations <span>Transforming spaces with expert.</span>
-            </h3>
-            <div className={JVStyle.bannerImg}>
-              <div className={JVStyle.bannerInnerImg}>
-              </div>
-            </div>
-            <p className={portfolioDetailsCommon.bannerSecondaryText}>Transforming Spaces with Expert Craftsmanship and Innovative Designs: Your one-stop solution for home renovations, including whole house makeovers, bathroom and kitchen remodels, extensions, carpentry, fencing, land leveling (civils), and carpentry repairs.</p>
-          </div>
-        </div>
-      </div>
-
-      <div className={JVStyle.showCaseSection}>
-        <div className="container">
-          <h3 className={portfolioDetailsCommon.mainheading}>
-            Innovative design solution <br />
-            <span>JV Construct</span> Showcase
-          </h3>
-          <div className={JVStyle.showCase}>
-            <div className={JVStyle.showCaseImgSection}>
-              <div className={`${JVStyle.showCaseImg1} `}>
-                <Image className='animatable bounceInLeft'
-                  src={require('../../assets/images/work/2024/JV-construction/showcaseImg1.png')}
-                  alt="Animated"
-                />
-              </div>
-              <div className={`${JVStyle.showCaseImg2}  `}>
-                <Image className='animatable bounceInRight'
-                  src={require('../../assets/images/work/2024/JV-construction/showcaseImg2.png')}
-                  alt="Animated"
-                />
+      <div className={JVStyle.ContentSection}>
+        <div className={JVStyle.bannerMainSection}>
+          <div className={JVStyle.bannerSection}>
+            <div className="container">
+              <div className={`${JVStyle.sectionContent}`}>
+                <h3 className={portfolioDetailsCommon.bannerPrimaryText}>Comprehensive Home Renovations <span>Transforming spaces with expert.</span>
+                </h3>
+                <div className={JVStyle.bannerImg}>
+                  <div className={JVStyle.bannerInnerImg}>
+                  </div>
+                </div>
+                <p className={portfolioDetailsCommon.bannerSecondaryText}>Transforming Spaces with Expert Craftsmanship and Innovative Designs: Your one-stop solution for home renovations, including whole house makeovers, bathroom and kitchen remodels, extensions, carpentry, fencing, land leveling (civils), and carpentry repairs.</p>
               </div>
             </div>
           </div>
 
+          <div className={JVStyle.showCaseSection}>
+            <div className="container">
+              <h3 className={portfolioDetailsCommon.mainheading}>
+                Innovative design solution <br />
+                <span>JV Construct</span> Showcase
+              </h3>
+              {/* <div className='allpage'>
+                <div className='page fs'>
+                  <Image
+                    src={require('../../assets/images/work/2024/JV-construction/processImg1.svg')}
+                    alt="Animated"
+                  />
+                </div>
+                <div className='page sc'>
+                  <Image
+                    src={require('../../assets/images/work/2024/JV-construction/processImg1.svg')}
+                    alt="Animated"
+                  />
+                </div>
+                <div className="page th">
+                  <Image
+                    src={require('../../assets/images/work/2024/JV-construction/processImg1.svg')}
+                    alt="Animated"
+                  />
+                </div>
+                <div class="page fr">
+                  <Image
+                    src={require('../../assets/images/work/2024/JV-construction/processImg1.svg')}
+                    alt="Animated"
+                  />
+                </div>
+              </div> */}
+
+
+
+
+
+              <div className={JVStyle.showCase}>
+                    <div className={JVStyle.showCaseImgSection}>
+                      <div className={`${JVStyle.showCaseImg1} `}>
+                        <Image className='animatable bounceInLeft'
+                          src={require('../../assets/images/work/2024/JV-construction/showcaseImg1.png')}
+                          alt="Animated"
+                        />
+                      </div>
+                      <div className={`${JVStyle.showCaseImg2}  `}>
+                        <Image className='animatable bounceInRight'
+                          src={require('../../assets/images/work/2024/JV-construction/showcaseImg2.png')}
+                          alt="Animated"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+          </div>
         </div>
-      </div>
 
         <div className={JVStyle.processSection}>
           <div className="container">
@@ -218,147 +252,113 @@ export default function JVConstruction() {
                 <h6>Once the app was completed, we thoroughly tested and optimized it to resolve major user issues.</h6>
               </div>
             </div>
-            
+
           </div>
         </div>
-    
 
-      <div className={JVStyle.landingPageSection}>
-        <div className="container">
-          <h3 className={portfolioDetailsCommon.mainheading}>Full Page Preview <br />
-            <span> JV Construction</span> Website Design
-          </h3>
-        </div>
-        <div className={JVStyle.landingPage}>
-          <OwlCarousel className='owlcarousel' {...options}>
-            <div className={JVStyle.landingPageImg}>
-              <Image
-                src={require('../../assets/images/work/2024/JV-construction/landingPageImg.png')}
-              />
-            </div>
-            <div className={JVStyle.landingPageImg}>
-              <Image
-                src={require('../../assets/images/work/2024/JV-construction/landingPageImg2.svg')}
-              />
-            </div>
-            <div className={JVStyle.landingPageImg}>
-              <Image
-                src={require('../../assets/images/work/2024/JV-construction/landingPageImg3.svg')}
-              />
-            </div>
-            <div className={JVStyle.landingPageImg}>
-              <Image
-                src={require('../../assets/images/work/2024/JV-construction/landingPageImg4.svg')}
-              />
-            </div>
-            <div className={JVStyle.landingPageImg}>
-              <Image
-                src={require('../../assets/images/work/2024/JV-construction/landingPageImg5.svg')}
-              />
-            </div>
-            <div className={JVStyle.landingPageImg}>
-              <Image
-                src={require('../../assets/images/work/2024/JV-construction/landingPageImg.png')}
-              />
-            </div>
-            <div className={JVStyle.landingPageImg}>
-              <Image
-                src={require('../../assets/images/work/2024/JV-construction/landingPageImg2.svg')}
-              />
-            </div>
-            <div className={JVStyle.landingPageImg}>
-              <Image
-                src={require('../../assets/images/work/2024/JV-construction/landingPageImg3.svg')}
-              />
-            </div>
-            <div className={JVStyle.landingPageImg}>
-              <Image
-                src={require('../../assets/images/work/2024/JV-construction/landingPageImg4.svg')}
-              />
-            </div>
-            <div className={JVStyle.landingPageImg}>
-              <Image
-                src={require('../../assets/images/work/2024/JV-construction/landingPageImg5.svg')}
-              />
-            </div>
-          </OwlCarousel>
-        </div>
-      </div>
-
-      <TechnologySection data={data.techdata.jv} />
-
-
-
-      <div className={JVStyle.circleSection}>
-        <div className="container">
-          <h3 className={portfolioDetailsCommon.mainheading}>Color Palette presentation for <br />
-            <span> JV Construction</span> Website Design
-          </h3>
-          <p>The color scheme features a strong primary Gold with background light cream accents for a cohesive look, deep dark tones for strong contrast, creating a modern and professional aesthetic.</p>
-        </div>
-
-
-        <div className={JVStyle.circlePart}>
+        <div className={JVStyle.landingPageSection}>
           <div className="container">
-            <div className={JVStyle.circleOne}>
-              Gold Primary Color
-            </div>
-            <div className={JVStyle.circleTwo}>
-              Background
-            </div>
-            <div className={JVStyle.circleThree}>
-              Dark Text
-            </div>
-            <div className={JVStyle.circleFour}>
-              Light Text
-            </div>
+            <h3 className={portfolioDetailsCommon.mainheading}>Full Page Preview <br />
+              <span> JV Construction</span> Website Design
+            </h3>
+          </div>
+          <div className={JVStyle.landingPage}>
+            <OwlCarousel className='owlcarousel' {...options}>
+              <div className={JVStyle.landingPageImg}>
+                <Image
+                  src={require('../../assets/images/work/2024/JV-construction/landingPageImg.png')}
+                />
+              </div>
+              <div className={JVStyle.landingPageImg}>
+                <Image
+                  src={require('../../assets/images/work/2024/JV-construction/landingPageImg2.svg')}
+                />
+              </div>
+              <div className={JVStyle.landingPageImg}>
+                <Image
+                  src={require('../../assets/images/work/2024/JV-construction/landingPageImg3.svg')}
+                />
+              </div>
+              <div className={JVStyle.landingPageImg}>
+                <Image
+                  src={require('../../assets/images/work/2024/JV-construction/landingPageImg4.svg')}
+                />
+              </div>
+              <div className={JVStyle.landingPageImg}>
+                <Image
+                  src={require('../../assets/images/work/2024/JV-construction/landingPageImg5.svg')}
+                />
+              </div>
+              <div className={JVStyle.landingPageImg}>
+                <Image
+                  src={require('../../assets/images/work/2024/JV-construction/landingPageImg.png')}
+                />
+              </div>
+              <div className={JVStyle.landingPageImg}>
+                <Image
+                  src={require('../../assets/images/work/2024/JV-construction/landingPageImg2.svg')}
+                />
+              </div>
+              <div className={JVStyle.landingPageImg}>
+                <Image
+                  src={require('../../assets/images/work/2024/JV-construction/landingPageImg3.svg')}
+                />
+              </div>
+              <div className={JVStyle.landingPageImg}>
+                <Image
+                  src={require('../../assets/images/work/2024/JV-construction/landingPageImg4.svg')}
+                />
+              </div>
+              <div className={JVStyle.landingPageImg}>
+                <Image
+                  src={require('../../assets/images/work/2024/JV-construction/landingPageImg5.svg')}
+                />
+              </div>
+            </OwlCarousel>
           </div>
         </div>
 
-      </div>
+        <TechnologySection data={data.techdata.jv} />
+        <div className={JVStyle.circleSection}>
+          <div className="container">
+            <h3 className={portfolioDetailsCommon.mainheading}>Color Palette presentation for <br />
+              <span> JV Construction</span> Website Design
+            </h3>
+            <p>The color scheme features a strong primary Gold with background light cream accents for a cohesive look, deep dark tones for strong contrast, creating a modern and professional aesthetic.</p>
+          </div>
 
-      {/* <div className={JVStyle.circleSection}>
-        <div className="container">
-          <h3 className={portfolioDetailsCommon.mainheading}>Color Palette presentation for <br />
-            <span> JV Construction</span> Website Design
-          </h3>
-          <p>The color scheme features a strong primary Gold with background light cream accents for a cohesive look, deep dark tones for strong contrast, creating a modern and professional aesthetic.</p>
+
           <div className={JVStyle.circlePart}>
-          <div className={JVStyle.circleOne}>
-          <Image
-                src={require('../../assets/images/work/2024/JV-construction/paletteImg1.svg')}
-              />
+            <div className="container">
+              <div className={JVStyle.circleOne}>
+                Gold Primary Color
+              </div>
+              <div className={JVStyle.circleTwo}>
+                Background
+              </div>
+              <div className={JVStyle.circleThree}>
+                Dark Text
+              </div>
+              <div className={JVStyle.circleFour}>
+                Light Text
+              </div>
+            </div>
           </div>
-          <div className={JVStyle.circleTwo}>
-          <Image
-                src={require('../../assets/images/work/2024/JV-construction/paletteImg2.svg')}
-              />
-          </div>
-          <div className={JVStyle.circleThree}>
-          <Image
-                src={require('../../assets/images/work/2024/JV-construction/paletteImg3.svg')}
-              />
-          </div>
-          <div className={JVStyle.circleFour}>
-          <Image
-                src={require('../../assets/images/work/2024/JV-construction/paletteImg4.svg')}
-              />
-          </div>
-          </div>
+
         </div>
-      </div> */}
 
-      <div className={JVStyle.innerPageSection}>
-        <div className="container">
-          <h3 className={portfolioDetailsCommon.mainheading}>Inner Page Design Of<br />
-            <span> JV Construction</span> Website
-          </h3>
+        <div className={JVStyle.innerPageSection}>
+          <div className="container">
+            <h3 className={portfolioDetailsCommon.mainheading}>Inner Page Design Of<br />
+              <span> JV Construction</span> Website
+            </h3>
 
-          <div>
-            <Image
-              src={require('../../assets/images/work/2024/JV-construction/innerBg.png')}
-              alt="Animated"
-            />
+            <div>
+              <Image
+                src={require('../../assets/images/work/2024/JV-construction/innerBg.png')}
+                alt="Animated"
+              />
+            </div>
           </div>
         </div>
       </div>

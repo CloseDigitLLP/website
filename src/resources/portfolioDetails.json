@@ -221,6 +221,17 @@
                     { "src": "images/work/technology-icons/bootstrap.svg", "name": "Bootstrap" },
                     { "src": "images/work/technology-icons/js.svg", "name": "JavaScript" }
                 ]
+            },
+            {
+                "id": "animate17",
+                "title": "Proper Sky",
+                "href": "/ProperSky",
+                "imgSrc": "images/work/2024/ProperSky.png",
+                "tech": [
+                    { "src": "images/work/technology-icons/uiux.svg", "name": "UI-UX" },
+                    { "src": "images/work/technology-icons/html.svg", "name": "HTML" },
+                    { "src": "images/work/technology-icons/scss.svg", "name": "SCSS" }
+                ]
             }
     ],
     "techdata": {

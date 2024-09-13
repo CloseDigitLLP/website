@@ -1,12 +1,10 @@
-.bannerSection{
-    background-image: url(../../assets/images/work/2024/JV-construction/banner-img.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
+.bannerMainSection{
+    background: linear-gradient(180deg, #FFF 0%, #F4F3EC 10%, #EBE9DC 15%, #faf4d5 20%, #d3cba0 50%, #faf4d5 70%, #EBE9DC 84.6%, #F4F3EC 90%, #FFF 100%);
 }
 
-
+.ContentSection{
+    overflow: hidden !important;
+}
 .bannerSection h3 {
     width: 100%;
 }
@@ -60,10 +58,11 @@
 
 .showCaseSection {
     padding: 144px 0;
+    overflow: hidden;
 }
 
 .showCaseSection h3 span {
-    color: #AA9A48;
+    color: #70652a;
 }
 
 .showCase {
@@ -80,13 +79,12 @@
 .showCaseSection .showCaseImg1 {
     position: absolute;
     width: 70%;
-    height: 570px !important;
+    height: 570px;
     top: 0;
     left: 0;
     z-index: 5;
+    transition: all 0.5s;
 }
-
-
 .showCaseSection .showCaseImg2 {
     position: absolute;
     width: 70%;
@@ -94,10 +92,12 @@
     top: -70px;
     right: 0;
     z-index: 2;
+    transition: all 0.5s;
 }
 
 .processSection {
     margin-top: 160px;
+    overflow: hidden;
 }
 
 .processSection p {

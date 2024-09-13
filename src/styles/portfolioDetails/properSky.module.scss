@@ -1,0 +1,117 @@
+.bannerHeadText h3 span {
+    color: #257CA8;
+}
+
+
+
+
+
+
+
+.bannerSection {
+    height: 3000px;
+    display: flex;
+}
+
+.bannerImg {
+    position: sticky;
+    top: 0px;
+    transition: 0.5s;
+    overflow: hidden;
+    background-image: url(../../assets/images/work/2024/propersky/laptopImg.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+}
+
+
+
+.image1,
+.image2,
+.image3,
+.image4,
+.image5,
+.image6,
+.image7,
+.image8 {
+    position: absolute !important;
+    top: 16px !important;
+    left: -2px !important;
+    transition: opacity 0.8s;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+.image1{
+    background-image: url(../../assets/images/work/2024/propersky/img1.png);
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 86%;
+    background-repeat: no-repeat;
+}
+.image2{
+    background-image: url(../../assets/images/work/2024/propersky/img2.png);
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 86%;
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+.image3{
+    background-image: url(../../assets/images/work/2024/propersky/img3.png);
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 86%;
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+.image4{
+    background-image: url(../../assets/images/work/2024/propersky/img4.png);
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 86%;
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+.image5{
+    background-image: url(../../assets/images/work/2024/propersky/img5.png);
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 86%;
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+.image6{
+    background-image: url(../../assets/images/work/2024/propersky/img6.png);
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 86%;
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+.image7{
+    background-image: url(../../assets/images/work/2024/propersky/img7.png);
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 86%;
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+.image8{
+    background-image: url(../../assets/images/work/2024/propersky/img8.png);
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 86%;
+    background-repeat: no-repeat;
+    opacity: 0;
+}

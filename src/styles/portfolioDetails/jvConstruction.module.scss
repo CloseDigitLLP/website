@@ -1,10 +1,7 @@
-.bannerMainSection{
+.bannerMainSection {
     background: linear-gradient(180deg, #FFF 0%, #F4F3EC 10%, #EBE9DC 15%, #faf4d5 20%, #d3cba0 50%, #faf4d5 70%, #EBE9DC 84.6%, #F4F3EC 90%, #FFF 100%);
 }
 
-.ContentSection{
-    overflow: hidden !important;
-}
 .bannerSection h3 {
     width: 100%;
 }
@@ -56,44 +53,63 @@
     }
 }
 
+
+
+// showCaseSection
+
 .showCaseSection {
     padding: 144px 0;
-    overflow: hidden;
+    position: relative;
+    height: 100%;
 }
 
 .showCaseSection h3 span {
     color: #70652a;
 }
 
-.showCase {
-    background-color: #F5F5F7;
-    border-radius: 20px;
-}
+.showCaseImg{
+    height: 100vh;
+    position: sticky;
+    top: 20px;
+    text-align: center;
+    font-size: 85px;
+    box-shadow: 0 10px 15px #00000060;
+  }
 
-.showCaseSection .showCaseImgSection {
-    top: 70px;
-    position: relative;
-    height: 700px;
-}
+  .Img1 {
+    z-index: 7;
+    background: url('../../assets/images/work/2024/JV-construction/showcaseImg1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .Img2 {
+    z-index: 8;
+    background: url('../../assets/images/work/2024/JV-construction/showcaseImg2.png');
+    background-size: cover;
+    background-position: 0% 70%;
+    background-repeat: no-repeat;
+  }
+  .Img3 {
+    z-index: 9;
+    background: url('../../assets/images/work/2024/JV-construction/showcaseImg1.png');
+    background-size: cover;
+    background-position: 0% 70%;
+    background-repeat: no-repeat;
+  }
+  .Img4 {
+    z-index: 10;
+    background: url('../../assets/images/work/2024/JV-construction/showcaseImg2.png');
+    background-size: cover;
+    background-position: 0% 30%;
+    background-repeat: no-repeat;
+  }
 
-.showCaseSection .showCaseImg1 {
-    position: absolute;
-    width: 70%;
-    height: 570px;
-    top: 0;
-    left: 0;
-    z-index: 5;
-    transition: all 0.5s;
-}
-.showCaseSection .showCaseImg2 {
-    position: absolute;
-    width: 70%;
-    height: 570px;
-    top: -70px;
-    right: 0;
-    z-index: 2;
-    transition: all 0.5s;
-}
+
+
+
+
+// processSection
 
 .processSection {
     margin-top: 160px;
@@ -149,6 +165,8 @@
     color: #919EAB;
 
 }
+
+// landingPageSection
 
 .landingPageSection {
     margin-top: 50px;
@@ -452,26 +470,30 @@
     .landingPageSection .landingPage {
         padding: 100px 0px;
     }
+
     .processSection .processScrollSection h3 {
         font-size: 24px;
     }
-    
+
     .processSection .processScrollSection p {
         font-size: 14px;
     }
+
     .scaleUp {
         width: 150px !important;
         height: 150px !important;
     }
-    
+
     .removeScale {
         width: 75px !important;
         height: 75px !important;
     }
+
     .processScrollSection .subProcessPart .subProcessImg {
         width: 75px;
         height: 75px;
     }
+
     .processScrollSection .subProcessPart {
         padding: 30px 0;
     }
@@ -479,7 +501,7 @@
     .landingPageSection .landingPage::after {
         font-size: 100px;
     }
-    
+
     .landingPageSection .landingPage::before {
         font-size: 100px;
     }
@@ -562,22 +584,26 @@
     .showCaseSection .showCaseImgSection {
         height: 450px;
     }
+
     .processScrollSection .subProcessPart h6 {
         width: 30%;
         font-size: 12px;
     }
+
     .processSection .processScrollSection h3 {
         font-size: 16px;
     }
+
     .scaleUp {
         width: 100px !important;
         height: 100px !important;
     }
-    
+
     .removeScale {
         width: 50px !important;
         height: 50px !important;
     }
+
     .processScrollSection .subProcessPart .subProcessImg {
         width: 50px;
         height: 50px;
@@ -619,10 +645,12 @@
     .circlePart {
         height: 260px;
     }
+
     .processSection p {
         font-size: 16px;
         width: 100%;
     }
+
     .showCaseSection .showCaseImgSection {
         height: 400px;
     }
@@ -674,36 +702,43 @@
     .circlePart {
         height: 200px;
     }
+
     .processScrollSection .subProcessPart h6 {
         width: 35%;
         font-size: 10px;
     }
+
     .processSection .processScrollSection h3 {
         font-size: 12px;
     }
+
     .scaleUp {
         width: 70px !important;
         height: 70px !important;
     }
-    
+
     .removeScale {
         width: 35px !important;
         height: 35px !important;
     }
+
     .processScrollSection .subProcessPart .subProcessImg {
         width: 35px;
         height: 35px;
     }
+
     .landingPageSection .landingPage::after {
         font-size: 50px;
     }
-    
+
     .landingPageSection .landingPage::before {
         font-size: 50px;
     }
+
     .landingPageSection .landingPage {
         padding: 70px 0px;
     }
+
     .showCaseSection .showCaseImgSection {
         height: 300px;
     }

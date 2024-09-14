@@ -135,60 +135,35 @@ export default function JVConstruction() {
           </div>
 
           <div className={JVStyle.showCaseSection}>
+
+
             <div className="container">
               <h3 className={portfolioDetailsCommon.mainheading}>
                 Innovative design solution <br />
                 <span>JV Construct</span> Showcase
               </h3>
-              {/* <div className='allpage'>
-                <div className='page fs'>
-                  <Image
-                    src={require('../../assets/images/work/2024/JV-construction/processImg1.svg')}
-                    alt="Animated"
-                  />
-                </div>
-                <div className='page sc'>
-                  <Image
-                    src={require('../../assets/images/work/2024/JV-construction/processImg1.svg')}
-                    alt="Animated"
-                  />
-                </div>
-                <div className="page th">
-                  <Image
-                    src={require('../../assets/images/work/2024/JV-construction/processImg1.svg')}
-                    alt="Animated"
-                  />
-                </div>
-                <div class="page fr">
-                  <Image
-                    src={require('../../assets/images/work/2024/JV-construction/processImg1.svg')}
-                    alt="Animated"
-                  />
-                </div>
-              </div> */}
-
-
-
-
-
-              <div className={JVStyle.showCase}>
-                    <div className={JVStyle.showCaseImgSection}>
-                      <div className={`${JVStyle.showCaseImg1} `}>
-                        <Image className='animatable bounceInLeft'
-                          src={require('../../assets/images/work/2024/JV-construction/showcaseImg1.png')}
-                          alt="Animated"
-                        />
-                      </div>
-                      <div className={`${JVStyle.showCaseImg2}  `}>
-                        <Image className='animatable bounceInRight'
-                          src={require('../../assets/images/work/2024/JV-construction/showcaseImg2.png')}
-                          alt="Animated"
-                        />
-                      </div>
-                    </div>
-                  </div>
-
             </div>
+
+            <div className="container">
+              <div className={JVStyle.showCaseImgSection}>
+
+                <div className={`${JVStyle.showCaseImg} ${JVStyle.Img1}`}>               
+                </div>
+                <div className={`${JVStyle.showCaseImg} ${JVStyle.Img2}`}>
+                </div>
+                <div className={`${JVStyle.showCaseImg} ${JVStyle.Img3}`}>
+                </div>
+                <div className={`${JVStyle.showCaseImg} ${JVStyle.Img4}`}>
+                </div>
+                <div className={`${JVStyle.showCaseImg} ${JVStyle.Img5}`}>
+                </div>
+
+              </div>
+              </div>
+            
+
+
+
           </div>
         </div>
 

@@ -228,20 +228,37 @@
     background-size: contain;
     background-position: center;
     width: 100%;
-    height: 550px;
+    height: 500px;
     z-index: 10;
     position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.mockupSlider{
+.landingPageSection .landingPage .mockupImg .mockupInnerImg{
     position: absolute;
-    top: 3px;
-    left: 70px;
-    transform: scale(1);
-    rotate: 10deg;
-    width: 100%;
-    height: 355px;
+    background-color: #4C8BC3;
+    width: 20%;
+    rotate: 10.0deg;
+    top: 49px;
+    left: 43.1%;
+    height: 284px;
+    padding: 20px 20px 100px 20px;
+    background-image: url(../../assets/images/work/2024/propersky/ProperSkyInnermockup.png);
+    background-size: cover;
+    background-repeat: repeat;
+    animation: moveUp 30s linear infinite;
 }
+@keyframes moveUp {
+    0% {
+        background-position: 0 -100%;
+    }
 
+    100% {
+        background-position: 0 0;
+    }
+}
 .landingPageSection .landingPage::after {
     position: absolute;
     content: "Landing";

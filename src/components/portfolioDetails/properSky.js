@@ -2,31 +2,9 @@ import React, { useEffect, useRef } from 'react';
 import ProperSkyStyle from '../../styles/portfolioDetails/properSky.module.scss';
 import portfolioDetailsCommon from '../../styles/portfolioDetails/portfolioDetailsCommon.module.scss';
 import Image from 'next/image';
-import dynamic from 'next/dynamic';
 import data from '../../resources/portfolioDetails.json'
 import TechnologySection from './portfolioDetailsCommon/technologySection';
 
-
-const options = {
-  items: 1,
-  autoplay: false,
-  autoplayTimeout: 3000,
-  autoplayHoverPause: false,
-  autoplaySpeed: 4000,
-  margin: 20,
-  loop: true,
-  rtl: true,
-  responsiveClass: true,
-  nav: false,
-  dots: false,
-  stagePadding: 50,
-  margin: 20,
-};
-
-const OwlCarousel = dynamic(() => import('react-owl-carousel'), { ssr: false });
-
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 export default function properSky() {
 
@@ -239,59 +217,8 @@ export default function properSky() {
         </div>
         <div className={ProperSkyStyle.landingPage}>
           <div className={ProperSkyStyle.mockupImg}>
-          <div className={ProperSkyStyle.mockupSlider}>
-            <OwlCarousel className='owlcarousel' {...options}>
-              <div className={ProperSkyStyle.landingPageImg}>
-                <Image
-                  src={require('../../assets/images/work/2024/JV-construction/landingPageImg.png')}
-                />
-              </div>
-              <div className={ProperSkyStyle.landingPageImg}>
-                <Image
-                  src={require('../../assets/images/work/2024/JV-construction/landingPageImg2.svg')}
-                />
-              </div>
-              <div className={ProperSkyStyle.landingPageImg}>
-                <Image
-                  src={require('../../assets/images/work/2024/JV-construction/landingPageImg3.svg')}
-                />
-              </div>
-              <div className={ProperSkyStyle.landingPageImg}>
-                <Image
-                  src={require('../../assets/images/work/2024/JV-construction/landingPageImg4.svg')}
-                />
-              </div>
-              <div className={ProperSkyStyle.landingPageImg}>
-                <Image
-                  src={require('../../assets/images/work/2024/JV-construction/landingPageImg5.svg')}
-                />
-              </div>
-              <div className={ProperSkyStyle.landingPageImg}>
-                <Image
-                  src={require('../../assets/images/work/2024/JV-construction/landingPageImg.png')}
-                />
-              </div>
-              <div className={ProperSkyStyle.landingPageImg}>
-                <Image
-                  src={require('../../assets/images/work/2024/JV-construction/landingPageImg2.svg')}
-                />
-              </div>
-              <div className={ProperSkyStyle.landingPageImg}>
-                <Image
-                  src={require('../../assets/images/work/2024/JV-construction/landingPageImg3.svg')}
-                />
-              </div>
-              <div className={ProperSkyStyle.landingPageImg}>
-                <Image
-                  src={require('../../assets/images/work/2024/JV-construction/landingPageImg4.svg')}
-                />
-              </div>
-              <div className={ProperSkyStyle.landingPageImg}>
-                <Image
-                  src={require('../../assets/images/work/2024/JV-construction/landingPageImg5.svg')}
-                />
-              </div>
-            </OwlCarousel>
+          <div className={ProperSkyStyle.mockupInnerImg}>
+           
             </div>
           </div>
         </div>

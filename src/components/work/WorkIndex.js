@@ -16,7 +16,7 @@ export default function WorkIndex(){
                         <div className={`card ${workBannerStyle['card-portfolio']}`}>
                             <div className={`${workBannerStyle['cardImage']}`}>
                                 <Image
-                                    src={require('../../assets/images/work/venini.png')}
+                                    src="/portfolio/work/venini.png"
                                     alt="Animated"
                                     width={580}
                                     height={380}
@@ -37,7 +37,7 @@ export default function WorkIndex(){
                         <div className={`card ${workBannerStyle['card-portfolio']}`}>
                             <div className={`${workBannerStyle['cardImage']}`}>
                                 <Image
-                                    src={require('../../assets/images/work/chillipadi.png')}
+                                    src="/portfolio/work/chillipadi.png"
                                     alt="Animated"
                                     width={580}
                                     height={380}
@@ -59,7 +59,7 @@ export default function WorkIndex(){
                         <div className={`card ${workBannerStyle['card-portfolio']}`}>
                             <div className={`${workBannerStyle['cardImage']}`}>
                                 <Image
-                                    src={require('../../assets/images/work/fbn.png')}
+                                    src="/portfolio/work/fbn.png"
                                     alt="Animated"
                                     width={600}
                                     height={350}
@@ -80,7 +80,7 @@ export default function WorkIndex(){
                         <div className={`card ${workBannerStyle['card-portfolio']}`}>
                             <div className={`${workBannerStyle['cardImage']}`}>
                                 <Image
-                                    src={require('../../assets/images/work/FBN-mobile-app.png')}
+                                    src="/portfolio/work/FBN-mobile-app.png"
                                     alt="Animated"
                                     width={650}
                                     height={380}
@@ -101,7 +101,7 @@ export default function WorkIndex(){
                         <div className={`card ${workBannerStyle['card-portfolio']}`}>
                             <div className={`${workBannerStyle['cardImage']}`}>
                                 <Image
-                                    src={require('../../assets/images/work/practisePlus.png')}
+                                    src="/portfolio/work/practisePlus.png"
                                     alt="Animated"
                                     width={600}
                                     height={350}
@@ -122,7 +122,7 @@ export default function WorkIndex(){
                         <div className={`card ${workBannerStyle['card-portfolio']}`}>
                             <div className={`${workBannerStyle['cardImage']}`}>
                                 <Image
-                                    src={require('../../assets/images/work/commbitz.png')}
+                                    src="/portfolio/work/commbitz.png"
                                     alt="Animated"
                                     width={580}
                                     height={350}
@@ -143,7 +143,7 @@ export default function WorkIndex(){
                         <div className={`card ${workBannerStyle['card-portfolio']}`}>
                             <div className={`${workBannerStyle['cardImage']}`}>
                                 <Image
-                                    src={require('../../assets/images/work/ChilliApi.png')}
+                                    src="/portfolio/work/ChilliApi.png"
                                     alt="Animated"
                                     width={580}
                                     height={350}
@@ -164,7 +164,7 @@ export default function WorkIndex(){
                         <div className={`card ${workBannerStyle['card-portfolio']}`}>
                             <div className={`${workBannerStyle['cardImage']}`}>
                                 <Image
-                                    src={require('../../assets/images/work/snbla.png')}
+                                    src="/portfolio/work/snbla.png"
                                     alt="Animated"
                                     width={580}
                                     height={350}

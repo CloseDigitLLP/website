@@ -30,7 +30,7 @@ export default function ClientStory() {
             </div>
             <div className='container'>
                 <div>
-                    <OwlCarousel 
+                    <OwlCarousel
                         loop
                         nav={false}
                         responsive={{
@@ -94,8 +94,10 @@ export default function ClientStory() {
                                             </div>
                                             <div className={`${clientStoryStyle.profile}`}>
                                                 {review.image_path ? (<Image
-                                                    src={require(`../../assets/${review.image_path}`)}
+                                                    src={review.image_path}
                                                     alt="client"
+                                                    width={70}
+                                                    height={70}
                                                 />) : (<div className={`${clientStoryStyle.namePart}`}>{initial}</div>)}
                                             </div>
                                             <div className={`${clientStoryStyle.ClientName}`}>

@@ -15,7 +15,7 @@ export default function Banner(){
                                 <h3 className={bannerStyle['banner-heading']}>Encourage innovation with</h3>
                             </div>
                             <Image
-                                src={require('../../assets/images/animated-logo.svg')}
+                                src='/imagesssss/animated-logo.svg'
                                 alt="Animated"
                                 width={300}
                                 height={70}

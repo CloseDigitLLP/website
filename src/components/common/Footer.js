@@ -54,14 +54,14 @@ export default function Services(){
                             <div className='col-lg-3 col-md-4 col-sm-6'>
                                 <h6 className={footerStyle['footer-heading']}>About Us</h6>
                                 <div className={footerStyle['description']}>
-                                    <Link href="/AboutUs">
-                                        <a className={footerStyle['link']}>About Us</a>
+                                    <Link href="/AboutUs" className={footerStyle['link']}>
+                                        About Us
                                     </Link>
-                                    <Link href="/Services">
-                                        <a className={footerStyle['link']}>Services</a>
+                                    <Link className={footerStyle['link']} href="/Services">
+                                        Services
                                     </Link>
-                                    <Link href="/Technology">
-                                        <a className={footerStyle['link']}>Technology</a>   
+                                    <Link className={footerStyle['link']} href="/Technology">
+                                        Technology  
                                     </Link>
                                     {/* <Link href="/project">
                                         <a href="" className={footerStyle['link']}>Projects</a>

@@ -72,6 +72,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+}
+
+.brand-part .logo img {
+    width: auto !important;
 }
 
 .brand-part .tech-logo img {
@@ -136,6 +141,7 @@
     transition: 0.5s ease-out;
     opacity: 1;
 }
+
 // hover effect title
 // .imgBox:hover+.project-info {
 //     opacity: 1;

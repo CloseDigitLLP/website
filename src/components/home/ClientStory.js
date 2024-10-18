@@ -59,31 +59,31 @@ export default function ClientStory() {
                                         <div className={`${clientStoryStyle.testimonialBlock}`}>
                                             <div className={`${clientStoryStyle.center}`}>
                                                 <span className={`${clientStoryStyle.star}`}>
-                                                    <Image
+                                                    <Image width={16} height={16}
                                                         src={require('../../assets/images/star.svg')}
                                                         alt="star"
                                                     />
                                                 </span>
                                                 <span className={`${clientStoryStyle.star}`}>
-                                                    <Image
+                                                    <Image width={16} height={16}
                                                         src={require('../../assets/images/star.svg')}
                                                         alt="star"
                                                     />
                                                 </span>
                                                 <span className={`${clientStoryStyle.star}`}>
-                                                    <Image
+                                                    <Image width={16} height={16}
                                                         src={require('../../assets/images/star.svg')}
                                                         alt="star"
                                                     />
                                                 </span>
                                                 <span className={`${clientStoryStyle.star}`}>
-                                                    <Image
+                                                    <Image width={16} height={16}
                                                         src={require('../../assets/images/star.svg')}
                                                         alt="star"
                                                     />
                                                 </span>
                                                 <span className={`${clientStoryStyle.star}`}>
-                                                    <Image
+                                                    <Image width={16} height={16}
                                                         src={require('../../assets/images/star.svg')}
                                                         alt="star"
                                                     />

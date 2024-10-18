@@ -36,7 +36,7 @@ return(
                             <FontAwesomeIcon icon={faUsersViewfinder} />
                         </div>
                         <h3 className={aboutFeature['card-title']}><span>Customer</span>Focused</h3>
-                        <p>By merging technology, concepts, and abilities, we assist today's enterprises in being ready for the future. Committed to providing the greatest level of quality and service.</p>
+                        <p>By merging technology, concepts, and abilities, we assist today&apos;s enterprises in being ready for the future. Committed to providing the greatest level of quality and service.</p>
                     </div>
                 </div>
             </div>

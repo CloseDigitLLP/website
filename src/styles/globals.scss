@@ -148,8 +148,9 @@ section {
   -moz-animation: hero-left-marquee-new 100s linear infinite;
   animation: hero-left-marquee-new 100s linear infinite;
 }
+
 // slick-slider
-.slick-slider{
+.slick-slider {
   z-index: 10;
 }
 
@@ -187,8 +188,9 @@ section {
   .container {
     max-width: 900px;
   }
+
   html,
-  body{
+  body {
     overflow-x: hidden !important;
   }
 
@@ -645,107 +647,107 @@ section {
 
   0%,
   60% {
-      opacity: 0;
+    opacity: 0;
   }
 
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 @keyframes fadeInDown {
   0% {
-      opacity: 0;
-      transform: translateY(-20px);
+    opacity: 0;
+    transform: translateY(-20px);
   }
 
   100% {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 @keyframes fadeInUp {
   0% {
-      opacity: 0;
-      transform: translateY(20px);
+    opacity: 0;
+    transform: translateY(20px);
   }
 
   100% {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 @keyframes bounceIn {
   0% {
-      opacity: 0;
-      transform: scale(0.8);
+    opacity: 0;
+    transform: scale(0.8);
   }
 
   50% {
-      transform: scale(1);
+    transform: scale(1);
   }
 
   70% {
-      transform: scale(0.9);
+    transform: scale(0.9);
   }
 
   100% {
-      opacity: 1;
-      transform: scale(1);
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
 @keyframes bounceInLeft {
   0% {
-      opacity: 0;
-      transform: translateX(-2000px);
+    opacity: 0;
+    transform: translateX(-2000px);
   }
 
   60% {
-      opacity: 0.4;
-      transform: translateX(20px);
+    opacity: 0.4;
+    transform: translateX(20px);
   }
 
   80% {
-      opacity: 0.8;
-      transform: translateX(-5px);
+    opacity: 0.8;
+    transform: translateX(-5px);
   }
 
   100% {
-      opacity: 1;
-      transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
 @keyframes bounceInRight {
   0% {
-      opacity: 0;
-      transform: translateX(2000px);
+    opacity: 0;
+    transform: translateX(2000px);
   }
 
   60% {
-      transform: translateX(-20px);
+    transform: translateX(-20px);
   }
 
   80% {
-      transform: translateX(5px);
+    transform: translateX(5px);
   }
 
   100% {
-      opacity: 1;
-      transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
 @keyframes moveUp {
   0% {
-      transform: translateY(40px);
+    transform: translateY(40px);
   }
 
   100% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -753,11 +755,11 @@ section {
 
   0%,
   70% {
-      background: rgba(255, 226, 208, 1);
+    background: rgba(255, 226, 208, 1);
   }
 
   100% {
-      background: none;
+    background: none;
   }
 }
 

@@ -54,8 +54,10 @@ const Slider = ({ slides }) => {
           <div key={index} className={styles['slider-card']}>
             <div className={styles['slider-img-part']}>
               <Image
-                src={require(`../../../assets/${slide.image}`)}
+                src={slide.image}
                 alt={`Slide ${index + 1}`}
+                width={500}
+                height={500}
               />
             </div>
             <div className={styles['slider-text-part']}>

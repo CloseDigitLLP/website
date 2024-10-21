@@ -421,7 +421,6 @@
 
 .innerPageSection img {
     width: 100% !important;
-    height: 100vh !important;
 }
 
 .scaleUp {
@@ -446,6 +445,10 @@
 }
 
 @media screen and (max-width:992px) {
+    .showCaseImgSection {
+        overflow: hidden;
+    }
+
     .bannerSection .bannerInnerImg {
         width: 72%;
         left: 14%;
@@ -553,6 +556,11 @@
         height: 540px;
     }
 
+    .landingPageSection .landingPageImg img {
+        width: 300px !important;
+        height: 250px !important;
+    }
+
 }
 
 @media screen and (max-width:690px) {
@@ -638,6 +646,11 @@
 }
 
 @media screen and (max-width:512px) {
+    .landingPageSection .landingPageImg img {
+        width: 200px !important;
+        height: 150px !important;
+    }
+
     .bannerSection .bannerInnerImg {
         height: 228px;
         top: 76px;

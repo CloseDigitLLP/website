@@ -2,123 +2,113 @@ import React, { useEffect, useRef } from 'react';
 import JVStyle from '../../styles/portfolioDetails/jvConstruction.module.scss';
 import portfolioDetailsCommon from '../../styles/portfolioDetails/portfolioDetailsCommon.module.scss';
 import Image from 'next/image';
-import dynamic from 'next/dynamic';
 import data from '../../resources/portfolioDetails.json'
-// import TechnologySection from './portfolioDetailsCommon/technologySection';
-
-
-// const options = {
-//   items: 1,
-//   autoplay: true,
-//   autoplayTimeout: 3000,
-//   autoplayHoverPause: false,
-//   autoplaySpeed: 4000,
-//   margin: 20,
-//   loop: true,
-//   rtl: true,
-//   responsiveClass: true,
-//   nav: false,
-//   dots: false,
-//   stagePadding: 50,
-//   margin: 20,
-// };
-
-// const OwlCarousel = dynamic(() => import('react-owl-carousel'), { ssr: false });
-
-// import 'owl.carousel/dist/assets/owl.carousel.css';
-// import 'owl.carousel/dist/assets/owl.theme.default.css';
+import TechnologySection from './portfolioDetailsCommon/technologySection';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 export default function JVConstruction() {
 
-  // const processImgRef1 = useRef(null);
-  // const processImgRef2 = useRef(null);
-  // const processImgRef3 = useRef(null);
-  // const processImgRef4 = useRef(null);
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 400,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    pauseOnHover: false,
+  };
 
-  // useEffect(() => {
-  //   const initializeScrollMagic = async () => {
-  //     const { default: ScrollMagic } = await import('scrollmagic');
-  //     await import('scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators');
+  const processImgRef1 = useRef(null);
+  const processImgRef2 = useRef(null);
+  const processImgRef3 = useRef(null);
+  const processImgRef4 = useRef(null);
 
-  //     const controller = new ScrollMagic.Controller();
+  useEffect(() => {
+    const initializeScrollMagic = async () => {
+      const { default: ScrollMagic } = await import('scrollmagic/scrollmagic/uncompressed/ScrollMagic');
 
-  //     const scenes = [
-  //       {
-  //         triggerElement: processImgRef1.current,
-  //         ref: processImgRef1,
-  //       },
-  //       {
-  //         triggerElement: processImgRef2.current,
-  //         ref: processImgRef2,
-  //       },
-  //       {
-  //         triggerElement: processImgRef3.current,
-  //         ref: processImgRef3,
-  //       },
-  //       {
-  //         triggerElement: processImgRef4.current,
-  //         ref: processImgRef4,
-  //       },
-  //     ];
+      const controller = new ScrollMagic.Controller();
 
-  //     scenes.forEach(({ triggerElement, ref }) => {
-  //       new ScrollMagic.Scene({
-  //         triggerElement,
-  //         duration: 500,
-  //         triggerHook: 0.7,
-  //       })
-  //         .setClassToggle(ref.current, JVStyle['scaleUp'])
-  //         .addIndicators()
-  //         .addTo(controller);
+      const scenes = [
+        {
+          triggerElement: processImgRef1.current,
+          ref: processImgRef1,
+        },
+        {
+          triggerElement: processImgRef2.current,
+          ref: processImgRef2,
+        },
+        {
+          triggerElement: processImgRef3.current,
+          ref: processImgRef3,
+        },
+        {
+          triggerElement: processImgRef4.current,
+          ref: processImgRef4,
+        },
+      ];
 
-  //       new ScrollMagic.Scene({
-  //         triggerElement,
-  //         duration: 500,
-  //         triggerHook: 0.3,
-  //       })
-  //         .setClassToggle(ref.current, JVStyle['removeScale'])
-  //         .addIndicators()
-  //         .addTo(controller);
-  //     });
+      scenes.forEach(({ triggerElement, ref }) => {
+        new ScrollMagic.Scene({
+          triggerElement,
+          duration: 500,
+          triggerHook: 0.7,
+        })
+          .setClassToggle(ref.current, JVStyle['scaleUp'])
+          .addTo(controller);
 
-  //     return () => {
-  //       controller.destroy(true);
-  //     };
-  //   };
+        new ScrollMagic.Scene({
+          triggerElement,
+          duration: 500,
+          triggerHook: 0.3,
+        })
+          .setClassToggle(ref.current, JVStyle['removeScale'])
+          .addTo(controller);
+      });
 
-  //   initializeScrollMagic();
-  // }, []);
+      return () => {
+        controller.destroy(true);
+      };
+    };
+
+    initializeScrollMagic();
+  }, []);
 
 
-  // useEffect(() => {
-  //   const doAnimations = () => {
-  //     const offset = $(window).scrollTop() + $(window).height();
-  //     const $animatables = $('.animatable');
+  useEffect(() => {
+    const doAnimations = () => {
+      const offset = window.scrollY + window.innerHeight;
+      const animatables = document.querySelectorAll('.animatable');
 
-  //     if ($animatables.length === 0) {
-  //       $(window).off('scroll', doAnimations);
-  //     }
+      if (animatables.length === 0) {
+        window.removeEventListener('scroll', doAnimations);
+      }
 
-  //     $animatables.each(function () {
-  //       const $animatable = $(this);
-  //       if (($animatable.offset().top + $animatable.height() - 500) < offset) {
-  //         $animatable.removeClass('animatable').addClass('animated');
-  //       }
-  //     });
-  //   };
+      animatables.forEach((animatable) => {
+        if ((animatable.getBoundingClientRect().top + animatable.offsetHeight - 500) < offset) {
+          animatable.classList.remove('animatable');
+          animatable.classList.add('animated');
+        }
+      });
+    };
 
-  //   $(window).on('scroll', doAnimations);
-  //   $(window).trigger('scroll');
-  //   return () => {
-  //     $(window).off('scroll', doAnimations);
-  //   };
-  // }, []);
+    window.addEventListener('scroll', doAnimations);
+    doAnimations();
+
+    return () => {
+      window.removeEventListener('scroll', doAnimations);
+    };
+  }, []);
 
 
 
   return (
     <div className={portfolioDetailsCommon.mainSection}>
-      {/* <div className={JVStyle.ContentSection}>
+      <div className={JVStyle.ContentSection}>
         <div className={JVStyle.bannerMainSection}>
           <div className={JVStyle.bannerSection}>
             <div className="container">
@@ -146,7 +136,6 @@ export default function JVConstruction() {
 
             <div className="container">
               <div className={JVStyle.showCaseImgSection}>
-
                 <div className={`${JVStyle.showCaseImg} ${JVStyle.Img1}`}>
                 </div>
                 <div className={`${JVStyle.showCaseImg} ${JVStyle.Img2}`}>
@@ -157,13 +146,8 @@ export default function JVConstruction() {
                 </div>
                 <div className={`${JVStyle.showCaseImg} ${JVStyle.Img5}`}>
                 </div>
-
               </div>
             </div>
-
-
-
-
           </div>
         </div>
 
@@ -182,7 +166,7 @@ export default function JVConstruction() {
               <div className={JVStyle.subProcessPart}>
                 <h3>01.</h3>
                 <div ref={processImgRef1} className={JVStyle.subProcessImg}>
-                  <Image width={100} height={100} 
+                  <Image width={100} height={100}
                     src="/work/2024/JV-construction/processImg1.svg"
                     alt="Animated"
                   />
@@ -194,7 +178,7 @@ export default function JVConstruction() {
               <div className={JVStyle.subProcessPart}>
                 <h3>02.</h3>
                 <div ref={processImgRef2} className={JVStyle.subProcessImg}>
-                  <Image width={100} height={100} 
+                  <Image width={100} height={100}
                     src="/work/2024/JV-construction/processImg2.svg"
                     alt="Animated"
                   />
@@ -206,7 +190,7 @@ export default function JVConstruction() {
               <div className={JVStyle.subProcessPart}>
                 <h3>03.</h3>
                 <div ref={processImgRef3} className={JVStyle.subProcessImg}>
-                  <Image width={100} height={100} 
+                  <Image width={100} height={100}
                     src="/work/2024/JV-construction/processImg3.svg"
                     alt="Animated"
                   />
@@ -218,7 +202,7 @@ export default function JVConstruction() {
               <div className={JVStyle.subProcessPart}>
                 <h3>04.</h3>
                 <div ref={processImgRef4} className={JVStyle.subProcessImg}>
-                  <Image width={100} height={100} 
+                  <Image width={100} height={100}
                     src="/work/2024/JV-construction/processImg4.svg"
                     alt="Animated"
                   />
@@ -238,58 +222,49 @@ export default function JVConstruction() {
             </h3>
           </div>
           <div className={JVStyle.landingPage}>
-            <OwlCarousel className='owlcarousel' {...options}>
+            {/* React Slick Carousel */}
+            <Slider {...settings}>
               <div className={JVStyle.landingPageImg}>
-                <Image width={100} height={100} 
+                <Image
+                  width={500}
+                  height={500}
                   src="/work/2024/JV-construction/landingPageImg.png"
+                  alt="JV Construction Landing Page Image 1"
                 />
               </div>
               <div className={JVStyle.landingPageImg}>
-                <Image width={100} height={100} 
+                <Image
+                  width={500}
+                  height={500}
                   src="/work/2024/JV-construction/landingPageImg2.svg"
+                  alt="JV Construction Landing Page Image 2"
                 />
               </div>
               <div className={JVStyle.landingPageImg}>
-                <Image width={100} height={100} 
+                <Image
+                  width={500}
+                  height={500}
                   src="/work/2024/JV-construction/landingPageImg3.svg"
+                  alt="JV Construction Landing Page Image 3"
                 />
               </div>
               <div className={JVStyle.landingPageImg}>
-                <Image width={100} height={100} 
+                <Image
+                  width={500}
+                  height={500}
                   src="/work/2024/JV-construction/landingPageImg4.svg"
+                  alt="JV Construction Landing Page Image 4"
                 />
               </div>
               <div className={JVStyle.landingPageImg}>
-                <Image width={100} height={100} 
+                <Image
+                  width={500}
+                  height={500}
                   src="/work/2024/JV-construction/landingPageImg5.svg"
+                  alt="JV Construction Landing Page Image 5"
                 />
               </div>
-              <div className={JVStyle.landingPageImg}>
-                <Image width={100} height={100} 
-                  src="/work/2024/JV-construction/landingPageImg.png"
-                />
-              </div>
-              <div className={JVStyle.landingPageImg}>
-                <Image width={100} height={100} 
-                  src="/work/2024/JV-construction/landingPageImg2.svg"
-                />
-              </div>
-              <div className={JVStyle.landingPageImg}>
-                <Image width={100} height={100} 
-                  src="/work/2024/JV-construction/landingPageImg3.svg"
-                />
-              </div>
-              <div className={JVStyle.landingPageImg}>
-                <Image width={100} height={100} 
-                  src="/work/2024/JV-construction/landingPageImg4.svg"
-                />
-              </div>
-              <div className={JVStyle.landingPageImg}>
-                <Image width={100} height={100} 
-                  src="/work/2024/JV-construction/landingPageImg5.svg"
-                />
-              </div>
-            </OwlCarousel>
+            </Slider>
           </div>
         </div>
 
@@ -329,14 +304,14 @@ export default function JVConstruction() {
             </h3>
 
             <div>
-              <Image width={100} height={100} 
+              <img
                 src="/work/2024/JV-construction/innerBg.png"
                 alt="Animated"
               />
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   )
 

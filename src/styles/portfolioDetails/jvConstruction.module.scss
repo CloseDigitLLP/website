@@ -13,13 +13,14 @@
 .bannerSection p {
     margin-top: 50px;
 }
+
 // .ContentSection img{
 //     width: 100% !important;
 //     height: auto !important;
 // }
 
 .bannerSection .bannerImg {
-    // background-image: url(../../assets/images/work/2024/JV-construction/laptop-mockup.svg);
+    background-image: url("/work/2024/JV-construction/laptop-mockup.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -41,7 +42,7 @@
     height: 435px;
     right: 0;
     padding: 20px 20px 100px 20px;
-    // background-image: url(../../assets/images/work/2024/JV-construction/banner-img.png);
+    background-image: url('/work/2024/JV-construction/banner-img.png');
     background-size: cover;
     background-repeat: repeat;
     animation: moveUp 30s linear infinite;
@@ -64,54 +65,57 @@
 .showCaseSection {
     padding: 144px 0;
     position: relative;
-    height: 100%;
+
 }
 
 .showCaseSection h3 span {
     color: #70652a;
 }
 
-.showCaseImg{
+.showCaseImg {
     height: 100vh;
     position: sticky;
     top: 20px;
     text-align: center;
     font-size: 85px;
     box-shadow: 0 10px 15px #00000060;
-  }
+}
 
-  .Img1 {
+.Img1 {
     z-index: 7;
-    // background: url('../../assets/images/work/2024/JV-construction/slideUpImg1.png');
+    background: url('/work/2024/JV-construction/slideUpImg1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    top:20px
-  }
-  .Img2 {
+    top: 20px
+}
+
+.Img2 {
     z-index: 8;
-    // background: url('../../assets/images/work/2024/JV-construction/slideUpImg2.png');
+    background: url('/work/2024/JV-construction/slideUpImg2.png');
     background-size: cover;
     background-position: 0% 70%;
     background-repeat: no-repeat;
-    top:30px
-  }
-  .Img3 {
+    top: 30px
+}
+
+.Img3 {
     z-index: 9;
-    // background: url('../../assets/images/work/2024/JV-construction/slideUpImg3.png');
+    background: url('/work/2024/JV-construction/slideUpImg3.png');
     background-size: cover;
     background-position: 0% 70%;
     background-repeat: no-repeat;
-    top:40px
-  }
-  .Img4 {
+    top: 40px
+}
+
+.Img4 {
     z-index: 10;
-    // background: url('../../assets/images/work/2024/JV-construction/slideUpImg4.png');
+    background: url('/work/2024/JV-construction/slideUpImg4.png');
     background-size: cover;
     background-position: 0% 30%;
     background-repeat: no-repeat;
-    top:50px
-  }
+    top: 50px
+}
 
 
 
@@ -159,6 +163,11 @@
     transition: transform 0.5s ease-out, width 0.5s ease-out, height 0.5s ease-out;
 }
 
+.processScrollSection .subProcessPart .subProcessImg img {
+    width: 100% !important;
+    height: auto !important;
+}
+
 .processScrollSection .subProcessPart .subProcessImg span {
     height: 100% !important;
     width: 100% !important;
@@ -191,6 +200,7 @@
     background-position: center;
     width: 100%;
     position: relative;
+    z-index: 10;
 }
 
 .landingPageSection .landingPage::after {
@@ -205,6 +215,7 @@
     left: 0;
     right: 0;
     top: 0;
+    z-index: 1;
 }
 
 .landingPageSection .landingPage::before {
@@ -219,20 +230,23 @@
     left: 0;
     right: 0;
     opacity: 0.5;
+    z-index: 1;
 }
 
 .landingPageSection .landingPageImg {
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
 }
 
 .landingPageSection .landingPageImg img {
     width: 500px !important;
+    height: 400px !important;
 }
 
 .circleSection {
     padding: 144px 0;
+    overflow: hidden;
 
 }
 
@@ -405,6 +419,11 @@
     color: #857523;
 }
 
+.innerPageSection img {
+    width: 100% !important;
+    height: 100vh !important;
+}
+
 .scaleUp {
     width: 200px !important;
     height: 200px !important;
@@ -500,6 +519,7 @@
         width: 75px;
         height: 75px;
     }
+
 
     .processScrollSection .subProcessPart {
         padding: 30px 0;

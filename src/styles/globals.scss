@@ -148,6 +148,10 @@ section {
   -moz-animation: hero-left-marquee-new 100s linear infinite;
   animation: hero-left-marquee-new 100s linear infinite;
 }
+// slick-slider
+.slick-slider{
+  z-index: 10;
+}
 
 @keyframes hero-left-marquee-new {
   0% {

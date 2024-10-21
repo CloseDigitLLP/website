@@ -238,162 +238,162 @@
         "camelab": [
             {
                 "name": "React",
-                "icon": "images/work/2024/tech-icons/React.svg"
+                "icon": "/work/2024/tech-icons/React.svg"
             },
             {
                 "name": "MySQL",
-                "icon": "images/work/2024/tech-icons/MySQL.svg"
+                "icon": "/work/2024/tech-icons/MySQL.svg"
             },
             {
                 "name": "Redux",
-                "icon": "images/work/2024/tech-icons/Redux.svg"
+                "icon": "/work/2024/tech-icons/Redux.svg"
             },
             {
                 "name": "MUI Theme",
-                "icon": "images/work/2024/tech-icons/MUITheme.svg"
+                "icon": "/work/2024/tech-icons/MUITheme.svg"
             },
             {
                 "name": "Firebase",
-                "icon": "images/work/2024/tech-icons/Firebase.svg"
+                "icon": "/work/2024/tech-icons/Firebase.svg"
             },
             {
                 "name": "React Native",
-                "icon": "images/work/2024/tech-icons/ReactNative.svg"
+                "icon": "/work/2024/tech-icons/ReactNative.svg"
             }
         ],
         "FBN":[
             {
                 "name": "Next JS",
-                "icon": "images/work/2024/tech-icons/NextJS.svg"
+                "icon": "/work/2024/tech-icons/NextJS.svg"
             },
             {
                 "name": "Firebase",
-                "icon": "images/work/2024/tech-icons/Firebase.svg"
+                "icon": "/work/2024/tech-icons/Firebase.svg"
             },
             {
                 "name": "Redux",
-                "icon": "images/work/2024/tech-icons/Redux.svg"
+                "icon": "/work/2024/tech-icons/Redux.svg"
             },
             {
                 "name": "AWS",
-                "icon": "images/work/2024/tech-icons/AWS.svg"
+                "icon": "/work/2024/tech-icons/AWS.svg"
             },
             {
                 "name": "Express JS",
-                "icon": "images/work/2024/tech-icons/ExpressJS.svg"
+                "icon": "/work/2024/tech-icons/ExpressJS.svg"
             },
             {
                 "name": "Material UI",
-                "icon": "images/work/2024/tech-icons/MaterialUI.svg"
+                "icon": "/work/2024/tech-icons/MaterialUI.svg"
             },
 
             {
                 "name": "React Native",
-                "icon": "images/work/2024/tech-icons/ReactNative.svg"
+                "icon": "/work/2024/tech-icons/ReactNative.svg"
             },
             {
                 "name": "React",
-                "icon": "images/work/2024/tech-icons/React.svg"
+                "icon": "/work/2024/tech-icons/React.svg"
             },
             {
                 "name": "MongoDB",
-                "icon": "images/work/2024/tech-icons/MongoDB.svg"
+                "icon": "/work/2024/tech-icons/MongoDB.svg"
             },
             {
                 "name": "Azure",
-                "icon": "images/work/2024/tech-icons/Azure.svg"
+                "icon": "/work/2024/tech-icons/Azure.svg"
             },
             {
                 "name": "Pdfmake",
-                "icon": "images/work/2024/tech-icons/Pdfmake.svg"
+                "icon": "/work/2024/tech-icons/Pdfmake.svg"
             },
             {
                 "name": "Node",
-                "icon": "images/work/2024/tech-icons/Node.svg"
+                "icon": "/work/2024/tech-icons/Node.svg"
             },
             {
                 "name": "Styled Components",
-                "icon": "images/work/2024/tech-icons/StyledComponents.svg"
+                "icon": "/work/2024/tech-icons/StyledComponents.svg"
             },
 
             {
                 "name": "Redis",
-                "icon": "images/work/2024/tech-icons/Redis.svg"
+                "icon": "/work/2024/tech-icons/Redis.svg"
             },
             {
                 "name": "Chart JS",
-                "icon": "images/work/2024/tech-icons/ChartJS.svg"
+                "icon": "/work/2024/tech-icons/ChartJS.svg"
             },
             {
                 "name": "MySQL",
-                "icon": "images/work/2024/tech-icons/MySQL.svg"
+                "icon": "/work/2024/tech-icons/MySQL.svg"
             },
             {
                 "name": "Kubernetes",
-                "icon": "images/work/2024/tech-icons/Kubernetes.svg"
+                "icon": "/work/2024/tech-icons/Kubernetes.svg"
             },
             {
                 "name": "Sequelize",
-                "icon": "images/work/2024/tech-icons/Sequelize.svg"
+                "icon": "/work/2024/tech-icons/Sequelize.svg"
             },
             {
                 "name": "Git",
-                "icon": "images/work/2024/tech-icons/Git.svg"
+                "icon": "/work/2024/tech-icons/Git.svg"
             }
         ],
         "jv": [
             {
                 "name": "UI/UX",
-                "icon": "images/work/2024/tech-icons/UIUX.svg"
+                "icon": "/work/2024/tech-icons/UIUX.svg"
             },
             {
                 "name": "Figma",
-                "icon": "images/work/2024/tech-icons/Figma.svg"
+                "icon": "/work/2024/tech-icons/Figma.svg"
             },
             {
                 "name": "Adobe Illustrator",
-                "icon": "images/work/2024/tech-icons/AdobeIllustrator.svg"
+                "icon": "/work/2024/tech-icons/AdobeIllustrator.svg"
             },
             {
                 "name": "Adobe XD",
-                "icon": "images/work/2024/tech-icons/AdobeXD.svg"
+                "icon": "/work/2024/tech-icons/AdobeXD.svg"
             }
         ]
     },
     "sliderdata": {
         "camelab": [
             {
-                "image": "images/work/2024/camelab/camelabSliderImg1.png",
+                "image": "/work/2024/camelab/camelabSliderImg1.png",
                 "text": "Camelab admin dashboard provides comprehensive insights into creator submissions and brand selections of User-Generated Content (UGC). It tracks video uploads, categorization, brand engagements, and creator payments seamlessly."
             },
             {
-                "image": "images/work/2024/camelab/camelabSliderImg2.png",
+                "image": "/work/2024/camelab/camelabSliderImg2.png",
                 "text": "The Camelab mobile app's detail page offers brands a comprehensive view of uploaded Content. It showcases video details, creator information, and engagement metrics, facilitating seamless selection and collaboration with creators for impactful brand campaigns."
             },
             {
-                "image": "images/work/2024/camelab/camelabSliderImg3.png",
+                "image": "/work/2024/camelab/camelabSliderImg3.png",
                 "text": "Creating a new campaign on Camelab involves brands outlining their campaign goals and target audience demographics. They then specify criteria for desired Content and set a budget."
             },
             {
-                "image": "images/work/2024/camelab/camelabSliderImg4.png",
+                "image": "/work/2024/camelab/camelabSliderImg4.png",
                 "text": "The Camelab mobile dashboard empowers creators with filters to manage submissions, track uploads and earnings, view brand selections, and handle rejections, ensuring streamlined and transparent engagement."
             }
         ],
         "FBN": [
             {
-                "image": "images/work/2024/fbn/fbnSliderImg1.png",
+                "image": "/work/2024/fbn/fbnSliderImg1.png",
                 "text": "FeelingBetterNow® offers a gold-standard, easy-to-use online mental health risk assessment with instant results. Ensure your privacy while accessing personalized self-care plans and mental health resources. Revisit anytime to monitor your progress."
             },
             {
-                "image": "images/work/2024/fbn/fbnSliderImg2.png",
+                "image": "/work/2024/fbn/fbnSliderImg2.png",
                 "text": "With FeelingBetterNow®, you can view your mental health assessment results instantly. This immediate feedback allows you to quickly understand your mental well-being and take prompt action with personalized self-care plans and resources."
             },
             {
-                "image": "images/work/2024/fbn/fbnSliderImg3.png",
+                "image": "/work/2024/fbn/fbnSliderImg3.png",
                 "text": "Start by completing the online mental health risk assessment with easy-to-answer questions. Once submitted, view your results instantly for a clear overview of your mental well-being. Use the insights to access personalized self-care plans and resources, and revisit the assessment as needed to track your progress."
             },
             {
-                "image": "images/work/2024/fbn/fbnSliderImg4.png",
+                "image": "/work/2024/fbn/fbnSliderImg4.png",
                 "text": "After viewing your results, you'll receive a personalized self-care plan with actionable steps, resources, and medication guidance tailored to your needs. This plan helps you improve your mental well-being, including recommendations for medications if necessary. Track your progress and adjust your plan as needed."
             }
         ]

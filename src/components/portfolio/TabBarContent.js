@@ -22,30 +22,32 @@ export default function TabBarContent() {
             rootMargin: '0px',
             threshold: 0.7
         };
-
+    
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 const index = Number(entry.target.dataset.index);
                 const animateEl = animateRefs.current[index];
                 const showEl = showRefs.current[index];
-
-                if (entry.isIntersecting) {
-                    animateEl.classList.add(portfolioWorkStyle['scale-up']);
-                    showEl.classList.add(portfolioWorkStyle['showDetails']);
-                } else {
-                    animateEl.classList.remove(portfolioWorkStyle['scale-up']);
-                    showEl.classList.remove(portfolioWorkStyle['showDetails']);
+    
+                if (animateEl && showEl) { 
+                    if (entry.isIntersecting) {
+                        animateEl.classList.add(portfolioWorkStyle['scale-up']);
+                        showEl.classList.add(portfolioWorkStyle['showDetails']);
+                    } else {
+                        animateEl.classList.remove(portfolioWorkStyle['scale-up']);
+                        showEl.classList.remove(portfolioWorkStyle['showDetails']);
+                    }
                 }
             });
         }, options);
-
+    
         animateRefs.current.forEach((el, index) => {
             if (el) {
                 el.dataset.index = index;
                 observer.observe(el);
             }
         });
-
+    
         return () => {
             observer.disconnect();
         };

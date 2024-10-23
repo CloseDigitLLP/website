@@ -127,7 +127,7 @@ background: linear-gradient(127deg, rgba(39,24,117,1) 0%, rgba(73,73,221,1) 70%)
     .footerSection{
         padding: 76px 0 0px 0;
         &::after{
-            transform: scaleX(3);
+            transform: scaleX(1);
         }
     }
 }
@@ -135,7 +135,7 @@ background: linear-gradient(127deg, rgba(39,24,117,1) 0%, rgba(73,73,221,1) 70%)
 @media screen and (max-width:767px) {
     .footerSection{
         &::after{
-            transform: scaleX(5);
+            transform: scaleX(1);
         }
       .description{
         margin: 14px 0 30px;
@@ -146,7 +146,7 @@ background: linear-gradient(127deg, rgba(39,24,117,1) 0%, rgba(73,73,221,1) 70%)
 @media screen and (max-width:520px) {
     .footerSection{
         &::after{
-            transform: scaleX(6);
+            transform: scaleX(1);
         }
     }
 }

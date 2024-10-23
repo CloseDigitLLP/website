@@ -1,0 +1,800 @@
+.bannerHeadText {
+    margin-top: 200px;
+}
+
+.bannerHeadText h3 span {
+    color: #257CA8;
+}
+
+
+.bannerSection {
+    height: 4000px;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.bannerImg {
+    position: sticky;
+    top: 0px;
+    transition: 0.5s;
+    overflow: hidden;
+    background-image: url(/work/2024/propersky/laptopImg.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.image1,
+.image2,
+.image3,
+.image4,
+.image5,
+.image6,
+.image7,
+.image8 {
+    position: absolute !important;
+    top: 16px !important;
+    transition: opacity 0.8s;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 86%;
+    background-repeat: no-repeat;
+}
+
+.image1 {
+    background-image: url(/work/2024/propersky/img1.png);
+    z-index: 10;
+}
+
+.image2 {
+    background-image: url(/work/2024/propersky/img2.png);
+    opacity: 0;
+    z-index: 11;
+}
+
+.image3 {
+    background-image: url(/work/2024/propersky/img3.png);
+    opacity: 0;
+    z-index: 12;
+}
+
+.image4 {
+    background-image: url(/work/2024/propersky/img4.png);
+    opacity: 0;
+    z-index: 13;
+}
+
+.image5 {
+    background-image: url(/work/2024/propersky/img5.png);
+    opacity: 0;
+    z-index: 14;
+}
+
+.image6 {
+    background-image: url(/work/2024/propersky/img6.png);
+    opacity: 0;
+    z-index: 15;
+}
+
+.image7 {
+    background-image: url(/work/2024/propersky/img7.png);
+    opacity: 0;
+    z-index: 16;
+}
+
+.image8 {
+    background-image: url(/work/2024/propersky/img8.png);
+    opacity: 0;
+    z-index: 20;
+}
+
+
+// processSection
+
+.processSection {
+    margin-top: 160px;
+    overflow: hidden;
+}
+
+.processSection p {
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 500;
+    color: #919EAB;
+    width: 50%;
+}
+
+.processSection .processScrollSection h3 {
+    font-family: "Poppins";
+    font-size: 32px;
+    font-weight: 500;
+    color: #212529;
+}
+
+.processSection .processScrollSection p {
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+    color: #919EAB;
+}
+
+.processScrollSection .subProcessPart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid 1px #D3D4D7;
+    padding: 50px 0;
+}
+
+.processScrollSection .subProcessPart .subProcessImg {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.5s ease-out, width 0.5s ease-out, height 0.5s ease-out;
+}
+
+.processScrollSection .subProcessPart .subProcessImg img {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.processScrollSection .subProcessPart .subProcessImg span {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.processScrollSection .subProcessPart h6 {
+    width: 30%;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+    color: #919EAB;
+
+}
+
+.scaleUp {
+    width: 200px !important;
+    height: 200px !important;
+}
+
+.removeScale {
+    width: 100px !important;
+    height: 100px !important;
+}
+
+
+// landingPageSection
+.landingPageSection {
+    margin-top: 50px;
+}
+
+.landingPageSection h3 span {
+    color: #AA9A48;
+}
+
+.landingPageSection .landingPage {
+    background: linear-gradient(180deg, #257CA8 0%, #4C8BC3 100%);
+    padding: 120px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landingPageSection .landingPage .mockupImg {
+    background-image: url(/work/2024/propersky/landingPage-laptop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    z-index: 10;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landingPageSection .landingPage .mockupImg .mockupInnerImg {
+    position: absolute;
+    background-color: #4C8BC3;
+    width: 20%;
+    rotate: 10.0deg;
+    top: 49px;
+    left: 43.1%;
+    height: 284px;
+    padding: 20px 20px 100px 20px;
+    background-image: url(/work/2024/propersky/ProperSkyInnermockup.png);
+    background-size: cover;
+    background-repeat: repeat;
+    animation: moveUp 30s linear infinite;
+}
+
+@keyframes moveUp {
+    0% {
+        background-position: 0 -100%;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.landingPageSection .landingPage::after {
+    position: absolute;
+    content: "Landing";
+    font-family: "Poppins";
+    font-size: 200px;
+    font-weight: 500;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.5;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.landingPageSection .landingPage::before {
+    position: absolute;
+    content: "Page";
+    font-family: "Poppins";
+    font-size: 200px;
+    font-weight: 500;
+    text-align: center;
+    color: #FFFFFF;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.landingPage img {
+    z-index: 5;
+
+}
+
+.landingPageSection .landingPageImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landingPageSection .landingPageImg img {
+    width: 500px !important;
+}
+
+.circleSection {
+    padding: 144px 0;
+
+}
+
+.circleSection h3 span {
+    color: #857523;
+}
+
+.circleSection p {
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 500;
+    color: #919EAB;
+    margin-bottom: 70px;
+}
+
+// circlePart
+
+.circlePart {
+    position: relative;
+    height: 600px;
+    margin-top: 60px;
+    background: linear-gradient(180deg, #257CA8 0%, #4C8BC3 100%);
+    overflow: hidden;
+}
+
+.circleSection .circleOne {
+    position: absolute;
+    background-color: #257CA8;
+    border-radius: 50%;
+    width: 497px;
+    height: 497px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins";
+    font-size: 40px;
+    font-weight: 400;
+    color: #FFFFFF;
+    animation: scale1 5s infinite;
+    transition: all .2s ease-out;
+    left: 0%;
+
+}
+
+.circleSection .circleTwo {
+    position: absolute;
+    background-color: #4C8BC3;
+    border-radius: 50%;
+    width: 273px;
+    height: 273px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 40%;
+    font-family: "Poppins";
+    font-size: 26px;
+    font-weight: 400;
+    color: #212529;
+    animation: scale2 4.4s infinite;
+    transition: all .2s ease-out;
+}
+
+.circleSection .circleThree {
+    position: absolute;
+    background-color: #1A1C30;
+    border-radius: 50%;
+    width: 337px;
+    height: 337px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 50%;
+    font-family: "Poppins";
+    font-size: 32px;
+    font-weight: 400;
+    color: #ffffff;
+    animation: scale3 3.5s infinite;
+    transition: all .2s ease-out;
+}
+
+.circleSection .circleFour {
+    position: absolute;
+    background-color: #40CAC3;
+    border-radius: 50%;
+    width: 360px;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    font-family: "Poppins";
+    font-size: 32px;
+    font-weight: 400;
+    color: #ffffff;
+    animation: scale4 3.8s infinite;
+    transition: all .2s ease-out;
+}
+
+
+@keyframes scale1 {
+    0% {
+        transform: scale(1) translateX(0px) translateY(0px);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    50% {
+        transform: scale(1.04) translateX(-10px) translateY(-10px);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px 0px 0px;
+    }
+
+    100% {
+        transform: scale(1) translateX(0px) translateY(0px);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+}
+
+@keyframes scale2 {
+    0% {
+        transform: scale(1) translateX(0px) translateY(0px);
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+
+    50% {
+        transform: scale(1.04) translateX(10px) translateY(10px);
+        box-shadow: rgb(38, 57, 77) 0px 4px 5px 0px;
+    }
+
+    100% {
+        transform: scale(1) translateX(0px) translateY(0px);
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+}
+
+@keyframes scale3 {
+    0% {
+        transform: scale(1) translateX(0px);
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    }
+
+    50% {
+        transform: scale(1.04) translateX(10px);
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px 0px;
+    }
+
+    100% {
+        transform: scale(1) translateX(0px);
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    }
+}
+
+@keyframes scale4 {
+    0% {
+        transform: scale(1) translateY(0px);
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    }
+
+    50% {
+        transform: scale(1.05) translateY(-10px);
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px 0px;
+    }
+
+    100% {
+        transform: scale(1) translateY(0px);
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    }
+}
+
+
+
+@media screen and (max-width:1200px) {
+    .processSection {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width:1120px) {
+
+    .image1,
+    .image2,
+    .image3,
+    .image4,
+    .image5,
+    .image6,
+    .image7,
+    .image8 {
+        top: 30px !important;
+        width: 69%;
+        height: 500px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .showCaseSection {
+        padding: 60px 0;
+    }
+
+    .processSection {
+        margin-top: 0px;
+    }
+
+    .circleSection {
+        padding: 70px 0;
+    }
+
+    .circleSection .circleOne {
+        width: 400px;
+        height: 400px;
+        font-size: 30px;
+    }
+
+    .circleSection .circleTwo {
+        width: 200px;
+        height: 200px;
+        font-size: 18px;
+        left: 44%;
+    }
+
+    .circleSection .circleThree {
+        width: 250px;
+        height: 250px;
+        left: 50%;
+        font-size: 18px;
+    }
+
+    .circleSection .circleFour {
+        width: 220px;
+        height: 220px;
+        font-size: 18px;
+    }
+
+    .circlePart {
+        height: 450px;
+    }
+
+    .landingPageSection .landingPage {
+        padding: 100px 0px;
+    }
+
+    .processSection .processScrollSection h3 {
+        font-size: 24px;
+    }
+
+    .processSection .processScrollSection p {
+        font-size: 14px;
+    }
+
+    .scaleUp {
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+    .removeScale {
+        width: 75px !important;
+        height: 75px !important;
+    }
+
+    .processScrollSection .subProcessPart .subProcessImg {
+        width: 75px;
+        height: 75px;
+    }
+
+    .processScrollSection .subProcessPart {
+        padding: 30px 0;
+    }
+
+    .landingPageSection .landingPage::after {
+        font-size: 100px;
+    }
+
+    .landingPageSection .landingPage::before {
+        font-size: 100px;
+    }
+}
+
+
+@media screen and (max-width:770px) {
+
+    .showCaseSection .showCaseImgSection {
+        height: 540px;
+    }
+    .image1,
+    .image2,
+    .image3,
+    .image4,
+    .image5,
+    .image6,
+    .image7,
+    .image8 {
+        top: 14px !important;
+        width: 69%;
+        height: 340px;
+        background-repeat: no-repeat;
+    }
+    .bannerImg {
+        top: 100px;
+        height: 400px;
+    }
+    
+}
+
+@media screen and (max-width:690px) {
+
+    .circleSection .circleOne {
+        width: 300px;
+        height: 300px;
+        font-size: 20px;
+    }
+
+    .circleSection .circleTwo {
+        width: 150px;
+        height: 150px;
+        font-size: 16px;
+        left: 44%;
+    }
+
+    .circleSection .circleThree {
+        width: 200px;
+        height: 200px;
+        left: 50%;
+        font-size: 16px;
+    }
+
+    .circleSection .circleFour {
+        width: 180px;
+        height: 180px;
+        font-size: 16px;
+    }
+
+    .circlePart {
+        height: 360px;
+    }
+
+    .processSection p {
+        font-size: 16px;
+        width: 50%;
+    }
+
+    .showCaseSection .showCaseImgSection {
+        height: 450px;
+    }
+
+    .processScrollSection .subProcessPart h6 {
+        width: 30%;
+        font-size: 12px;
+    }
+
+    .processSection .processScrollSection h3 {
+        font-size: 16px;
+    }
+
+    .scaleUp {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .removeScale {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .processScrollSection .subProcessPart .subProcessImg {
+        width: 50px;
+        height: 50px;
+    }
+ 
+}
+
+@media screen and (max-width:512px) {
+    .image1,
+    .image2,
+    .image3,
+    .image4,
+    .image5,
+    .image6,
+    .image7,
+    .image8 {
+        top: 14px !important;
+        width: 69%;
+        height: 246px;
+        background-repeat: no-repeat;
+    }
+    .bannerImg {
+        top: 54px;
+        height: 290px;
+    }
+
+    .circleSection .circleOne {
+        width: 200px;
+        height: 200px;
+        font-size: 14px;
+    }
+
+    .circleSection .circleTwo {
+        width: 100px;
+        height: 100px;
+        font-size: 14px;
+        left: 44%;
+    }
+
+    .circleSection .circleThree {
+        width: 150px;
+        height: 150px;
+        left: 50%;
+        font-size: 14px;
+    }
+
+    .circleSection .circleFour {
+        width: 120px;
+        height: 120px;
+        font-size: 14px;
+    }
+
+    .circlePart {
+        height: 260px;
+    }
+
+    .processSection p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .showCaseSection .showCaseImgSection {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .image1,
+    .image2,
+    .image3,
+    .image4,
+    .image5,
+    .image6,
+    .image7,
+    .image8 {
+        top: 14px !important;
+        width: 69%;
+        height: 152px;
+        background-repeat: no-repeat;
+    }
+    .bannerImg {
+        top: 30px;
+        height: 194px;
+    }
+
+    .circleSection .circleOne {
+        width: 160px;
+        height: 160px;
+        font-size: 14px;
+    }
+
+    .circleSection .circleTwo {
+        width: 75px;
+        height: 75px;
+        font-size: 10px;
+        left: 44%;
+    }
+
+    .circleSection .circleThree {
+        width: 120px;
+        height: 120px;
+        left: 50%;
+        font-size: 12px;
+    }
+
+    .circleSection .circleFour {
+        width: 100px;
+        height: 100px;
+        font-size: 12px;
+    }
+
+    .circlePart {
+        height: 200px;
+    }
+
+    .processScrollSection .subProcessPart h6 {
+        width: 35%;
+        font-size: 10px;
+    }
+
+    .processSection .processScrollSection h3 {
+        font-size: 12px;
+    }
+
+    .scaleUp {
+        width: 70px !important;
+        height: 70px !important;
+    }
+
+    .removeScale {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .processScrollSection .subProcessPart .subProcessImg {
+        width: 35px;
+        height: 35px;
+    }
+
+    .landingPageSection .landingPage::after {
+        font-size: 50px;
+    }
+
+    .landingPageSection .landingPage::before {
+        font-size: 50px;
+    }
+
+    .landingPageSection .landingPage {
+        padding: 70px 0px;
+    }
+
+    .showCaseSection .showCaseImgSection {
+        height: 300px;
+    }
+}

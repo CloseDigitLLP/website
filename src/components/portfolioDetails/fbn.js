@@ -8,30 +8,33 @@ import $ from 'jquery';
 
 
 export default function FBN() {
+
     useEffect(() => {
-        const doAnimations = () => {
-            const offset = $(window).scrollTop() + $(window).height();
-            const $animatables = $('.animatable');
+        // Check to ensure that we are in a browser environment
+        if (typeof window !== 'undefined') {
+            const doAnimations = () => {
+                const offset = $(window).scrollTop() + $(window).height();
+                const $animatables = $('.animatable');
 
-            if ($animatables.length === 0) {
-                $(window).off('scroll', doAnimations);
-            }
-
-            $animatables.each(function () {
-                const $animatable = $(this);
-                if (($animatable.offset().top + $animatable.height() - 150) < offset) {
-                    $animatable.removeClass('animatable').addClass('animated');
+                if ($animatables.length === 0) {
+                    $(window).off('scroll', doAnimations);
                 }
-            });
-        };
 
-        $(window).on('scroll', doAnimations);
-        $(window).trigger('scroll');
-        return () => {
-            $(window).off('scroll', doAnimations);
-        };
+                $animatables.each(function () {
+                    const $animatable = $(this);
+                    if (($animatable.offset().top + $animatable.height() - 150) < offset) {
+                        $animatable.removeClass('animatable').addClass('animated');
+                    }
+                });
+            };
+
+            $(window).on('scroll', doAnimations);
+            $(window).trigger('scroll');
+            return () => {
+                $(window).off('scroll', doAnimations);
+            };
+        }
     }, []);
-
     return (
         <div className={portfolioDetailsCommon.mainSection}>
             <div className={fbnStyles.FBNMain}>
@@ -207,7 +210,6 @@ export default function FBN() {
                                                 alt="Animated"
                                             />
                                         </div>
-
                                     </div>
                                 </div>
                             </div>

@@ -10,7 +10,6 @@ import $ from 'jquery';
 export default function FBN() {
 
     useEffect(() => {
-        // Check to ensure that we are in a browser environment
         if (typeof window !== 'undefined') {
             const doAnimations = () => {
                 const offset = $(window).scrollTop() + $(window).height();

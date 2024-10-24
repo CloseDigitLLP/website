@@ -134,7 +134,7 @@ export default function JVConstruction() {
               </h3>
             </div>
 
-            <div className="container">
+
               <div className={JVStyle.showCaseImgSection}>
                 <div className={`${JVStyle.showCaseImg} ${JVStyle.Img1}`}>
                 </div>
@@ -147,7 +147,6 @@ export default function JVConstruction() {
                 <div className={`${JVStyle.showCaseImg} ${JVStyle.Img5}`}>
                 </div>
               </div>
-            </div>
           </div>
         </div>
 
@@ -305,7 +304,7 @@ export default function JVConstruction() {
 
             <div>
               <img
-                src="/work/2024/JV-construction/innerBg.png"
+                src="/work/2024/JV-construction/innerBg.svg"
                 alt="Animated"
               />
             </div>

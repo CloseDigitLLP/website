@@ -95,17 +95,17 @@
 
 @media screen and (max-width:520px) {
     .mainheading {
-        font-size: 24px;
-        margin-bottom: 30px;
+        font-size: 20px;
+        margin-bottom: 20px;
     }
     .bannerPrimaryText {
-        font-size: 26px;
+        font-size: 20px;
         margin: 30px 0;
         padding-left: 0px;
     }
 
     .bannerSecondaryText {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
@@ -144,7 +144,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translateY(50px);
     transition: opacity 0.5s ease, transform 0.5s ease;
     min-width: 10vw;
 }
@@ -169,7 +168,6 @@
     margin-left: 20px;
     margin-right: 20px;
     position: relative;
-
 }
 
 .slider-part .slider-card {
@@ -306,12 +304,12 @@
     }
 
     .technology-section {
-        margin-top: 40px;
+        margin-top: 0px;
     }
 
     .technology-section .technology-row {
-        margin-top: 28px;
-        margin-bottom: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .slider-part .left-btn {
@@ -329,6 +327,9 @@
 }
 
 @media only screen and (max-width: 520px) {
+    .technology-section .technology-row {
+        gap: 0px;
+    }
     .technology .technology-text {
         margin-top: 8px;
         font-size: 10px;

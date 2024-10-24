@@ -72,7 +72,7 @@
             {
                 "id": "animate5",
                 "title": "Schenk",
-                "href": "/",
+                "href": "/Schenk",
                 "imgSrc": "/work/2024/Schenk.png",
                 "tech": [
                     { "src": "/work/technology-icons/uiux.svg", "name": "UI-UX" },
@@ -358,6 +358,28 @@
                 "name": "Adobe XD",
                 "icon": "/work/2024/tech-icons/AdobeXD.svg"
             }
+        ],
+        "schenk": [
+            {
+                "name": "ScrollJS",
+                "icon": "/work/2024/tech-icons/ScrollJS.svg"
+            },
+            {
+                "name": "UI/UX",
+                "icon": "/work/2024/tech-icons/UIUX.svg"
+            },
+            {
+                "name": "Bootstrap",
+                "icon": "/work/2024/tech-icons/Bootstrap.svg"
+            },
+            {
+                "name": "Firebase",
+                "icon": "/work/2024/tech-icons/Firebase.svg"
+            },
+            {
+                "name": "CanvasJS",
+                "icon": "/work/2024/tech-icons/CanvasJS.svg"
+            }
         ]
     },
     "sliderdata": {
@@ -395,6 +417,24 @@
             {
                 "image": "/work/2024/fbn/fbnSliderImg4.png",
                 "text": "After viewing your results, you'll receive a personalized self-care plan with actionable steps, resources, and medication guidance tailored to your needs. This plan helps you improve your mental well-being, including recommendations for medications if necessary. Track your progress and adjust your plan as needed."
+            }
+        ],
+        "schenk": [
+            {
+                "image": "/work/2024/schenk/schenkSliderImg1.png",
+                "text": "Our website design for Schenk Construction Group features a clean, modern layout that highlights our services and projects. With intuitive navigation and clear calls to action, it offers a seamless user experience and showcases our commitment to quality."
+            },
+            {
+                "image": "/work/2024/schenk/schenkSliderImg2.png",
+                "text": "This About Us page design showcases our team's expertise and commitment through a clean layout and engaging visuals, highlighting our mission and services in a clear, professional manner."
+            },
+            {
+                "image": "/work/2024/schenk/schenkSliderImg3.png",
+                "text": "This Our Latest Project page features a visually engaging layout that highlights our most recent work. With high-quality images and concise project details, it effectively showcases our capabilities and the success of our latest endeavors."
+            },
+            {
+                "image": "/work/2024/schenk/schenkSliderImg4.png",
+                "text": "This Our Team page design offers a professional and inviting look, featuring team members’ profiles with high-quality photos and brief bios. It highlights each member's expertise and role, giving visitors insight into the skilled professionals behind Schenk Construction Group."
             }
         ]
     }

@@ -117,7 +117,7 @@
 // technology section 
 
 .technology-section {
-    margin-top: 150px;
+    margin: 0px 0px 80px 0px;
     overflow: hidden;
 }
 
@@ -296,6 +296,11 @@
     .slider-part .slider-card {
         margin-left: 8px;
         margin-right: 8px;
+    }
+
+    .technology-section {
+        margin: 0px 0px 40px 0px;
+        overflow: hidden;
     }
 }
 

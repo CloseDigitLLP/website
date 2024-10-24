@@ -136,7 +136,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 32px;
 }
 
 .technology-section .technology-row .technology {
@@ -212,23 +212,27 @@
     display: block;
 }
 
+.slider-part:hover .circle-btn span{
+    display: none;
+}
+
 .slider-part .circle-btn:hover {
     transform: scale(1.2);
 }
 
-// .slider-part .left-btn {
-//     background-image: url('../../assets//images/work/2024/camelab/sliderRightButton.svg');
-//     position: absolute;
-//     top: 30%;
-//     left: 2%;
-// }
+.slider-part .left-btn {
+    background-image: url('/work/2024/camelab/sliderRightButton.svg');
+    position: absolute;
+    top: 30%;
+    left: 2%;
+}
 
-// .slider-part .right-btn {
-//     background-image: url('../../assets//images/work/2024/camelab/sliderLeftButton.svg');
-//     position: absolute;
-//     right: 2%;
-//     top: 30%;
-// }
+.slider-part .right-btn {
+    background-image: url('/work/2024/camelab/sliderLeftButton.svg');
+    position: absolute;
+    right: 2%;
+    top: 30%;
+}
 
 
 // mediaQueries 

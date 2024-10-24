@@ -298,7 +298,7 @@ export default function CamelabPage() {
                         <div className={CamelabStyle['codecraft-mobile-section']}>
                             <div className={CamelabStyle['code-craft-section']}>
                                 <div className={CamelabStyle['codecraft-img-part']}>
-                                    <div className='codecraft-mobile-img'>
+                                    <div className={CamelabStyle['codecraft-mobile-img']}>
                                         <img
                                             src="/work/2024/camelab/codecraft-mobile-img1.png"
                                             alt='code-craft image'
@@ -319,7 +319,7 @@ export default function CamelabPage() {
                                     </p>
                                 </div>
                                 <div className={CamelabStyle['codecraft-img-part']}>
-                                    <div className='codecraft-mobile-img'>
+                                    <div className={CamelabStyle['codecraft-mobile-img']}>
                                         <img
                                             src="/work/2024/camelab/codecraft-mobile-img2.png"
                                             alt='code-craft image'
@@ -329,7 +329,7 @@ export default function CamelabPage() {
                             </div>
                             <div className={CamelabStyle['code-craft-section']}>
                                 <div className={CamelabStyle['codecraft-img-part']}>
-                                    <div className='codecraft-mobile-img'>
+                                    <div className={CamelabStyle['codecraft-mobile-img']}>
                                         <img
                                             src="/work/2024/camelab/codecraft-mobile-img3.png"
                                             alt='code-craft image'

@@ -52,9 +52,8 @@
 }
 
 .banner-section .banner-img-part .laptop-img {
-    // left: 10% !important;
-    width: 100% !important;
-    height: auto !important;
+    width: 100% ;
+    height: auto ;
     z-index: 1;
     transition: transform 1s ease-out;
 }
@@ -63,40 +62,31 @@
     z-index: 10;
 }
 
-.banner-section .banner-img-part .mobile-img-section span {
-    right: 60% !important;
-    top: 16% !important
-}
-
 .banner-section .banner-img-part .mobile-img {
-    width: 100% !important;
-    height: auto !important;
+    width: 100% ;
+    height: auto ;
     transition: transform 1s ease-out;
     position: relative;
-    right: 60% !important;
-    top: 16% !important
+    right: 60% ;
+    top: 16% ;
 }
 
 // banner animation
 
 .initial-laptop {
     transform: translateX(-100%);
-    /* Start off-screen to the left */
 }
 
 .animate-laptop {
     transform: translateX(0);
-    /* End position */
 }
 
 .initial-mobile {
     transform: translateX(100%);
-    /* Start off-screen to the right */
 }
 
 .animate-mobile {
     transform: translateX(0);
-    /* End position */
 }
 
 
@@ -154,7 +144,6 @@
 .camelab-section .codecraft-section {
     padding-top: 144px;
     margin-bottom: 144px;
-    // height: 100vh;
 }
 
 .codecraft-section .codecraft-heading-section {
@@ -169,7 +158,6 @@
 
 .codecraft-section .codecraft-grid-section {
     margin-top: 64px;
-    // max-height: 300px;
 }
 
 .codecraft-grid-section .codecraft-text-part {
@@ -198,27 +186,20 @@
 }
 
 .codecraft-img-part .laptop-screen {
-    height: auto !important;
-    width: 100% !important;
+    height: auto ;
+    width: 100%;
 }
 
 .overlay-image-screen-part img {
-    width: 82% !important;
-    height: auto !important;
+    width: 82%;
+    height: auto;
     position: relative;
-    top: -344px !important;
+    top: -344px;
     left: 8.7%;
 }
 
 .overlay-image-screen-part {
     position: relative;
-}
-
-.code-craft-image {
-    width: 100% !important;
-    height: auto !important;
-    transition: opacity 0.5s ease-in-out;
-    opacity: 1;
 }
 
 .codecraft-mobile-section {
@@ -227,6 +208,11 @@
     flex-direction: column;
     gap: 64px;
     display: none;
+}
+
+.codecraft-mobile-section .codecraft-mobile-img img{
+    width: 100%;
+    height: auto ;
 }
 
 .codecraft-mobile-section .code-craft-section {
@@ -283,11 +269,6 @@
     justify-content: center;
 }
 
-.feature-card1 .img-part img {
-    width: 100% !important;
-    height: auto !important;
-}
-
 .feature-card-row .feature-card1 .text-part {
     padding-top: 25px;
 }
@@ -316,6 +297,11 @@
 
 .feature-card-row .feature-card .card-text span {
     color: #6E6E73;
+}
+
+.feature-section .feature-card .image-part img{
+    width: 100%;
+    height: auto;
 }
 
 .feature-section h2 span{
@@ -362,15 +348,13 @@
 @media only screen and (max-width:1280px) {
 
     .overlay-image-screen-part img {
-        top: -344px !important;
+        top: -344px;
         left: 8.7%;
     }
 
     .codecraft-grid-section .codecraft-img-part .code-craft-image {
-        width: 80% !important;
-        min-width: auto !important;
-        min-height: auto !important;
-        top: -318px !important;
+        width: 80% ;
+        top: -318px ;
         left: 9.7%;
     }
 
@@ -381,9 +365,10 @@
         width: 80% !important;
     }
 
-    .overlay-image-screen-part span {
-        top: -300px !important;
-        left: 0%;
+    .codecraft-grid-section .codecraft-img-part .code-craft-image {
+        width: 80% ;
+        top: -264px ;
+        left: 9.7%;
     }
 }
 

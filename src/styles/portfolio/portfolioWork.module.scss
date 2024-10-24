@@ -1,13 +1,10 @@
 @import '../variable.module.scss';
 
-.project-info.showDetails {
-    opacity: 1 !important;
-    scale: 1 !important;
-}
+
 
 .brand-part .project-info {
     opacity: 0;
-    scale: 0.7;
+    scale: 1;
     transition: 0.5s all ease;
 }
 
@@ -143,83 +140,26 @@
 }
 
 // hover effect title
-// .imgBox:hover+.project-info {
-//     opacity: 1;
-// }
-
-// .imgBox1:hover+.project-info {
-//     opacity: 1;
-// }
-
-// .imgBox2:hover+.project-info {
-//     opacity: 1;
-// }
-
-// .imgBox3:hover+.project-info {
-//     opacity: 1;
-// }
-
-// .imgBox4:hover+.project-info {
-//     opacity: 1;
-// }
-
-// .imgBox5:hover+.project-info {
-//     opacity: 1;
-// }
-
-// .imgBox6:hover+.project-info {
-//     opacity: 1;
-// }
-
-// .imgBox7:hover+.project-info {
-//     opacity: 1;
-// }
-
-// .imgBox8:hover+.project-info {
-//     opacity: 1;
-// }
-
-// .imgBox9:hover+.project-info {
-//     opacity: 1;
-// }
-
-// .imgBox10:hover+.project-info {
-//     opacity: 1;
-// }
-
-// .imgBox11:hover+.project-info {
-//     opacity: 1;
-// }
-
-// .imgBox12:hover+.project-info {
-//     opacity: 1;
-// }
-
-// .imgBox13:hover+.project-info {
-//     opacity: 1;
-// }
-
-// .imgBox14:hover+.project-info {
-//     opacity: 1;
-// }
-
-// .imgBox15:hover+.project-info {
-//     opacity: 1;
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#animate.scale-up:hover+.project-info,
+#animate1.scale-up:hover+.project-info,
+#animate2.scale-up:hover+.project-info,
+#animate3.scale-up:hover+.project-info,
+#animate4.scale-up:hover+.project-info,
+#animate5.scale-up:hover+.project-info,
+#animate6.scale-up:hover+.project-info,
+#animate7.scale-up:hover+.project-info,
+#animate8.scale-up:hover+.project-info,
+#animate9.scale-up:hover+.project-info,
+#animate10.scale-up:hover+.project-info,
+#animate11.scale-up:hover+.project-info,
+#animate12.scale-up:hover+.project-info,
+#animate13.scale-up:hover+.project-info,
+#animate14.scale-up:hover+.project-info,
+#animate15.scale-up:hover+.project-info,
+#animate16.scale-up:hover+.project-info,
+#animate17.scale-up:hover+.project-info {
+    opacity: 1;
+}
 
 
 @media screen and (max-width:1024px) {
@@ -258,6 +198,18 @@
     // }
 }
 
+@media screen and (max-width:767px) {
+    .brand-part .project-info {
+        opacity: 0;
+        scale: 1;
+        transition: 0.5s all ease;
+    }
+
+    .project-info.showDetails {
+        opacity: 1 !important;
+        scale: 1 !important;
+    }
+}
 
 
 

@@ -29,7 +29,8 @@ export default function TabBarContent() {
                 const animateEl = animateRefs.current[index];
                 const showEl = showRefs.current[index];
     
-                if (animateEl && showEl) { 
+
+                if (animateEl && showEl) {  
                     if (entry.isIntersecting) {
                         animateEl.classList.add(portfolioWorkStyle['scale-up']);
                         showEl.classList.add(portfolioWorkStyle['showDetails']);

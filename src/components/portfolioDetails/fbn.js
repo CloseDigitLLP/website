@@ -34,16 +34,20 @@ export default function FBN() {
             };
         }
     }, []);
+
+    
+
+
     return (
         <div className={portfolioDetailsCommon.mainSection}>
             <div className={fbnStyles.FBNMain}>
                 <div className={fbnStyles.bannerSection}>
                     <div className="container">
                         <div className={`${fbnStyles.sectionContent}`}>
-                            <h3 className={portfolioDetailsCommon.bannerPrimaryText}>
+                            <h3 className={`${portfolioDetailsCommon.bannerPrimaryText} animatable bounceInLeft`}>
                                 Achieve Mental Clarity with <span>FeelingBetterNow&reg;</span>
                             </h3>
-                            <div className={fbnStyles.bannerImg}>
+                            <div className={`${fbnStyles.bannerImg} animatable fadeInDown`}>
                                 <div className={fbnStyles.bannerInnerImg}>
                                 </div>
                             </div>
@@ -122,7 +126,6 @@ export default function FBN() {
                                         height={100}
                                         width={100}
                                     />
-
                                 </div>
                             </div>
                         </div>
@@ -196,10 +199,10 @@ export default function FBN() {
                             <h3 className={portfolioDetailsCommon['mainheading']}>Codecraft: <br /><span>FellingBetterNow</span> journey in Development</h3>
                         </div>
                         <div className={fbnStyles['vaidcards']}>
-                            <div className={fbnStyles['cardbody']}>
-                                <div className={`${fbnStyles.mainCard}animatable bounceInLeft`} >
+                            <div className={`${fbnStyles.cardbody} animatable bounceInLeft`}>
+                                <div className={`${fbnStyles.mainCard}`} >
                                     <div className={`${fbnStyles.cardone}`}>
-                                        <div className={fbnStyles.cardContent}>
+                                        <div className={`${fbnStyles.cardContent}`}>
                                             <h4>Personalized Health Tips and Medication Advice.</h4>
                                             <p>
                                                 The AI-generated report provides precise health tips and medication recommendations tailored to your individual responses, addressing your specific needs and conditions&apos; requirements.
@@ -212,8 +215,8 @@ export default function FBN() {
                                     </div>
                                 </div>
                             </div>
-                            <div className={fbnStyles['cardbody']}>
-                                <div className={`${fbnStyles.mainCard}animatable bounceInLeft`} >
+                            <div className={`${fbnStyles.cardbody} animatable bounceInRight`}>
+                                <div className={`${fbnStyles.mainCard}`} >
                                     <div className={`${fbnStyles.cardtwo}`}>
                                         <div className={fbnStyles.cardContent}>
                                             <h4>Expert-Reviewed Recommendations.</h4>
@@ -240,12 +243,13 @@ export default function FBN() {
                             <h3 className={portfolioDetailsCommon['mainheading']}>Innovative Features in <br /><span>FellingBetterNow</span></h3>
                         </div>
 
-                        <div className={fbnStyles['innovativeCard']}>
+                        <div className={`${fbnStyles.innovativeCard}`}>
                             <div className={`${fbnStyles['reverseRow']} row`}>
                                 <div className="col-md-5 d-flex">
                                     <img
                                         src='/work/2024/fbn/innovative-img1.png'
                                         alt="Animated"
+                                        width="100%"
                                     />
                                 </div>
                                 <div className="col-md-7">
@@ -271,6 +275,7 @@ export default function FBN() {
                                     <img
                                         src='/work/2024/fbn/innovative-img2.png'
                                         alt="Animated"
+                                        width="100%"
                                     />
                                 </div>
                             </div>

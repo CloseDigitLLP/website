@@ -331,6 +331,9 @@
 }
 
 @media only screen and (max-width: 520px) {
+    .slider-part {
+        margin-top: 30px;
+    }
     .technology-section .technology-row {
         gap: 0px;
     }

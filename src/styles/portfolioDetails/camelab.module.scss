@@ -1,0 +1,739 @@
+@import '../variable.module.scss';
+
+// banner section 
+
+.camelab-section .banner-section {
+    margin-top: 174px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.banner-section .banner-heading-section {
+    width: 80%;
+}
+
+.main-heading {
+    font-family: 'Poppins';
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: $textColor;
+}
+
+.main-heading span {
+    color: #F4783C;
+}
+
+.banner-section .banner-text-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.banner-section .banner-text-part .banner-text {
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 500;
+    text-align: left;
+    color: #212529;
+    width: 82%;
+}
+
+.banner-section .banner-img-part {
+    margin-top: 64px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.banner-section .banner-img-part .laptop-img {
+    width: 100% ;
+    height: auto ;
+    z-index: 1;
+    transition: transform 1s ease-out;
+}
+
+.banner-section .banner-img-part .mobile-img-section {
+    z-index: 10;
+}
+
+.banner-section .banner-img-part .mobile-img {
+    width: 100% ;
+    height: auto ;
+    transition: transform 1s ease-out;
+    position: relative;
+    right: 60% ;
+    top: 16% ;
+}
+
+// banner animation
+
+.initial-laptop {
+    transform: translateX(-100%);
+}
+
+.animate-laptop {
+    transform: translateX(0);
+}
+
+.initial-mobile {
+    transform: translateX(100%);
+}
+
+.animate-mobile {
+    transform: translateX(0);
+}
+
+
+// showcase section 
+
+.camelab-section .showcase-section {
+    margin-top: 144px;
+}
+
+.showcase-section .showcase-heading-section {
+    width: 60%;
+}
+
+// technology section
+
+.camelab-section .technology-section {
+    margin-top: 150px;
+}
+
+.technology-section .technology-heading-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.technology-section .technology-row {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.technology-section .technology-row .technology {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.technology .technology-text {
+    align-self: center;
+    margin-top: 24px;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+// code-craft section 
+.camelab-section .codecraft-section {
+    padding-top: 144px;
+    margin-bottom: 144px;
+}
+
+.codecraft-section .codecraft-heading-section {
+    position: sticky;
+    top: 20%;
+}
+
+.codecraft-section .sticky-part {
+    position: sticky;
+    top: 40%;
+}
+
+.codecraft-section .codecraft-grid-section {
+    margin-top: 64px;
+}
+
+.codecraft-grid-section .codecraft-text-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+}
+
+.codecraft-grid-section .codecraft-text-part .codecraft-text {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    color: #212529;
+}
+
+.spacing {
+    height: 35vh;
+}
+
+.codecraft-grid-section .codecraft-img-part {
+    display: flex;
+    flex-direction: column;
+}
+
+.codecraft-img-part .laptop-screen {
+    height: auto ;
+    width: 100%;
+}
+
+.overlay-image-screen-part img {
+    width: 82%;
+    height: auto;
+    position: relative;
+    top: -344px;
+    left: 8.7%;
+}
+
+.overlay-image-screen-part {
+    position: relative;
+}
+
+.codecraft-mobile-section {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    display: none;
+}
+
+.codecraft-mobile-section .codecraft-mobile-img img{
+    width: 100%;
+    height: auto ;
+}
+
+.codecraft-mobile-section .code-craft-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center !important;
+}
+
+.codecraft-mobile-section .code-craft-section .codecraft-img-part {
+    width: 50%;
+}
+
+.codecraft-mobile-section .code-craft-section .codecraft-text-part {
+    width: 50%;
+    padding-left: 20px;
+}
+
+// feature section 
+
+.camelab-section .feature-section {
+    background-color: #F5F5F7;
+    padding: 80px 0px;
+    margin-top: -250px;
+}
+
+.feature-section .feature-heading-section {
+    width: 100%;
+}
+
+.feature-section .feature-card-section {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px
+}
+
+.feature-card-section .feature-card-row {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.feature-card-row .feature-card {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+
+.feature-card-row .feature-card1 {
+    padding: 24px 40px 0px 24px;
+}
+
+.feature-card-row .feature-card1 .image-part {
+    display: flex;
+    justify-content: center;
+}
+
+.feature-card-row .feature-card1 .text-part {
+    padding-top: 25px;
+}
+
+.feature-card-row .feature-card2 {
+    padding: 50px 0px 80px 24px;
+}
+
+.feature-card-row .feature-card3 {
+    padding: 24px 80px 24px 0px;
+}
+
+.feature-card-row .feature-card3 .text-part {
+    padding-top: 90px;
+}
+
+.feature-card-row .feature-card .card-text {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0.002em;
+    text-align: left;
+    color: #212529;
+}
+
+.feature-card-row .feature-card .card-text span {
+    color: #6E6E73;
+}
+
+.feature-section .feature-card .image-part img{
+    width: 100%;
+    height: auto;
+}
+
+.feature-section h2 span{
+    font-weight: 100;
+    font-size: 50px;
+    color: #2E3A59;
+    display: inline-block; 
+    -webkit-animation: blink 1s step-end infinite;
+    -moz-animation: blink 1s step-end infinite;
+    -ms-animation: blink 1s step-end infinite;
+    -o-animation: blink 1s step-end infinite;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        color: transparent;
+    }
+    50% {
+        color: #2E3A59;
+    }
+}
+
+
+// media queries 
+@media only screen and (max-width:1600px) {
+    .codecraft-section .codecraft-heading-section {
+        position: relative !important;
+    }
+
+    .codecraft-section .sticky-part {
+        top: 30%;
+    }
+
+    .spacing {
+        height: 30vh;
+    }
+
+    .spacing-last {
+        height: 60vh;
+    }
+}
+
+@media only screen and (max-width:1280px) {
+
+    .overlay-image-screen-part img {
+        top: -344px;
+        left: 8.7%;
+    }
+
+    .codecraft-grid-section .codecraft-img-part .code-craft-image {
+        width: 80% ;
+        top: -318px ;
+        left: 9.7%;
+    }
+
+}
+
+@media only screen and (max-width:1200px) {
+    .codecraft-grid-section .codecraft-img-part .code-craft-image {
+        width: 80% !important;
+    }
+
+    .codecraft-grid-section .codecraft-img-part .code-craft-image {
+        width: 80% ;
+        top: -264px ;
+        left: 9.7%;
+    }
+}
+
+
+@media only screen and (max-width: 1025px) {
+    .main-heading {
+        font-size: 44px;
+    }
+
+    .banner-section .banner-heading-section {
+        width: 100%;
+    }
+
+    .banner-section .banner-img-part {
+        width: 80%;
+        margin: auto;
+        margin-top: 44px;
+    }
+
+    .banner-section .banner-text-part {
+        margin-top: 44px;
+    }
+
+    .banner-section .banner-text-part .banner-text {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .camelab-section .showcase-section {
+        margin-top: 80px;
+    }
+
+    .camelab-section .codecraft-section {
+        padding-top: 80px;
+    }
+
+    .showcase-section .showcase-heading-section {
+        width: 100%;
+    }
+
+    .showcase-section .slider-part {
+        margin-top: 44px;
+    }
+
+    .camelab-section .technology-section {
+        margin-top: 50px;
+    }
+
+    .technology .technology-text {
+        margin-top: 16px;
+        font-size: 20px;
+    }
+
+    .technology-section .technology-row {
+        margin-top: 44px;
+        margin-bottom: 80px;
+    }
+
+    .feature-section .feature-heading-section {
+        width: 100%;
+    }
+
+    .feature-card-section .feature-card-row {
+        flex-wrap: wrap;
+    }
+
+    .feature-card-row .feature-card1 {
+        padding: 24px 40px 0px 60px;
+    }
+
+    .feature-card-row .feature-card2 {
+        padding: 50px 0px 40px 24px;
+    }
+
+    .feature-card-row .feature-card3 {
+        padding: 24px 40px 24px 0px;
+    }
+
+    .feature-section .feature-card-section {
+        margin-top: 44px;
+    }
+
+    .feature-card-row .feature-card3 .text-part {
+        padding-top: 0px;
+    }
+
+    .feature-card-row .feature-card .card-text {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .technology-section .technology-row .technology img {
+        width: 65% !important;
+    }
+
+    .camelab-section .feature-section {
+        padding: 60px 0px;
+    }
+
+    .camelab-section .codecraft-section {
+        margin-bottom: 80px;
+    }
+
+    .codecraft-section .codecraft-grid-section {
+        margin-top: 44px;
+        display: none;
+    }
+
+    .camelab-section .feature-section {
+        margin-top: 0px;
+    }
+
+    .codecraft-mobile-section {
+        display: flex;
+    }
+
+    .codecraft-mobile-section p{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .codecraft-grid-section .codecraft-img-part {
+        margin-top: 44px;
+    }
+
+}
+
+@media only screen and (max-width: 769px) {
+
+    .camelab-section .banner-section {
+        margin-top: 140px;
+    }
+
+    .main-heading {
+        font-size: 36px;
+    }
+
+    .feature-section h2 span{
+        font-size: 38px;
+    }
+
+    .banner-section .banner-img-part {
+        margin-top: 36px;
+    }
+
+    .banner-section .banner-text-part {
+        margin-top: 36px;
+    }
+
+    .banner-section .banner-text-part .banner-text {
+        font-size: 16px;
+    }
+
+    .camelab-section .showcase-section {
+        margin-top: 60px;
+    }
+
+    .camelab-section .codecraft-section {
+        padding-top: 60px;
+    }
+
+    .showcase-section .slider-part {
+        margin-top: 36px;
+    }
+
+    .camelab-section .technology-section {
+        margin-top: 60px;
+    }
+
+    .technology .technology-text {
+        margin-top: 16px;
+        font-size: 16px;
+    }
+
+    .technology-section .technology-row {
+        margin-top: 36px;
+        margin-bottom: 60px;
+    }
+
+    .technology-section .technology-row .technology img {
+        width: 55% !important;
+    }
+
+    .feature-card-row .feature-card .card-text {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .codecraft-grid-section .codecraft-text-part .codecraft-text {
+        font-size: 18px;
+    }
+
+    .camelab-section .codecraft-section {
+        margin-bottom: 60px;
+    }
+
+    .codecraft-section .codecraft-grid-section {
+        margin-top: 36px;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    .slider-card .slider-text-part {
+        min-height: 200px;
+    }
+
+    .slider-part .left-btn {
+        top: 33%;
+    }
+
+    .slider-part .right-btn {
+        top: 33%;
+    }
+
+}
+
+@media only screen and (max-width: 621px) {
+    .main-heading {
+        font-size: 32px;
+    }
+
+    .banner-section .banner-text-part .banner-text {
+        font-size: 14px;
+    }
+
+    .feature-card-row .feature-card .card-text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .technology .technology-text {
+        margin-top: 12px;
+        font-size: 12px;
+    }
+
+    .technology-section .technology-row .technology img {
+        width: 46% !important;
+    }
+
+    .camelab-section .technology-section {
+        margin-top: 40px;
+    }
+
+    .technology-section .technology-row {
+        margin-top: 28px;
+        margin-bottom: 40px;
+    }
+
+    .camelab-section .feature-section {
+        padding: 40px 0px;
+    }
+
+    .feature-section .feature-card-section {
+        margin-top: 36px;
+    }
+
+    .codecraft-grid-section .codecraft-text-part .codecraft-text {
+        font-size: 14px;
+    }
+
+    .codecraft-mobile-section .code-craft-section{
+        flex-direction: column;
+    }
+
+    .codecraft-mobile-section .code-craft-section .codecraft-img-part{
+        width: 100%;
+    }
+
+    .codecraft-mobile-section .code-craft-section .codecraft-text-part{
+        width: 100%;
+        margin-top: 30px;
+        padding-left: 0;
+    }
+
+    .codecraft-mobile-section .code-craft-section:nth-child(2) {
+        flex-direction: column-reverse !important;
+    }
+
+}
+
+@media only screen and (max-width: 520px) {
+    .feature-card-row .feature-card1 {
+        padding: 20px 30px 0px 30px;
+    }
+
+    .feature-card-row .feature-card .card-text {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .feature-card-row .feature-card2 {
+        padding: 30px 0px 30px 24px;
+    }
+
+    .feature-card-row .feature-card3 {
+        padding: 30px 24px 30px 0px;
+    }
+
+    .main-heading {
+        font-size: 28px;
+    }
+
+    .feature-section h2 span{
+        font-size: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 420px) {
+    .main-heading {
+        font-size: 24px;
+    }
+
+    .banner-section .banner-text-part .banner-text {
+        font-size: 12px;
+    }
+
+    .feature-card-row .feature-card .card-text {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .feature-card-row .feature-card1 {
+        padding: 16px 20px 0px 20px;
+    }
+
+    .feature-card-row .feature-card2 {
+        padding: 20px 0px 10px 24px;
+    }
+
+    .feature-card-row .feature-card3 {
+        padding: 20px 24px 10px 0px;
+    }
+
+    .technology .technology-text {
+        margin-top: 8px;
+        font-size: 8px;
+    }
+
+    .camelab-section .showcase-section {
+        margin-top: 40px;
+    }
+
+    .camelab-section .codecraft-section {
+        padding-top: 40px;
+    }
+
+    .codecraft-grid-section .codecraft-text-part .codecraft-text {
+        font-size: 12px;
+    }
+
+    .feature-section .feature-card-section {
+        gap: 16px;
+    }
+
+    .codecraft-mobile-section{
+        gap: 16px;
+    }
+
+    .codecraft-mobile-section p{
+        font-size: 12px;
+    }
+}
+
+
+

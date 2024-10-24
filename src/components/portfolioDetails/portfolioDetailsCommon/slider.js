@@ -4,13 +4,17 @@ import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import styles from '../../../styles/portfolioDetails/portfolioDetailsCommon.module.scss';
 
+var $ = require('jquery');
+if (typeof window !== 'undefined') {
+    window.$ = window.jQuery = require('jquery');
+}
+
 const options = {
   autoplay: true,
-  autoplayTimeout: 3000,
+  autoplayTimeout: 2000,
   autoplayHoverPause: false,
   margin: 20,
   loop: true,
-  rtl: true,
   responsiveClass: true,
   nav: true,
   navClass: [`${styles['circle-btn']} ${styles['left-btn']}`, `${styles['circle-btn']} ${styles['right-btn']}`],
@@ -45,7 +49,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const Slider = ({ slides }) => {
 
-  console.log(slides, 'slide image')
+  // console.log(slides, 'slide image')
 
   return (
     <div className={styles['slider-part']}>
@@ -53,11 +57,9 @@ const Slider = ({ slides }) => {
         {slides.map((slide, index) => (
           <div key={index} className={styles['slider-card']}>
             <div className={styles['slider-img-part']}>
-              <Image
+              <img
                 src={slide.image}
                 alt={`Slide ${index + 1}`}
-                width={500}
-                height={500}
               />
             </div>
             <div className={styles['slider-text-part']}>

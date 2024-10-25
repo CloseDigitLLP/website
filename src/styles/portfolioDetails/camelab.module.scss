@@ -106,43 +106,9 @@
     margin-top: 150px;
 }
 
-.technology-section .technology-heading-section {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.technology-section .technology-row {
-    margin-top: 64px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.technology-section .technology-row .technology {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.technology .technology-text {
-    align-self: center;
-    margin-top: 24px;
-    font-family: 'Poppins';
-    font-size: 24px;
-    font-weight: 500;
-    text-align: center;
-}
-
 // code-craft section 
 .camelab-section .codecraft-section {
-    padding-top: 144px;
+    padding-top: 80px;
     margin-bottom: 144px;
 }
 
@@ -401,10 +367,6 @@
         margin-top: 80px;
     }
 
-    .camelab-section .codecraft-section {
-        padding-top: 80px;
-    }
-
     .showcase-section .showcase-heading-section {
         width: 100%;
     }
@@ -415,16 +377,6 @@
 
     .camelab-section .technology-section {
         margin-top: 50px;
-    }
-
-    .technology .technology-text {
-        margin-top: 16px;
-        font-size: 20px;
-    }
-
-    .technology-section .technology-row {
-        margin-top: 44px;
-        margin-bottom: 80px;
     }
 
     .feature-section .feature-heading-section {
@@ -458,10 +410,6 @@
     .feature-card-row .feature-card .card-text {
         font-size: 18px;
         line-height: 32px;
-    }
-
-    .technology-section .technology-row .technology img {
-        width: 65% !important;
     }
 
     .camelab-section .feature-section {
@@ -539,20 +487,6 @@
         margin-top: 60px;
     }
 
-    .technology .technology-text {
-        margin-top: 16px;
-        font-size: 16px;
-    }
-
-    .technology-section .technology-row {
-        margin-top: 36px;
-        margin-bottom: 60px;
-    }
-
-    .technology-section .technology-row .technology img {
-        width: 55% !important;
-    }
-
     .feature-card-row .feature-card .card-text {
         font-size: 16px;
         line-height: 28px;
@@ -572,21 +506,6 @@
 
 }
 
-@media only screen and (max-width: 700px) {
-    .slider-card .slider-text-part {
-        min-height: 200px;
-    }
-
-    .slider-part .left-btn {
-        top: 33%;
-    }
-
-    .slider-part .right-btn {
-        top: 33%;
-    }
-
-}
-
 @media only screen and (max-width: 621px) {
     .main-heading {
         font-size: 32px;
@@ -601,22 +520,8 @@
         line-height: 24px;
     }
 
-    .technology .technology-text {
-        margin-top: 12px;
-        font-size: 12px;
-    }
-
-    .technology-section .technology-row .technology img {
-        width: 46% !important;
-    }
-
     .camelab-section .technology-section {
         margin-top: 40px;
-    }
-
-    .technology-section .technology-row {
-        margin-top: 28px;
-        margin-bottom: 40px;
     }
 
     .camelab-section .feature-section {
@@ -703,11 +608,6 @@
 
     .feature-card-row .feature-card3 {
         padding: 20px 24px 10px 0px;
-    }
-
-    .technology .technology-text {
-        margin-top: 8px;
-        font-size: 8px;
     }
 
     .camelab-section .showcase-section {

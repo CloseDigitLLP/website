@@ -155,7 +155,7 @@
         {
             "id": "animate5",
             "title": "Schenk",
-            "href": "/",
+            "href": "/Schenk",
             "imgSrc": "/work/2024/Schenk.png",
             "tech": [
                 {
@@ -343,7 +343,7 @@
         {
             "id": "animate12",
             "title": "Snbla",
-            "href": "/",
+            "href": "/Snbla",
             "imgSrc": "/work/2024/Snbla.png",
             "tech": [
                 {
@@ -637,6 +637,46 @@
                 "name": "Adobe XD",
                 "icon": "/work/2024/tech-icons/AdobeXD.svg"
             }
+        ],
+        "schenk": [
+            {
+                "name": "ScrollJS",
+                "icon": "/work/2024/tech-icons/ScrollJS.svg"
+            },
+            {
+                "name": "UI/UX",
+                "icon": "/work/2024/tech-icons/UIUX.svg"
+            },
+            {
+                "name": "Bootstrap",
+                "icon": "/work/2024/tech-icons/Bootstrap.svg"
+            },
+            {
+                "name": "Firebase",
+                "icon": "/work/2024/tech-icons/Firebase.svg"
+            },
+            {
+                "name": "CanvasJS",
+                "icon": "/work/2024/tech-icons/CanvasJS.svg"
+            }
+        ],
+        "snbla": [
+            {
+                "name": "UI/UX",
+                "icon": "/work/2024/tech-icons/UIUX.svg"
+            },
+            {
+                "name": "HTML",
+                "icon": "/work/2024/tech-icons/HTML.svg"
+            },
+            {
+                "name": "Wordpress",
+                "icon": "/work/2024/tech-icons/Wordpress.svg"
+            },
+            {
+                "name": "Elementor",
+                "icon": "/work/2024/tech-icons/Elementor.svg"
+            }
         ]
     },
     "sliderdata": {
@@ -674,6 +714,42 @@
             {
                 "image": "/work/2024/fbn/fbnSliderImg4.png",
                 "text": "After viewing your results, you'll receive a personalized self-care plan with actionable steps, resources, and medication guidance tailored to your needs. This plan helps you improve your mental well-being, including recommendations for medications if necessary."
+            }
+        ],
+        "schenk": [
+            {
+                "image": "/work/2024/schenk/schenkSliderImg1.png",
+                "text": "Our website design for Schenk Construction Group features a clean, modern layout that highlights our services and projects. With intuitive navigation and clear calls to action, it offers a seamless user experience and showcases our commitment to quality."
+            },
+            {
+                "image": "/work/2024/schenk/schenkSliderImg2.png",
+                "text": "This About Us page design showcases our team's expertise and commitment through a clean layout and engaging visuals, highlighting our mission and services in a clear, professional manner."
+            },
+            {
+                "image": "/work/2024/schenk/schenkSliderImg3.png",
+                "text": "This Our Latest Project page features a visually engaging layout that highlights our most recent work. With high-quality images and concise project details, it effectively showcases our capabilities and the success of our latest endeavors."
+            },
+            {
+                "image": "/work/2024/schenk/schenkSliderImg4.png",
+                "text": "This Our Team page design offers a professional and inviting look, featuring team members’ profiles with high-quality photos and brief bios. It highlights each member's expertise and role, giving visitors insight into the skilled professionals behind Schenk Construction Group."
+            }
+        ],
+        "snbla": [
+            {
+                "image": "/work/2024/snbla/snblaSliderImg1.png",
+                "text": "Choose a savings plan that fits your schedule by depositing money into your account once or repeatedly. Adjust the deposit amount as needed—speed up, slow down, or pause the process according to your purchasing plan. Create an account and start saving today!"
+            },
+            {
+                "image": "/work/2024/snbla/snblaSliderImg1.png",
+                "text": "While saving to buy later, you receive cash rewards from brands directly into your Sunbulah account to help you pay for purchases faster. Get a reward and accelerate your savings!"
+            },
+            {
+                "image": "/work/2024/snbla/snblaSliderImg3.png",
+                "text": "Achieving your shopping goals becomes closer with the support of relatives and friends. Invite your family and friends to join and contribute to your purchasing goals, accelerating your achievement. The more you cooperate, the more rewards you'll all benefit from on purchases. Share with everyone and enjoy the benefits together!"
+            },
+            {
+                "image": "/work/2024/snbla/snblaSliderImg4.png",
+                "text": "When you reach your goal, you'll incur no fees, additional amounts, or financial penalties for delaying or changing the plan. Once you confirm your purchase, you'll receive a financial reward from the brand and can cancel the purchase without any financial penalty. Buy whenever you want and enjoy the flexibility!"
             }
         ]
     }

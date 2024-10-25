@@ -77,7 +77,7 @@ export default function ProperSky() {
       controllerRef.current = controller;
 
       const images = ['img1', 'img2', 'img3', 'img4', 'img5', 'img6', 'img7'];
-      
+
       const checkImagesLoaded = setInterval(() => {
         const bannerImage = document.getElementById('img1');
         if (bannerImage) {
@@ -94,7 +94,7 @@ export default function ProperSky() {
               .on("enter", () => {
                 images.forEach((id, idx) => {
                   const imageElement = document.getElementById(id);
-                  if (imageElement) { 
+                  if (imageElement) {
                     imageElement.style.opacity = idx === index ? 1 : 0;
                   }
                 });
@@ -107,10 +107,10 @@ export default function ProperSky() {
               })
               .addTo(controller);
           });
-          
-          clearInterval(checkImagesLoaded); 
+
+          clearInterval(checkImagesLoaded);
         }
-      }, 100); 
+      }, 100);
 
       return () => {
         controller.destroy(true);
@@ -146,6 +146,27 @@ export default function ProperSky() {
           <div id="img6" className={ProperSkyStyle.image6}>
           </div>
           <div id="img7" className={ProperSkyStyle.image7}>
+          </div>
+        </div>
+      </div>
+
+      <div className={ProperSkyStyle.showCaseSection}>
+        <div className="container">
+          <h3 className={portfolioDetailsCommon.mainheading}>
+            Innovative design solution <br />
+            <span>JV Construct</span> Showcase
+          </h3>
+        </div>
+        <div className={ProperSkyStyle.showCaseImgSection}>
+          <div className={`${ProperSkyStyle.showCaseImg} ${ProperSkyStyle.Img1}`}>
+          </div>
+          <div className={`${ProperSkyStyle.showCaseImg} ${ProperSkyStyle.Img2}`}>
+          </div>
+          <div className={`${ProperSkyStyle.showCaseImg} ${ProperSkyStyle.Img3}`}>
+          </div>
+          <div className={`${ProperSkyStyle.showCaseImg} ${ProperSkyStyle.Img4}`}>
+          </div>
+          <div className={`${ProperSkyStyle.showCaseImg} ${ProperSkyStyle.Img5}`}>
           </div>
         </div>
       </div>

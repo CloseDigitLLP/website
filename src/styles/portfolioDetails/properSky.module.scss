@@ -99,6 +99,73 @@
 }
 
 
+// showCaseSection
+
+.showCaseSection {
+    padding: 144px 0;
+    position: relative;
+
+}
+
+.showCaseSection h3 span {
+    color: #70652a;
+}
+
+.showCaseSection .showCaseImg {
+    height: 100vh;
+    position: sticky;
+    top: 20px;
+    text-align: center;
+    font-size: 85px;
+    box-shadow: 0 10px 15px #00000028;
+}
+
+.Img1 {
+    z-index: 7;
+    background: url('/work/2024/JV-construction/slideUpImg1.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 20px
+}
+
+.Img2 {
+    z-index: 8;
+    background: url('/work/2024/JV-construction/slideUpImg2.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 30px
+}
+
+.Img3 {
+    z-index: 9;
+    background: url('/work/2024/JV-construction/slideUpImg3.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 40px
+}
+
+.Img4 {
+    z-index: 10;
+    background: url('/work/2024/JV-construction/slideUpImg4.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 50px
+}
+
+.Img5 {
+    z-index: 11;
+    background: url('/work/2024/JV-construction/slideUpImg2.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 60px;
+}
+
+
 // processSection
 
 .processSection {
@@ -451,6 +518,7 @@
 
 
 
+
 @media screen and (max-width:1200px) {
     .processSection {
         margin-top: 0px;
@@ -477,6 +545,10 @@
 @media screen and (max-width:992px) {
     .showCaseSection {
         padding: 60px 0;
+    }
+
+    .showCaseSection .showCaseImg {
+        height: 80vh;
     }
 
     .processSection {
@@ -559,10 +631,10 @@
 
 
 @media screen and (max-width:770px) {
-
-    .showCaseSection .showCaseImgSection {
-        height: 540px;
+    .showCaseSection .showCaseImg {
+        height: 70vh;
     }
+
     .image1,
     .image2,
     .image3,
@@ -576,15 +648,18 @@
         height: 340px;
         background-repeat: no-repeat;
     }
+
     .bannerImg {
         top: 100px;
         height: 400px;
     }
-    
+
 }
 
 @media screen and (max-width:690px) {
-
+    .showCaseSection .showCaseImg {
+        height: 60vh;
+    }
     .circleSection .circleOne {
         width: 300px;
         height: 300px;
@@ -620,10 +695,6 @@
         width: 50%;
     }
 
-    .showCaseSection .showCaseImgSection {
-        height: 450px;
-    }
-
     .processScrollSection .subProcessPart h6 {
         width: 30%;
         font-size: 12px;
@@ -647,10 +718,14 @@
         width: 50px;
         height: 50px;
     }
- 
+
 }
 
 @media screen and (max-width:512px) {
+    .showCaseSection .showCaseImg {
+        height: 50vh;
+    }
+
     .image1,
     .image2,
     .image3,
@@ -664,6 +739,7 @@
         height: 246px;
         background-repeat: no-repeat;
     }
+
     .bannerImg {
         top: 54px;
         height: 290px;
@@ -704,12 +780,13 @@
         width: 100%;
     }
 
-    .showCaseSection .showCaseImgSection {
-        height: 400px;
-    }
 }
 
 @media screen and (max-width:420px) {
+    .showCaseSection .showCaseImg {
+        height: 40vh;
+    }
+
     .image1,
     .image2,
     .image3,
@@ -723,6 +800,7 @@
         height: 152px;
         background-repeat: no-repeat;
     }
+
     .bannerImg {
         top: 30px;
         height: 194px;
@@ -794,7 +872,11 @@
         padding: 70px 0px;
     }
 
-    .showCaseSection .showCaseImgSection {
-        height: 300px;
+}
+
+
+@media screen and (max-width:375px) {
+    .showCaseSection .showCaseImg {
+        height: 35vh;
     }
 }

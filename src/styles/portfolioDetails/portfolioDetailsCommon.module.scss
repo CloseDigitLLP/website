@@ -300,16 +300,16 @@
         margin: 0px 0px 40px 0px;
         overflow: hidden;
     }
+
+    .technology-section .technology-row .technology img {
+        width: 60% !important;
+    }
 }
 
 @media only screen and (max-width: 621px) {
     .technology .technology-text {
         margin-top: 12px;
         font-size: 12px;
-    }
-
-    .technology-section .technology-row .technology img {
-        width: 60% !important;
     }
 
     .technology-section {

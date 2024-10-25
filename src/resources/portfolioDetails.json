@@ -161,7 +161,7 @@
             {
                 "id": "animate12",
                 "title": "Snbla",
-                "href": "/",
+                "href": "/Snbla",
                 "imgSrc": "/work/2024/Snbla.png",
                 "tech": [
                     { "src": "/work/technology-icons/uiux.svg", "name": "UI-UX" },
@@ -380,6 +380,24 @@
                 "name": "CanvasJS",
                 "icon": "/work/2024/tech-icons/CanvasJS.svg"
             }
+        ],
+        "snbla": [
+            {
+                "name": "UI/UX",
+                "icon": "/work/2024/tech-icons/UIUX.svg"
+            },
+            {
+                "name": "HTML",
+                "icon": "/work/2024/tech-icons/HTML.svg"
+            },
+            {
+                "name": "Wordpress",
+                "icon": "/work/2024/tech-icons/Wordpress.svg"
+            },
+            {
+                "name": "Elementor",
+                "icon": "/work/2024/tech-icons/Elementor.svg"
+            }
         ]
     },
     "sliderdata": {
@@ -435,6 +453,24 @@
             {
                 "image": "/work/2024/schenk/schenkSliderImg4.png",
                 "text": "This Our Team page design offers a professional and inviting look, featuring team members’ profiles with high-quality photos and brief bios. It highlights each member's expertise and role, giving visitors insight into the skilled professionals behind Schenk Construction Group."
+            }
+        ],
+        "snbla": [
+            {
+                "image": "/work/2024/snbla/snblaSliderImg1.png",
+                "text": "Choose a savings plan that fits your schedule by depositing money into your account once or repeatedly. Adjust the deposit amount as needed—speed up, slow down, or pause the process according to your purchasing plan. Create an account and start saving today!"
+            },
+            {
+                "image": "/work/2024/snbla/snblaSliderImg1.png",
+                "text": "While saving to buy later, you receive cash rewards from brands directly into your Sunbulah account to help you pay for purchases faster. Get a reward and accelerate your savings!"
+            },
+            {
+                "image": "/work/2024/snbla/snblaSliderImg3.png",
+                "text": "Achieving your shopping goals becomes closer with the support of relatives and friends. Invite your family and friends to join and contribute to your purchasing goals, accelerating your achievement. The more you cooperate, the more rewards you'll all benefit from on purchases. Share with everyone and enjoy the benefits together!"
+            },
+            {
+                "image": "/work/2024/snbla/snblaSliderImg4.png",
+                "text": "When you reach your goal, you'll incur no fees, additional amounts, or financial penalties for delaying or changing the plan. Once you confirm your purchase, you'll receive a financial reward from the brand and can cancel the purchase without any financial penalty. Buy whenever you want and enjoy the flexibility!"
             }
         ]
     }

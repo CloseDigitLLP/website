@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
@@ -11,7 +11,7 @@ import TechnologySection from './portfolioDetailsCommon/technologySection';
 
 var $ = require('jquery');
 if (typeof window !== 'undefined') {
-    window.$ = window.jQuery = require('jquery');
+  window.$ = window.jQuery = require('jquery');
 }
 
 export default function Vaid() {
@@ -38,11 +38,9 @@ export default function Vaid() {
     dots: false,
     stagePadding: 0,
     responsive: {
-      0: { items: 1 },
-      400: { items: 1.2 },
-      600: { items: 1.2 },
-      700: { items: 2.1 },
-      1000: { items: 2.2 },
+      0: { items: 1.2 },
+      700: { items: 2 },
+      1200: { items: 2.2 },
       1800: { items: 3 }
     },
   };
@@ -66,10 +64,10 @@ export default function Vaid() {
         endValue = "center center";
         // console.log(endValue + "-------------- 1200>")
       } else if (screenWidth > 1920) {
-        endValue = "bottom center"; 
+        endValue = "bottom center";
         // console.log(endValue + "-------------- 1900>")
       } else {
-        endValue = "center center"; 
+        endValue = "center center";
       }
       const xPercentValue = screenWidth > 1800 ? -40 : -40;
       const yPercentValue = screenWidth > 1800 ? 150 : 80;
@@ -264,54 +262,67 @@ export default function Vaid() {
         </div>
       </section>
 
-
+      {/* horizontal mobile  section*/}
       <section className={vaidStyle['phoneImg-mobileView']}>
-        <div>
-          <img
-            src='/work/2024/vaid/vaid-img1.png'
+        <div className={vaidStyle['phoneImg-part']}>
+          <div>
+            <img
+              src='/work/2024/vaid/vaid-img1.png'
+              alt="Animated"
+
+            />
+          </div>
+          <div><img
+            src='/work/2024/vaid/vaid-img2.png'
             alt="Animated"
-            className={vaidStyle.phoneImg}
+
           />
+          </div>
+          <div> <img
+            src='/work/2024/vaid/vaid-img6.png'
+            alt="Animated"
+
+          />
+          </div>
+          <div><img
+            src='/work/2024/vaid/vaid-img3.png'
+            alt="Animated"
+
+          />
+          </div>
         </div>
-        <div> <img
-          src='/work/2024/vaid/vaid-img2.png'
+        <div className={vaidStyle.centerPhoneImg}><img
+          src='/work/2024/vaid/vaid-img1.png'
           alt="Animated"
-          className={vaidStyle.phoneImg}
         />
         </div>
-        <div> <img
-          src='/work/2024/vaid/vaid-img3.png'
-          alt="Animated"
-          className={vaidStyle.phoneImg}
-        />
-        </div>
-        <div> <img
-          src='/work/2024/vaid/vaid-img4.png'
-          alt="Animated"
-          className={vaidStyle.phoneImg}
-        />
-        </div>
-        <div> <img
-          src='/work/2024/vaid/vaid-img5.png'
-          alt="Animated"
-          className={vaidStyle.phoneImg}
-        />
-        </div>
-        <div> <img
-          src='/work/2024/vaid/vaid-img6.png'
-          alt="Animated"
-          className={vaidStyle.phoneImg}
-        />
-        </div>
-        <div> <img
-          src='/work/2024/vaid/vaid-img7.png'
-          alt="Animated"
-          className={vaidStyle.phoneImg}
-        />
+        <div className={vaidStyle['phoneImg-part']}>
+          <div> <img
+            src='/work/2024/vaid/vaid-img5.png'
+            alt="Animated"
+
+          />
+          </div>
+          <div> <img
+            src='/work/2024/vaid/vaid-img6.png'
+            alt="Animated"
+
+          />
+          </div>
+          <div><img
+            src='/work/2024/vaid/vaid-img2.png'
+            alt="Animated"
+
+          />
+          </div>
+          <div> <img
+            src='/work/2024/vaid/vaid-img7.png'
+            alt="Animated"
+
+          />
+          </div>
         </div>
       </section>
-
-
 
       {/* tools and technology section  */}
       <TechnologySection data={data.techdata.vaid} />
@@ -326,12 +337,14 @@ export default function Vaid() {
             <div className={vaidStyle['cardbody']}>
               <div className="row">
                 <div className="col-6">
+                <div className={vaidStyle.cardImg}>
                   <Image
                     src='/work/2024/vaid/vaidCardImg1.png'
                     alt="Animated"
                     width={230}
                     height={450}
                   />
+                  </div>
                 </div>
 
                 <div className={`col-6 ${vaidStyle.leftTextPart}`}>
@@ -349,12 +362,14 @@ export default function Vaid() {
                   </div>
                 </div>
                 <div className="col-6">
-                  <Image
-                    src='/work/2024/vaid/vaidCardImg1.png'
-                    alt="Animated"
-                    width={230}
-                    height={450}
-                  />
+                  <div className={`${vaidStyle.cardImg} d-flex justify-content-end`}>
+                    <Image
+                      src='/work/2024/vaid/vaidCardImg1.png'
+                      alt="Animated"
+                      width={230}
+                      height={450}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -369,7 +384,7 @@ export default function Vaid() {
           <h3 className={vaidStyle['mainheading']}>
             Innovative Features <br /><span>in VAID</span>
           </h3>
-         
+
         </div>
         <OwlCarousel className={`${vaidStyle['owlcarousel']} ${vaidStyle['review-owlcarousel']}`} navText={["", ""]}  {...options}>
           <div className={`${vaidStyle['slider-item']}`}>
@@ -433,7 +448,7 @@ export default function Vaid() {
           </div>
         </OwlCarousel>
       </section>
-      
+
     </div>
   );
 }

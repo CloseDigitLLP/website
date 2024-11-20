@@ -391,32 +391,33 @@ export default function Directory() {
 
 
             {/* color pallet */}
-            <div class={`${directoryStyle['colorPalletContainer']}`}>
+            <div className={`${directoryStyle['colorPalletContainer']}`}>
                 <div className="conatiner">
                 <h3 className={directoryStyle['mainheading']}>
                 Color Palette presentation for 
                         <br /><span>Directory Application</span> Design
                     </h3>
-                    <div class={`${directoryStyle['box']} ${directoryStyle['box1']}`}>
-                        <div class={`${directoryStyle['info']}`}>
+                    <p>The deep, striking blue was utilized in development to enhance visual impact and maintain a professional appearance. This color choice supports a strong, cohesive brand identity and improves user engagement through its bold and distinctive presence.</p>
+                    <div className={`${directoryStyle['box']} ${directoryStyle['box1']}`}>
+                        <div className={`${directoryStyle['info']}`}>
                         Cyan Blue
                         </div>
                     </div>
 
-                    <div class={`${directoryStyle['box']} ${directoryStyle['box2']}`}>
-                        <div class={`${directoryStyle['info']}`}>
+                    <div className={`${directoryStyle['box']} ${directoryStyle['box2']}`}>
+                        <div className={`${directoryStyle['info']}`}>
                         Celestial Blue
                         </div>
                     </div>
 
-                    <div class={`${directoryStyle['box']} ${directoryStyle['box3']}`}>
-                        <div class={`${directoryStyle['info']}`}>
+                    <div className={`${directoryStyle['box']} ${directoryStyle['box3']}`}>
+                        <div className={`${directoryStyle['info']}`}>
                         Superiority Blue
                         </div>
                     </div>
 
-                    <div class={`${directoryStyle['box']} ${directoryStyle['box4']}`}>
-                        <div class={`${directoryStyle['info']}`}>
+                    <div className={`${directoryStyle['box']} ${directoryStyle['box4']}`}>
+                        <div className={`${directoryStyle['info']}`}>
                         Slate Gray
                         </div>
                     </div>

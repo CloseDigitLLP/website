@@ -4,80 +4,10 @@ import portfolioDetailsCommon from '../../styles/portfolioDetails/portfolioDetai
 import Image from 'next/image';
 import data from '../../resources/portfolioDetails.json'
 import TechnologySection from './portfolioDetailsCommon/technologySection';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import DesignProcess from './portfolioDetailsCommon/designProcess';
+import PreviewSlider from './portfolioDetailsCommon/previewSlider';
 
 export default function JVConstruction() {
-
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 400,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    arrows: false,
-    pauseOnHover: false,
-  };
-
-  const processImgRef1 = useRef(null);
-  const processImgRef2 = useRef(null);
-  const processImgRef3 = useRef(null);
-  const processImgRef4 = useRef(null);
-
-  useEffect(() => {
-    const initializeScrollMagic = async () => {
-      const { default: ScrollMagic } = await import('scrollmagic/scrollmagic/uncompressed/ScrollMagic');
-
-      const controller = new ScrollMagic.Controller();
-
-      const scenes = [
-        {
-          triggerElement: processImgRef1.current,
-          ref: processImgRef1,
-        },
-        {
-          triggerElement: processImgRef2.current,
-          ref: processImgRef2,
-        },
-        {
-          triggerElement: processImgRef3.current,
-          ref: processImgRef3,
-        },
-        {
-          triggerElement: processImgRef4.current,
-          ref: processImgRef4,
-        },
-      ];
-
-      scenes.forEach(({ triggerElement, ref }) => {
-        new ScrollMagic.Scene({
-          triggerElement,
-          duration: 500,
-          triggerHook: 0.7,
-        })
-          .setClassToggle(ref.current, JVStyle['scaleUp'])
-          .addTo(controller);
-
-        new ScrollMagic.Scene({
-          triggerElement,
-          duration: 500,
-          triggerHook: 0.3,
-        })
-          .setClassToggle(ref.current, JVStyle['removeScale'])
-          .addTo(controller);
-      });
-
-      return () => {
-        controller.destroy(true);
-      };
-    };
-
-    initializeScrollMagic();
-  }, []);
-
 
   useEffect(() => {
     const doAnimations = () => {
@@ -103,7 +33,6 @@ export default function JVConstruction() {
       window.removeEventListener('scroll', doAnimations);
     };
   }, []);
-
 
 
   return (
@@ -150,69 +79,7 @@ export default function JVConstruction() {
           </div>
         </div>
 
-        <div className={JVStyle.processSection}>
-          <div className="container">
-            <div className="d-flex justify-content-between flex-wrap">
-              <h3 className={portfolioDetailsCommon.mainheading}>
-                Design Process
-              </h3>
-              <p>
-                Extensive research, in-depth competitive analysis, and continuous improvement provided crucial insights for developing a new application that meets the highest industry standards.
-              </p>
-            </div>
-            <div className={JVStyle.processScrollSection}>
-
-              <div className={JVStyle.subProcessPart}>
-                <h3>01.</h3>
-                <div ref={processImgRef1} className={JVStyle.subProcessImg}>
-                  <Image width={100} height={100}
-                    src="/work/2024/JV-construction/processImg1.svg"
-                    alt="Animated"
-                  />
-                </div>
-                <h3>Research</h3>
-                <h6>Focus on users, analyze competitors, and apply best practices to exceed expectations.</h6>
-              </div>
-
-              <div className={JVStyle.subProcessPart}>
-                <h3>02.</h3>
-                <div ref={processImgRef2} className={JVStyle.subProcessImg}>
-                  <Image width={100} height={100}
-                    src="/work/2024/JV-construction/processImg2.svg"
-                    alt="Animated"
-                  />
-                </div>
-                <h3>Wireframe</h3>
-                <h6>We designed the layout for optimal structure, intuitive navigation, and seamless interaction to ensure a user-friendly website.</h6>
-              </div>
-
-              <div className={JVStyle.subProcessPart}>
-                <h3>03.</h3>
-                <div ref={processImgRef3} className={JVStyle.subProcessImg}>
-                  <Image width={100} height={100}
-                    src="/work/2024/JV-construction/processImg3.svg"
-                    alt="Animated"
-                  />
-                </div>
-                <h3>UI Design</h3>
-                <h6>Designers and marketers collaborate on brand research to create appealing visual elements.</h6>
-              </div>
-
-              <div className={JVStyle.subProcessPart}>
-                <h3>04.</h3>
-                <div ref={processImgRef4} className={JVStyle.subProcessImg}>
-                  <Image width={100} height={100}
-                    src="/work/2024/JV-construction/processImg4.svg"
-                    alt="Animated"
-                  />
-                </div>
-                <h3>Analysis</h3>
-                <h6>Once the app was completed, we thoroughly tested and optimized it to resolve major user issues.</h6>
-              </div>
-            </div>
-
-          </div>
-        </div>
+    <DesignProcess/>
 
         <div className={JVStyle.landingPageSection}>
           <div className="container">
@@ -222,48 +89,7 @@ export default function JVConstruction() {
           </div>
           <div className={JVStyle.landingPage}>
             {/* React Slick Carousel */}
-            <Slider {...settings}>
-              <div className={JVStyle.landingPageImg}>
-                <Image
-                  width={500}
-                  height={500}
-                  src="/work/2024/JV-construction/landingPageImg.png"
-                  alt="JV Construction Landing Page Image 1"
-                />
-              </div>
-              <div className={JVStyle.landingPageImg}>
-                <Image
-                  width={500}
-                  height={500}
-                  src="/work/2024/JV-construction/landingPageImg2.svg"
-                  alt="JV Construction Landing Page Image 2"
-                />
-              </div>
-              <div className={JVStyle.landingPageImg}>
-                <Image
-                  width={500}
-                  height={500}
-                  src="/work/2024/JV-construction/landingPageImg3.svg"
-                  alt="JV Construction Landing Page Image 3"
-                />
-              </div>
-              <div className={JVStyle.landingPageImg}>
-                <Image
-                  width={500}
-                  height={500}
-                  src="/work/2024/JV-construction/landingPageImg4.svg"
-                  alt="JV Construction Landing Page Image 4"
-                />
-              </div>
-              <div className={JVStyle.landingPageImg}>
-                <Image
-                  width={500}
-                  height={500}
-                  src="/work/2024/JV-construction/landingPageImg5.svg"
-                  alt="JV Construction Landing Page Image 5"
-                />
-              </div>
-            </Slider>
+            <PreviewSlider images={data.previewSliderData.jv}/>
           </div>
         </div>
 

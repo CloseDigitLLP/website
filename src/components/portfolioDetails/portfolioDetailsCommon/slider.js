@@ -49,7 +49,6 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const Slider = ({ slides }) => {
 
-  // console.log(slides, 'slide image')
 
   return (
     <div className={styles['slider-part']}>

@@ -35,7 +35,7 @@
 
 
 // loader
-.loaderContainer{
+.loaderContainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,31 +50,47 @@
     height: 80px;
     aspect-ratio: 1;
     display: grid;
-  }
-  .loader:before,
-  .loader:after {
+}
+
+.loader:before,
+.loader:after {
     content: "";
-    --c:no-repeat linear-gradient(#0000ff 0 0);
+    --c: no-repeat linear-gradient(#0000ff 0 0);
     background: var(--c), var(--c);
     background-size: 25% 50%;
     animation: l4 1.5s infinite linear;
-  }
-  .loader:after {
+}
+
+.loader:after {
     transform: scale(-1);
-  }
-  @keyframes l4 {
+}
+
+@keyframes l4 {
+
     0%,
-    10%  {background-position:33.4% 100%,66.6% 100%}
-    40%  {background-position:33.4% 0,100% 100%}
-    70%  {background-position:0 100%,66.6% 0}
-    100% {background-position:33.4% 100%,66.6% 100%}
-  } 
+    10% {
+        background-position: 33.4% 100%, 66.6% 100%
+    }
+
+    40% {
+        background-position: 33.4% 0, 100% 100%
+    }
+
+    70% {
+        background-position: 0 100%, 66.6% 0
+    }
+
+    100% {
+        background-position: 33.4% 100%, 66.6% 100%
+    }
+}
 
 @media screen and (max-width:991px) {
     .mainheading {
         font-size: 32px;
         margin-bottom: 30px;
     }
+
     .bannerPrimaryText {
         font-size: 32px;
         margin: 40px 0;
@@ -98,6 +114,7 @@
         font-size: 20px;
         margin-bottom: 20px;
     }
+
     .bannerPrimaryText {
         font-size: 20px;
         margin: 30px 0;
@@ -210,7 +227,7 @@
     display: block;
 }
 
-.slider-part:hover .circle-btn span{
+.slider-part:hover .circle-btn span {
     display: none;
 }
 
@@ -232,6 +249,98 @@
     top: 30%;
 }
 
+// processSection
+
+.processSection {
+    margin-top: 160px;
+    overflow: hidden;
+}
+
+.processSection p {
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 500;
+    color: #919EAB;
+    width: 50%;
+}
+
+.processSection .processScrollSection h3 {
+    font-family: "Poppins";
+    font-size: 32px;
+    font-weight: 500;
+    color: #212529;
+}
+
+.processSection .processScrollSection p {
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+    color: #919EAB;
+}
+
+.processScrollSection .subProcessPart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid 1px #D3D4D7;
+    padding: 50px 0;
+}
+
+.processScrollSection .subProcessPart .subProcessImg {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.5s ease-out, width 0.5s ease-out, height 0.5s ease-out;
+}
+
+.processScrollSection .subProcessPart .subProcessImg img {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.processScrollSection .subProcessPart .subProcessImg span {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.processScrollSection .subProcessPart h6 {
+    width: 30%;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+    color: #919EAB;
+}
+
+.scaleUp {
+    width: 200px !important;
+    height: 200px !important;
+}
+
+.removeScale {
+    width: 100px !important;
+    height: 100px !important;
+}
+
+// preview slider
+
+
+.landingPageSection .landingPageImg {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.landingPageSection .landingPageImg img {
+    width: 500px !important;
+    height: 400px !important;
+}
+
+
+
+@media screen and (max-width:1200px) {
+    .processSection {
+        margin-top: 0px;
+    }
+}
 
 // mediaQueries 
 @media only screen and (max-width: 1025px) {
@@ -263,7 +372,57 @@
     }
 }
 
+@media screen and (max-width:992px) {
+    .landingPageSection .landingPage {
+        padding: 100px 0px;
+    }
+
+    .landingPageSection .landingPage::after {
+        font-size: 100px;
+    }
+
+    .landingPageSection .landingPage::before {
+        font-size: 100px;
+    }
+
+    .processSection {
+        margin-top: 0px;
+    }
+
+    .processSection .processScrollSection h3 {
+        font-size: 24px;
+    }
+
+    .processSection .processScrollSection p {
+        font-size: 14px;
+    }
+
+    .scaleUp {
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+    .removeScale {
+        width: 75px !important;
+        height: 75px !important;
+    }
+
+    .processScrollSection .subProcessPart .subProcessImg {
+        width: 75px;
+        height: 75px;
+    }
+
+    .processScrollSection .subProcessPart {
+        padding: 30px 0;
+    }
+
+}
+
 @media only screen and (max-width: 768px) {
+    .landingPageSection .landingPageImg img {
+        width: 300px !important;
+        height: 250px !important;
+    }
 
     .technology .technology-text {
         margin-top: 16px;
@@ -306,6 +465,38 @@
     }
 }
 
+@media screen and (max-width:690px) {
+    .processSection p {
+        font-size: 16px;
+        width: 50%;
+    }
+
+    .processScrollSection .subProcessPart h6 {
+        width: 30%;
+        font-size: 12px;
+    }
+
+    .processSection .processScrollSection h3 {
+        font-size: 16px;
+    }
+
+    .scaleUp {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .removeScale {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .processScrollSection .subProcessPart .subProcessImg {
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
 @media only screen and (max-width: 621px) {
     .technology .technology-text {
         margin-top: 12px;
@@ -336,12 +527,24 @@
 }
 
 @media only screen and (max-width: 520px) {
+    .landingPageSection .landingPageImg img {
+        width: 280px !important;
+        height: 200px !important;
+    }
+
+    .processSection p {
+        font-size: 16px;
+        width: 100%;
+    }
+
     .slider-part {
         margin-top: 30px;
     }
+
     .technology-section .technology-row {
         gap: 0px;
     }
+
     .technology .technology-text {
         margin-top: 8px;
         font-size: 10px;
@@ -370,4 +573,41 @@
 
 }
 
+@media screen and (max-width:420px) {
+
+    .processScrollSection .subProcessPart h6 {
+        width: 35%;
+        font-size: 10px;
+    }
+
+    .processSection .processScrollSection h3 {
+        font-size: 12px;
+    }
+
+    .scaleUp {
+        width: 70px !important;
+        height: 70px !important;
+    }
+
+    .removeScale {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .processScrollSection .subProcessPart .subProcessImg {
+        width: 35px;
+        height: 35px;
+    }
+    .landingPageSection .landingPage::after {
+        font-size: 50px;
+    }
+
+    .landingPageSection .landingPage::before {
+        font-size: 50px;
+    }
+
+    .landingPageSection .landingPage {
+        padding: 70px 0px;
+    }
+}
 

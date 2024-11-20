@@ -31,20 +31,20 @@ export default function PortfolioBanner() {
                         </div>
                         <div className="col-lg-6 col-md-12">
                             <div className={bannerStyle['textSection']}>
-                                <Image
+                                {/* <Image
                                 src={require('../../assets/images/portfolioBanner.svg')}
                                 alt="Banner"
                                 width={584}
                                 height={435}
                                 className={bannerStyle['banner-image']}
                                 quality={100}
-                            />
+                            /> */}
 
-                                {/* <h2 className={bannerStyle['closeText']}>
-                                    <div className={bannerStyle['rotate-img']}>
-                                </div>
+                                <h2 className={bannerStyle['closeText']}>
+                                    {/* <div className={bannerStyle['rotate-img']}>
+                                </div> */}
                                     CLOSE</h2>
-                                <h2 className={bannerStyle['digitText']}>DIGIT<span>.</span></h2> */}
+                                <h2 className={bannerStyle['digitText']}>DIGIT<span>.</span></h2>
 
                             </div>
                         </div>

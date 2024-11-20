@@ -677,6 +677,32 @@
                 "name": "Elementor",
                 "icon": "/work/2024/tech-icons/Elementor.svg"
             }
+        ],
+        "directory": [
+            {
+                "name": "UI/UX",
+                "icon": "/work/2024/tech-icons/UIUX.svg"
+            },
+            {
+                "name": "Firebase",
+                "icon": "/work/2024/tech-icons/Firebase.svg"
+            },
+            {
+                "name": "Redux",
+                "icon": "/work/2024/tech-icons/Redux.svg"
+            },
+            {
+                "name": "React",
+                "icon": "/work/2024/tech-icons/React.svg"
+            },
+            {
+                "name": "MySQL",
+                "icon": "/work/2024/tech-icons/MySQL.svg"
+            },
+            {
+                "name": "PWA",
+                "icon": "/work/2024/tech-icons/PWA.svg"
+            }
         ]
     },
     "sliderdata": {
@@ -750,6 +776,30 @@
             {
                 "image": "/work/2024/snbla/snblaSliderImg4.png",
                 "text": "When you reach your goal, you'll incur no fees, additional amounts, or financial penalties for delaying or changing the plan. Once you confirm your purchase, you'll receive a financial reward from the brand and can cancel the purchase without any financial penalty. Buy whenever you want and enjoy the flexibility!"
+            }
+        ]
+    },
+    "previewSliderData": {
+        "jv": [
+            {
+                "src": "/work/2024/JV-construction/landingPageImg.png",
+                "alt": "JV Construction Landing"
+            },
+            {
+                "src": "/work/2024/JV-construction/landingPageImg2.svg",
+                "alt": "JV Construction Landing"
+            },
+            {
+                "src": "/work/2024/JV-construction/landingPageImg3.svg",
+                "alt": "JV Construction Landing"
+            },
+            {
+                "src": "/work/2024/JV-construction/landingPageImg4.svg",
+                "alt": "JV Construction Landing"
+            },
+            {
+                "src": "/work/2024/JV-construction/landingPageImg5.svg",
+                "alt": "JV Construction Landing"
             }
         ]
     }

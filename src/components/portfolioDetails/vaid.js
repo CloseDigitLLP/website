@@ -139,8 +139,8 @@ export default function Vaid() {
               <Image
                 src='/work/2024/vaid/vaid-banner.png'
                 alt="Animated"
-                width={200}
-                height={200}
+                width={700}
+                height={700}
               />
             </div>
 

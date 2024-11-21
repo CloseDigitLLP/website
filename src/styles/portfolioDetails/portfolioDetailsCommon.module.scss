@@ -85,50 +85,6 @@
     }
 }
 
-@media screen and (max-width:991px) {
-    .mainheading {
-        font-size: 32px;
-        margin-bottom: 30px;
-    }
-
-    .bannerPrimaryText {
-        font-size: 32px;
-        margin: 40px 0;
-        padding-left: 40px;
-    }
-
-    .bannerSecondaryText {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width:767px) {
-    .bannerSecondaryText {
-        font-size: 20px;
-    }
-
-}
-
-@media screen and (max-width:520px) {
-    .mainheading {
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-
-    .bannerPrimaryText {
-        font-size: 20px;
-        margin: 30px 0;
-        padding-left: 0px;
-    }
-
-    .bannerSecondaryText {
-        font-size: 14px;
-    }
-}
-
-
-
-
 
 
 // technology section 
@@ -334,6 +290,66 @@
     height: 400px !important;
 }
 
+// colorPalette
+
+.colorPalette {
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height:400px;
+    margin-top: 64px;
+}
+
+.colorPalette1,
+.colorPalette2,
+.colorPalette3,
+.colorPalette4 {
+    position: absolute;
+    top: 0;
+    transition: 0.8s all;
+}
+
+.colorPalette1 {
+    left: 0%;
+    z-index: 10;
+}
+
+.colorPalette2 {
+    left: 20%;
+    z-index: 20;
+}
+
+.colorPalette3 {
+    left: 40%;
+    z-index: 30;
+}
+
+.colorPalette4 {
+    left: 60%;
+    z-index: 40;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.imageContainer::before {
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+
+
 
 
 @media screen and (max-width:1200px) {
@@ -372,7 +388,23 @@
     }
 }
 
+
 @media screen and (max-width:992px) {
+    .mainheading {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .bannerPrimaryText {
+        font-size: 32px;
+        margin: 40px 0;
+        padding-left: 40px;
+    }
+
+    .bannerSecondaryText {
+        font-size: 20px;
+    }
+
     .landingPageSection .landingPage {
         padding: 100px 0px;
     }
@@ -418,7 +450,54 @@
 
 }
 
+@media only screen and (min-width: 768px) {
+
+    .colorPalette1:hover,
+    .colorPalette2:hover,
+    .colorPalette3:hover,
+    .colorPalette4:hover {
+        z-index: 100;
+        scale: 0.95;
+        transition: 0.8s all;
+    }
+
+    .colorPalette1:hover .imageContainer::before,
+    .colorPalette2:hover .imageContainer::before,
+    .colorPalette3:hover .imageContainer::before,
+    .colorPalette4:hover .imageContainer::before {
+        position: absolute;
+        font-size: 30px;
+        color: white;
+        top: 100px;
+        left: 50px;
+        transition: 0.6s;
+        z-index: 100;
+    }
+}
+
 @media only screen and (max-width: 768px) {
+    .colorPalette {
+        margin-top: 40px;
+    }
+
+    .bannerSecondaryText {
+        font-size: 20px;
+    }
+
+    .imageContainer img {
+        width: 100%;
+    }
+
+    .imageContainer::before {
+        position: absolute;
+        font-size: 12px;
+        color: white;
+        bottom: 10px;
+        top: unset;
+        left: 20px;
+        display: unset;
+    }
+
     .landingPageSection .landingPageImg img {
         width: 300px !important;
         height: 250px !important;
@@ -527,6 +606,22 @@
 }
 
 @media only screen and (max-width: 520px) {
+    .mainheading {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .bannerPrimaryText {
+        font-size: 20px;
+        margin: 30px 0;
+        padding-left: 0px;
+    }
+
+    .bannerSecondaryText {
+        font-size: 14px;
+    }
+
+
     .landingPageSection .landingPageImg img {
         width: 280px !important;
         height: 200px !important;
@@ -574,6 +669,9 @@
 }
 
 @media screen and (max-width:420px) {
+    .colorPalette {
+        height: 300px;
+    }
 
     .processScrollSection .subProcessPart h6 {
         width: 35%;
@@ -598,6 +696,7 @@
         width: 35px;
         height: 35px;
     }
+
     .landingPageSection .landingPage::after {
         font-size: 50px;
     }
@@ -610,4 +709,3 @@
         padding: 70px 0px;
     }
 }
-

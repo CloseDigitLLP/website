@@ -6,6 +6,7 @@ import vaidStyle from '../../styles/portfolioDetails/vaid.module.scss';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import dynamic from 'next/dynamic';
+import portfolioDetailsCommon from '../../styles/portfolioDetails/portfolioDetailsCommon.module.scss';
 import data from '../../resources/portfolioDetails.json'
 import TechnologySection from './portfolioDetailsCommon/technologySection';
 
@@ -131,8 +132,8 @@ export default function Vaid() {
         <div className="container">
           <div className={vaidStyle.content}>
             <div>
-              <h3>
-                Crafting Timeless Spaces: Unveiling the <span>Interior Design</span>
+              <h3 className={portfolioDetailsCommon['bannerPrimaryText']}>
+                Crafting Timeless Spaces: Unveiling the <span className={vaidStyle.mainheadingSpan}>Interior Design</span>
               </h3>
             </div>
             <div className={vaidStyle.mobileBanner}>
@@ -331,7 +332,7 @@ export default function Vaid() {
       <section className={vaidStyle['vaidCardsSection']}>
         <div className="container">
           <div>
-            <h3 className={vaidStyle['mainheading']}>Codecraft: <br /> <span>VAID&rsquo;s</span> journey in Development</h3>
+            <h3 className={portfolioDetailsCommon['mainheading']}>Codecraft: <br /> <span  className={vaidStyle.mainheadingSpan}>VAID&rsquo;s</span> journey in Development</h3>
           </div>
           <div className={vaidStyle['vaidcards']}>
             <div className={vaidStyle['cardbody']}>
@@ -381,8 +382,8 @@ export default function Vaid() {
 
       <section className={vaidStyle['sliderSection']}>
         <div className="container">
-          <h3 className={vaidStyle['mainheading']}>
-            Innovative Features <br /><span>in VAID</span>
+          <h3 className={portfolioDetailsCommon['mainheading']}>
+            Innovative Features <br /><span className={vaidStyle.mainheadingSpan}>in VAID</span>
           </h3>
 
         </div>

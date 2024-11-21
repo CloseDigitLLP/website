@@ -6,9 +6,11 @@ import directoryStyle from '../../styles/portfolioDetails/directory.module.scss'
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import dynamic from 'next/dynamic';
+import portfolioDetailsCommon from '../../styles/portfolioDetails/portfolioDetailsCommon.module.scss';
 import data from '../../resources/portfolioDetails.json'
 import TechnologySection from './portfolioDetailsCommon/technologySection';
 import DesignProcess from './portfolioDetailsCommon/designProcess';
+
 
 var $ = require('jquery');
 if (typeof window !== 'undefined') {
@@ -132,8 +134,8 @@ export default function Directory() {
                 <div className="container">
                     <div className={directoryStyle.content}>
                         <div>
-                            <h3>
-                                Effortless Contact Management with <span>Directory Apps</span>
+                            <h3 className={portfolioDetailsCommon['bannerPrimaryText']}>
+                                Effortless Contact Management with <span className={directoryStyle.mainheadingSpan}>Directory Apps</span>
                                 at Your Fingertips
                             </h3>
                         </div>
@@ -175,7 +177,7 @@ export default function Directory() {
                             <div className={directoryStyle.horiImgContainer}>
                                 <div className={directoryStyle.imgContent}>
                                     <Image
-                                        src='/work/2024/vaid/vaid-img1.png'
+                                        src='/work/2024/directory/phoneImg1.png'
                                         alt="Animated"
                                         className={directoryStyle.phoneImg}
                                         width={215}
@@ -187,7 +189,7 @@ export default function Directory() {
                                 </div>
                                 <div className={directoryStyle.imgContent}>
                                     <Image
-                                        src='/work/2024/vaid/vaid-img2.png'
+                                        src='/work/2024/directory/phoneImg2.png'
                                         alt="Animated"
                                         className={directoryStyle.phoneImg}
                                         width={215}
@@ -199,7 +201,7 @@ export default function Directory() {
                                 </div>
                                 <div className={directoryStyle.imgContent}>
                                     <Image
-                                        src='/work/2024/vaid/vaid-img3.png'
+                                        src='/work/2024/directory/phoneImg3.png'
                                         alt="Animated"
                                         className={directoryStyle.phoneImg}
                                         width={215}
@@ -211,7 +213,7 @@ export default function Directory() {
                                 </div>
                                 <div className={directoryStyle.imgContent}>
                                     <Image
-                                        src='/work/2024/vaid/vaid-img4.png'
+                                        src='/work/2024/directory/phoneImg4.png'
                                         alt="Animated"
                                         className={directoryStyle.phoneImg}
                                         width={215}
@@ -223,7 +225,7 @@ export default function Directory() {
                                 </div>
                                 <div className={directoryStyle.imgContent}>
                                     <Image
-                                        src='/work/2024/vaid/vaid-img5.png'
+                                        src='/work/2024/directory/phoneImg5.png'
                                         alt="Animated"
                                         className={directoryStyle.phoneImg}
                                         width={215}
@@ -235,7 +237,7 @@ export default function Directory() {
                                 </div>
                                 <div className={directoryStyle.imgContent}>
                                     <Image
-                                        src='/work/2024/vaid/vaid-img6.png'
+                                        src='/work/2024/directory/phoneImg6.png'
                                         alt="Animated"
                                         className={directoryStyle.phoneImg}
                                         width={215}
@@ -247,7 +249,7 @@ export default function Directory() {
                                 </div>
                                 <div className={directoryStyle.imgContent}>
                                     <Image
-                                        src='/work/2024/vaid/vaid-img7.png'
+                                        src='/work/2024/directory/phoneImg7.png'
                                         alt="Animated"
                                         className={directoryStyle.phoneImg}
                                         width={215}
@@ -268,49 +270,49 @@ export default function Directory() {
                 <div className={directoryStyle['phoneImg-part']}>
                     <div>
                         <img
-                            src='/work/2024/vaid/vaid-img1.png'
+                            src='/work/2024/directory/phoneImg1.png'
                             alt="Animated"
                         />
                     </div>
                     <div><img
-                        src='/work/2024/vaid/vaid-img2.png'
+                       src='/work/2024/directory/phoneImg2.png'
                         alt="Animated"
                     />
                     </div>
                     <div> <img
-                        src='/work/2024/vaid/vaid-img6.png'
+                        src='/work/2024/directory/phoneImg3.png'
                         alt="Animated"
                     />
                     </div>
                     <div><img
-                        src='/work/2024/vaid/vaid-img3.png'
+                        src='/work/2024/directory/phoneImg4.png'
                         alt="Animated"
                     />
                     </div>
                 </div>
                 <div className={directoryStyle.centerPhoneImg}><img
-                    src='/work/2024/vaid/vaid-img1.png'
+                    src='/work/2024/directory/phoneImg1.png'
                     alt="Animated"
                 />
                 </div>
                 <div className={directoryStyle['phoneImg-part']}>
                     <div> <img
-                        src='/work/2024/vaid/vaid-img5.png'
+                        src='/work/2024/directory/phoneImg5.png'
                         alt="Animated"
                     />
                     </div>
                     <div> <img
-                        src='/work/2024/vaid/vaid-img6.png'
+                       src='/work/2024/directory/phoneImg6.png'
                         alt="Animated"
                     />
                     </div>
                     <div><img
-                        src='/work/2024/vaid/vaid-img2.png'
+                        src='/work/2024/directory/phoneImg7.png'
                         alt="Animated"
                     />
                     </div>
                     <div> <img
-                        src='/work/2024/vaid/vaid-img7.png'
+                        src='/work/2024/directory/phoneImg4.png'
                         alt="Animated"
                     />
                     </div>
@@ -323,12 +325,12 @@ export default function Directory() {
             {/* showcase section */}
             <section className={directoryStyle['showCaseSection']}>
                 <div className="container">
-                    <h3 className={directoryStyle['mainheading']}>
+                    <h3 className={portfolioDetailsCommon['mainheading']}>
                         Innovative design solution for Mobile App:
-                        <br /><span>Directory Application</span> Showcase
+                        <br /><span className={directoryStyle.mainheadingSpan}>Directory Application</span> Showcase
                     </h3>
-                    <div>
-                        <img src="work/2024/directory/showCaseImg.svg" alt="showcase" width="100%" />
+                    <div className={directoryStyle.showCaseBox}>
+                        <img src="work/2024/directory/showCasePhone.svg" alt="showcase" />
                     </div>
                 </div>
             </section>
@@ -341,10 +343,9 @@ export default function Directory() {
             {/* sliderSection */}
             <section className={directoryStyle['sliderSection']}>
                 <div className="container">
-                    <h3 className={directoryStyle['mainheading']}>
-                        Innovative Features <br /><span>in VAID</span>
+                    <h3 className={portfolioDetailsCommon['mainheading']}>
+                        Innovative Features <br /><span className={directoryStyle.mainheadingSpan}>in VAID</span>
                     </h3>
-
                 </div>
                 <OwlCarousel className={`${directoryStyle['owlcarousel']} ${directoryStyle['review-owlcarousel']}`} navText={["", ""]}  {...options}>
                     <div className={`${directoryStyle['slider-item']}`}>
@@ -392,34 +393,18 @@ export default function Directory() {
 
             {/* color pallet */}
             <div className={`${directoryStyle['colorPalletContainer']}`}>
-                <div className="conatiner">
-                <h3 className={directoryStyle['mainheading']}>
-                Color Palette presentation for 
-                        <br /><span>Directory Application</span> Design
+                <div className="container">
+                    <h3 className={portfolioDetailsCommon['mainheading']}>
+                        Color Palette presentation for
+                        <br /><span className={directoryStyle.mainheadingSpan}>Directory Application</span> Design
                     </h3>
                     <p>The deep, striking blue was utilized in development to enhance visual impact and maintain a professional appearance. This color choice supports a strong, cohesive brand identity and improves user engagement through its bold and distinctive presence.</p>
-                    <div className={`${directoryStyle['box']} ${directoryStyle['box1']}`}>
-                        <div className={`${directoryStyle['info']}`}>
-                        Cyan Blue
-                        </div>
-                    </div>
 
-                    <div className={`${directoryStyle['box']} ${directoryStyle['box2']}`}>
-                        <div className={`${directoryStyle['info']}`}>
-                        Celestial Blue
-                        </div>
-                    </div>
-
-                    <div className={`${directoryStyle['box']} ${directoryStyle['box3']}`}>
-                        <div className={`${directoryStyle['info']}`}>
-                        Superiority Blue
-                        </div>
-                    </div>
-
-                    <div className={`${directoryStyle['box']} ${directoryStyle['box4']}`}>
-                        <div className={`${directoryStyle['info']}`}>
-                        Slate Gray
-                        </div>
+                    <div className={portfolioDetailsCommon.colorPalette}>
+                        <div className={`${portfolioDetailsCommon.colorPalette1} ${directoryStyle.colorPalette1}`}><div className={`${portfolioDetailsCommon.imageContainer} ${directoryStyle.imageContainer}`}><img src="/work/2024/directory/colorPalette1.png" alt="colorPalette" /></div></div>
+                        <div className={`${portfolioDetailsCommon.colorPalette2} ${directoryStyle.colorPalette2}`}><div className={`${portfolioDetailsCommon.imageContainer} ${directoryStyle.imageContainer}`}><img src="/work/2024/directory/colorPalette2.png" alt="colorPalette" /></div></div>
+                        <div className={`${portfolioDetailsCommon.colorPalette3} ${directoryStyle.colorPalette3}`}><div className={`${portfolioDetailsCommon.imageContainer} ${directoryStyle.imageContainer}`}><img src="/work/2024/directory/colorPalette3.png" alt="colorPalette" /></div></div>
+                        <div className={`${portfolioDetailsCommon.colorPalette4} ${directoryStyle.colorPalette4}`}><div className={`${portfolioDetailsCommon.imageContainer} ${directoryStyle.imageContainer}`}><img src="/work/2024/directory/colorPalette4.png" alt="colorPalette" /></div></div>
                     </div>
                 </div>
             </div>

@@ -49,17 +49,6 @@
         z-index: 120;
     }
 
-    h3 {
-        font-family: Poppins;
-        font-size: 48px;
-        font-weight: 600;
-        text-align: left;
-        color: #16085E;
-    }
-
-    h3 span {
-        color: #4BD659;
-    }
 
     p {
         font-family: "Poppins";
@@ -72,6 +61,9 @@
     }
 
 
+}
+.mainheadingSpan{
+    color: #4BD659;
 }
 
 .phoneImg-mobileView {
@@ -126,18 +118,6 @@
 
 }
 
-.mainheading {
-    font-family: "Poppins";
-    font-size: 48px;
-    font-weight: 600;
-    text-align: left;
-    color: #16085E;
-    margin-bottom: 64px;
-}
-
-.mainheading span {
-    color: #4BD659;
-}
 
 
 .vaidCardsSection {
@@ -442,9 +422,6 @@
     }
 
     .bannerSection {
-        h3 {
-            font-size: 44px;
-        }
 
         p {
             font-size: 20px;
@@ -489,14 +466,8 @@
         flex-wrap: wrap;
     }
 
-    .mainheading {
-        font-size: 32px;
-    }
 
     .bannerSection {
-        h3 {
-            font-size: 32px;
-        }
 
         p {
             font-size: 16px;
@@ -522,20 +493,12 @@
         padding: 16px 16px 0px 16px !important;
     }
 
-    .mainheading {
-        font-size: 20px;
-        margin-bottom: 24px;
-    }
-
     .sliderSection h6 {
         font-size: 12px;
         line-height: normal;
     }
 
     .bannerSection {
-        h3 {
-            font-size: 20px;
-        }
 
         p {
             font-size: 12px;

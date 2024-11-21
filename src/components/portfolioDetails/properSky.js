@@ -1,37 +1,22 @@
 import React, { useEffect, useRef } from 'react';
 import ProperSkyStyle from '../../styles/portfolioDetails/properSky.module.scss';
 import portfolioDetailsCommon from '../../styles/portfolioDetails/portfolioDetailsCommon.module.scss';
-import Image from 'next/image';
 import data from '../../resources/portfolioDetails.json'
 import TechnologySection from './portfolioDetailsCommon/technologySection';
-import $ from 'jquery';
 import DesignProcess from './portfolioDetailsCommon/designProcess';
 import PreviewSlider from './portfolioDetailsCommon/previewSlider';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function ProperSky() {
+
   useEffect(() => {
-    const doAnimations = () => {
-      const offset = $(window).scrollTop() + $(window).height();
-      const $animatables = $('.animatable');
-
-      if ($animatables.length === 0) {
-        $(window).off('scroll', doAnimations);
-      }
-
-      $animatables.each(function () {
-        const $animatable = $(this);
-        if (($animatable.offset().top + $animatable.height() - 500) < offset) {
-          $animatable.removeClass('animatable').addClass('animated');
-        }
-      });
-    };
-
-    $(window).on('scroll', doAnimations);
-    $(window).trigger('scroll');
-
-    return () => {
-      $(window).off('scroll', doAnimations);
-    };
+    AOS.init({
+      duration: 1200,
+      delay: 100,
+      once: true,
+      offset: 200,
+    });
   }, []);
 
   const processImgRef1 = useRef(null);
@@ -150,8 +135,8 @@ export default function ProperSky() {
       <div className={ProperSkyStyle.ProperSkyMain}>
 
         <div className={ProperSkyStyle.bannerHeadText}>
-          <div className="container animatable bounceInRight">
-            <h3 className={portfolioDetailsCommon.bannerPrimaryText}>
+          <div className="container">
+            <h3 data-aos="slide-left" className={portfolioDetailsCommon.bannerPrimaryText}>
               Empowering Your Business <br />
               <span>With Secure Data and Smooth IT Operations.</span>
             </h3>
@@ -177,11 +162,13 @@ export default function ProperSky() {
         </div>
 
         <div className={ProperSkyStyle.showCaseSection}>
+        <div className={ProperSkyStyle.showCaseHeading}>
           <div className="container">
-            <h3 className={portfolioDetailsCommon.mainheading}>
+            <h3 data-aos="slide-left" className={portfolioDetailsCommon.mainheading}>
               Innovative design solution <br />
               <span>JV Construct</span> Showcase
             </h3>
+            </div>
           </div>
           <div className={ProperSkyStyle.showCaseImgSection}>
             <div className={`${ProperSkyStyle.showCaseImg} ${ProperSkyStyle.Img1}`}>
@@ -199,7 +186,7 @@ export default function ProperSky() {
         <DesignProcess />
 
         <div className={ProperSkyStyle.landingPageSection}>
-          <div className="container animatable bounceInRight">
+          <div className="container">
             <h3 className={portfolioDetailsCommon.mainheading}>Full Page Preview <br />
               <span> JV Construction</span> Website Design
             </h3>
@@ -211,7 +198,7 @@ export default function ProperSky() {
 
         <TechnologySection data={data.techdata.jv} />
         <div className={ProperSkyStyle.circleSection}>
-          <div className="container animatable bounceInRight">
+          <div className="container">
             <h3 className={portfolioDetailsCommon.mainheading}>Color Palette presentation for <br />
               <span> JV Construction</span> Website Design
             </h3>
@@ -221,16 +208,16 @@ export default function ProperSky() {
 
           <div className={ProperSkyStyle.circlePart}>
             <div className="container">
-              <div className={ProperSkyStyle.circleOne}>
+              <div data-aos="zoom-in" className={ProperSkyStyle.circleOne}>
                 Gold Primary Color
               </div>
-              <div className={ProperSkyStyle.circleTwo}>
+              <div data-aos="flip-up" className={ProperSkyStyle.circleTwo}>
                 Background
               </div>
-              <div className={ProperSkyStyle.circleThree}>
+              <div data-aos="zoom-in" className={ProperSkyStyle.circleThree}>
                 Dark Text
               </div>
-              <div className={ProperSkyStyle.circleFour}>
+              <div data-aos="flip-up" className={ProperSkyStyle.circleFour}>
                 Light Text
               </div>
             </div>

@@ -1,15 +1,15 @@
 
 import Head from 'next/head'
-import Directory from '../components/portfolioDetails/directory'
+import WordWell from '../components/portfolioDetails/wordWell'
 
-export default function DirectoryPage() {
+export default function WordWellPage() {
     return (
         <>
             <Head>
-                <title>DirectoryPage | CloseDigit</title>
+                <title>WordWell | CloseDigit</title>
                 <meta name="description" content="Make your company wealthy by using CloseDigit's effective tool to assist users in finding solutions to create something truly wonderful." />
             </Head>
-            <Directory/>
+        <WordWell/>
         </>
     )
 }

@@ -6,35 +6,19 @@ import data from '../../resources/portfolioDetails.json'
 import TechnologySection from './portfolioDetailsCommon/technologySection';
 import DesignProcess from './portfolioDetailsCommon/designProcess';
 import PreviewSlider from './portfolioDetailsCommon/previewSlider';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function JVConstruction() {
 
   useEffect(() => {
-    const doAnimations = () => {
-      const offset = window.scrollY + window.innerHeight;
-      const animatables = document.querySelectorAll('.animatable');
-
-      if (animatables.length === 0) {
-        window.removeEventListener('scroll', doAnimations);
-      }
-
-      animatables.forEach((animatable) => {
-        if ((animatable.getBoundingClientRect().top + animatable.offsetHeight - 500) < offset) {
-          animatable.classList.remove('animatable');
-          animatable.classList.add('animated');
-        }
-      });
-    };
-
-    window.addEventListener('scroll', doAnimations);
-    doAnimations();
-
-    return () => {
-      window.removeEventListener('scroll', doAnimations);
-    };
+    AOS.init({
+      duration: 1200,
+      delay: 100,
+      once: true,
+      offset: 200,
+    });
   }, []);
-
-
   return (
     <div className={portfolioDetailsCommon.mainSection}>
       <div className={JVStyle.ContentSection}>
@@ -42,9 +26,9 @@ export default function JVConstruction() {
           <div className={JVStyle.bannerSection}>
             <div className="container">
               <div className={`${JVStyle.sectionContent}`}>
-                <h3 className={portfolioDetailsCommon.bannerPrimaryText}>Comprehensive Home Renovations <span>Transforming spaces with expert.</span>
+                <h3 data-aos="slide-left" className={portfolioDetailsCommon.bannerPrimaryText}>Comprehensive Home Renovations <span>Transforming spaces with expert.</span>
                 </h3>
-                <div className={JVStyle.bannerImg}>
+                <div data-aos="flip-up" className={JVStyle.bannerImg}>
                   <div className={JVStyle.bannerInnerImg}>
                   </div>
                 </div>
@@ -55,48 +39,48 @@ export default function JVConstruction() {
 
           <div className={JVStyle.showCaseSection}>
 
-
-            <div className="container">
-              <h3 className={portfolioDetailsCommon.mainheading}>
-                Innovative design solution <br />
-                <span>JV Construct</span> Showcase
-              </h3>
+            <div className={JVStyle.showCaseHeading}>
+              <div className="container">
+                <h3 data-aos="slide-left" className={portfolioDetailsCommon.mainheading}>
+                  Innovative design solution <br />
+                  <span>JV Construct</span> Showcase
+                </h3>
+              </div>
             </div>
 
-
-              <div className={JVStyle.showCaseImgSection}>
-                <div className={`${JVStyle.showCaseImg} ${JVStyle.Img1}`}>
-                </div>
-                <div className={`${JVStyle.showCaseImg} ${JVStyle.Img2}`}>
-                </div>
-                <div className={`${JVStyle.showCaseImg} ${JVStyle.Img3}`}>
-                </div>
-                <div className={`${JVStyle.showCaseImg} ${JVStyle.Img4}`}>
-                </div>
-                <div className={`${JVStyle.showCaseImg} ${JVStyle.Img5}`}>
-                </div>
+            <div className={JVStyle.showCaseImgSection}>
+              <div className={`${JVStyle.showCaseImg} ${JVStyle.Img1}`}>
               </div>
+              <div className={`${JVStyle.showCaseImg} ${JVStyle.Img2}`}>
+              </div>
+              <div className={`${JVStyle.showCaseImg} ${JVStyle.Img3}`}>
+              </div>
+              <div className={`${JVStyle.showCaseImg} ${JVStyle.Img4}`}>
+              </div>
+              <div className={`${JVStyle.showCaseImg} ${JVStyle.Img5}`}>
+              </div>
+            </div>
           </div>
         </div>
 
-    <DesignProcess/>
+        <DesignProcess />
 
         <div className={JVStyle.landingPageSection}>
           <div className="container">
-            <h3 className={portfolioDetailsCommon.mainheading}>Full Page Preview <br />
+            <h3 data-aos="slide-left" className={portfolioDetailsCommon.mainheading}>Full Page Preview <br />
               <span> JV Construction</span> Website Design
             </h3>
           </div>
           <div className={JVStyle.landingPage}>
             {/* React Slick Carousel */}
-            <PreviewSlider images={data.previewSliderData.jv}/>
+            <PreviewSlider images={data.previewSliderData.jv} />
           </div>
         </div>
 
         <TechnologySection data={data.techdata.jv} />
         <div className={JVStyle.circleSection}>
           <div className="container">
-            <h3 className={portfolioDetailsCommon.mainheading}>Color Palette presentation for <br />
+            <h3 data-aos="slide-left" className={portfolioDetailsCommon.mainheading}>Color Palette presentation for <br />
               <span> JV Construction</span> Website Design
             </h3>
             <p>The color scheme features a strong primary Gold with background light cream accents for a cohesive look, deep dark tones for strong contrast, creating a modern and professional aesthetic.</p>
@@ -105,16 +89,16 @@ export default function JVConstruction() {
 
           <div className={JVStyle.circlePart}>
             <div className="container">
-              <div className={JVStyle.circleOne}>
+              <div data-aos="zoom-in" className={JVStyle.circleOne}>
                 Gold Primary Color
               </div>
-              <div className={JVStyle.circleTwo}>
+              <div data-aos="flip-up" className={JVStyle.circleTwo}>
                 Background
               </div>
-              <div className={JVStyle.circleThree}>
+              <div data-aos="zoom-in" className={JVStyle.circleThree}>
                 Dark Text
               </div>
-              <div className={JVStyle.circleFour}>
+              <div data-aos="flip-up" className={JVStyle.circleFour}>
                 Light Text
               </div>
             </div>
@@ -124,14 +108,14 @@ export default function JVConstruction() {
 
         <div className={JVStyle.innerPageSection}>
           <div className="container">
-            <h3 className={portfolioDetailsCommon.mainheading}>Inner Page Design Of<br />
+            <h3 data-aos="slide-left" className={portfolioDetailsCommon.mainheading}>Inner Page Design Of<br />
               <span> JV Construction</span> Website
             </h3>
-
             <div>
               <img
                 src="/work/2024/JV-construction/innerBg.svg"
                 alt="Animated"
+                data-aos="zoom-in-up"
               />
             </div>
           </div>

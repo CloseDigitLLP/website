@@ -9,6 +9,8 @@ import dynamic from 'next/dynamic';
 import portfolioDetailsCommon from '../../styles/portfolioDetails/portfolioDetailsCommon.module.scss';
 import data from '../../resources/portfolioDetails.json'
 import TechnologySection from './portfolioDetailsCommon/technologySection';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 var $ = require('jquery');
 if (typeof window !== 'undefined') {
@@ -25,6 +27,15 @@ export default function Vaid() {
   const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
     ssr: false,
   });
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      delay: 200, 
+      once: true, 
+      offset: 200, 
+    });
+  }, []);
 
   const options = {
     autoplay: true,
@@ -132,7 +143,7 @@ export default function Vaid() {
         <div className="container">
           <div className={vaidStyle.content}>
             <div>
-              <h3 className={portfolioDetailsCommon['bannerPrimaryText']}>
+              <h3 data-aos="slide-left" className={portfolioDetailsCommon['bannerPrimaryText']}>
                 Crafting Timeless Spaces: Unveiling the <span className={vaidStyle.mainheadingSpan}>Interior Design</span>
               </h3>
             </div>
@@ -332,7 +343,7 @@ export default function Vaid() {
       <section className={vaidStyle['vaidCardsSection']}>
         <div className="container">
           <div>
-            <h3 className={portfolioDetailsCommon['mainheading']}>Codecraft: <br /> <span  className={vaidStyle.mainheadingSpan}>VAID&rsquo;s</span> journey in Development</h3>
+            <h3 data-aos="slide-left" className={portfolioDetailsCommon['mainheading']}>Codecraft: <br /> <span  className={vaidStyle.mainheadingSpan}>VAID&rsquo;s</span> journey in Development</h3>
           </div>
           <div className={vaidStyle['vaidcards']}>
             <div className={vaidStyle['cardbody']}>
@@ -344,6 +355,7 @@ export default function Vaid() {
                     alt="Animated"
                     width={230}
                     height={450}
+                    data-aos="zoom-in"
                   />
                   </div>
                 </div>
@@ -369,6 +381,7 @@ export default function Vaid() {
                       alt="Animated"
                       width={230}
                       height={450}
+                      data-aos="zoom-in"
                     />
                   </div>
                 </div>
@@ -382,10 +395,9 @@ export default function Vaid() {
 
       <section className={vaidStyle['sliderSection']}>
         <div className="container">
-          <h3 className={portfolioDetailsCommon['mainheading']}>
+          <h3 data-aos="slide-left" className={portfolioDetailsCommon['mainheading']}>
             Innovative Features <br /><span className={vaidStyle.mainheadingSpan}>in VAID</span>
           </h3>
-
         </div>
         <OwlCarousel className={`${vaidStyle['owlcarousel']} ${vaidStyle['review-owlcarousel']}`} navText={["", ""]}  {...options}>
           <div className={`${vaidStyle['slider-item']}`}>

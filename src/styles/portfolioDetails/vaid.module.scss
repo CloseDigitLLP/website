@@ -1,6 +1,7 @@
 .bannerSection {
     padding: 80px 0 140px 0;
     margin-top: 100px;
+    overflow: hidden;
 
     .content {
         display: flex;
@@ -122,6 +123,7 @@
 
 .vaidCardsSection {
     padding: 80px 0;
+    overflow: hidden;
 
     .vaidcards {
         display: flex;
@@ -216,7 +218,7 @@
 .sliderSection {
     padding: 80px 0;
     background-color: #F5F5F7;
-
+    overflow: hidden;
 
     .slider-item {
         display: flex;

@@ -10,6 +10,8 @@ import portfolioDetailsCommon from '../../styles/portfolioDetails/portfolioDetai
 import data from '../../resources/portfolioDetails.json'
 import TechnologySection from './portfolioDetailsCommon/technologySection';
 import DesignProcess from './portfolioDetailsCommon/designProcess';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 var $ = require('jquery');
@@ -23,6 +25,15 @@ export default function Directory() {
     useEffect(() => {
         setIsClient(true);
     }, []);
+
+    useEffect(() => {
+        AOS.init({
+          duration: 1200,
+          delay: 100, 
+          once: true, 
+          offset: 200, 
+        });
+      }, []);
 
     const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
         ssr: false,
@@ -134,7 +145,7 @@ export default function Directory() {
                 <div className="container">
                     <div className={directoryStyle.content}>
                         <div>
-                            <h3 className={portfolioDetailsCommon['bannerPrimaryText']}>
+                            <h3 data-aos="slide-left" className={portfolioDetailsCommon['bannerPrimaryText']}>
                                 Effortless Contact Management with <span className={directoryStyle.mainheadingSpan}>Directory Apps</span>
                                 at Your Fingertips
                             </h3>
@@ -325,12 +336,12 @@ export default function Directory() {
             {/* showcase section */}
             <section className={directoryStyle['showCaseSection']}>
                 <div className="container">
-                    <h3 className={portfolioDetailsCommon['mainheading']}>
+                    <h3 data-aos="slide-left" className={portfolioDetailsCommon['mainheading']}>
                         Innovative design solution for Mobile App:
                         <br /><span className={directoryStyle.mainheadingSpan}>Directory Application</span> Showcase
                     </h3>
                     <div className={directoryStyle.showCaseBox}>
-                        <img src="work/2024/directory/showCasePhone.svg" alt="showcase" />
+                        <img data-aos="flip-up" src="work/2024/directory/showCasePhone.svg" alt="showcase" />
                     </div>
                 </div>
             </section>
@@ -394,13 +405,13 @@ export default function Directory() {
             {/* color pallet */}
             <div className={`${directoryStyle['colorPalletContainer']}`}>
                 <div className="container">
-                    <h3 className={portfolioDetailsCommon['mainheading']}>
+                    <h3 data-aos="slide-left" className={portfolioDetailsCommon['mainheading']}>
                         Color Palette presentation for
                         <br /><span className={directoryStyle.mainheadingSpan}>Directory Application</span> Design
                     </h3>
                     <p>The deep, striking blue was utilized in development to enhance visual impact and maintain a professional appearance. This color choice supports a strong, cohesive brand identity and improves user engagement through its bold and distinctive presence.</p>
 
-                    <div className={portfolioDetailsCommon.colorPalette}>
+                    <div className={portfolioDetailsCommon.colorPalette} data-aos="flip-down">
                         <div className={`${portfolioDetailsCommon.colorPalette1} ${directoryStyle.colorPalette1}`}><div className={`${portfolioDetailsCommon.imageContainer} ${directoryStyle.imageContainer}`}><img src="/work/2024/directory/colorPalette1.png" alt="colorPalette" /></div></div>
                         <div className={`${portfolioDetailsCommon.colorPalette2} ${directoryStyle.colorPalette2}`}><div className={`${portfolioDetailsCommon.imageContainer} ${directoryStyle.imageContainer}`}><img src="/work/2024/directory/colorPalette2.png" alt="colorPalette" /></div></div>
                         <div className={`${portfolioDetailsCommon.colorPalette3} ${directoryStyle.colorPalette3}`}><div className={`${portfolioDetailsCommon.imageContainer} ${directoryStyle.imageContainer}`}><img src="/work/2024/directory/colorPalette3.png" alt="colorPalette" /></div></div>

@@ -1,6 +1,7 @@
 .bannerSection {
-    padding: 80px 0 140px 0;
+    padding: 80px 0 250px 0;
     margin-top: 100px;
+    overflow: hidden;
 
     .content {
         display: flex;
@@ -163,6 +164,7 @@
 // showCase section
 .showCaseSection {
     padding-bottom: 70px;
+    overflow: hidden;
 
     .showCaseBox {
         padding: 10px 0 0 0;
@@ -174,15 +176,17 @@
         border-radius: 32px;
         overflow: hidden;
     }
-    .showCaseBox img{
+
+    .showCaseBox img {
         transition: 0.3s;
         width: 100%;
         margin-bottom: -44%;
     }
-    .showCaseBox img:hover{
+
+    .showCaseBox img:hover {
         rotate: 9deg;
         bottom: -68px;
-        
+
     }
 }
 
@@ -239,6 +243,7 @@
 // color pallet
 .colorPalletContainer {
     padding-top: 70px;
+    overflow: hidden;
 
     p {
         font-family: "Poppins";

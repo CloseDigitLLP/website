@@ -1,41 +1,22 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import fbnStyles from '../../styles/portfolioDetails/fbn.module.scss';
 import Image from 'next/image';
 import portfolioDetailsCommon from '../../styles/portfolioDetails/portfolioDetailsCommon.module.scss';
 import data from '../../resources/portfolioDetails.json'
 import Slider from './portfolioDetailsCommon/slider';
-import $ from 'jquery';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function FBN() {
 
     useEffect(() => {
-        if (typeof window !== 'undefined') {
-            const doAnimations = () => {
-                const offset = $(window).scrollTop() + $(window).height();
-                const $animatables = $('.animatable');
-
-                if ($animatables.length === 0) {
-                    $(window).off('scroll', doAnimations);
-                }
-
-                $animatables.each(function () {
-                    const $animatable = $(this);
-                    if (($animatable.offset().top + $animatable.height() - 150) < offset) {
-                        $animatable.removeClass('animatable').addClass('animated');
-                    }
-                });
-            };
-
-            $(window).on('scroll', doAnimations);
-            $(window).trigger('scroll');
-            return () => {
-                $(window).off('scroll', doAnimations);
-            };
-        }
-    }, []);
-
-
+        AOS.init({
+          duration: 1200,
+          delay: 100, 
+          once: true, 
+          offset: 200, 
+        });
+      }, []);
 
     return (
         <div className={portfolioDetailsCommon.mainSection}>
@@ -43,10 +24,10 @@ export default function FBN() {
                 <div className={fbnStyles.bannerSection}>
                     <div className="container">
                         <div className={`${fbnStyles.sectionContent}`}>
-                            <h3 className={`${portfolioDetailsCommon.bannerPrimaryText} animatable bounceInLeft`}>
+                            <h3 data-aos="slide-left" className={`${portfolioDetailsCommon.bannerPrimaryText}`}>
                                 Achieve Mental Clarity with <span>FeelingBetterNow&reg;</span>
                             </h3>
-                            <div className={`${fbnStyles.bannerImg} animatable fadeInDown`}>
+                            <div data-aos="flip-up" className={`${fbnStyles.bannerImg}`}>
                                 <div className={fbnStyles.bannerInnerImg}>
                                 </div>
                             </div>
@@ -56,11 +37,11 @@ export default function FBN() {
                         </div>
                     </div>
                 </div>
-                <div className='animatable fadeInDown'>
+                <div>
                     <Slider slides={data.sliderdata.FBN} />
                 </div>
                 {/* tools and technology section  */}
-                <div className='animatable fadeInDown'>
+                <div>
                     <div className={fbnStyles.MovingTechnologySection}>
                         <div className={fbnStyles.movingSection}>
                             <div className={fbnStyles.movingContainer}>
@@ -194,11 +175,11 @@ export default function FBN() {
                 {/* Additional Content */}
                 <section className={fbnStyles['vaidCardsSection']}>
                     <div className="container">
-                        <div className='animatable bounceInRight'>
-                            <h3 className={portfolioDetailsCommon['mainheading']}>Codecraft: <br /><span>FellingBetterNow</span> journey in Development</h3>
+                        <div>
+                            <h3 data-aos="slide-left" className={portfolioDetailsCommon['mainheading']}>Codecraft: <br /><span>FellingBetterNow</span> journey in Development</h3>
                         </div>
                         <div className={fbnStyles['vaidcards']}>
-                            <div className={`${fbnStyles.cardbody} animatable bounceInLeft`}>
+                            <div data-aos="zoom-in-left" className={`${fbnStyles.cardbody}`}>
                                 <div className={`${fbnStyles.mainCard}`} >
                                     <div className={`${fbnStyles.cardone}`}>
                                         <div className={`${fbnStyles.cardContent}`}>
@@ -214,7 +195,7 @@ export default function FBN() {
                                     </div>
                                 </div>
                             </div>
-                            <div className={`${fbnStyles.cardbody} animatable bounceInRight`}>
+                            <div data-aos="zoom-in-right" className={`${fbnStyles.cardbody}`}>
                                 <div className={`${fbnStyles.mainCard}`} >
                                     <div className={`${fbnStyles.cardtwo}`}>
                                         <div className={fbnStyles.cardContent}>
@@ -239,13 +220,14 @@ export default function FBN() {
                 <section className={fbnStyles['innovativeSection']}>
                     <div className="container">
                         <div>
-                            <h3 className={portfolioDetailsCommon['mainheading']}>Innovative Features in <br /><span>FellingBetterNow</span></h3>
+                            <h3 data-aos="slide-left" className={portfolioDetailsCommon['mainheading']}>Innovative Features in <br /><span>FellingBetterNow</span></h3>
                         </div>
 
                         <div className={`${fbnStyles.innovativeCard}`}>
                             <div className={`${fbnStyles['reverseRow']} row`}>
                                 <div className="col-md-5 d-flex">
                                     <img
+                                    data-aos="slide-left"
                                         src='/work/2024/fbn/innovative-img1.png'
                                         alt="Animated"
                                         width="100%"
@@ -272,6 +254,7 @@ export default function FBN() {
                                 </div>
                                 <div className="col-md-5 d-flex">
                                     <img
+                                    data-aos="slide-right"
                                         src='/work/2024/fbn/innovative-img2.png'
                                         alt="Animated"
                                         width="100%"

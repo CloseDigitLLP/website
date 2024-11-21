@@ -2,6 +2,10 @@
     background: linear-gradient(180deg, #FFF 0%, #EEFFF9 4%, #DFFFF3 18%, #DFFFF3 49.1%, #DFFFF3 100%);
 }
 
+.bannerSection {
+    overflow: hidden;
+}
+
 .bannerSection .bannerImg {
     background-image: url(/work/2024/JV-construction/laptop-mockup.svg);
     background-repeat: no-repeat;
@@ -360,6 +364,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: table;
+    overflow: hidden;
 
 
     .innovativeCard {
@@ -444,6 +449,7 @@
         left: 12%;
         height: 400px;
         top: 35px;
+
     }
 }
 

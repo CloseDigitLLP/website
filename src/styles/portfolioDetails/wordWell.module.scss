@@ -1,0 +1,230 @@
+.bannerSection {
+    overflow: hidden;
+}
+
+.bannerSection h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    padding-left: 0;
+    margin: 30px 0;
+    overflow: hidden;
+}
+
+.bannerSection p {
+    margin-top: 50px;
+}
+
+.bannerSection .bannerImg {
+    background-image: url("/work/2024/JV-construction/laptop-mockup.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannerSection .bannerInnerImg {
+    position: absolute;
+    background-color: #beb68d;
+    width: 54%;
+    top: 15px;
+    left: 23%;
+    height: 435px;
+    right: 0;
+    padding: 20px 20px 100px 20px;
+    background-image: url('/work/2024/wordWell/banner-img.png');
+    background-size: cover;
+    background-repeat: repeat;
+    animation: moveUp 30s linear infinite;
+}
+
+@keyframes moveUp {
+    0% {
+        background-position: 0 -100%;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.mainheadingSpan {
+    color: #05976A;
+}
+// sliderSection
+.sliderSection{
+    overflow: hidden;
+    margin-top: 50px;
+}
+.sliderSection .slider-item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .imgPart img {
+        width: 100%;
+    }
+    
+     h6 {
+        font-family: 'Poppins';
+        font-size: 20px;
+        font-weight: 400;
+        color: #919EAB;
+        line-height: 28px;
+        width: 90%;
+        padding-left: 10px;
+    }
+}
+
+
+
+// color pallet
+.colorPalletContainer {
+    padding-top: 70px;
+    overflow: hidden;
+
+    p {
+        font-family: "Poppins";
+        font-size: 18px;
+        font-weight: 400;
+        color: #919EAB;
+    }
+
+    .colorPalette1 .imageContainer::before {
+        content: "Vibrant Green";
+    }
+
+    .colorPalette2 .imageContainer::before {
+        content: "Pale Mint";
+    }
+
+    .colorPalette3 .imageContainer::before {
+        content: "Charcoal Blue";
+    }
+
+    .colorPalette4 .imageContainer::before {
+        content: "Slate Gray";
+    }
+}
+
+
+
+
+@media screen and (max-width:1200px) {
+    .bannerSection .bannerInnerImg {
+        width: 70%;
+        left: 15%;
+    }
+}
+
+@media screen and (max-width:992px) {
+
+    .bannerSection .bannerInnerImg {
+        width: 72%;
+        left: 14%;
+    }
+}
+
+@media screen and (max-width:848px) {
+    .bannerSection .bannerInnerImg {
+        width: 78%;
+        left: 11%;
+        height: 400px;
+        top: 35px;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .bannerSection .bannerInnerImg {
+        height: 360px;
+        top: 60px;
+    }
+    .sliderSection .slider-item {
+        gap: 16px;
+         h6 {
+            font-size: 16px;
+            width: 100%;
+            line-height: normal;
+        }
+    }
+    .bannerSection h3 {
+        font-size: 20px;
+        margin: 16px 0;
+    }
+    .sliderSection{
+        overflow: hidden;
+        margin-top: 30px;
+    }
+
+}
+@media screen and (max-width:690px) {
+
+    .bannerSection .bannerInnerImg {
+        height: 250px;
+        top: 55px;
+    }
+
+    .bannerSection p {
+        margin-top: 0px;
+    }
+
+    .bannerSection h3 {
+        margin-bottom: 0px;
+    }
+
+    .bannerSection .bannerImg {
+        height: 386px;
+    }
+
+}
+
+@media screen and (max-width:512px) {
+    .sliderSection .slider-item {
+        h6 {
+           font-size: 14px;
+       }
+   }
+    .bannerSection .bannerInnerImg {
+        height: 228px;
+        top: 76px;
+    }
+
+}
+
+@media screen and (max-width:470px) {
+    .bannerSection .bannerInnerImg {
+        height: 202px;
+        top: 85px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .bannerSection .bannerInnerImg {
+        height: 175px;
+        top: 38px;
+    }
+
+    .bannerSection .bannerImg {
+        height: 270px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .bannerSection .bannerInnerImg {
+        height: 160px;
+        top: 51px;
+    }
+}
+
+@media screen and (max-width:340px) {
+    .bannerSection .bannerInnerImg {
+        height: 140px;
+        top: 60px;
+    }
+}

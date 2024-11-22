@@ -110,7 +110,9 @@
 #animate14,
 #animate15,
 #animate16,
-#animate17 {
+#animate17,
+#animate18,
+#animate19 {
     transition: 0.5s ease-out;
     transform: scale(0.9) !important;
     opacity: 0.5;
@@ -133,7 +135,9 @@
 #animate14.scale-up,
 #animate15.scale-up,
 #animate16.scale-up,
-#animate17.scale-up {
+#animate17.scale-up,
+#animate18.scale-up,
+#animate19.scale-up {
     transform: scale(1) !important;
     transition: 0.5s ease-out;
     opacity: 1;
@@ -157,7 +161,9 @@
 #animate14.scale-up:hover+.project-info,
 #animate15.scale-up:hover+.project-info,
 #animate16.scale-up:hover+.project-info,
-#animate17.scale-up:hover+.project-info {
+#animate17.scale-up:hover+.project-info,
+#animate18.scale-up:hover+.project-info,
+#animate19.scale-up:hover+.project-info {
     opacity: 1;
 }
 

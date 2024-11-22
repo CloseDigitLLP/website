@@ -26,7 +26,7 @@ export default function JVConstruction() {
           <div className={JVStyle.bannerSection}>
             <div className="container">
               <div className={`${JVStyle.sectionContent}`}>
-                <h3 data-aos="slide-left" className={portfolioDetailsCommon.bannerPrimaryText}>Comprehensive Home Renovations <span>Transforming spaces with expert.</span>
+                <h3 data-aos="slide-left" className={portfolioDetailsCommon.bannerPrimaryText}>Comprehensive Home Renovations <span className={JVStyle.mainheadingSpan}>Transforming spaces with expert.</span>
                 </h3>
                 <div data-aos="flip-up" className={JVStyle.bannerImg}>
                   <div className={JVStyle.bannerInnerImg}>
@@ -43,7 +43,7 @@ export default function JVConstruction() {
               <div className="container">
                 <h3 data-aos="slide-left" className={portfolioDetailsCommon.mainheading}>
                   Innovative design solution <br />
-                  <span>JV Construct</span> Showcase
+                  <span className={JVStyle.mainheadingSpan}>JV Construct</span> Showcase
                 </h3>
               </div>
             </div>
@@ -63,12 +63,14 @@ export default function JVConstruction() {
           </div>
         </div>
 
-        <DesignProcess />
+        <DesignProcess 
+          description='Extensive research, in-depth competitive analysis, and continuous improvement provided crucial insights for developing a new application that meets the highest industry standards.'
+        />
 
         <div className={JVStyle.landingPageSection}>
           <div className="container">
             <h3 data-aos="slide-left" className={portfolioDetailsCommon.mainheading}>Full Page Preview <br />
-              <span> JV Construction</span> Website Design
+              <span className={JVStyle.mainheadingSpan}> JV Construction</span> Website Design
             </h3>
           </div>
           <div className={JVStyle.landingPage}>
@@ -81,7 +83,7 @@ export default function JVConstruction() {
         <div className={JVStyle.circleSection}>
           <div className="container">
             <h3 data-aos="slide-left" className={portfolioDetailsCommon.mainheading}>Color Palette presentation for <br />
-              <span> JV Construction</span> Website Design
+              <span className={JVStyle.mainheadingSpan}> JV Construction</span> Website Design
             </h3>
             <p>The color scheme features a strong primary Gold with background light cream accents for a cohesive look, deep dark tones for strong contrast, creating a modern and professional aesthetic.</p>
           </div>
@@ -109,7 +111,7 @@ export default function JVConstruction() {
         <div className={JVStyle.innerPageSection}>
           <div className="container">
             <h3 data-aos="slide-left" className={portfolioDetailsCommon.mainheading}>Inner Page Design Of<br />
-              <span> JV Construction</span> Website
+              <span className={JVStyle.mainheadingSpan}> JV Construction</span> Website
             </h3>
             <div>
               <img

@@ -1,9 +1,8 @@
-
 import Head from 'next/head'
 import Snbla from '../components/portfolioDetails/Snbla'
 
 
-export default function VaidPage() {
+export default function SnblaPage() {
     return (
         <>
             <Head>

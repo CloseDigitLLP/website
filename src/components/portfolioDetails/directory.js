@@ -348,7 +348,9 @@ export default function Directory() {
 
             {/* design process section */}
 
-            <DesignProcess />
+            <DesignProcess 
+                description='For our directory app, the design process starts with in-depth research and goal setting. We move on to ideation and prototyping, rigorously testing with real users to gather feedback. Designs are refined based on insights, and we collaborate closely with developers to ensure seamless implementation and ongoing enhancements.'
+            />
 
 
             {/* sliderSection */}

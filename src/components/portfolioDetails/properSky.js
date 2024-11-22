@@ -160,14 +160,25 @@ export default function ProperSky() {
             </div>
           </div>
         </div>
+        <div  className={ProperSkyStyle.mobileBannerImg}>
+          <img data-aos="flip-up" src="work/2024/propersky/bannerPhone.svg" alt="mobile banner img" />
+        </div>
+
+        <div className={ProperSkyStyle.bannerSecondText}>
+          <div className="container">
+            <p className={portfolioDetailsCommon.bannerSecondaryText}>
+            Empowering Your Business with Secure Data and Smooth IT Operations. Our expert solutions ensure your data remains protected while optimizing your IT infrastructure for seamless, efficient performance. Trust us to keep your business running smoothly and securely.
+            </p>
+          </div>
+        </div>
 
         <div className={ProperSkyStyle.showCaseSection}>
-        <div className={ProperSkyStyle.showCaseHeading}>
-          <div className="container">
-            <h3 data-aos="slide-left" className={portfolioDetailsCommon.mainheading}>
-              Innovative design solution <br />
-              <span>JV Construct</span> Showcase
-            </h3>
+          <div className={ProperSkyStyle.showCaseHeading}>
+            <div className="container">
+              <h3 data-aos="slide-left" className={portfolioDetailsCommon.mainheading}>
+                Innovative design solution <br />
+                <span>JV Construct</span> Showcase
+              </h3>
             </div>
           </div>
           <div className={ProperSkyStyle.showCaseImgSection}>
@@ -183,11 +194,13 @@ export default function ProperSky() {
             </div>
           </div>
         </div>
-        <DesignProcess />
+        <DesignProcess 
+          description='Extensive research, in-depth competitive analysis, and continuous improvement provided crucial insights for developing a new application that meets the highest industry standards.'
+        />
 
         <div className={ProperSkyStyle.landingPageSection}>
           <div className="container">
-            <h3 className={portfolioDetailsCommon.mainheading}>Full Page Preview <br />
+            <h3 data-aos="slide-left" className={portfolioDetailsCommon.mainheading}>Full Page Preview <br />
               <span> JV Construction</span> Website Design
             </h3>
           </div>
@@ -199,7 +212,7 @@ export default function ProperSky() {
         <TechnologySection data={data.techdata.jv} />
         <div className={ProperSkyStyle.circleSection}>
           <div className="container">
-            <h3 className={portfolioDetailsCommon.mainheading}>Color Palette presentation for <br />
+            <h3 data-aos="slide-left" className={portfolioDetailsCommon.mainheading}>Color Palette presentation for <br />
               <span> JV Construction</span> Website Design
             </h3>
             <p>The color scheme features a strong primary Gold with background light cream accents for a cohesive look, deep dark tones for strong contrast, creating a modern and professional aesthetic.</p>

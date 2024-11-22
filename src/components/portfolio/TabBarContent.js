@@ -13,8 +13,8 @@ const groupIntoPairs = (projects) => {
 }
 
 export default function TabBarContent() {
-    const animateRefs = useRef(Array.from({ length: 18 }, () => null));
-    const showRefs = useRef(Array.from({ length: 18 }, () => null));
+    const animateRefs = useRef(Array.from({ length: 20 }, () => null));
+    const showRefs = useRef(Array.from({ length: 20 }, () => null));
 
     useEffect(() => {
         const options = {

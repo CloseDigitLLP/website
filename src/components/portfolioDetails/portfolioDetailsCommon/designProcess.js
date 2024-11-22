@@ -3,8 +3,7 @@ import portfolioDetailsCommon from '../../../styles/portfolioDetails/portfolioDe
 import Image from 'next/image';
 
 
-
-export default function DesignProcess() {
+export default function DesignProcess({ description }) {
     const processImgRef1 = useRef(null);
     const processImgRef2 = useRef(null);
     const processImgRef3 = useRef(null);
@@ -62,26 +61,25 @@ export default function DesignProcess() {
 
         initializeScrollMagic();
     }, []);
+
     return (
         <div>
             <div className={portfolioDetailsCommon.processSection}>
                 <div className="container">
-                    <div className="d-flex justify-content-between flex-wrap">
+                    <div className="d-flex flex-column justify-content-between">
                         <h3 className={portfolioDetailsCommon.mainheading}>
                             Design Process
                         </h3>
-                        <p>
-                            Extensive research, in-depth competitive analysis, and continuous improvement provided crucial insights for developing a new application that meets the highest industry standards.
-                        </p>
+                        <p>{description}</p>
                     </div>
                     <div className={portfolioDetailsCommon.processScrollSection}>
-
                         <div className={portfolioDetailsCommon.subProcessPart}>
                             <h3>01.</h3>
                             <div ref={processImgRef1} className={portfolioDetailsCommon.subProcessImg}>
                                 <Image
-                                    width={100} height={100}
-                                    src='/work/2024/propersky/processImg1.svg'
+                                    width={100}
+                                    height={100}
+                                    src="/work/2024/propersky/processImg1.svg"
                                     alt="Animated"
                                 />
                             </div>
@@ -93,8 +91,9 @@ export default function DesignProcess() {
                             <h3>02.</h3>
                             <div ref={processImgRef2} className={portfolioDetailsCommon.subProcessImg}>
                                 <Image
-                                    width={100} height={100}
-                                    src='/work/2024/propersky/processImg2.svg'
+                                    width={100}
+                                    height={100}
+                                    src="/work/2024/propersky/processImg2.svg"
                                     alt="Animated"
                                 />
                             </div>
@@ -106,8 +105,9 @@ export default function DesignProcess() {
                             <h3>03.</h3>
                             <div ref={processImgRef3} className={portfolioDetailsCommon.subProcessImg}>
                                 <Image
-                                    width={100} height={100}
-                                    src='/work/2024/propersky/processImg3.svg'
+                                    width={100}
+                                    height={100}
+                                    src="/work/2024/propersky/processImg3.svg"
                                     alt="Animated"
                                 />
                             </div>
@@ -119,8 +119,9 @@ export default function DesignProcess() {
                             <h3>04.</h3>
                             <div ref={processImgRef4} className={portfolioDetailsCommon.subProcessImg}>
                                 <Image
-                                    width={100} height={100}
-                                    src='/work/2024/propersky/processImg4.svg'
+                                    width={100}
+                                    height={100}
+                                    src="/work/2024/propersky/processImg4.svg"
                                     alt="Animated"
                                 />
                             </div>
@@ -131,5 +132,6 @@ export default function DesignProcess() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
+

@@ -15,18 +15,13 @@
     overflow: hidden;
 }
 
-.bannerSection h3 span {
+.mainheadingSpan{
     color: #AA9A48;
 }
 
 .bannerSection p {
     margin-top: 50px;
 }
-
-// .ContentSection img{
-//     width: 100% !important;
-//     height: auto !important;
-// }
 
 .bannerSection .bannerImg {
     background-image: url("/work/2024/JV-construction/laptop-mockup.svg");
@@ -80,9 +75,6 @@
     overflow: hidden;
 }
 
-.showCaseSection h3 span {
-    color: #70652a;
-}
 
 .showCaseImg {
     height: 100vh;
@@ -145,10 +137,6 @@
     overflow: hidden;
 }
 
-.landingPageSection h3 span {
-    color: #AA9A48;
-}
-
 .landingPageSection .landingPage {
     background: linear-gradient(180deg, #AA9A48 0%, #857523 100%);
     padding: 120px;
@@ -195,10 +183,6 @@
     padding: 144px 0;
     overflow: hidden;
 
-}
-
-.circleSection h3 span {
-    color: #857523;
 }
 
 .circleSection p {
@@ -288,10 +272,6 @@
 
 .innerPageSection {
     overflow: hidden;
-}
-
-.innerPageSection h3 span {
-    color: #857523;
 }
 
 .innerPageSection img {
@@ -392,6 +372,10 @@
         height: 70vh;
     }
 
+    .bannerSection h3 {
+        font-size: 20px;
+        margin: 30px 0 10px 0;
+    }
 }
 
 @media screen and (max-width:690px) {

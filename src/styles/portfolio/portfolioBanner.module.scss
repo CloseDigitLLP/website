@@ -128,7 +128,7 @@
 .rotate-img {
   position: absolute;
   top: 33%;
-  right:257px;
+  right: 257px;
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -141,13 +141,13 @@
 @keyframes animate-img {
   0% {
     transform: perspective(1000px) rotateY(0deg);
-    background:radial-gradient(50% 50% at 50% 50%, #000 0%, #00F 4%, #0301E8 14.4%, #16085E 76.4%, #16085E 90.4%, #16085E 97.4%);
+    background: radial-gradient(50% 50% at 50% 50%, #000 0%, #00F 4%, #0301E8 14.4%, #16085E 76.4%, #16085E 90.4%, #16085E 97.4%);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
 
   100% {
     transform: perspective(1000px) rotateY(-370deg);
-    background:radial-gradient(50% 50% at 50% 50%, #000 0%, #00F 4%, #0301E8 14.4%, #16085E 76.4%, #16085E 90.4%, #16085E 97.4%);
+    background: radial-gradient(50% 50% at 50% 50%, #000 0%, #00F 4%, #0301E8 14.4%, #16085E 76.4%, #16085E 90.4%, #16085E 97.4%);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
 
@@ -170,14 +170,7 @@
     animation: animate-img 10s linear infinite;
     z-index: 100000;
   }
-  // .closeText {
-  //   font-size: 120px;
-  // }
-  
-  // .digitText {
-  //   font-size: 120px;
-  //   margin-bottom: 0px;
-  // }
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -200,6 +193,15 @@
 @media screen and (max-width: 768px) {
   .banner-image {
     width: 70%;
+  }
+
+  .closeText {
+    font-size: 120px;
+  }
+
+  .digitText {
+    font-size: 120px;
+    margin-bottom: 50px;
   }
 }
 
@@ -229,5 +231,53 @@
     left: -10%;
     z-index: 0;
   }
+
+  .closeText {
+    font-size: 90px;
+  }
+
+  .digitText {
+    font-size: 90px;
+  }
+
+}
+.swing {
+  animation: swing ease-in-out 1.4s infinite alternate;
+  transform-origin: center -20px;
+  margin: 0;
+  padding: 0;
 }
 
+@keyframes swing {
+  0% { 
+    transform: rotate(3deg); 
+  }
+  100% { 
+    transform: rotate(-3deg); 
+  }
+}
+
+.rotate-o {
+  display: inline-block;
+  animation: rotateY360 4s linear infinite; 
+}
+
+@keyframes rotateY360 {
+  0% {
+    transform: rotateY(0deg) rotate(3deg);
+  }
+  100% {
+    transform: rotateY(360deg) rotate(3deg);
+  }
+}
+
+.verticle-line {
+  transform: rotate(90deg);
+  border: 2px solid #212529;
+  position: absolute;
+  width: 2px;
+  height: 400px !important;
+  rotate: 90deg;
+  top: -364px !important;
+  left: 310px !important;
+}

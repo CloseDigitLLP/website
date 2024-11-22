@@ -1,5 +1,3 @@
-
-
 .bannerHeadText {
     margin-top: 200px;
     overflow-x: hidden;
@@ -7,6 +5,13 @@
 
 .bannerHeadText h3 span {
     color: #257CA8;
+}
+.bannerSecondText{
+    overflow-x: hidden;
+}
+.mobileBannerImg {
+    display: none;
+    overflow: hidden;
 }
 
 
@@ -19,7 +24,7 @@
 
 .bannerImg {
     position: sticky;
-    top: 0px;
+    top: 100px;
     transition: 0.5s;
     overflow: hidden;
     background-image: url(/work/2024/propersky/laptopImg.svg);
@@ -110,7 +115,8 @@
     position: relative;
 
 }
-.showCaseHeading{
+
+.showCaseHeading {
     overflow: hidden;
 }
 
@@ -124,7 +130,6 @@
     top: 20px;
     text-align: center;
     font-size: 85px;
-    box-shadow: 0 10px 15px #00000028;
 }
 
 .Img1 {
@@ -176,7 +181,7 @@
 
 // landingPageSection
 .landingPageSection {
-    margin-top: 50px;
+    margin: 50px 0;
     overflow-x: hidden;
 }
 
@@ -230,9 +235,7 @@
 
 
 .circleSection {
-    padding: 144px 0;
     overflow: hidden;
-
 }
 
 .circleSection h3 span {
@@ -357,10 +360,6 @@
     }
 
 
-    .circleSection {
-        padding: 70px 0;
-    }
-
     .circleSection .circleOne {
         width: 400px;
         height: 400px;
@@ -409,13 +408,24 @@
     .bannerHeadText {
         margin-top: 120px;
     }
+
+    .mobileBannerImg {
+        display: block;
+        overflow: hidden;
+        padding: 0 30px;
+    }
+
+    .mobileBannerImg img {
+        width: 100%;
+    }
+    .bannerSecondText{
+        margin-top: 30px;
+        overflow: hidden;
+    }
+
     .bannerSection {
-        background-image: url(../../../public/work/2024/propersky/mobile-banner-img.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        height: 310px;
-        margin-bottom: 0px;
+        height: auto;
+        margin-bottom: 0;
     }
 
 

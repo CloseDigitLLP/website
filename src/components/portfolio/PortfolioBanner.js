@@ -45,7 +45,7 @@ export default function PortfolioBanner() {
                                 <div className={`${bannerStyle['swing']}`}>
                                 <hr className={`${bannerStyle['verticle-line']}`}/>
                                     <h2 className={bannerStyle['closeText']}>
-                                        CL<span class={`${bannerStyle['rotate-o']}`}>O</span>SE</h2>
+                                        CL<span className={`${bannerStyle['rotate-o']}`}>O</span>SE</h2>
                                     <h2 className={bannerStyle['digitText']}>DIGIT<span>.</span></h2>
                                 </div>
                             </div>

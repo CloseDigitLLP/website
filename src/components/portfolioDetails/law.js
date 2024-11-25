@@ -61,7 +61,7 @@ export default function Law() {
               <div className={lawStyle.bannerInnerImg}>
               </div>
             </div>
-            <p className={portfolioDetailsCommon.bannerSecondaryText}>At The Estes Law Firm, we are committed to providing personalized legal services with compassion and expertise. Our skilled attorneys are dedicated to protecting your rights and guiding you through every step of the legal process. Whether you’re facing a personal injury case or need legal advice, we work tirelessly to achieve the best possible outcome for you. Trust us to be your advocate in the pursuit of justice.</p>
+            <p className={portfolioDetailsCommon.bannerSecondaryText}>At The Estes Law Firm, we are committed to providing personalized legal services with compassion and expertise. Our skilled attorneys are dedicated to protecting your rights and guiding you through every step of the legal process. Whether you&apos;re facing a personal injury case or need legal advice, we work tirelessly to achieve the best possible outcome for you. Trust us to be your advocate in the pursuit of justice.</p>
           </div>
         </div>
       </div>
@@ -112,7 +112,7 @@ export default function Law() {
               </div>
               <div>
                 <h6>
-                Our "Contact Us" page is designed for your convenience, offering a straightforward way to get in touch. Fill out the fields below to reach out to us, and view our available timings and address information to plan your visit or call. Whether you have questions or need to schedule a consultation, we're here to assist you efficiently and effectively.
+                Our Contact Us page is designed for your convenience, offering a straightforward way to get in touch. Fill out the fields below to reach out to us, and view our available timings and address information to plan your visit or call. Whether you have questions or need to schedule a consultation, we&apos;re here to assist you efficiently and effectively.
                 </h6>
               </div>
             </div>
@@ -132,7 +132,7 @@ export default function Law() {
             Color Palette presentation for
             <br /><span className={lawStyle.mainheadingSpan}>The Estes Law Firm</span>
           </h3>
-          <p>For our law firm's design, we use a refined color palette to enhance professionalism and readability. A deep orange highlights key elements, while a light cream provides a clean background. Slate gray is used for text and borders, and medium gray complements for secondary text and dividers. This combination ensures a sophisticated and user-friendly experience.</p>
+          <p>For our law firm&apos;s design, we use a refined color palette to enhance professionalism and readability. A deep orange highlights key elements, while a light cream provides a clean background. Slate gray is used for text and borders, and medium gray complements for secondary text and dividers. This combination ensures a sophisticated and user-friendly experience.</p>
 
           <div className={portfolioDetailsCommon.colorPalette} data-aos="flip-down">
             <div className={`${portfolioDetailsCommon.colorPalette1} ${lawStyle.colorPalette1}`}><div className={`${portfolioDetailsCommon.imageContainer} ${lawStyle.imageContainer}`}><img src="/work/2024/law/colorPalette1.png" alt="colorPalette" /></div></div>

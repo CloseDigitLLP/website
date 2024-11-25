@@ -160,7 +160,7 @@ export default function ProperSky() {
           </div>
         </div>
         <div  className={ProperSkyStyle.mobileBannerImg}>
-          <img data-aos="flip-up" src="work/2024/propersky/bannerPhone.svg" alt="mobile banner img" />
+          <img src="work/2024/propersky/bannerPhone.svg" alt="mobile banner img" />
         </div>
 
         <div className={ProperSkyStyle.bannerSecondText}>

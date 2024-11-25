@@ -11,8 +11,8 @@ const TechnologySection = ({ data }) => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1200,
-      delay: 100,
+      duration: 1000,
+      delay: 50,
       once: true,
       offset: 200,
     });

@@ -743,6 +743,24 @@
                 "name": "PWA",
                 "icon": "/work/2024/tech-icons/PWA.svg"
             }
+        ],
+        "integra": [
+            {
+                "name": "UI/UX",
+                "icon": "/work/2024/tech-icons/UIUX.svg"
+            },
+            {
+                "name": "Figma",
+                "icon": "/work/2024/tech-icons/Figma.svg"
+            },
+            {
+                "name": "Adobe Illustrator",
+                "icon": "/work/2024/tech-icons/AdobeIllustrator.svg"
+            },
+            {
+                "name": "Adobe XD",
+                "icon": "/work/2024/tech-icons/AdobeXD.svg"
+            }
         ]
     },
     "sliderdata": {

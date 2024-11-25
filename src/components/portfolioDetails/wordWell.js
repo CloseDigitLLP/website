@@ -23,10 +23,9 @@ export default function WordWell() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1200,
-      delay: 100,
-      once: true,
-      offset: 200,
+      duration: 2000,
+      once: true, 
+      offset: 0, 
     });
   }, [])
   const options = {
@@ -75,7 +74,7 @@ export default function WordWell() {
             Innovative design solution for Website: <br /><span className={wordWellStyle.mainheadingSpan}>WordWell </span>Showcase
           </h3>
         </div>
-        <div className="container">
+        <div data-aos="slide-up" className="container">
           <OwlCarousel className={`${wordWellStyle['owlcarousel']} ${wordWellStyle['review-owlcarousel']}`} navText={["", ""]}  {...options}>
             <div className={`${wordWellStyle['slider-item']}`}>
               <div className={wordWellStyle['imgPart']}>

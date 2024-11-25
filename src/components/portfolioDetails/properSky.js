@@ -12,10 +12,9 @@ export default function ProperSky() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1200,
-      delay: 100,
-      once: true,
-      offset: 200,
+      duration: 2000,
+      once: true, 
+      offset: 200, 
     });
   }, []);
 
@@ -222,7 +221,7 @@ export default function ProperSky() {
           <div className={ProperSkyStyle.circlePart}>
             <div className="container">
               <div data-aos="zoom-in" className={ProperSkyStyle.circleOne}>
-                Gold Primary Color
+              Greenish Blue
               </div>
               <div data-aos="flip-up" className={ProperSkyStyle.circleTwo}>
                 Background
@@ -231,7 +230,7 @@ export default function ProperSky() {
                 Dark Text
               </div>
               <div data-aos="flip-up" className={ProperSkyStyle.circleFour}>
-                Light Text
+              Aqua
               </div>
             </div>
           </div>

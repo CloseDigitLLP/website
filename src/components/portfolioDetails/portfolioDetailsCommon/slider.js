@@ -1,13 +1,16 @@
 // Slider.jsx
-import React from 'react';
+import React, { useEffect } from 'react'
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import styles from '../../../styles/portfolioDetails/portfolioDetailsCommon.module.scss';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 var $ = require('jquery');
 if (typeof window !== 'undefined') {
     window.$ = window.jQuery = require('jquery');
 }
+
+
 
 const options = {
   autoplay: true,
@@ -48,10 +51,16 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const Slider = ({ slides }) => {
-
+  useEffect(() => {
+    AOS.init({
+        duration: 2000,
+        once: true, 
+        offset: 0, 
+    });
+  }, []);
 
   return (
-    <div className={styles['slider-part']}>
+    <div data-aos="fade-up" className={styles['slider-part']}>
       <OwlCarousel className={`${styles['owlcarousel']} ${styles['review-owlcarousel']}`} {...options}>
         {slides.map((slide, index) => (
           <div key={index} className={styles['slider-card']}>

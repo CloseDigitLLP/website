@@ -28,8 +28,7 @@ export default function Directory() {
 
     useEffect(() => {
         AOS.init({
-          duration: 1200,
-          delay: 100, 
+          duration: 2000,
           once: true, 
           offset: 200, 
         });

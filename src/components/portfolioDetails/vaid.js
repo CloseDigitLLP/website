@@ -30,9 +30,8 @@ export default function Vaid() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      delay: 200, 
       once: true, 
-      offset: 200, 
+      offset: 0, 
     });
   }, []);
 
@@ -146,7 +145,7 @@ export default function Vaid() {
                 Crafting Timeless Spaces: Unveiling the <span className={vaidStyle.mainheadingSpan}>Interior Design</span>
               </h3>
             </div>
-            <div className={vaidStyle.mobileBanner}>
+            <div data-aos="slide-up" className={vaidStyle.mobileBanner}>
               <Image
                 src='/work/2024/vaid/vaid-banner.png'
                 alt="Animated"
@@ -398,7 +397,7 @@ export default function Vaid() {
             Innovative Features <br /><span className={vaidStyle.mainheadingSpan}>in VAID</span>
           </h3>
         </div>
-        <OwlCarousel className={`${vaidStyle['owlcarousel']} ${vaidStyle['review-owlcarousel']}`} navText={["", ""]}  {...options}>
+        <OwlCarousel data-aos="slide-up" className={`${vaidStyle['owlcarousel']} ${vaidStyle['review-owlcarousel']}`} navText={["", ""]}  {...options}>
           <div className={`${vaidStyle['slider-item']}`}>
             <div className="row">
               <div className="col-lg-6">

@@ -112,7 +112,11 @@
 #animate16,
 #animate17,
 #animate18,
-#animate19 {
+#animate19,
+#animate20,
+#animate21,
+#animate22,
+#animate23 {
     transition: 0.5s ease-out;
     transform: scale(0.9) !important;
     opacity: 0.5;
@@ -137,7 +141,11 @@
 #animate16.scale-up,
 #animate17.scale-up,
 #animate18.scale-up,
-#animate19.scale-up {
+#animate19.scale-up,
+#animate20.scale-up,
+#animate21.scale-up,
+#animate22.scale-up,
+#animate23.scale-up {
     transform: scale(1) !important;
     transition: 0.5s ease-out;
     opacity: 1;
@@ -163,7 +171,11 @@
 #animate16.scale-up:hover+.project-info,
 #animate17.scale-up:hover+.project-info,
 #animate18.scale-up:hover+.project-info,
-#animate19.scale-up:hover+.project-info {
+#animate19.scale-up:hover+.project-info,
+#animate20.scale-up:hover+.project-info,
+#animate21.scale-up:hover+.project-info,
+#animate22.scale-up:hover+.project-info,
+#animate23.scale-up:hover+.project-info {
     opacity: 1;
 }
 
@@ -272,7 +284,13 @@
     #animate14,
     #animate15,
     #animate16,
-    #animate17 {
+    #animate17,
+    #animate18,
+    #animate19,
+    #animate20,
+    #animate21,
+    #animate22,
+    #animate23 {
         transition: 0.5s ease-out;
         transform: scale(0.6) !important;
         opacity: 0.5;

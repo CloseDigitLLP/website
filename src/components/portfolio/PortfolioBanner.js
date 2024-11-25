@@ -27,18 +27,17 @@ export default function PortfolioBanner() {
                                     <button type="button" className="btn btn-primary">Get in touch <span className='btn-animation'></span></button>
                                 </Link>
                             </div>
-
                         </div>
                         <div className="col-lg-6 col-md-12">
                             <div className={bannerStyle['textSection']}>
-                                {/* <Image
+                                <Image
                                 src={require('../../assets/images/portfolioBanner.svg')}
                                 alt="Banner"
                                 width={584}
                                 height={435}
                                 className={bannerStyle['banner-image']}
                                 quality={100}
-                            /> */}
+                            />
                             {/* <div className={bannerStyle['rotate-img']}>
                             </div> */}
                                 

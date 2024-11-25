@@ -23,9 +23,9 @@ export default function Law() {
 
   useEffect(() => {
     AOS.init({
-      duration: 2000,
-      once: true, 
-      offset: 0, 
+      duration: 1600,
+      easing: 'ease-in-out',
+      once: true,
     });
   }, [])
   const options = {
@@ -67,9 +67,36 @@ export default function Law() {
       </div>
 
 
-      {/* sliderSection */}
+   
 
-      <section className={lawStyle['sliderSection']}>
+      {/* DesignProcess */}
+      <DesignProcess
+        description="At The Estes Law Firm, our design process starts with understanding your specific needs and goals. We engage in thorough research and planning to set clear objectives. Our team then moves to brainstorming and creating initial prototypes. We gather feedback through user testing to refine and enhance the designs. Collaborating closely with developers ensures a seamless implementation, and we continue to make improvements to deliver an outstanding experience for our clients."
+      />
+      <TechnologySection data={data.techdata.jv} />
+      {/* color pallet */}
+      <div className={`${lawStyle['colorPalletContainer']}`}>
+        <div className="container">
+          <h3 data-aos="slide-left" className={portfolioDetailsCommon['mainheading']}>
+            Color Palette presentation for
+            <br /><span className={lawStyle.mainheadingSpan}>The Estes Law Firm</span>
+          </h3>
+          <p>For our law firm&apos;s design, we use a refined color palette to enhance professionalism and readability. A deep orange highlights key elements, while a light cream provides a clean background. Slate gray is used for text and borders, and medium gray complements for secondary text and dividers. This combination ensures a sophisticated and user-friendly experience.</p>
+
+          <div data-aos="flip-down" className={portfolioDetailsCommon.colorPalette} >
+            <div className={`${portfolioDetailsCommon.colorPalette1} ${lawStyle.colorPalette1}`}><div className={`${portfolioDetailsCommon.imageContainer} ${lawStyle.imageContainer}`}><img src="/work/2024/law/colorPalette1.png" alt="colorPalette" /></div></div>
+            <div className={`${portfolioDetailsCommon.colorPalette2} ${lawStyle.colorPalette2}`}><div className={`${portfolioDetailsCommon.imageContainer} ${lawStyle.imageContainer}`}><img src="/work/2024/law/colorPalette2.png" alt="colorPalette" /></div></div>
+            <div className={`${portfolioDetailsCommon.colorPalette3} ${lawStyle.colorPalette3}`}><div className={`${portfolioDetailsCommon.imageContainer} ${lawStyle.imageContainer}`}><img src="/work/2024/law/colorPalette3.png" alt="colorPalette" /></div></div>
+            <div className={`${portfolioDetailsCommon.colorPalette4} ${lawStyle.colorPalette4}`}><div className={`${portfolioDetailsCommon.imageContainer} ${lawStyle.imageContainer}`}><img src="/work/2024/law/colorPalette4.png" alt="colorPalette" /></div></div>
+          </div>
+        </div>
+      </div>
+
+
+
+         {/* sliderSection */}
+
+         <section className={lawStyle['sliderSection']}>
         <div className="container">
           <h3 data-aos="slide-left" className={portfolioDetailsCommon['mainheading']}>
             Innovative design solution for Website: <br /><span className={lawStyle.mainheadingSpan}>The Estes Law Firm </span>Showcase
@@ -119,29 +146,6 @@ export default function Law() {
           </OwlCarousel>
         </div>
       </section>
-
-      {/* DesignProcess */}
-      <DesignProcess
-        description="At The Estes Law Firm, our design process starts with understanding your specific needs and goals. We engage in thorough research and planning to set clear objectives. Our team then moves to brainstorming and creating initial prototypes. We gather feedback through user testing to refine and enhance the designs. Collaborating closely with developers ensures a seamless implementation, and we continue to make improvements to deliver an outstanding experience for our clients."
-      />
-      <TechnologySection data={data.techdata.jv} />
-      {/* color pallet */}
-      <div className={`${lawStyle['colorPalletContainer']}`}>
-        <div className="container">
-          <h3 data-aos="slide-left" className={portfolioDetailsCommon['mainheading']}>
-            Color Palette presentation for
-            <br /><span className={lawStyle.mainheadingSpan}>The Estes Law Firm</span>
-          </h3>
-          <p>For our law firm&apos;s design, we use a refined color palette to enhance professionalism and readability. A deep orange highlights key elements, while a light cream provides a clean background. Slate gray is used for text and borders, and medium gray complements for secondary text and dividers. This combination ensures a sophisticated and user-friendly experience.</p>
-
-          <div className={portfolioDetailsCommon.colorPalette} data-aos="flip-down">
-            <div className={`${portfolioDetailsCommon.colorPalette1} ${lawStyle.colorPalette1}`}><div className={`${portfolioDetailsCommon.imageContainer} ${lawStyle.imageContainer}`}><img src="/work/2024/law/colorPalette1.png" alt="colorPalette" /></div></div>
-            <div className={`${portfolioDetailsCommon.colorPalette2} ${lawStyle.colorPalette2}`}><div className={`${portfolioDetailsCommon.imageContainer} ${lawStyle.imageContainer}`}><img src="/work/2024/law/colorPalette2.png" alt="colorPalette" /></div></div>
-            <div className={`${portfolioDetailsCommon.colorPalette3} ${lawStyle.colorPalette3}`}><div className={`${portfolioDetailsCommon.imageContainer} ${lawStyle.imageContainer}`}><img src="/work/2024/law/colorPalette3.png" alt="colorPalette" /></div></div>
-            <div className={`${portfolioDetailsCommon.colorPalette4} ${lawStyle.colorPalette4}`}><div className={`${portfolioDetailsCommon.imageContainer} ${lawStyle.imageContainer}`}><img src="/work/2024/law/colorPalette4.png" alt="colorPalette" /></div></div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }

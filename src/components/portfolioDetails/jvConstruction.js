@@ -13,7 +13,7 @@ export default function JVConstruction() {
 
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1600,
       once: true, 
       offset: 200, 
     });

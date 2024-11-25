@@ -29,7 +29,7 @@ export default function Vaid() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 1200,
       once: true, 
       offset: 0, 
     });

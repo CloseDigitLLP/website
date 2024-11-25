@@ -23,7 +23,7 @@ export default function WordWell() {
 
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1600,
       once: true, 
       offset: 0, 
     });
@@ -65,10 +65,33 @@ export default function WordWell() {
         </div>
       </div>
 
+      {/* DesignProcess */}
+      <DesignProcess
+        description="At WordWell, our design process starts with detailed research and clear objective-setting. We then move into brainstorming and prototyping, followed by user testing to gather feedback. Based on these insights, we refine the designs and collaborate closely with developers to ensure a seamless launch and continuous improvements for the best user experience."
+      />
+      <TechnologySection data={data.techdata.jv} />
+      {/* color pallet */}
+      <div className={`${wordWellStyle['colorPalletContainer']}`}>
+        <div className="container">
+          <h3 data-aos="slide-left" className={portfolioDetailsCommon['mainheading']}>
+            Color Palette presentation for
+            <br /><span className={wordWellStyle.mainheadingSpan}>WordWell</span> Design
+          </h3>
+          <p>The rich, vibrant green was incorporated into the design to elevate visual impact while maintaining a professional look. This color choice reinforces a strong and cohesive brand identity, enhancing user engagement with its bold and unique presence.</p>
 
-      {/* sliderSection */}
+          <div className={portfolioDetailsCommon.colorPalette} data-aos="flip-down">
+            <div className={`${portfolioDetailsCommon.colorPalette1} ${wordWellStyle.colorPalette1}`}><div className={`${portfolioDetailsCommon.imageContainer} ${wordWellStyle.imageContainer}`}><img src="/work/2024/wordWell/colorPalette1.png" alt="colorPalette" /></div></div>
+            <div className={`${portfolioDetailsCommon.colorPalette2} ${wordWellStyle.colorPalette2}`}><div className={`${portfolioDetailsCommon.imageContainer} ${wordWellStyle.imageContainer}`}><img src="/work/2024/wordWell/colorPalette2.png" alt="colorPalette" /></div></div>
+            <div className={`${portfolioDetailsCommon.colorPalette3} ${wordWellStyle.colorPalette3}`}><div className={`${portfolioDetailsCommon.imageContainer} ${wordWellStyle.imageContainer}`}><img src="/work/2024/wordWell/colorPalette3.png" alt="colorPalette" /></div></div>
+            <div className={`${portfolioDetailsCommon.colorPalette4} ${wordWellStyle.colorPalette4}`}><div className={`${portfolioDetailsCommon.imageContainer} ${wordWellStyle.imageContainer}`}><img src="/work/2024/wordWell/colorPalette4.png" alt="colorPalette" /></div></div>
+          </div>
+        </div>
+      </div>
 
-      <section className={wordWellStyle['sliderSection']}>
+
+         {/* sliderSection */}
+
+         <section className={wordWellStyle['sliderSection']}>
         <div className="container">
           <h3 data-aos="slide-left" className={portfolioDetailsCommon['mainheading']}>
             Innovative design solution for Website: <br /><span className={wordWellStyle.mainheadingSpan}>WordWell </span>Showcase
@@ -106,28 +129,11 @@ export default function WordWell() {
         </div>
       </section>
 
-      {/* DesignProcess */}
-      <DesignProcess
-        description="At WordWell, our design process starts with detailed research and clear objective-setting. We then move into brainstorming and prototyping, followed by user testing to gather feedback. Based on these insights, we refine the designs and collaborate closely with developers to ensure a seamless launch and continuous improvements for the best user experience."
-      />
-      <TechnologySection data={data.techdata.jv} />
-      {/* color pallet */}
-      <div className={`${wordWellStyle['colorPalletContainer']}`}>
-        <div className="container">
-          <h3 data-aos="slide-left" className={portfolioDetailsCommon['mainheading']}>
-            Color Palette presentation for
-            <br /><span className={wordWellStyle.mainheadingSpan}>WordWell</span> Design
-          </h3>
-          <p>The rich, vibrant green was incorporated into the design to elevate visual impact while maintaining a professional look. This color choice reinforces a strong and cohesive brand identity, enhancing user engagement with its bold and unique presence.</p>
 
-          <div className={portfolioDetailsCommon.colorPalette} data-aos="flip-down">
-            <div className={`${portfolioDetailsCommon.colorPalette1} ${wordWellStyle.colorPalette1}`}><div className={`${portfolioDetailsCommon.imageContainer} ${wordWellStyle.imageContainer}`}><img src="/work/2024/wordWell/colorPalette1.png" alt="colorPalette" /></div></div>
-            <div className={`${portfolioDetailsCommon.colorPalette2} ${wordWellStyle.colorPalette2}`}><div className={`${portfolioDetailsCommon.imageContainer} ${wordWellStyle.imageContainer}`}><img src="/work/2024/wordWell/colorPalette2.png" alt="colorPalette" /></div></div>
-            <div className={`${portfolioDetailsCommon.colorPalette3} ${wordWellStyle.colorPalette3}`}><div className={`${portfolioDetailsCommon.imageContainer} ${wordWellStyle.imageContainer}`}><img src="/work/2024/wordWell/colorPalette3.png" alt="colorPalette" /></div></div>
-            <div className={`${portfolioDetailsCommon.colorPalette4} ${wordWellStyle.colorPalette4}`}><div className={`${portfolioDetailsCommon.imageContainer} ${wordWellStyle.imageContainer}`}><img src="/work/2024/wordWell/colorPalette4.png" alt="colorPalette" /></div></div>
-          </div>
-        </div>
-      </div>
+
+
+
+
     </div>
   );
 }

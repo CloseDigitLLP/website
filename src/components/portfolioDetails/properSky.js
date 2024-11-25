@@ -12,7 +12,7 @@ export default function ProperSky() {
 
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1600,
       once: true, 
       offset: 200, 
     });

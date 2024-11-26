@@ -11,21 +11,20 @@ const TechnologySection = ({ data }) => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000,
-      delay: 50,
+      duration: 2000,
       once: true,
-      offset: 200,
+      offset: 0,
     });
   }, []);
 
 
   return (
     <div className={CommonStyle['technology-section']} id="technology-section">
-      <div data-aos="slide-left" className="container">
+      <div  className="container">
         <div className={CommonStyle['technology-heading-section']}>
-          <h2 className={CommonStyle['main-heading']}>Tools & Technology</h2>
+          <h2 data-aos="zoom-out" className={CommonStyle['main-heading']}>Tools & Technology</h2>
         </div>
-        <div className={CommonStyle['technology-row']}>
+        <div data-aos="zoom-in" className={CommonStyle['technology-row']}>
           {data.map((tech, index) => (
             <div key={index} className={`technology ${CommonStyle['technology']}`}>
               <Image

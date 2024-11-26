@@ -11,10 +11,9 @@ export default function FBN() {
 
     useEffect(() => {
         AOS.init({
-          duration: 1200,
-          delay: 100, 
-          once: true, 
-          offset: 200, 
+            duration: 2500,
+            once: true, 
+            offset: 0, 
         });
       }, []);
 

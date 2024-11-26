@@ -254,10 +254,10 @@
 
 .circlePart {
     position: relative;
-    height: 600px;
+    height: 670px;
     margin-top: 60px;
-    background: linear-gradient(180deg, #257CA8 0%, #4C8BC3 100%);
     overflow: hidden;
+    padding: 50px 0;
 }
 
 .circleSection .circleOne {
@@ -304,7 +304,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    bottom: 0;
+    bottom: 50px;
     left: 50%;
     font-family: "Poppins";
     font-size: 32px;
@@ -387,7 +387,7 @@
     }
 
     .circlePart {
-        height: 450px;
+        height: 550px;
     }
 
     .landingPageSection .landingPage {
@@ -490,7 +490,7 @@
     }
 
     .circlePart {
-        height: 360px;
+        height: 460px;
     }
 
 }
@@ -547,7 +547,7 @@
     }
 
     .circlePart {
-        height: 260px;
+        height: 360px;
     }
 
 }
@@ -603,7 +603,8 @@
     }
 
     .circlePart {
-        height: 200px;
+        height: 300px;
+        margin-top: 0;
     }
 
     .landingPageSection .landingPage::after {

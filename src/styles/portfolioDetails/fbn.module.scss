@@ -139,18 +139,6 @@
         position: relative;
     }
 
-    .cardbody::after {
-        position: absolute;
-        top: 102px;
-        right: 45px;
-        content: "";
-        width: 35px;
-        height: 35px;
-        background-image: url(/work/2024/fbn/downGif2.gif);
-        background-size: contain;
-        z-index: 1;
-    }
-
 
     .cardbody .cardone {
         background-image: url(/work/2024/fbn/fbn-card1.png);

@@ -498,6 +498,26 @@
         },
         {
             "id": "animate18",
+            "title": "Wordwell",
+            "href": "/WordWell",
+            "imgSrc": "/work/2024/Wordwell.png",
+            "tech": [
+                {
+                    "src": "/work/technology-icons/uiux.svg",
+                    "name": "UI-UX"
+                },
+                {
+                    "src": "/work/technology-icons/html.svg",
+                    "name": "HTML"
+                },
+                {
+                    "src": "/work/technology-icons/scss.svg",
+                    "name": "SCSS"
+                }
+            ]
+        },
+        {
+            "id": "animate19",
             "title": "Amending the Soil",
             "href": "/AmendingTheSoil",
             "imgSrc": "/work/2024/AmendingTheSoil.png",
@@ -517,10 +537,70 @@
             ]
         },
         {
-            "id": "animate19",
-            "title": "Wordwell",
-            "href": "/WordWell",
-            "imgSrc": "/work/2024/Wordwell.png",
+            "id": "animate20",
+            "title": "Hyperstack",
+            "href": "/Hyperstack",
+            "imgSrc": "/work/2024/Hyperstack.png",
+            "tech": [
+                {
+                    "src": "/work/technology-icons/uiux.svg",
+                    "name": "UI-UX"
+                },
+                {
+                    "src": "/work/technology-icons/html.svg",
+                    "name": "HTML"
+                },
+                {
+                    "src": "/work/technology-icons/scss.svg",
+                    "name": "SCSS"
+                }
+            ]
+        },
+        {
+            "id": "animate21",
+            "title": "The Estes Law Firm",
+            "href": "/Law",
+            "imgSrc": "/work/2024/TheEstesLawFirm.png",
+            "tech": [
+                {
+                    "src": "/work/technology-icons/uiux.svg",
+                    "name": "UI-UX"
+                },
+                {
+                    "src": "/work/technology-icons/html.svg",
+                    "name": "HTML"
+                },
+                {
+                    "src": "/work/technology-icons/scss.svg",
+                    "name": "SCSS"
+                }
+            ]
+        },
+        {
+            "id": "animate22",
+            "title": "Blupeak Health",
+            "href": "/BlupeakHealth",
+            "imgSrc": "/work/2024/BlupeakHealth.png",
+            "tech": [
+                {
+                    "src": "/work/technology-icons/uiux.svg",
+                    "name": "UI-UX"
+                },
+                {
+                    "src": "/work/technology-icons/html.svg",
+                    "name": "HTML"
+                },
+                {
+                    "src": "/work/technology-icons/scss.svg",
+                    "name": "SCSS"
+                }
+            ]
+        },
+        {
+            "id": "animate23",
+            "title": "Integra",
+            "href": "/Integra",
+            "imgSrc": "/work/2024/Integra.png",
             "tech": [
                 {
                     "src": "/work/technology-icons/uiux.svg",

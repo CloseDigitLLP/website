@@ -182,11 +182,20 @@ section {
   .container {
     max-width: 1260px;
   }
+
+}
+@media screen and (max-width: 1200px) {
+  .portfolioTabBar .nav-tabs {
+    top: 114px !important;
+  }
 }
 
 @media screen and (max-width: 991px) {
   .container {
     max-width: 900px;
+  }
+  .portfolioTabBar .nav-tabs {
+    top: 86px !important;
   }
 
   // html,
@@ -366,16 +375,20 @@ section {
   .portfolioTabBar .nav-tabs {
     margin-bottom: 24px !important;
     display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    gap: 6px;
   }
 
   .portfolioTabBar .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
-    font-size: 8px !important;
+    font-size: 10px !important;
+    
   }
 
   .portfolioTabBar .nav-tabs .nav-link,
   .nav-tabs .nav-item.show .nav-link {
-    font-size: 8px !important;
+    font-size: 10px !important;
     padding: 10px 10px;
     margin: 0px !important;
   }
@@ -396,11 +409,19 @@ section {
 
 .portfolioTabBar .nav-tabs {
   --bs-nav-tabs-border-width: "100%";
-  border-radius: 100px;
+  border-radius: 0px;
   margin-bottom: 45px;
   flex-wrap: nowrap;
   display: flex;
+  justify-content: center;
+  align-items: center;
   border-bottom: none;
+  position: sticky;
+  top: 90px;
+  z-index: 10;
+  padding: 20px 0;
+  background-color: #FFFFFF;
+  width: 100%;
 }
 
 .portfolioTabBar .nav-tabs .nav-link.active,

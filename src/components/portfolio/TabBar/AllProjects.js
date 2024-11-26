@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react';
-import portfolioWorkStyle from '../../styles/portfolio/portfolioWork.module.scss';
+import portfolioWorkStyle from '../../../styles/portfolio/portfolioWork.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
-import data from "../../resources/portfolioDetails.json";
+import data from "../../../resources/portfolioDetails.json";
 
 const groupIntoPairs = (projects) => {
     let pairs = [];
@@ -12,7 +12,7 @@ const groupIntoPairs = (projects) => {
     return pairs;
 }
 
-export default function TabBarContent() {
+export default function AllProjects() {
     const animateRefs = useRef(Array.from({ length: 24 }, () => null));
     const showRefs = useRef(Array.from({ length: 24 }, () => null));
 
@@ -63,7 +63,7 @@ export default function TabBarContent() {
                     {pair.map((project, index) => (
                         <div key={index} className='main-content'>
                             <div id={portfolioWorkStyle[project.id]}
-                                className={portfolioWorkStyle[`imgBox${pairIndex * 2 + index}`]}
+                                className={portfolioWorkStyle['imgBox']}
                                 ref={el => animateRefs.current[pairIndex * 2 + index] = el}>
                                 <Link href={project.href}>
                                     <div>
@@ -76,7 +76,7 @@ export default function TabBarContent() {
                                 </Link>
                             </div>
                             <div ref={el => showRefs.current[pairIndex * 2 + index] = el} className={portfolioWorkStyle["project-info"]}>
-                                {/* <h3 className={portfolioWorkStyle["project-title"]}>{project.title}</h3> */}
+                                <h3 className={portfolioWorkStyle["project-title"]}>{project.title}</h3>
                                 <div className={portfolioWorkStyle['brand-info']}>
                                     <div className={portfolioWorkStyle['tech-logo']}>
                                         {project.tech.map((techItem, techIndex) => (

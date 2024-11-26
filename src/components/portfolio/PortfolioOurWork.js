@@ -1,12 +1,12 @@
 import portfolioWorkStyle from '../../styles/portfolio/portfolioWork.module.scss'
-import Image from 'next/image'
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
-import React, { useEffect, useState } from 'react';
-import dynamic from 'next/dynamic';
-import Link from 'next/link';
+import React from 'react';
 import data from "../../resources/portfolioDetails.json"
-import TabBarContent from './TabBarContent';
+import UiUxTab from './TabBar/UiUxProjects';
+import WebTab from './TabBar/WebsiteProjects';
+import AppTab from './TabBar/AppProjects';
+import AllProjects from './TabBar/AllProjects';
 
 const groupIntoPairs = (projects) => {
     let pairs = [];
@@ -33,16 +33,16 @@ export default function OurWorkContent() {
                             id="uncontrolled-tab-example"
                             className={portfolioWorkStyle["tab-bar"]}>
                             <Tab eventKey="All" title="All Work">
-                                <TabBarContent />
+                               <AllProjects/>
                             </Tab>
-                            <Tab eventKey="UI/UX" title="UI/UX Design">
-                                <TabBarContent />
+                            <Tab eventKey="UI/UX" title="UI/UX">
+                                <UiUxTab />
                             </Tab>
-                            <Tab eventKey="Web" title="Web Development/Design">
-                                <TabBarContent />
+                            <Tab eventKey="Web" title="Web Development">
+                                <WebTab />
                             </Tab>
-                            <Tab eventKey="App" title="App Development/Design">
-                                <TabBarContent />
+                            <Tab eventKey="App" title="App Development">
+                                <AppTab/>
                             </Tab>
                         </Tabs>
                     </div>

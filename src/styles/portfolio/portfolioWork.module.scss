@@ -5,7 +5,7 @@
 .brand-part .project-info {
     opacity: 0;
     scale: 1;
-    transition: 0.5s all ease;
+    transition: opacity 0.5s ease;
 }
 
 .brand-part .project-info .project-title {
@@ -43,7 +43,7 @@
 .brand-part img {
     width: 100%;
     cursor: pointer;
-    margin: 0 0 16px 0 !important;
+    margin: 0 0 6px 0 !important;
 }
 
 .brand-part h3 {
@@ -62,6 +62,7 @@
 .brand-part .tech-logo {
     display: flex !important;
     column-gap: 20px;
+    transition: 0.5s all ease;
 }
 
 .brand-part .logo {
@@ -92,93 +93,21 @@
 }
 
 
-// scoll magic
-#animate,
-#animate1,
-#animate2,
-#animate3,
-#animate4,
-#animate5,
-#animate6,
-#animate7,
-#animate8,
-#animate9,
-#animate10,
-#animate11,
-#animate12,
-#animate13,
-#animate14,
-#animate15,
-#animate16,
-#animate17,
-#animate18,
-#animate19,
-#animate20,
-#animate21,
-#animate22,
-#animate23 {
+.imgBox{
     transition: 0.5s ease-out;
     transform: scale(0.9) !important;
     opacity: 0.5;
 }
 
-#animate.scale-up,
-#animate1.scale-up,
-#animate2.scale-up,
-#animate3.scale-up,
-#animate4.scale-up,
-#animate5.scale-up,
-#animate6.scale-up,
-#animate7.scale-up,
-#animate8.scale-up,
-#animate9.scale-up,
-#animate10.scale-up,
-#animate11.scale-up,
-#animate12.scale-up,
-#animate13.scale-up,
-#animate14.scale-up,
-#animate15.scale-up,
-#animate16.scale-up,
-#animate17.scale-up,
-#animate18.scale-up,
-#animate19.scale-up,
-#animate20.scale-up,
-#animate21.scale-up,
-#animate22.scale-up,
-#animate23.scale-up {
+.imgBox.scale-up{
     transform: scale(1) !important;
     transition: 0.5s ease-out;
     opacity: 1;
 }
 
-// hover effect title
-#animate.scale-up:hover+.project-info,
-#animate1.scale-up:hover+.project-info,
-#animate2.scale-up:hover+.project-info,
-#animate3.scale-up:hover+.project-info,
-#animate4.scale-up:hover+.project-info,
-#animate5.scale-up:hover+.project-info,
-#animate6.scale-up:hover+.project-info,
-#animate7.scale-up:hover+.project-info,
-#animate8.scale-up:hover+.project-info,
-#animate9.scale-up:hover+.project-info,
-#animate10.scale-up:hover+.project-info,
-#animate11.scale-up:hover+.project-info,
-#animate12.scale-up:hover+.project-info,
-#animate13.scale-up:hover+.project-info,
-#animate14.scale-up:hover+.project-info,
-#animate15.scale-up:hover+.project-info,
-#animate16.scale-up:hover+.project-info,
-#animate17.scale-up:hover+.project-info,
-#animate18.scale-up:hover+.project-info,
-#animate19.scale-up:hover+.project-info,
-#animate20.scale-up:hover+.project-info,
-#animate21.scale-up:hover+.project-info,
-#animate22.scale-up:hover+.project-info,
-#animate23.scale-up:hover+.project-info {
+.imgBox.scale-up:hover+.project-info{
     opacity: 1;
 }
-
 
 @media screen and (max-width:1024px) {
     .trusted-brands-section {
@@ -186,6 +115,10 @@
         justify-content: center;
         align-items: center;
         gap: 40px;
+    }
+
+    .imgBox.scale-up +.project-info{
+        opacity: 1;
     }
 }
 
@@ -195,7 +128,7 @@
     }
 
     .brand-part .project-info .project-title {
-        margin-top: -44px;
+        margin-top: -40px;
     }
 
     .brand-part {
@@ -210,28 +143,16 @@
         padding: 0 16px;
         margin-bottom: 50px;
     }
-
-    // .brand-part.reverse{
-    //     flex-wrap: wrap-reverse;
-    // }
 }
 
-@media screen and (max-width:767px) {
-    .brand-part .project-info {
-        opacity: 0;
-        scale: 1;
-        transition: 0.5s all ease;
-    }
-
-    .project-info.showDetails {
-        opacity: 1 !important;
-        scale: 1 !important;
-    }
-}
 
 
 
 @media screen and (max-width:520px) {
+    .brand-part .project-info .project-title {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
     .trusted-brands-section img {
         max-width: 90% !important;
     }
@@ -249,7 +170,7 @@
     }
 
     .brand-part h3 {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .brand-part .tech-logo p {
@@ -267,30 +188,7 @@
         row-gap: 10px;
     }
 
-    #animate,
-    #animate1,
-    #animate2,
-    #animate3,
-    #animate4,
-    #animate5,
-    #animate6,
-    #animate7,
-    #animate8,
-    #animate9,
-    #animate10,
-    #animate11,
-    #animate12,
-    #animate13,
-    #animate14,
-    #animate15,
-    #animate16,
-    #animate17,
-    #animate18,
-    #animate19,
-    #animate20,
-    #animate21,
-    #animate22,
-    #animate23 {
+    .imgBox{
         transition: 0.5s ease-out;
         transform: scale(0.6) !important;
         opacity: 0.5;

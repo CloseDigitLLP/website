@@ -7,6 +7,7 @@
             "imgSrc": "/work/2024/Vaid.png",
             "category": [
                 "design",
+                "web",
                 "app"
             ],
             "tech": [
@@ -38,6 +39,7 @@
             "href": "/Camelab",
             "imgSrc": "/work/2024/Camelab.png",
             "category": [
+                "design",
                 "web",
                 "app"
             ],
@@ -69,13 +71,92 @@
             ]
         },
         {
+            "id": "animate2",
+            "title": "Hontrel",
+            "href": "/",
+            "imgSrc": "/work/2024/Hontrel.png",
+            "category": [
+                "web"
+            ],
+            "tech": [
+                {
+                    "src": "/work/technology-icons/wordpress.svg",
+                    "name": "Wordpress"
+                },
+                {
+                    "src": "/work/technology-icons/elementor.svg",
+                    "name": "Elementor"
+                },
+                {
+                    "src": "/work/technology-icons/godaddy.svg",
+                    "name": "Godaddy"
+                }
+            ]
+        },
+        {
+            "id": "animate3",
+            "title": "Superior",
+            "href": "/",
+            "imgSrc": "/work/2024/Superior.png",
+            "category": [
+                "web",
+                "design"
+            ],
+            "tech": [
+                {
+                    "src": "/work/technology-icons/uiux.svg",
+                    "name": "UI-UX"
+                },
+                {
+                    "src": "/work/technology-icons/html.svg",
+                    "name": "HTML"
+                },
+                {
+                    "src": "/work/technology-icons/scss.svg",
+                    "name": "SCSS"
+                },
+                {
+                    "src": "/work/technology-icons/bootstrap.svg",
+                    "name": "Bootstrap"
+                },
+                {
+                    "src": "/work/technology-icons/css.svg",
+                    "name": "CSS"
+                }
+            ]
+        },
+        {
+            "id": "animate4",
+            "title": "Datasync",
+            "href": "/",
+            "imgSrc": "/work/2024/Datasync.png",
+            "category": [
+                "web"
+            ],
+            "tech": [
+                {
+                    "src": "/work/technology-icons/react.svg",
+                    "name": "React"
+                },
+                {
+                    "src": "/work/technology-icons/material.svg",
+                    "name": "Material"
+                },
+                {
+                    "src": "/work/technology-icons/firebase.svg",
+                    "name": "Firebase"
+                },
+                {
+                    "src": "/work/technology-icons/github.svg",
+                    "name": "Github"
+                }
+            ]
+        },
+        {
             "id": "animate5",
             "title": "Schenk",
             "href": "/Schenk",
             "imgSrc": "/work/2024/Schenk.png",
-            "category": [
-                "web"
-            ],
             "tech": [
                 {
                     "src": "/work/technology-icons/uiux.svg",
@@ -100,13 +181,170 @@
             ]
         },
         {
+            "id": "animate6",
+            "title": "Payday Depot",
+            "href": "/",
+            "imgSrc": "/work/2024/PaydayDepot.png",
+            "tech": [
+                {
+                    "src": "/work/technology-icons/html.svg",
+                    "name": "HTML"
+                },
+                {
+                    "src": "/work/technology-icons/css.svg",
+                    "name": "CSS"
+                },
+                {
+                    "src": "/work/technology-icons/bootstrap.svg",
+                    "name": "Bootstrap"
+                },
+                {
+                    "src": "/work/technology-icons/github.svg",
+                    "name": "Github"
+                }
+            ]
+        },
+        {
+            "id": "animate7",
+            "title": "Delivery",
+            "href": "/",
+            "imgSrc": "/work/2024/Delivery.png",
+            "tech": [
+                {
+                    "src": "/work/technology-icons/react.svg",
+                    "name": "React"
+                },
+                {
+                    "src": "/work/technology-icons/ReactBootstrap.svg",
+                    "name": "React Bootstrap"
+                },
+                {
+                    "src": "/work/technology-icons/firebase.svg",
+                    "name": "Firebase"
+                }
+            ]
+        },
+        {
+            "id": "animate8",
+            "title": "Gupta Group",
+            "href": "/",
+            "imgSrc": "/work/2024/GuptaGroup.png",
+            "tech": [
+                {
+                    "src": "/work/technology-icons/uiux.svg",
+                    "name": "UI-UX"
+                },
+                {
+                    "src": "/work/technology-icons/html.svg",
+                    "name": "HTML"
+                },
+                {
+                    "src": "/work/technology-icons/tailwind.svg",
+                    "name": "Tailwind"
+                },
+                {
+                    "src": "/work/technology-icons/github.svg",
+                    "name": "Github"
+                }
+            ]
+        },
+        {
+            "id": "animate9",
+            "title": "Practice Plus",
+            "href": "/",
+            "imgSrc": "/work/2024/PracticePlus.png",
+            "tech": [
+                {
+                    "src": "/work/technology-icons/uiux.svg",
+                    "name": "UI-UX"
+                },
+                {
+                    "src": "/work/technology-icons/bootstrap.svg",
+                    "name": "Bootstrap"
+                },
+                {
+                    "src": "/work/technology-icons/firebase.svg",
+                    "name": "Firebase"
+                },
+                {
+                    "src": "/work/technology-icons/wordpress.svg",
+                    "name": "Wordpress"
+                },
+                {
+                    "src": "/work/technology-icons/owl.png",
+                    "name": "Owl-carousel"
+                }
+            ]
+        },
+        {
+            "id": "animate10",
+            "title": "Commbitz",
+            "href": "/",
+            "imgSrc": "/work/2024/Commbitz.png",
+            "tech": [
+                {
+                    "src": "/work/technology-icons/uiux.svg",
+                    "name": "UI-UX"
+                },
+                {
+                    "src": "/work/technology-icons/nextjs.svg",
+                    "name": "NextJS"
+                },
+                {
+                    "src": "/work/technology-icons/tailwind.svg",
+                    "name": "Tailwind"
+                },
+                {
+                    "src": "/work/technology-icons/redux.svg",
+                    "name": "Redux"
+                },
+                {
+                    "src": "/work/technology-icons/nodejs.svg",
+                    "name": "Node"
+                },
+                {
+                    "src": "/work/technology-icons/firestore.svg",
+                    "name": "Firestore"
+                },
+                {
+                    "src": "/work/technology-icons/firebase.svg",
+                    "name": "Firebase"
+                }
+            ]
+        },
+        {
+            "id": "animate11",
+            "title": "Allure",
+            "href": "/",
+            "imgSrc": "/work/2024/Allure.png",
+            "tech": [
+                {
+                    "src": "/work/technology-icons/uiux.svg",
+                    "name": "UI-UX"
+                },
+                {
+                    "src": "/work/technology-icons/html.svg",
+                    "name": "HTML"
+                },
+                {
+                    "src": "/work/technology-icons/css.svg",
+                    "name": "CSS"
+                },
+                {
+                    "src": "/work/technology-icons/bootstrap.svg",
+                    "name": "Bootstrap"
+                },
+                {
+                    "src": "/work/technology-icons/github.svg",
+                    "name": "Github"
+                }
+            ]
+        },
+        {
             "id": "animate12",
             "title": "Snbla",
             "href": "/Snbla",
             "imgSrc": "/work/2024/Snbla.png",
-            "category": [
-                "web"
-            ],
             "tech": [
                 {
                     "src": "/work/technology-icons/uiux.svg",
@@ -128,13 +366,9 @@
         },
         {
             "id": "animate13",
-            "title": "FeelingBetterNow",
+            "title": "FellingBetterNow",
             "href": "/FBN",
             "imgSrc": "/work/2024/FellingBetterNow.png",
-            "category": [
-                "design",
-                "web"
-            ],
             "tech": [
                 {
                     "src": "/work/technology-icons/nextjs.svg",
@@ -167,11 +401,6 @@
             "title": "Directory",
             "href": "/Directory",
             "imgSrc": "/work/2024/Directory.png",
-            "category": [
-                "design",
-                "web",
-                "app"
-            ],
             "tech": [
                 {
                     "src": "/work/technology-icons/uiux.svg",
@@ -180,9 +409,6 @@
                 {
                     "src": "/work/technology-icons/react.svg",
                     "name": "React"
-                }, {
-                    "src": "/work/technology-icons/reactnative.svg",
-                    "name": "React Native"
                 },
                 {
                     "src": "/work/technology-icons/pwa.svg",
@@ -203,18 +429,35 @@
             ]
         },
         {
+            "id": "animate15",
+            "title": "Camplinq",
+            "href": "/",
+            "imgSrc": "/work/2024/Camplinq.png",
+            "tech": [
+                {
+                    "src": "/work/technology-icons/html.svg",
+                    "name": "HTML"
+                },
+                {
+                    "src": "/work/technology-icons/css.svg",
+                    "name": "CSS"
+                },
+                {
+                    "src": "/work/technology-icons/bootstrap.svg",
+                    "name": "Bootstrap"
+                },
+                {
+                    "src": "/work/technology-icons/js.svg",
+                    "name": "JavaScript"
+                }
+            ]
+        },
+        {
             "id": "animate16",
             "title": "JV Construction",
             "href": "/JVConstruction",
             "imgSrc": "/work/2024/jv.png",
-            "category": [
-                "design"
-            ],
             "tech": [
-                {
-                    "src": "/work/technology-icons/uiux.svg",
-                    "name": "UI-UX"
-                },
                 {
                     "src": "/work/technology-icons/html.svg",
                     "name": "HTML"
@@ -238,9 +481,6 @@
             "title": "Proper Sky",
             "href": "/ProperSky",
             "imgSrc": "/work/2024/ProperSky.png",
-            "category": [
-                "design"
-            ],
             "tech": [
                 {
                     "src": "/work/technology-icons/uiux.svg",
@@ -261,9 +501,46 @@
             "title": "Wordwell",
             "href": "/WordWell",
             "imgSrc": "/work/2024/Wordwell.png",
-            "category": [
-                "design"
-            ],
+            "tech": [
+                {
+                    "src": "/work/technology-icons/uiux.svg",
+                    "name": "UI-UX"
+                },
+                {
+                    "src": "/work/technology-icons/html.svg",
+                    "name": "HTML"
+                },
+                {
+                    "src": "/work/technology-icons/scss.svg",
+                    "name": "SCSS"
+                }
+            ]
+        },
+        {
+            "id": "animate19",
+            "title": "Amending the Soil",
+            "href": "/AmendingTheSoil",
+            "imgSrc": "/work/2024/AmendingTheSoil.png",
+            "tech": [
+                {
+                    "src": "/work/technology-icons/uiux.svg",
+                    "name": "UI-UX"
+                },
+                {
+                    "src": "/work/technology-icons/html.svg",
+                    "name": "HTML"
+                },
+                {
+                    "src": "/work/technology-icons/scss.svg",
+                    "name": "SCSS"
+                }
+            ]
+        },
+        {
+            "id": "animate20",
+            "title": "Hyperstack",
+            "href": "/Hyperstack",
+            "imgSrc": "/work/2024/Hyperstack.png",
             "tech": [
                 {
                     "src": "/work/technology-icons/uiux.svg",
@@ -284,9 +561,46 @@
             "title": "The Estes Law Firm",
             "href": "/Law",
             "imgSrc": "/work/2024/TheEstesLawFirm.png",
-            "category": [
-                "design"
-            ],
+            "tech": [
+                {
+                    "src": "/work/technology-icons/uiux.svg",
+                    "name": "UI-UX"
+                },
+                {
+                    "src": "/work/technology-icons/html.svg",
+                    "name": "HTML"
+                },
+                {
+                    "src": "/work/technology-icons/scss.svg",
+                    "name": "SCSS"
+                }
+            ]
+        },
+        {
+            "id": "animate22",
+            "title": "Blupeak Health",
+            "href": "/BlupeakHealth",
+            "imgSrc": "/work/2024/BlupeakHealth.png",
+            "tech": [
+                {
+                    "src": "/work/technology-icons/uiux.svg",
+                    "name": "UI-UX"
+                },
+                {
+                    "src": "/work/technology-icons/html.svg",
+                    "name": "HTML"
+                },
+                {
+                    "src": "/work/technology-icons/scss.svg",
+                    "name": "SCSS"
+                }
+            ]
+        },
+        {
+            "id": "animate23",
+            "title": "Integra",
+            "href": "/Integra",
+            "imgSrc": "/work/2024/Integra.png",
             "tech": [
                 {
                     "src": "/work/technology-icons/uiux.svg",

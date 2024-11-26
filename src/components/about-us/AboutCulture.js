@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 export default function AboutCulture(){
     return(
+        <div className='overflow-hidden'>
         <section className={`section-spacing`}>
         <div className="section-title-part">
             <p className="back-title">Our Culture</p>
@@ -19,5 +20,6 @@ export default function AboutCulture(){
                 /> */}
        </div>
        </section>
+       </div>
     )
 }

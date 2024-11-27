@@ -33,6 +33,7 @@ export default function ClientStory() {
                     <OwlCarousel
                         loop
                         nav={false}
+                        autoplay={true}
                         responsive={{
                             0: {
                                 items: 1

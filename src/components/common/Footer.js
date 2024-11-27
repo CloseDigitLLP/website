@@ -63,9 +63,9 @@ export default function Services(){
                                     <Link className={footerStyle['link']} href="/Technology">
                                         Technology  
                                     </Link>
-                                    {/* <Link href="/project">
-                                        <a href="" className={footerStyle['link']}>Projects</a>
-                                    </Link> */}
+                                    <Link href="/Portfolio" className={footerStyle['link']}>
+                                        our work
+                                    </Link>
                                 </div>
                             </div>
                             <div className='col-lg-4 col-md-4 col-sm-6'>

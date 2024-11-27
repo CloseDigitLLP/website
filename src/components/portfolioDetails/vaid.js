@@ -63,7 +63,6 @@ export default function Vaid() {
     if (!isClient) return;
 
     const initializeGsap = async () => {
-      // Import GSAP modules once
       const { default: gsap } = await import('gsap');
       const { ScrollTrigger } = await import('gsap/ScrollTrigger');
       gsap.registerPlugin(ScrollTrigger);

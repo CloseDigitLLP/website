@@ -70,7 +70,7 @@ export default function IntegraPage() {
                         <span>Integra</span> Showcase
                     </h3>
                     <div className={IntegraStyle['step-section']}>
-                        <div data-aos="fade-right">
+                        <div data-aos="fade-right" className={IntegraStyle['step-img-part']}>
                             <img src="/work/2024/integra/step1.png" alt="step img" />
                         </div>
                         <div className={IntegraStyle['step-content']} data-aos="fade-left">
@@ -91,12 +91,12 @@ export default function IntegraPage() {
                                 complete, the verification results will appear on the screen.
                             </p>
                         </div>
-                        <div data-aos="fade-left">
+                        <div data-aos="fade-left" className={IntegraStyle['step-img-part']}>
                             <img src="/work/2024/integra/step2.png" alt="step img" />
                         </div>
                     </div>
                     <div className={IntegraStyle['step-section']}>
-                        <div data-aos="fade-right">
+                        <div data-aos="fade-right" className={IntegraStyle['step-img-part']}>
                             <img src="/work/2024/integra/step3.png" alt="step img" />
                         </div>
                         <div className={IntegraStyle['step-content']} data-aos="fade-left">

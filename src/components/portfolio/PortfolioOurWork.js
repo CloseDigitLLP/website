@@ -2,23 +2,27 @@ import portfolioWorkStyle from '../../styles/portfolio/portfolioWork.module.scss
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import React from 'react';
-import data from "../../resources/portfolioDetails.json"
 import UiUxTab from './TabBar/UiUxProjects';
 import WebTab from './TabBar/WebsiteProjects';
 import AppTab from './TabBar/AppProjects';
 import AllProjects from './TabBar/AllProjects';
+import data from '../../resources/portfolioDetails.json';
+import dynamic from 'next/dynamic';
+import Image from 'next/image';
 
-const groupIntoPairs = (projects) => {
-    let pairs = [];
-    for (let i = 0; i < projects.length; i += 2) {
-        pairs.push(projects.slice(i, i + 2));
-    }
-    return pairs;
-};
+var $ = require('jquery');
+if (typeof window !== 'undefined') {
+    window.$ = window.jQuery = require('jquery');
+}
+
+import 'owl.carousel/dist/assets/owl.carousel.css';
+
+const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
+    ssr: false,
+});
+
 
 export default function OurWorkContent() {
-
-    const projectPairs = groupIntoPairs(data.projectPairs.flat());
     return (
         <>
             <section className={`section-spacing`}>
@@ -54,33 +58,45 @@ export default function OurWorkContent() {
                         </div>
                     </div>
 
-                    <div className={portfolioWorkStyle["trusted-brands-section"]}>
-                        <div><img
-                            src="/portfolio/shopify.svg"
-                            alt="Animated"
-                            className={portfolioWorkStyle['brand-img']}
-                        /></div>
-                        <div><img
-                            src="/portfolio/google.svg"
-                            alt="Animated"
-                            className={portfolioWorkStyle['brand-img']}
-                        /></div>
-                        <div><img
-                            src="/portfolio/pintrest.svg"
-                            alt="Animated"
-                            className={portfolioWorkStyle['brand-img']}
-                        /></div>
-                        <div><img
-                            src="/portfolio/stripe.svg"
-                            alt="Animated"
-                            className={portfolioWorkStyle['brand-img']}
-                        /></div>
-                        <div><img
-                            src="/portfolio/reddit.svg"
-                            alt="Animated"
-                            className={portfolioWorkStyle['brand-img']}
-                        />
-                        </div>
+                    <div className='my-3'>
+                    <OwlCarousel
+                        loop
+                        nav={false}
+                        autoplay={true}
+                        responsive={{
+                            0: {
+                                items: 3,
+                                margin: 30 
+                            },
+                            600: {
+                                items: 3,
+                                margin: 30 
+                            },
+                            1000: {
+                                items: 4
+                            }
+                        }}
+                        items={2}
+                        autoPlay={false}
+                        dots={false}
+                        autoplayTimeout={2000}
+                        autoplaySpeed={2000}
+                        autoplayHoverPause={false}
+                    >
+                        {data.clientCarouselData.map((client,index) => {
+                                return (
+                                    <div className={portfolioWorkStyle["clientCarousel"]} key={index}>
+                                                <Image
+                                                    src={client.logo}
+                                                    alt="client"
+                                                    width={200}
+                                                    height={40}
+                                                />
+                                    </div>
+                                )
+                            })
+                        }
+                    </OwlCarousel>
                     </div>
                 </div>
             </section>

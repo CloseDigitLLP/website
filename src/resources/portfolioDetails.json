@@ -69,6 +69,87 @@
             ]
         },
         {
+            "id": "animate13",
+            "title": "FeelingBetterNow",
+            "href": "/FBN",
+            "imgSrc": "/work/2024/FellingBetterNow.png",
+            "category": [
+                "design",
+                "web"
+            ],
+            "tech": [
+                {
+                    "src": "/work/technology-icons/uiux.svg",
+                    "name": "UI-UX"
+                },
+                {
+                    "src": "/work/technology-icons/nextjs.svg",
+                    "name": "NextJS"
+                },
+                {
+                    "src": "/work/technology-icons/firebase.svg",
+                    "name": "Firebase"
+                },
+                {
+                    "src": "/work/technology-icons/firestore.svg",
+                    "name": "Firestore"
+                },
+                {
+                    "src": "/work/technology-icons/redux.svg",
+                    "name": "Redux"
+                },
+                {
+                    "src": "/work/technology-icons/aws.svg",
+                    "name": "AWS"
+                },
+                {
+                    "src": "/work/technology-icons/express.svg",
+                    "name": "ExpressJS"
+                }
+            ]
+        },
+        {
+            "id": "animate14",
+            "title": "Directory",
+            "href": "/Directory",
+            "imgSrc": "/work/2024/Directory.png",
+            "category": [
+                "design",
+                "web",
+                "app"
+            ],
+            "tech": [
+                {
+                    "src": "/work/technology-icons/uiux.svg",
+                    "name": "UI-UX"
+                },
+                {
+                    "src": "/work/technology-icons/react.svg",
+                    "name": "React"
+                },
+                {
+                    "src": "/work/technology-icons/reactnative.svg",
+                    "name": "React Native"
+                },
+                {
+                    "src": "/work/technology-icons/pwa.svg",
+                    "name": "PWA"
+                },
+                {
+                    "src": "/work/technology-icons/firebase.svg",
+                    "name": "Firebase"
+                },
+                {
+                    "src": "/work/technology-icons/redux.svg",
+                    "name": "Redux"
+                },
+                {
+                    "src": "/work/technology-icons/mysql.svg",
+                    "name": "MySQL"
+                }
+            ]
+        },
+        {
             "id": "animate5",
             "title": "Schenk",
             "href": "/Schenk",
@@ -123,82 +204,6 @@
                 {
                     "src": "/work/technology-icons/elementor.svg",
                     "name": "Elementor"
-                }
-            ]
-        },
-        {
-            "id": "animate13",
-            "title": "FeelingBetterNow",
-            "href": "/FBN",
-            "imgSrc": "/work/2024/FellingBetterNow.png",
-            "category": [
-                "design",
-                "web"
-            ],
-            "tech": [
-                {
-                    "src": "/work/technology-icons/nextjs.svg",
-                    "name": "NextJS"
-                },
-                {
-                    "src": "/work/technology-icons/firebase.svg",
-                    "name": "Firebase"
-                },
-                {
-                    "src": "/work/technology-icons/firestore.svg",
-                    "name": "Firestore"
-                },
-                {
-                    "src": "/work/technology-icons/redux.svg",
-                    "name": "Redux"
-                },
-                {
-                    "src": "/work/technology-icons/aws.svg",
-                    "name": "AWS"
-                },
-                {
-                    "src": "/work/technology-icons/express.svg",
-                    "name": "ExpressJS"
-                }
-            ]
-        },
-        {
-            "id": "animate14",
-            "title": "Directory",
-            "href": "/Directory",
-            "imgSrc": "/work/2024/Directory.png",
-            "category": [
-                "design",
-                "web",
-                "app"
-            ],
-            "tech": [
-                {
-                    "src": "/work/technology-icons/uiux.svg",
-                    "name": "UI-UX"
-                },
-                {
-                    "src": "/work/technology-icons/react.svg",
-                    "name": "React"
-                }, {
-                    "src": "/work/technology-icons/reactnative.svg",
-                    "name": "React Native"
-                },
-                {
-                    "src": "/work/technology-icons/pwa.svg",
-                    "name": "PWA"
-                },
-                {
-                    "src": "/work/technology-icons/firebase.svg",
-                    "name": "Firebase"
-                },
-                {
-                    "src": "/work/technology-icons/redux.svg",
-                    "name": "Redux"
-                },
-                {
-                    "src": "/work/technology-icons/mysql.svg",
-                    "name": "MySQL"
                 }
             ]
         },
@@ -626,5 +631,28 @@
                 "alt": "JV Construction Landing"
             }
         ]
-    }
+    },
+    "clientCarouselData": [
+        {
+            "logo": "/work/2024/clients/camelab.svg"
+        },
+        {
+            "logo": "/work/2024/clients/commbitz.svg"
+        },
+        {
+            "logo": "/work/2024/clients/delivery.svg"
+        },
+        {
+            "logo": "/work/2024/clients/feeling-better-now.svg"
+        },
+        {
+            "logo": "/work/2024/clients/payday.svg"
+        },
+        {
+            "logo": "/work/2024/clients/snbla.svg"
+        },
+        {
+            "logo": "/work/2024/clients/vaid.svg"
+        }
+    ]
 }

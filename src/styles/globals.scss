@@ -154,6 +154,7 @@ section {
   z-index: 10;
 }
 
+
 @keyframes hero-left-marquee-new {
   0% {
     transform: translate3d(0, 0, 0);
@@ -659,7 +660,10 @@ section {
     .owl-item {
       display: flex; 
       align-items: stretch;
+      justify-content: center;
     }
   }
+  
 }
+
 

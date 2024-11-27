@@ -5,7 +5,7 @@ export default function Portfolio() {
   return (
     <>
       <Head>
-        <title>Portfolio | CloseDigit</title>
+        <title>Our Work | CloseDigit</title>
         <meta name="description" content="Make your company wealthy by using CloseDigit's effective tool to assist users in finding solutions to create something truly wonderful." />
       </Head>
       <PortfolioPage>

@@ -33,60 +33,6 @@
     margin-bottom: 64px;
 }
 
-
-// loader
-.loaderContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
-}
-
-
-.loader {
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    aspect-ratio: 1;
-    display: grid;
-}
-
-.loader:before,
-.loader:after {
-    content: "";
-    --c: no-repeat linear-gradient(#0000ff 0 0);
-    background: var(--c), var(--c);
-    background-size: 25% 50%;
-    animation: l4 1.5s infinite linear;
-}
-
-.loader:after {
-    transform: scale(-1);
-}
-
-@keyframes l4 {
-
-    0%,
-    10% {
-        background-position: 33.4% 100%, 66.6% 100%
-    }
-
-    40% {
-        background-position: 33.4% 0, 100% 100%
-    }
-
-    70% {
-        background-position: 0 100%, 66.6% 0
-    }
-
-    100% {
-        background-position: 33.4% 100%, 66.6% 100%
-    }
-}
-
-
-
 // technology section 
 
 .technology-section {
@@ -129,10 +75,6 @@
     font-weight: 500;
     text-align: center;
 }
-
-
-
-
 
 // slider part 
 
@@ -352,6 +294,32 @@
     z-index: 1;
 }
 
+// showcase sliderSection
+.showcaseSliderSection{
+    overflow: hidden;
+    margin-top: 50px;
+}
+.showcaseSliderSection .slider-item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .imgPart img {
+        width: 100%;
+    }
+    
+     h6 {
+        font-family: 'Poppins';
+        font-size: 20px;
+        font-weight: 400;
+        color: #919EAB;
+        line-height: 28px;
+        width: 90%;
+        padding-left: 10px;
+    }
+}
+
+
 
 
 
@@ -471,15 +439,27 @@
     .colorPalette4:hover .imageContainer::before {
         position: absolute;
         font-size: 30px;
-        color: white;
         top: 100px;
         left: 50px;
         transition: 0.6s;
         z-index: 100;
     }
+  
 }
 
 @media only screen and (max-width: 768px) {
+    .showcaseSliderSection .slider-item {
+        gap: 16px;
+         h6 {
+            font-size: 16px;
+            width: 100%;
+            line-height: normal;
+        }
+    }
+    .showcaseSliderSection{
+        overflow: hidden;
+        margin-top: 30px;
+    }
     .colorPalette {
         margin-top: 40px;
     }
@@ -611,6 +591,11 @@
 }
 
 @media only screen and (max-width: 520px) {
+    .showcaseSliderSection .slider-item {
+        h6 {
+           font-size: 14px;
+       }
+   }
     .mainheading {
         font-size: 20px;
         margin-bottom: 20px;

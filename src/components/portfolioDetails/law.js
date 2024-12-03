@@ -9,6 +9,7 @@ import TechnologySection from './portfolioDetailsCommon/technologySection';
 import DesignProcess from './portfolioDetailsCommon/designProcess';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ShowcaseSlider from './portfolioDetailsCommon/showcaseSlider';
 
 var $ = require('jquery');
 if (typeof window !== 'undefined') {
@@ -55,7 +56,7 @@ export default function Law() {
         <div className="container">
           <div className={`${lawStyle.sectionContent}`}>
             <h3 data-aos="slide-left" className={portfolioDetailsCommon.bannerPrimaryText}>Your Advocate for Justice and Fairness: <br />
-             <span className={lawStyle.mainheadingSpan}>The Estes Law Firm</span>
+              <span className={lawStyle.mainheadingSpan}>The Estes Law Firm</span>
             </h3>
             <div data-aos="flip-up" className={lawStyle.bannerImg}>
               <div className={lawStyle.bannerInnerImg}>
@@ -67,7 +68,7 @@ export default function Law() {
       </div>
 
 
-   
+
 
       {/* DesignProcess */}
       <DesignProcess
@@ -94,57 +95,15 @@ export default function Law() {
 
 
 
-         {/* sliderSection */}
+      {/* sliderSection */}
 
-         <section className={lawStyle['sliderSection']}>
+      <section className={lawStyle['sliderSection']}>
         <div className="container">
           <h3 data-aos="slide-left" className={portfolioDetailsCommon['mainheading']}>
             Innovative design solution for Website: <br /><span className={lawStyle.mainheadingSpan}>The Estes Law Firm </span>Showcase
           </h3>
         </div>
-        <div data-aos="slide-up" className="container">
-          <OwlCarousel className={`${lawStyle['owlcarousel']} ${lawStyle['review-owlcarousel']}`} navText={["", ""]}  {...options}>
-            <div className={`${lawStyle['slider-item']}`}>
-              <div className={lawStyle['imgPart']}>
-                <img
-                  src='/work/2024/law/sliderImg1.svg'
-                  alt="Animated"
-                />
-              </div>
-              <div>
-                <h6>
-                Our circular design showcases our services with clarity and ease. Personal Injury Claims address car accidents and brain trauma, Wrongful Death focuses on compensation for loss due to negligence, and Labor and Employment covers workplace injuries and wage disputes. Navigate through our services effortlessly with this visually engaging layout.
-                </h6>
-              </div>
-            </div>
-            <div className={`${lawStyle['slider-item']}`}>
-              <div className={lawStyle['imgPart']}>
-                <img
-                  src='/work/2024/law/sliderImg2.svg'
-                  alt="Animated"
-                />
-              </div>
-              <div>
-                <h6>
-                Our design for this screen features a clean, user-friendly layout that emphasizes our commitment to superior personal service. The section highlights our decades of experience, our flexibility to work around your needs, and our dedication to pursuing the full compensation you deserve. Each point is presented clearly, ensuring users can easily understand how we can help their claim succeed.
-                </h6>
-              </div>
-            </div>
-            <div className={`${lawStyle['slider-item']}`}>
-              <div className={lawStyle['imgPart']}>
-                <img
-                  src='/work/2024/law/sliderImg3.svg'
-                  alt="Animated"
-                />
-              </div>
-              <div>
-                <h6>
-                Our Contact Us page is designed for your convenience, offering a straightforward way to get in touch. Fill out the fields below to reach out to us, and view our available timings and address information to plan your visit or call. Whether you have questions or need to schedule a consultation, we&apos;re here to assist you efficiently and effectively.
-                </h6>
-              </div>
-            </div>
-          </OwlCarousel>
-        </div>
+        <ShowcaseSlider slides={data.ShowCaseData.law} />
       </section>
     </div>
   );

@@ -67,9 +67,6 @@ export default function Law() {
         </div>
       </div>
 
-
-
-
       {/* DesignProcess */}
       <DesignProcess
         description="At The Estes Law Firm, our design process starts with understanding your specific needs and goals. We engage in thorough research and planning to set clear objectives. Our team then moves to brainstorming and creating initial prototypes. We gather feedback through user testing to refine and enhance the designs. Collaborating closely with developers ensures a seamless implementation, and we continue to make improvements to deliver an outstanding experience for our clients."

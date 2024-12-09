@@ -111,7 +111,7 @@ export default function Snbla() {
                         <div className={snblaStyles['video-container']}>
                             <video
                                 ref={videoRef}
-                                src="/work/2024/snbla/snbla-banner-video.mp4"
+                                src="/work/2024/snbla/snbla-banner-video(1).mp4"
                                 preload="auto"
                                 className={snblaStyles['banner-video']}
                                 playsInline

@@ -608,6 +608,54 @@
             }
         ]
     },
+    "ShowCaseData":{
+        "mvintage":[
+            {
+                "image": "/work/2024/mvinTage/sliderImg1.svg",
+                "text": "The new MVINTAGE header is designed with simplicity and clarity in mind. Categories like rings, bracelets, and earrings are clearly displayed for effortless navigation. With intuitive dropdown menus and bold visuals, finding your desired jewelry piece is quick and easy. Each product type is highlighted in a unique, eye-catching way, ensuring that you can browse and explore our collections with minimal effort, all while enjoying a smooth and luxurious shopping experience."
+            },
+            {
+                "image": "/work/2024/mvinTage/sliderImg2.svg",
+                "text": "The 'Let's Stay Connected' section offers easy access to newsletters, social media, and contact options for seamless communication. The 'Mobile Application' section highlights the app’s features and benefits, making it simple for users to stay connected and experience our brand's offerings."
+            },
+            {
+                "image": "/work/2024/mvinTage/sliderImg3.svg",
+                "text": "The 'Shop by Category' section features clear, intuitive navigation with visually distinct categories for easy browsing. The 'Our Favourite' section highlights top selections with elegant visuals and detailed descriptions, showcasing how models are used in a dynamic slider to present our best pieces effectively."
+            },
+            {
+                "image": "/work/2024/mvinTage/sliderImg4.svg",
+                "text": "In the 'Review' section, customers share their experiences and photos from their purchases, providing valuable insights into their shopping journey. This section allows new customers to easily understand and relate to the positive experiences of others, helping them make informed decisions about their own purchases."
+            }
+        ],
+        "law" : [
+            {
+                "image": "/work/2024/law/sliderImg1.svg",
+                "text": "Our circular design showcases our services with clarity and ease. Personal Injury Claims address car accidents and brain trauma, Wrongful Death focuses on compensation for loss due to negligence, and Labor and Employment covers workplace injuries and wage disputes. Navigate through our services effortlessly with this visually engaging layout."
+            },
+            {
+                "image": "/work/2024/law/sliderImg2.svg",
+                "text": "Our design for this screen features a clean, user-friendly layout that emphasizes our commitment to superior personal service. The section highlights our decades of experience, our flexibility to work around your needs, and our dedication to pursuing the full compensation you deserve. Each point is presented clearly, ensuring users can easily understand how we can help their claim succeed."
+            },
+            {
+                "image": "/work/2024/law/sliderImg3.svg",
+                "text": "Our Contact Us page is designed for your convenience, offering a straightforward way to get in touch. Fill out the fields below to reach out to us, and view our available timings and address information to plan your visit or call. Whether you have questions or need to schedule a consultation, we&apos;re here to assist you efficiently and effectively."
+            }
+        ],
+        "hyperstack" : [
+            {
+                "image": "/work/2024/hyperstack/sliderImg1.svg",
+                "text": "In the first version of the Hyperstack Cloud signup page, all required information is gathered on a single screen for a streamlined experience. New users are asked to provide their basic details, including name, email, password, company name, industry, and country. This approach simplifies the signup process, allowing users to complete registration quickly without navigating through multiple steps, ensuring a smooth onboarding experience."
+            },
+            {
+                "image": "/work/2024/hyperstack/sliderImg2.svg",
+                "text": "At Hyperstack Cloud, our second version of the signup process for the client focuses on simplicity and ease of use. When a new customer arrives, we start by asking for basic details like name, email, company name, industry, and country. After gathering this information, the user is taken to a new screen where they are prompted to create a secure password. This streamlined process ensures a smooth and efficient user experience, helping new users get started quickly while maintaining security."
+            },
+            {
+                "image": "/work/2024/hyperstack/sliderImg3.svg",
+                "text": "The second version of the Hyperstack Cloud login screen is designed for simplicity and improved user experience. It only asks for the essentials: email or username and password. This streamlined approach ensures that users can quickly log in without unnecessary steps, making the process faster and more intuitive."
+            }
+        ]
+    },
     "previewSliderData": {
         "jv": [
             {

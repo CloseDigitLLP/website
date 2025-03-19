@@ -613,7 +613,7 @@
                 "text": "Choose a savings plan that fits your schedule by depositing money into your account once or repeatedly. Adjust the deposit amount as needed—speed up, slow down, or pause the process according to your purchasing plan. Create an account and start saving today!"
             },
             {
-                "image": "/work/2024/snbla/snblaSliderImg1.png",
+                "image": "/work/2024/snbla/snblaSliderImg2.png",
                 "text": "While saving to buy later, you receive cash rewards from brands directly into your Sunbulah account to help you pay for purchases faster. Get a reward and accelerate your savings!"
             },
             {
@@ -695,6 +695,28 @@
             {
                 "src": "/work/2024/JV-construction/landingPageImg5.svg",
                 "alt": "JV Construction Landing"
+            }
+        ],
+        "ProperSky": [
+            {
+                "src": "/work/2024/propersky/landingPageImg1.png",
+                "alt": "ProperSky Landing"
+            },
+            {
+                "src": "/work/2024/propersky/landingPageImg2.png",
+                "alt": "ProperSky Landing"
+            },
+            {
+                "src": "/work/2024/propersky/landingPageImg3.png",
+                "alt": "ProperSky Landing"
+            },
+            {
+                "src": "/work/2024/propersky/landingPageImg4.png",
+                "alt": "ProperSky Landing"
+            },
+            {
+                "src": "/work/2024/propersky/landingPageImg5.png",
+                "alt": "ProperSky Landing"
             }
         ]
     },

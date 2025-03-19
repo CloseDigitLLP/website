@@ -176,7 +176,7 @@ export default function ProperSky() {
             <div className="container">
               <h3 data-aos="slide-left" className={portfolioDetailsCommon.mainheading}>
                 Innovative design solution <br />
-                <span>JV Construct</span> Showcase
+                <span>Proper Sky</span> Showcase
               </h3>
             </div>
           </div>
@@ -200,11 +200,11 @@ export default function ProperSky() {
         <div className={ProperSkyStyle.landingPageSection}>
           <div className="container">
             <h3 data-aos="slide-left" className={portfolioDetailsCommon.mainheading}>Full Page Preview <br />
-              <span> JV Construction</span> Website Design
+              <span>  Proper Sky</span> Website Design
             </h3>
           </div>
           <div className={ProperSkyStyle.landingPage}>
-            <PreviewSlider images={data.previewSliderData.jv} />
+            <PreviewSlider images={data.previewSliderData.ProperSky} />
           </div>
         </div>
 
@@ -212,7 +212,7 @@ export default function ProperSky() {
         <div className={ProperSkyStyle.circleSection}>
           <div className="container">
             <h3 data-aos="slide-left" className={portfolioDetailsCommon.mainheading}>Color Palette presentation for <br />
-              <span> JV Construction</span> Website Design
+              <span>  Proper Sky</span> Website Design
             </h3>
             <p>The color scheme features a strong primary Gold with background light cream accents for a cohesive look, deep dark tones for strong contrast, creating a modern and professional aesthetic.</p>
           </div>

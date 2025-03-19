@@ -128,12 +128,6 @@ export default function WordWell() {
           </OwlCarousel>
         </div>
       </section>
-
-
-
-
-
-
     </div>
   );
 }

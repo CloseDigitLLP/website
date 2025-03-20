@@ -532,6 +532,24 @@
                 "name": "Adobe XD",
                 "icon": "/work/2024/tech-icons/AdobeXD.svg"
             }
+        ],
+        "amendSoil": [
+            {
+                "name": "UI/UX",
+                "icon": "/work/2024/tech-icons/UIUX.svg"
+            },
+            {
+                "name": "Figma",
+                "icon": "/work/2024/tech-icons/Figma.svg"
+            },
+            {
+                "name": "Adobe Illustrator",
+                "icon": "/work/2024/tech-icons/AdobeIllustrator.svg"
+            },
+            {
+                "name": "Adobe XD",
+                "icon": "/work/2024/tech-icons/AdobeXD.svg"
+            }
         ]
     },
     "sliderdata": {
@@ -653,6 +671,24 @@
             {
                 "image": "/work/2024/hyperstack/sliderImg3.svg",
                 "text": "The second version of the Hyperstack Cloud login screen is designed for simplicity and improved user experience. It only asks for the essentials: email or username and password. This streamlined approach ensures that users can quickly log in without unnecessary steps, making the process faster and more intuitive."
+            }
+        ],
+        "amendSoil" : [
+            {
+                "image": "/work/2024/amend-soil/sliderImg1.png",
+                "text": "This section outlines the core mission of 'Amending the Soil,' emphasizing our commitment to promoting soil health and sustainable practices. It provides a clear overview of our initiatives, educational resources, and how the community can engage with us. The design prioritizes simplicity and accessibility, making it easy for users to understand our goals and participate in upcoming events."
+            },
+            {
+                "image": "/work/2024/amend-soil/sliderImg2.png",
+                "text": "We have designed the events section with two viewing options to enhance user experience. The first option allows users to select specific dates to view events organized accordingly. The second option displays all upcoming events in one section, featuring essential details such as time, date, photo, main heading, short description, and location. This flexible design approach ensures that users can easily find and register for events that interest them."
+            },
+            {
+                "image": "/work/2024/amend-soil/sliderImg3.png",
+                "text": "We have designed the speakers section with two versions. The first version includes photos of the speakers alongside a concise overview of who will be attending the event, providing minimal details for quick reference. The second version features the same photos but adds interactivity; when users hover over a speaker's photo, their social media links are revealed, facilitating easy connections. This dual approach enhances user engagement while keeping the information easily accessible."
+            },
+            {
+                "image": "/work/2024/amend-soil/sliderImg4.png",
+                "text": "We have designed the location section with two versions. The first version features a direction button for easy navigation, accompanied by a map displayed beside the location details, phone number, and email. This layout allows users to quickly find directions while accessing contact information. The second version maintains the same details but positions the map below the information, providing a clear view of both the contact details and the map. This flexible design ensures that users can easily navigate and access relevant information."
             }
         ]
     },

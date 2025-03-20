@@ -2,7 +2,7 @@
 import Head from 'next/head'
 import Camelab from '../components/portfolioDetails/camelab'
 
-export default function VaidPage() {
+export default function CamelabPage() {
     return (
         <>
             <Head>

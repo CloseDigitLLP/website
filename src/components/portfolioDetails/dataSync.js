@@ -84,7 +84,7 @@ export default function DataSync() {
           <img src="/work/2024/dataSync/windowImg2.svg" alt="" />
         </div>
       </div>
-        <p className={portfolioDetailsCommon.bannerSecondaryText}>We design a user-friendly dual-option switch that allows brands and sellers to view and manage their information simultaneously. This innovative feature enhances workflow efficiency, enabling easy toggling between perspectives and quick access to essential data."</p>
+        <p className={portfolioDetailsCommon.bannerSecondaryText}>We design a user-friendly dual-option switch that allows brands and sellers to view and manage their information simultaneously. This innovative feature enhances workflow efficiency, enabling easy toggling between perspectives and quick access to essential data.</p>
       </div>
     </div>
       <TechnologySection data={data.techdata.datasync} />

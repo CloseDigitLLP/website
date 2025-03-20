@@ -550,6 +550,24 @@
                 "name": "Adobe XD",
                 "icon": "/work/2024/tech-icons/AdobeXD.svg"
             }
+        ],
+        "datasync": [
+            {
+                "name": "React",
+                "icon": "/work/2024/tech-icons/React.svg"
+            },
+            {
+                "name": "Material ",
+                "icon": "/work/2024/tech-icons/MaterialUI.svg"
+            },
+            {
+                "name": "Firebase",
+                "icon": "/work/2024/tech-icons/Firebase.svg"
+            },
+            {
+                "name": "Github",
+                "icon": "/work/2024/tech-icons/Github.svg"
+            }
         ]
     },
     "sliderdata": {

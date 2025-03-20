@@ -13,9 +13,9 @@ export default function JVConstruction() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1600,
+      duration: 2000,
       once: true, 
-      offset: 200, 
+      offset: 0, 
     });
   }, []);
   return (
@@ -25,7 +25,7 @@ export default function JVConstruction() {
           <div className={JVStyle.bannerSection}>
             <div className="container">
               <div className={`${JVStyle.sectionContent}`}>
-                <h3 data-aos="slide-left" className={portfolioDetailsCommon.bannerPrimaryText}>Comprehensive Home Renovations <span className={JVStyle.mainheadingSpan}>Transforming spaces with expert.</span>
+                <h3 data-aos="slide-left" className={portfolioDetailsCommon.bannerPrimaryText}>Comprehensive Home Renovations <br /><span className={JVStyle.mainheadingSpan}>Transforming spaces with expert.</span>
                 </h3>
                 <div data-aos="flip-up" className={JVStyle.bannerImg}>
                   <div className={JVStyle.bannerInnerImg}>

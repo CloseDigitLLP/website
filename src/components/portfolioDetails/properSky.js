@@ -12,9 +12,9 @@ export default function ProperSky() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1600,
+      duration: 2000,
       once: true, 
-      offset: 200, 
+      offset: 0, 
     });
   }, []);
 
@@ -135,7 +135,7 @@ export default function ProperSky() {
 
         <div className={ProperSkyStyle.bannerHeadText}>
           <div className="container">
-            <h3 data-aos="slide-left" className={portfolioDetailsCommon.bannerPrimaryText}>
+            <h3 data-aos="slide-left" className={`${portfolioDetailsCommon.bannerPrimaryText} mt-0`}>
               Empowering Your Business <br />
               <span>With Secure Data and Smooth IT Operations.</span>
             </h3>

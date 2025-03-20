@@ -54,7 +54,7 @@ export default function WordWell() {
       <div className={wordWellStyle.bannerSection}>
         <div className="container">
           <div className={`${wordWellStyle.sectionContent}`}>
-            <h3 data-aos="slide-left" className={portfolioDetailsCommon.bannerPrimaryText}>Comprehensive Home Renovations <span className={wordWellStyle.mainheadingSpan}>Transforming spaces with expert.</span>
+            <h3 data-aos="slide-left" className={portfolioDetailsCommon.bannerPrimaryText}>Comprehensive Home Renovations <br /><span className={wordWellStyle.mainheadingSpan}>Transforming spaces with expert.</span>
             </h3>
             <div data-aos="flip-up" className={wordWellStyle.bannerImg}>
               <div className={wordWellStyle.bannerInnerImg}>
@@ -128,12 +128,6 @@ export default function WordWell() {
           </OwlCarousel>
         </div>
       </section>
-
-
-
-
-
-
     </div>
   );
 }

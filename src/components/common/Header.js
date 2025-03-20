@@ -10,7 +10,7 @@ export default function Header() {
 
   useEffect(() => {
     if (window) {
-      const nonStickyPages = ['/Vaid','/FBN','/JVConstruction','/ProperSky','/Directory','/WordWell','/Law'];
+      const nonStickyPages = [''];
       if (!nonStickyPages.includes(router.pathname)) {
         window.addEventListener('scroll', stickNavbar);
       }
@@ -31,13 +31,13 @@ export default function Header() {
         <nav className={`navbar navbar-expand-lg navbar-light`}>
           <div className="container-fluid p-0">
             <Link href="/" className="navbar-brand">
-                <Image
-                  src={require('../../assets/images/CloseDigit-lg.svg')}
-                  alt="logo"
-                  width={220}
-                  height={30}
-                  className={`${headerStyle.logoPart}`}
-                />
+              <Image
+                src={require('../../assets/images/CloseDigit-lg.svg')}
+                alt="logo"
+                width={220}
+                height={30}
+                className={`${headerStyle.logoPart}`}
+              />
             </Link>
             <button
               className="navbar-toggler"
@@ -68,13 +68,13 @@ export default function Header() {
               <ul className={`${headerStyle.navbarNav} navbar-nav`}>
                 <li className={`${headerStyle.mobileLogo}`}>
                   <Link href="/" className="navbar-brand">
-                      <Image
-                        src={require('../../assets/images/CloseDigit-lg.svg')}
-                        alt="logo"
-                        width={220}
-                        height={30}
-                        className={`${headerStyle.logoPart}`}
-                      />
+                    <Image
+                      src={require('../../assets/images/CloseDigit-lg.svg')}
+                      alt="logo"
+                      width={220}
+                      height={30}
+                      className={`${headerStyle.logoPart}`}
+                    />
                   </Link>
                 </li>
                 <li
@@ -87,9 +87,8 @@ export default function Header() {
                 >
                   <Link href="/">
                     <span
-                      className={`${headerStyle.navLink} ${
-                        router.pathname === '/' ? headerStyle.active : ''
-                      } nav-link`}
+                      className={`${headerStyle.navLink} ${router.pathname === '/' ? headerStyle.active : ''
+                        } nav-link`}
                       aria-current="page"
                     >
                       Home
@@ -106,9 +105,8 @@ export default function Header() {
                 >
                   <Link href="/AboutUs">
                     <span
-                      className={`${headerStyle.navLink} ${
-                        router.pathname === '/AboutUs' ? headerStyle.active : ''
-                      } nav-link`}
+                      className={`${headerStyle.navLink} ${router.pathname === '/AboutUs' ? headerStyle.active : ''
+                        } nav-link`}
                     >
                       About Us
                     </span>
@@ -124,9 +122,8 @@ export default function Header() {
                 >
                   <Link href="/Services">
                     <span
-                      className={`${headerStyle.navLink} ${
-                        router.pathname === '/Services' ? headerStyle.active : ''
-                      } nav-link`}
+                      className={`${headerStyle.navLink} ${router.pathname === '/Services' ? headerStyle.active : ''
+                        } nav-link`}
                     >
                       Services
                     </span>
@@ -142,9 +139,8 @@ export default function Header() {
                 >
                   <Link href="/Portfolio">
                     <span
-                      className={`${headerStyle.navLink} ${
-                        router.pathname === '/Portfolio' ? headerStyle.active : ''
-                      } nav-link`}
+                      className={`${headerStyle.navLink} ${router.pathname === '/Portfolio' ? headerStyle.active : ''
+                        } nav-link`}
                     >
                       Our Work
                     </span>
@@ -160,9 +156,8 @@ export default function Header() {
                 >
                   <Link href="/Technology">
                     <span
-                      className={`${headerStyle.navLink} ${
-                        router.pathname === '/Technology' ? headerStyle.active : ''
-                      } nav-link`}
+                      className={`${headerStyle.navLink} ${router.pathname === '/Technology' ? headerStyle.active : ''
+                        } nav-link`}
                     >
                       Technology
                     </span>

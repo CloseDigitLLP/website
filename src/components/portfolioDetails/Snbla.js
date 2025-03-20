@@ -215,10 +215,12 @@ export default function Snbla() {
         <div className={snblaStyles['snbla-section']}>
             <div className={snblaStyles['banner-section']}>
                 <div  className="container">
-                    <h2 data-aos="slide-left" className={snblaStyles['main-heading']}>
+                  <div className="overflow-hidden">
+                  <h2 data-aos="slide-left" className={snblaStyles['main-heading']}>
                         Shop Now, Pay Later <br />
                         <span>No Fees, No Credit Cards!</span>
                     </h2>
+                  </div>
                      {/*<div className={snblaStyles['video-part']}>
                         <div className={snblaStyles['video-container']}>
                             <video

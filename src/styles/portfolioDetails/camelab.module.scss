@@ -3,10 +3,10 @@
 // banner section
 
 .camelab-section .banner-section {
-  margin-top: 174px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    margin-top: 174px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .banner-section .banner-heading-section {
@@ -42,53 +42,7 @@
   width: 82%;
 }
 
-.banner-section .banner-img-part {
-  margin-top: 64px;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  position: relative;
-}
-
-.banner-section .banner-img-part .laptop-img {
-  width: 100%;
-  height: auto;
-  z-index: 1;
-  transition: transform 1s ease-out;
-}
-
-.banner-section .banner-img-part .mobile-img-section {
-  z-index: 10;
-}
-
-.banner-section .banner-img-part .mobile-img {
-  width: 100%;
-  height: auto;
-  transition: transform 1s ease-out;
-  position: relative;
-  right: 60%;
-  top: 16%;
-}
-
-// banner animation
-
-.initial-laptop {
-  transform: translateX(-100%);
-}
-
-.animate-laptop {
-  transform: translateX(0);
-}
-
-.initial-mobile {
-  transform: translateX(100%);
-}
-
-.animate-mobile {
-  transform: translateX(0);
-}
-
-// showcase section
+// showcase section 
 
 .camelab-section .showcase-section {
   margin-top: 144px;
@@ -359,15 +313,9 @@
     width: 100%;
   }
 
-  .banner-section .banner-img-part {
-    width: 80%;
-    margin: auto;
-    margin-top: 44px;
-  }
-
-  .banner-section .banner-text-part {
-    margin-top: 44px;
-  }
+    .banner-section .banner-text-part {
+        margin-top: 44px;
+    }
 
   .banner-section .banner-text-part .banner-text {
     font-size: 20px;
@@ -472,13 +420,9 @@
     margin-top: 36px;
   }
 
-  .banner-section .banner-text-part {
-    margin-top: 36px;
-  }
-
-  .banner-section .banner-text-part .banner-text {
-    font-size: 16px;
-  }
+    .banner-section .banner-text-part {
+        margin-top: 36px;
+    }
 
   .camelab-section .showcase-section {
     margin-top: 60px;

@@ -1,4 +1,3 @@
-
 import Head from 'next/head'
 import MvinTage from '../components/portfolioDetails/mvinTage'
 

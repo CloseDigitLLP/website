@@ -6,6 +6,8 @@ import data from '../../resources/portfolioDetails.json'
 import Slider from './portfolioDetailsCommon/slider';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import TechnologySection from './portfolioDetailsCommon/technologySection';
+
 
 export default function FBN() {
 
@@ -41,135 +43,7 @@ export default function FBN() {
                 </div>
                 {/* tools and technology section  */}
                 <div>
-                    <div className={fbnStyles.MovingTechnologySection}>
-                        <div className={fbnStyles.movingSection}>
-                            <div className={fbnStyles.movingContainer}>
-                                <div className={fbnStyles.content}>
-                                    <Image className={fbnStyles.movingImg}
-                                        src='/work/2024/fbn/tech-img1.svg'
-                                        alt="Animated"
-                                        height={100}
-                                        width={100}
-                                    />
-                                    <Image className={`${fbnStyles.movingImg}`}
-                                        src='/work/2024/fbn/tech-img2.svg'
-                                        alt="Animated"
-                                        height={100}
-                                        width={100}
-                                    />
-                                    <Image className={fbnStyles.movingImg}
-                                        src='/work/2024/fbn/tech-img3.svg'
-                                        alt="Animated"
-                                        height={100}
-                                        width={100}
-                                    />
-                                    <Image className={fbnStyles.movingImg}
-                                        src='/work/2024/fbn/tech-img4.svg'
-                                        alt="Animated"
-                                        height={100}
-                                        width={100}
-                                    />
-                                    <Image className={fbnStyles.movingImg}
-                                        src='/work/2024/fbn/tech-img5.svg'
-                                        alt="Animated"
-                                        height={100}
-                                        width={100}
-                                    />
-                                    <Image className={fbnStyles.movingImg}
-                                        src='/work/2024/fbn/tech-img6.svg'
-                                        alt="Animated"
-                                        height={100}
-                                        width={100}
-                                    />
-                                    <Image className={fbnStyles.movingImg}
-                                        src='/work/2024/fbn/tech-img7.svg'
-                                        alt="Animated"
-                                        height={100}
-                                        width={100}
-                                    />
-                                    <Image className={fbnStyles.movingImg}
-                                        src='/work/2024/fbn/tech-img8.svg'
-                                        alt="Animated"
-                                        height={100}
-                                        width={100}
-                                    />
-                                    <Image className={fbnStyles.movingImg}
-                                        src='/work/2024/fbn/tech-img9.svg'
-                                        alt="Animated"
-                                        height={100}
-                                        width={100}
-                                    />
-                                    <Image className={fbnStyles.movingImg}
-                                        src='/work/2024/fbn/tech-img10.svg'
-                                        alt="Animated"
-                                        height={100}
-                                        width={100}
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <div className={fbnStyles.movingSection}>
-                            <div className={fbnStyles.movingContainer2}>
-                                <div className={fbnStyles.content}>
-
-                                    <Image className={fbnStyles.movingImg}
-                                        src='/work/2024/fbn/tech-img11.svg'
-                                        alt="Animated"
-                                        height={100}
-                                        width={100}
-                                    />
-                                    <Image className={fbnStyles.movingImg}
-                                        src='/work/2024/fbn/tech-img12.svg'
-                                        alt="Animated"
-                                        height={100}
-                                        width={100}
-                                    />
-                                    <Image className={fbnStyles.movingImg}
-                                        src='/work/2024/fbn/tech-img13.svg'
-                                        alt="Animated"
-                                        height={100}
-                                        width={100}
-                                    />
-                                    <Image className={fbnStyles.movingImg}
-                                        src='/work/2024/fbn/tech-img14.svg'
-                                        alt="Animated"
-                                        height={100}
-                                        width={100}
-                                    />
-                                    <Image className={fbnStyles.movingImg}
-                                        src='/work/2024/fbn/tech-img15.svg'
-                                        alt="Animated"
-                                        height={100}
-                                        width={100}
-                                    />
-                                    <Image className={fbnStyles.movingImg}
-                                        src='/work/2024/fbn/tech-img16.svg'
-                                        alt="Animated"
-                                        height={100}
-                                        width={100}
-                                    />
-                                    <Image className={fbnStyles.movingImg}
-                                        src='/work/2024/fbn/tech-img17.svg'
-                                        alt="Animated"
-                                        height={100}
-                                        width={100}
-                                    />
-                                    <Image className={fbnStyles.movingImg}
-                                        src='/work/2024/fbn/tech-img18.svg'
-                                        alt="Animated"
-                                        height={100}
-                                        width={100}
-                                    />
-                                    <Image className={fbnStyles.movingImg}
-                                        src='/work/2024/fbn/tech-img19.svg'
-                                        alt="Animated"
-                                        height={100}
-                                        width={100}
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <TechnologySection data={data.techdata.FBN} />
                 </div>
                 {/* Additional Content */}
                 <section className={fbnStyles['vaidCardsSection']}>

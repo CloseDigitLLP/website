@@ -4,6 +4,7 @@ import Slider from './portfolioDetailsCommon/slider';
 import data from '../../resources/portfolioDetails.json';
 import TechnologySection from './portfolioDetailsCommon/technologySection';
 import dynamic from 'next/dynamic';
+import BannerSection from './portfolioDetailsCommon/ScrollBanner';
 
 const ScrollMagic = dynamic(() => import('scrollmagic'), { ssr: false });
 const ScrollMagicController = dynamic(() => import('scrollmagic').then(mod => mod.Controller), { ssr: false });
@@ -15,10 +16,6 @@ export default function Schenk() {
     const [textLength, setTextLength] = useState(0);
     const [typingStarted, setTypingStarted] = useState(false);
 
-    useEffect(() => {
-        document.querySelector(`.${schenkStyles['laptop-img']}`).classList.add(schenkStyles['animate-laptop']);
-        document.querySelector(`.${schenkStyles['mobile-img']}`).classList.add(schenkStyles['animate-mobile']);
-    }, []);
 
     useEffect(() => {
         const ScrollMagic = require('scrollmagic');
@@ -55,22 +52,7 @@ export default function Schenk() {
                         </h2>
                     </div>
                 </div>
-                <div className={schenkStyles['banner-img-part']}>
-                    <div>
-                        <img
-                            src='/work/2024/schenk/banner-laptop.png'
-                            alt="schenk laptop screen"
-                            className={`${schenkStyles['laptop-img']} ${schenkStyles['initial-laptop']}`}
-                        />
-                    </div>
-                    <div className={schenkStyles['mobile-img-section']}>
-                        <img
-                            src='/work/2024/schenk/banner-mobile.png'
-                            alt=" schenk mobile screen"
-                            className={`${schenkStyles['mobile-img']} ${schenkStyles['initial-mobile']}`}
-                        />
-                    </div>
-                </div>
+                <BannerSection laptopImg_Src='/work/2024/schenk/banner-laptop.png' mobileImg_Src='/work/2024/schenk/banner-mobile.png' />
                 <div className='container'>
                     <div className={schenkStyles['banner-text-part']}>
                         <p className={schenkStyles['banner-text']}>

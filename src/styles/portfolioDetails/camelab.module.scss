@@ -42,53 +42,6 @@
     width: 82%;
 }
 
-.banner-section .banner-img-part {
-    margin-top: 64px;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    position: relative;
-}
-
-.banner-section .banner-img-part .laptop-img {
-    width: 100% ;
-    height: auto ;
-    z-index: 1;
-    transition: transform 1s ease-out;
-}
-
-.banner-section .banner-img-part .mobile-img-section {
-    z-index: 10;
-}
-
-.banner-section .banner-img-part .mobile-img {
-    width: 100% ;
-    height: auto ;
-    transition: transform 1s ease-out;
-    position: relative;
-    right: 60% ;
-    top: 16% ;
-}
-
-// banner animation
-
-.initial-laptop {
-    transform: translateX(-100%);
-}
-
-.animate-laptop {
-    transform: translateX(0);
-}
-
-.initial-mobile {
-    transform: translateX(100%);
-}
-
-.animate-mobile {
-    transform: translateX(0);
-}
-
-
 // showcase section 
 
 .camelab-section .showcase-section {
@@ -347,12 +300,6 @@
         width: 100%;
     }
 
-    .banner-section .banner-img-part {
-        width: 80%;
-        margin: auto;
-        margin-top: 44px;
-    }
-
     .banner-section .banner-text-part {
         margin-top: 44px;
     }
@@ -456,10 +403,6 @@
 
     .feature-section h2 span{
         font-size: 38px;
-    }
-
-    .banner-section .banner-img-part {
-        margin-top: 36px;
     }
 
     .banner-section .banner-text-part {

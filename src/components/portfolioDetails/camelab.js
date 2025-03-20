@@ -5,10 +5,15 @@ import dynamic from 'next/dynamic';
 import TechnologySection from './portfolioDetailsCommon/technologySection';
 import data from '../../resources/portfolioDetails.json'
 import Slider from './portfolioDetailsCommon/slider';
+import portfolioDetailsCommon from '../../styles/portfolioDetails/portfolioDetailsCommon.module.scss';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import BannerSection from './portfolioDetailsCommon/ScrollBanner';
 
 const ScrollMagic = dynamic(() => import('scrollmagic'), { ssr: false });
 const ScrollMagicController = dynamic(() => import('scrollmagic').then(mod => mod.Controller), { ssr: false });
 
+gsap.registerPlugin(ScrollTrigger);
 export default function CamelabPage() {
 
     const controller = useRef(null);
@@ -17,10 +22,6 @@ export default function CamelabPage() {
     const [textLength, setTextLength] = useState(0);
     const [typingStarted, setTypingStarted] = useState(false);
 
-    useEffect(() => {
-        document.querySelector(`.${CamelabStyle['laptop-img']}`).classList.add(CamelabStyle['animate-laptop']);
-        document.querySelector(`.${CamelabStyle['mobile-img']}`).classList.add(CamelabStyle['animate-mobile']);
-    }, []);
 
     useEffect(() => {
         const ScrollMagic = require('scrollmagic');
@@ -173,6 +174,9 @@ export default function CamelabPage() {
         }
     }, [typingStarted, text, textLength]);
 
+
+
+
     return (
         <>
             <div className={CamelabStyle['camelab-section']}>
@@ -186,23 +190,8 @@ export default function CamelabPage() {
                             </h2>
                         </div>
                     </div>
-                    <div className={CamelabStyle['banner-img-part']}>
-                        <div>
-                            <img
-                                src="/work/2024/camelab/camelabLaptopScreen.png"
-                                alt="camelab laptop screen"
-                                className={`${CamelabStyle['laptop-img']} ${CamelabStyle['initial-laptop']}`}
-                                width="100%"
-                            />
-                        </div>
-                        <div className={CamelabStyle['mobile-img-section']}>
-                            <img
-                                src="/work/2024/camelab/camelabMobileScreen.png"
-                                alt=" camelab mobile screen"
-                                className={`${CamelabStyle['mobile-img']} ${CamelabStyle['initial-mobile']}`}
-                            />
-                        </div>
-                    </div>
+
+                    <BannerSection />
                     <div className='container'>
                         <div className={CamelabStyle['banner-text-part']}>
                             <p className={CamelabStyle['banner-text']}>

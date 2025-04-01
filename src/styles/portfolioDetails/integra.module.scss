@@ -1,0 +1,319 @@
+@import '../variable.module.scss';
+
+.integra-section .banner-section {
+    margin-top: 174px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.banner-section .banner-heading-section {
+    width: 80%;
+}
+
+.main-heading {
+    font-family: 'Poppins';
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: $textColor;
+}
+
+.main-heading span {
+    color: #0038C0;
+}
+
+.banner-section .banner-text-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.banner-section .banner-text-part .banner-text {
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 500;
+    text-align: left;
+    color: #212529;
+    width: 82%;
+}
+
+.banner-section .banner-img-part {
+    margin-top: 64px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.banner-section .banner-img-part .laptop-img {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    transition: transform 1s ease-out;
+}
+
+.banner-section .banner-img-part .mobile-img-section {
+    z-index: 10;
+}
+
+.banner-section .banner-img-part .mobile-img {
+    width: 100%;
+    height: auto;
+    transition: transform 1s ease-out;
+    position: relative;
+    right: 60%;
+    top: 16%;
+}
+
+// banner animation
+
+.initial-laptop {
+    transform: translateX(-100%);
+}
+
+.animate-laptop {
+    transform: translateX(0);
+}
+
+.initial-mobile {
+    transform: translateX(100%);
+}
+
+.animate-mobile {
+    transform: translateX(0);
+}
+
+// show-case section 
+
+.showcase-section {
+    padding: 80px 0px;
+    overflow: hidden;
+
+    @media screen and (max-width: 768px) {
+        padding: 30px 0;
+    }
+    
+    .step-section:nth-of-type(2){
+        @media screen and (max-width: 768px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .step-section {
+        display: flex;
+        align-items: start;
+        margin-top: 64px;
+        gap: 50px;
+
+        @media screen and (max-width: 768px) {
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .step-img-part {
+            width: 55%;
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .step-content {
+            width: 45%;
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+
+            h4 {
+                font-family: 'Poppins';
+                font-size: 40px;
+                font-weight: 500;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: #212529;
+                margin-top: 32px;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 28px;
+                    margin-top: 16px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    font-size: 20px;
+                }
+    
+            }
+
+            p {
+                font-family: 'Poppins';
+                font-size: 20px;
+                font-weight: 400;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: #919EAB;
+                margin-top: 32px;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 16px;
+                    margin-top: 16px;
+                }
+
+                @media screen and (max-width: 520px) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+// technology section 
+
+.technology-section {
+    padding-top: 40px;
+
+    @media screen and (max-width: 768px) {
+        padding-top: 20px;
+    }
+}
+
+// color pallet
+.colorPalletContainer {
+    padding-top: 70px;
+    overflow: hidden;
+
+    @media screen and (max-width: 768px) {
+        padding-top: 20px;
+    }
+
+    p {
+        font-family: "Poppins";
+        font-size: 18px;
+        font-weight: 400;
+        color: #919EAB;
+    }
+
+    .colorPalette1 .imageContainer::before {
+        content: "Blue";
+    }
+
+    .colorPalette2 .imageContainer::before {
+        content: "Black Text ";
+    }
+
+    .colorPalette3 .imageContainer::before {
+        content: "Light Text";
+    }
+
+    .colorPalette4 .imageContainer::before {
+        content: "White";
+        color: #637381;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .main-heading {
+        font-size: 44px;
+    }
+
+    .banner-section .banner-heading-section {
+        width: 100%;
+    }
+
+    .banner-section .banner-img-part {
+        width: 80%;
+        margin: auto;
+        margin-top: 44px;
+    }
+
+    .banner-section .banner-text-part {
+        margin-top: 44px;
+    }
+
+    .banner-section .banner-text-part .banner-text {
+        font-size: 20px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .banner-section {
+        padding-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .main-heading {
+        font-size: 44px;
+    }
+
+    .banner-section .banner-heading-section {
+        width: 100%;
+    }
+
+    .banner-section .banner-img-part {
+        width: 80%;
+        margin: auto;
+        margin-top: 44px;
+    }
+
+    .banner-section .banner-text-part {
+        margin-top: 44px;
+    }
+
+    .banner-section .banner-text-part .banner-text {
+        font-size: 20px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+
+    .integra-section .banner-section {
+        margin-top: 140px;
+    }
+
+    .main-heading {
+        font-size: 36px;
+    }
+
+    .banner-section .banner-img-part {
+        margin-top: 36px;
+    }
+
+    .banner-section .banner-text-part {
+        margin-top: 36px;
+    }
+
+    .banner-section .banner-text-part .banner-text {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 520px) {
+    .main-heading {
+        font-size: 24px;
+    }
+
+    .banner-section .banner-text-part .banner-text {
+        font-size: 14px;
+    }
+
+}

@@ -1,0 +1,186 @@
+
+.bannerSection {
+    overflow: hidden;
+
+    p {
+        margin-top: 50px;
+
+        @media (max-width: 690px) {
+            margin-top: 0px;
+        }
+    }
+
+    h3 {
+        @media (max-width: 690px) {
+            margin-bottom: 0px;
+        }
+    }
+
+    .bannerImg {
+        background-image: url("/work/2024/JV-construction/laptop-mockup.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width: 690px) {
+            height: 386px;
+        }
+
+        @media (max-width: 420px) {
+            height: 270px;
+        }
+    }
+
+    .bannerInnerImg {
+        position: absolute;
+        background-color: #beb68d;
+        width: 54%;
+        top: 15px;
+        left: 23%;
+        height: 435px;
+        right: 0;
+        padding: 20px 20px 100px 20px;
+        background-image: url('/work/2024/amend-soil/banner-img.png');
+        background-size: cover;
+        background-repeat: repeat;
+        animation: moveUp 30s linear infinite;
+
+        @media (max-width: 1200px) {
+            width: 70%;
+            left: 15%;
+        }
+
+        @media (max-width: 992px) {
+            width: 72%;
+            left: 14%;
+        }
+
+        @media (max-width: 848px) {
+            width: 78%;
+            left: 11%;
+            height: 400px;
+            top: 35px;
+        }
+
+        @media (max-width: 770px) {
+            height: 360px;
+            top: 60px;
+        }
+
+        @media (max-width: 690px) {
+            height: 250px;
+            top: 55px;
+        }
+
+        @media (max-width: 512px) {
+            height: 228px;
+            top: 76px;
+        }
+
+        @media (max-width: 470px) {
+            height: 202px;
+            top: 85px;
+        }
+
+        @media (max-width: 420px) {
+            height: 175px;
+            top: 38px;
+        }
+
+        @media (max-width: 375px) {
+            height: 160px;
+            top: 51px;
+        }
+    }
+}
+
+.showcaseSection{
+    margin-top: 160px;
+
+    @media (max-width: 991px) {
+        margin-top: 80px;   
+    }
+
+    @media (max-width: 520px) {
+        margin-top: 40px;   
+    }
+
+    h3{
+        padding-left:0;
+
+        br{
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        background-position: 0 -100%;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.mainheadingSpan {
+    color: #867362;
+}
+
+
+// color pallet
+.colorPalletContainer {
+    padding-top: 70px;
+    overflow: hidden;
+
+    @media (max-width: 991px) {
+        padding-top: 40px;
+    }
+
+    @media (max-width: 520px) {
+        padding-top: 0;
+    }
+
+    p {
+        font-family: "Poppins";
+        font-size: 18px;
+        font-weight: 400;
+        color: #919EAB;
+
+        @media (max-width: 991px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 520px) {
+            font-size: 14px;
+        }
+    }
+
+    .colorPalette1 .imageContainer::before {
+        content: "Dark Walnut";
+    }
+
+    .colorPalette2 .imageContainer::before {
+        content: "taupe";
+        color: #51371E;
+    }
+
+    .colorPalette3 .imageContainer::before {
+        content: "Light Gold";
+        color: #51371E;
+    }
+
+    .colorPalette4 .imageContainer::before {
+        content: "Cream";
+        color: #51371E;
+    }
+}

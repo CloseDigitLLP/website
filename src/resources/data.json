@@ -2,19 +2,19 @@
   "reviews": [
     {
       "name": "David Ozersky",
-      "image_path": "images/client/David.jpeg",
+      "image_path": "/client/David.jpeg",
       "comment": "Excellent management and delivery. They provide information, thoughts, and ideas so we can produce a better project.",
       "position": "CEO"
     },
     {
       "name": "Hashem",
-      "image_path": "images/client/hasem.png",
+      "image_path": "/client/hasem.png",
       "comment": "Aditi and her team is so responsive and get the job done as required… no matter how many revisions I through at her she does the job successfully",
       "position": "Founder & Chief Evangelist"
     },
     {
       "name": "Ibukun Bello",
-      "image_path": "images/client/ibukun.jpeg",
+      "image_path": "/client/ibukun.jpeg",
       "comment": "Excellent communication and fantastic work. I will recommend Aditi to anyone that wants a fast, clean code and beautiful pixel perfect design.",
       "position": "CTO"
     },
@@ -26,7 +26,7 @@
     },
     {
       "name": "Sean Freitas",
-      "image_path": "images/client/sean.jpeg",
+      "image_path": "/client/sean.jpeg",
       "comment": "We are very happy to work with Rajan, it is very easy to get along with him, his work is very good and the deadlines are very short. Is very fast. We will hire him again for other jobs.",
       "position": "web developer"
     },
@@ -44,7 +44,7 @@
     },
     {
       "name": "Vlas Zubenko",
-      "image_path": "images/client/VIas.jpeg",
+      "image_path": "/client/VIas.jpeg",
       "comment": "Rajan is an exceptional Full stack developer, consistently delivering high-quality code and displaying a keen eye for design. His work is a true testament to his expertise and dedication in the field.",
       "position": "Frontend developer"
     }

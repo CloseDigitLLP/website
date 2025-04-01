@@ -1,0 +1,184 @@
+@import '../variable.module.scss';
+
+
+
+.brand-part .project-info {
+    opacity: 0;
+    scale: 1;
+    transition: opacity 0.5s ease;
+}
+
+.brand-part .project-info .project-title {
+    background: inherit;
+    margin-top: -55px;
+    backdrop-filter: blur(4px);
+    background: #ffffff77;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+
+.brand-part .brand-info {
+    padding: 0 16px;
+}
+
+
+.tab-section {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tab-section .tab-bar {
+    margin-bottom: 70px;
+}
+
+.brand-part {
+    display: flex;
+    column-gap: 32px;
+    margin-bottom: 32px;
+}
+
+.brand-part img {
+    width: 100%;
+    cursor: pointer;
+    margin: 0 0 6px 0 !important;
+}
+
+.brand-part h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #16085E;
+    padding: 10px;
+}
+
+.brand-part .tech-logo p {
+    font-size: 10px;
+    margin-bottom: 0px;
+    color: black;
+}
+
+.brand-part .tech-logo {
+    display: flex !important;
+    column-gap: 20px;
+    transition: 0.5s all ease;
+}
+
+.brand-part .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.brand-part .logo img {
+    width: auto !important;
+}
+
+.brand-part .tech-logo img {
+    margin-bottom: 0px !important;
+}
+
+
+.title-part {
+    margin: 80px 0 32px 0;
+}
+
+
+.imgBox{
+    transition: 0.5s ease-out;
+    transform: scale(0.9) !important;
+    opacity: 0.5;
+}
+
+.imgBox.scale-up{
+    transform: scale(1) !important;
+    transition: 0.5s ease-out;
+    opacity: 1;
+}
+
+.imgBox.scale-up:hover+.project-info{
+    opacity: 1;
+}
+.clientCarousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clientCarousel img{
+    width: 100% !important;
+    height: auto !important;
+   
+}
+
+@media screen and (max-width:1024px) {
+
+    .imgBox.scale-up +.project-info{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .brand-part h3 {
+        font-size: 20px;
+    }
+
+    .brand-part .project-info .project-title {
+        margin-top: -40px;
+    }
+
+    .brand-part {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: 14px;
+        margin-bottom: 0px;
+    }
+
+    .brand-part .brand-info {
+        padding: 0 16px;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+
+@media screen and (max-width:520px) {
+    .brand-part .project-info .project-title {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .brand-part .brand-info {
+        padding: 0 16px;
+        margin-bottom: 35px;
+    }
+
+    .brand-part h3 {
+        font-size: 14px;
+    }
+
+    .brand-part .tech-logo p {
+        font-size: 8px;
+    }
+
+    .brand-part .tech-logo img {
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    .brand-part .tech-logo {
+        flex-wrap: wrap;
+        column-gap: 16px;
+        row-gap: 10px;
+    }
+
+    .imgBox{
+        transition: 0.5s ease-out;
+        transform: scale(0.6) !important;
+        opacity: 0.5;
+    }
+}

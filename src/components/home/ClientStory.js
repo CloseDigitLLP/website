@@ -30,9 +30,10 @@ export default function ClientStory() {
             </div>
             <div className='container'>
                 <div>
-                    <OwlCarousel 
+                    <OwlCarousel
                         loop
                         nav={false}
+                        autoplay={true}
                         responsive={{
                             0: {
                                 items: 1
@@ -59,31 +60,31 @@ export default function ClientStory() {
                                         <div className={`${clientStoryStyle.testimonialBlock}`}>
                                             <div className={`${clientStoryStyle.center}`}>
                                                 <span className={`${clientStoryStyle.star}`}>
-                                                    <Image
+                                                    <Image width={16} height={16}
                                                         src={require('../../assets/images/star.svg')}
                                                         alt="star"
                                                     />
                                                 </span>
                                                 <span className={`${clientStoryStyle.star}`}>
-                                                    <Image
+                                                    <Image width={16} height={16}
                                                         src={require('../../assets/images/star.svg')}
                                                         alt="star"
                                                     />
                                                 </span>
                                                 <span className={`${clientStoryStyle.star}`}>
-                                                    <Image
+                                                    <Image width={16} height={16}
                                                         src={require('../../assets/images/star.svg')}
                                                         alt="star"
                                                     />
                                                 </span>
                                                 <span className={`${clientStoryStyle.star}`}>
-                                                    <Image
+                                                    <Image width={16} height={16}
                                                         src={require('../../assets/images/star.svg')}
                                                         alt="star"
                                                     />
                                                 </span>
                                                 <span className={`${clientStoryStyle.star}`}>
-                                                    <Image
+                                                    <Image width={16} height={16}
                                                         src={require('../../assets/images/star.svg')}
                                                         alt="star"
                                                     />
@@ -94,8 +95,10 @@ export default function ClientStory() {
                                             </div>
                                             <div className={`${clientStoryStyle.profile}`}>
                                                 {review.image_path ? (<Image
-                                                    src={require(`../../assets/${review.image_path}`)}
+                                                    src={review.image_path}
                                                     alt="client"
+                                                    width={70}
+                                                    height={70}
                                                 />) : (<div className={`${clientStoryStyle.namePart}`}>{initial}</div>)}
                                             </div>
                                             <div className={`${clientStoryStyle.ClientName}`}>

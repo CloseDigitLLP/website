@@ -1,23 +1,9 @@
 @import "../variable.module.scss";
 
-.owl-carousel {
-  .owl-stage-outer {
-    display: grid;
-
-    .owl-stage {
-      display: flex;
-      height: 100%;
-
-      .owl-item {
-        height: 100%;
-      }
-    }
-  }
-}
-
 .item{
   display: grid;
 }
+
 .namePart {
   height: 70px;
   width: 70px;

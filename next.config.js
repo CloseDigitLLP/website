@@ -7,6 +7,7 @@ const nextConfig = {
         // your project has ESLint errors.
         ignoreDuringBuilds: true,
     },
+    
     reactStrickMode: true,
     webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
         config.plugins.push(
@@ -29,3 +30,6 @@ const nextConfig = {
     }
 };
 module.exports = withAxiom(nextConfig);
+module.exports = {
+    reactStrictMode: true,
+  };

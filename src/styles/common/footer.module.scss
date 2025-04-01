@@ -1,7 +1,7 @@
 @import '../variable.module.scss';
 
 
-.footerSection{
+.footerSection {
     position: relative;
     color: #fff;
     // background: url('../../../public/images/project-banner.jpg');
@@ -10,7 +10,8 @@
     background-position: center;
     z-index: 1;
     padding: 80px 0 0px 0;
-    &::after{
+
+    &::after {
         content: "";
         position: absolute;
         z-index: -1;
@@ -24,7 +25,8 @@
         background-image: linear-gradient(-135deg, #16085e 0%, #4949dd 100%);
         // background-image: linear-gradient(-127deg, #4949dd 0%, #16085e 100%);
     }
-    &:after{
+
+    &:after {
         content: "";
         position: absolute;
         z-index: -1;
@@ -37,83 +39,97 @@
         overflow: hidden;
         width: 100%;
         height: 100%;
-        background: rgb(39,24,117);
-background: linear-gradient(127deg, rgba(39,24,117,1) 0%, rgba(73,73,221,1) 70%);
-background: rgb(39,24,117);
-background: -moz-linear-gradient(127deg, rgba(39,24,117,1) 0%, rgba(73,73,221,1) 70%);
-background: -webkit-linear-gradient(127deg, rgba(39,24,117,1) 0%, rgba(73,73,221,1) 70%);
-background: linear-gradient(127deg, rgba(39,24,117,1) 0%, rgba(73,73,221,1) 70%);
-// filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=“#271875”,endColorstr=“#4949DD”,GradientType=1);
+        background: rgb(39, 24, 117);
+        background: linear-gradient(127deg, rgba(39, 24, 117, 1) 0%, rgba(73, 73, 221, 1) 70%);
+        background: rgb(39, 24, 117);
+        background: -moz-linear-gradient(127deg, rgba(39, 24, 117, 1) 0%, rgba(73, 73, 221, 1) 70%);
+        background: -webkit-linear-gradient(127deg, rgba(39, 24, 117, 1) 0%, rgba(73, 73, 221, 1) 70%);
+        background: linear-gradient(127deg, rgba(39, 24, 117, 1) 0%, rgba(73, 73, 221, 1) 70%);
+        // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=“#271875”,endColorstr=“#4949DD”,GradientType=1);
     }
 }
-.description{
+
+.description {
     margin: 30px 0;
     font-size: 16px;
     line-height: 27px;
     // text-transform: capitalize;
     letter-spacing: 0.5px;
-    p{
+
+    p {
         max-width: 88%;
     }
 }
-.social-icon{
+
+.social-icon {
     font-size: 35px;
     color: #fff;
     margin-right: 16px;
-    &:hover{
+
+    &:hover {
         color: $textColor;
     }
 }
-.footer-heading{
+
+.footer-heading {
     font-size: 20px;
     font-weight: 600;
 }
-.link{
+
+.link {
     display: block;
     line-height: 30px;
     font-size: 16px;
     margin-bottom: 8px;
     margin-left: 3px;
-    &.withoutLink{
-        cursor:default;
+
+    &.withoutLink {
+        cursor: default;
         text-transform: capitalize;
-        &:hover{
+
+        &:hover {
             color: #fff;
             text-decoration: none;
         }
     }
-    &:hover{
+
+    &:hover {
         color: #fff;
         text-decoration: underline;
     }
 }
-.field{
+
+.field {
     display: flex;
     align-items: flex-start;
     margin-left: 10px;
     margin-bottom: 15px;
-    .contact-icon{
+
+    .contact-icon {
         margin-top: 4px;
     }
-    .fieldData{
+
+    .fieldData {
         margin-bottom: 0;
         margin-left: 10px;
         line-height: 25px;
         text-transform: none;
-        &.fieldDataAddress{
-            &:hover{
+
+        &.fieldDataAddress {
+            &:hover {
                 text-decoration: none;
             }
         }
-        &:hover{
+
+        &:hover {
             color: #fff;
             text-decoration: underline;
         }
     }
 }
 
-.copyRightSection{
-    border-top: 1px solid rgba(255,255,255,0.1);
+.copyRightSection {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     text-align: center;
     padding: 20px 0;
     margin-top: 30px;
@@ -124,29 +140,31 @@ background: linear-gradient(127deg, rgba(39,24,117,1) 0%, rgba(73,73,221,1) 70%)
 
 
 @media screen and (max-width:991px) {
-    .footerSection{
+    .footerSection {
         padding: 76px 0 0px 0;
-        &::after{
-            transform: scaleX(3);
+
+        &::after {
+            transform: scaleX(1);
         }
     }
 }
 
 @media screen and (max-width:767px) {
-    .footerSection{
-        &::after{
-            transform: scaleX(5);
+    .footerSection {
+        &::after {
+            transform: scaleX(1);
         }
-      .description{
-        margin: 14px 0 30px;
-      }
+
+        .description {
+            margin: 14px 0 30px;
+        }
     }
 }
 
 @media screen and (max-width:520px) {
-    .footerSection{
-        &::after{
-            transform: scaleX(6);
+    .footerSection {
+        &::after {
+            transform: scaleX(1);
         }
     }
 }

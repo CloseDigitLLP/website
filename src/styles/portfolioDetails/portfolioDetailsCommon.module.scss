@@ -1,0 +1,814 @@
+// header spacing
+.mainSection {
+    margin-top: 100px;
+}
+
+// banner text
+
+.bannerPrimaryText {
+    font-family: "Poppins";
+    font-size: 48px;
+    font-weight: 600;
+    text-align: left;
+    color: #16085E;
+    margin: 30px 0;
+    padding-left: 60px;
+}
+
+.bannerSecondaryText {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    color: #212529;
+}
+
+
+// heading
+.mainheading {
+    font-family: "Poppins";
+    font-size: 48px;
+    font-weight: 600;
+    text-align: left;
+    color: #16085E;
+    margin-bottom: 64px;
+}
+
+// technology section 
+
+.technology-section {
+    margin: 0px 0px 80px 0px;
+    overflow: hidden;
+}
+
+.technology-section .technology-heading-section {
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.technology-section .technology-row {
+    margin: 64px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.technology-section .technology-row .technology {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    min-width: 10vw;
+}
+
+.technology .technology-text {
+    align-self: center;
+    margin-top: 24px;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+// slider part 
+
+.slider-part {
+    margin-top: 64px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.slider-part .slider-card {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.slider-card .slider-img-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 530px;
+}
+
+.slider-card .slider-text-part {
+    margin-top: 30px;
+    min-height: 130px;
+}
+
+.slider-card .slider-text-part .slider-text {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.37400001287460327px;
+    text-align: left;
+    color: #212529;
+}
+
+.slider-part .circle-btn {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background-color: transparent;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    display: none;
+}
+
+.slider-part:hover .circle-btn {
+    display: block;
+}
+
+.slider-part:hover .circle-btn span {
+    display: none;
+}
+
+.slider-part .circle-btn:hover {
+    transform: scale(1.2);
+}
+
+.slider-part .left-btn {
+    background-image: url('/work/2024/camelab/sliderRightButton.svg');
+    position: absolute;
+    top: 30%;
+    left: 2%;
+}
+
+.slider-part .right-btn {
+    background-image: url('/work/2024/camelab/sliderLeftButton.svg');
+    position: absolute;
+    right: 2%;
+    top: 30%;
+}
+
+// processSection
+
+.processSection {
+    margin-top: 160px;
+    overflow: hidden;
+}
+
+.processSection h3 {
+    margin-bottom: 30px;
+}
+
+.processSection p {
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 500;
+    color: #919EAB;
+    width: 80%;
+    margin-bottom: 60px;
+}
+
+.processSection .processScrollSection h3 {
+    font-family: "Poppins";
+    font-size: 32px;
+    font-weight: 500;
+    color: #212529;
+}
+
+.processSection .processScrollSection p {
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+    color: #919EAB;
+}
+
+.processScrollSection .subProcessPart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid 1px #D3D4D7;
+    padding: 50px 0;
+}
+
+.processScrollSection .subProcessPart .subProcessImg {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.5s ease-out, width 0.5s ease-out, height 0.5s ease-out;
+}
+
+.processScrollSection .subProcessPart .subProcessImg img {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.processScrollSection .subProcessPart .subProcessImg span {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.processScrollSection .subProcessPart h6 {
+    width: 30%;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+    color: #919EAB;
+}
+
+.scaleUp {
+    width: 200px !important;
+    height: 200px !important;
+}
+
+.removeScale {
+    width: 100px !important;
+    height: 100px !important;
+}
+
+// preview slider
+
+
+.landingPageSection .landingPageImg {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.landingPageSection .landingPageImg img {
+    width: 500px !important;
+    height: 400px !important;
+}
+
+// colorPalette
+
+.colorPalette {
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin-top: 64px;
+}
+
+.colorPalette1,
+.colorPalette2,
+.colorPalette3,
+.colorPalette4 {
+    position: absolute;
+    top: 0;
+    transition: 0.8s all;
+}
+
+.colorPalette1 {
+    left: 0%;
+    z-index: 10;
+}
+
+.colorPalette2 {
+    left: 20%;
+    z-index: 20;
+}
+
+.colorPalette3 {
+    left: 40%;
+    z-index: 30;
+}
+
+.colorPalette4 {
+    left: 60%;
+    z-index: 40;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.imageContainer::before {
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+// showcase sliderSection
+.showcaseSliderSection {
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.showcaseSliderSection .slider-item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .imgPart img {
+        width: 100%;
+    }
+
+    h6 {
+        font-family: 'Poppins';
+        font-size: 20px;
+        font-weight: 400;
+        color: #919EAB;
+        line-height: 28px;
+        width: 90%;
+        padding-left: 10px;
+    }
+}
+
+// scroll banner section
+
+.banner-img-part {
+    margin-top: 64px;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    display: none;
+}
+
+.banner-img-part .laptop-img {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    transition: transform 1s ease-out;
+}
+
+.banner-img-part .mobile-img-section {
+    z-index: 10;
+}
+
+.banner-img-part .mobile-img {
+    width: 100%;
+    height: auto;
+    transition: transform 1s ease-out;
+    position: relative;
+    right: 60%;
+    top: 16%;
+}
+
+// banner animation
+
+.initial-laptop {
+    transform: translateX(-100%);
+}
+
+.animate-laptop {
+    transform: translateX(0);
+}
+
+.initial-mobile {
+    transform: translateX(100%);
+}
+
+.animate-mobile {
+    transform: translateX(0);
+}
+
+
+
+
+.scrollSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 70px 0;
+    overflow: hidden;
+
+    .bannerLaptopImg {
+        width: 1050px;
+        height: 655px;
+    }
+
+    .bannerPhoneImg {
+        width: 250px;
+        height: 550px;
+    }
+
+    @media (max-width: 1549px) {
+        .bannerLaptopImg {
+            width: 630px;
+            height: 375px;
+        }
+
+        .bannerPhoneImg {
+            width: 150px;
+            height: 300px;
+            margin-bottom: -50px;
+        }
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width:1200px) {
+    .banner-img-part {
+        display: flex;
+    }
+
+    .scrollSection {
+        display: none;
+    }
+
+    .processSection {
+        margin-top: 0px;
+    }
+}
+
+// mediaQueries 
+@media only screen and (max-width: 1025px) {
+    .banner-img-part {
+        width: 80%;
+        margin: auto;
+        margin-top: 44px;
+    }
+
+    .technology-section {
+        margin-top: 50px;
+    }
+
+    .technology .technology-text {
+        margin-top: 16px;
+        font-size: 20px;
+    }
+
+    .technology-section .technology-row {
+        margin-top: 44px;
+        margin-bottom: 80px;
+    }
+
+    .slider-card .slider-text-part {
+        min-height: 200px;
+    }
+
+    .slider-part .left-btn {
+        top: 22%;
+    }
+
+    .slider-part .right-btn {
+        top: 22%;
+    }
+}
+
+
+@media screen and (max-width:992px) {
+    .mainheading {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .bannerPrimaryText {
+        font-size: 32px;
+        margin: 40px 0;
+        padding-left: 40px;
+    }
+
+    .bannerSecondaryText {
+        font-size: 20px;
+    }
+
+    .landingPageSection .landingPage {
+        padding: 100px 0px;
+    }
+
+    .landingPageSection .landingPage::after {
+        font-size: 100px;
+    }
+
+    .landingPageSection .landingPage::before {
+        font-size: 100px;
+    }
+
+    .processSection {
+        margin-top: 0px;
+    }
+
+    .processSection .processScrollSection h3 {
+        font-size: 24px;
+    }
+
+    .processSection .processScrollSection p {
+        font-size: 14px;
+    }
+
+    .scaleUp {
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+    .removeScale {
+        width: 75px !important;
+        height: 75px !important;
+    }
+
+    .processScrollSection .subProcessPart .subProcessImg {
+        width: 75px;
+        height: 75px;
+    }
+
+    .processScrollSection .subProcessPart {
+        padding: 30px 0;
+    }
+
+    .processSection p {
+    width: 100%;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) {
+
+    .colorPalette1:hover,
+    .colorPalette2:hover,
+    .colorPalette3:hover,
+    .colorPalette4:hover {
+        z-index: 100;
+        scale: 0.95;
+        transition: 0.8s all;
+    }
+
+    .colorPalette1:hover .imageContainer::before,
+    .colorPalette2:hover .imageContainer::before,
+    .colorPalette3:hover .imageContainer::before,
+    .colorPalette4:hover .imageContainer::before {
+        position: absolute;
+        font-size: 30px;
+        top: 100px;
+        left: 50px;
+        transition: 0.6s;
+        z-index: 100;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .banner-img-part {
+        margin-top: 36px;
+    }
+
+    .showcaseSliderSection .slider-item {
+        gap: 16px;
+
+        h6 {
+            font-size: 16px;
+            width: 100%;
+            line-height: normal;
+        }
+    }
+
+    .showcaseSliderSection {
+        overflow: hidden;
+        margin-top: 30px;
+    }
+
+    .colorPalette {
+        margin-top: 40px;
+    }
+
+    .bannerSecondaryText {
+        font-size: 20px;
+    }
+
+    .imageContainer img {
+        width: 100%;
+    }
+
+    .imageContainer::before {
+        position: absolute;
+        font-size: 12px;
+        color: white;
+        bottom: 10px;
+        top: unset;
+        left: 20px;
+        display: unset;
+    }
+
+    .landingPageSection .landingPageImg img {
+        width: 300px !important;
+        height: 250px !important;
+    }
+
+    .technology .technology-text {
+        margin-top: 16px;
+        font-size: 16px;
+    }
+
+    .technology-section .technology-row {
+        margin-top: 36px;
+        margin-bottom: 60px;
+    }
+
+    .technology-section .technology-row {
+        gap: 20px;
+    }
+
+    .slider-card .slider-text-part .slider-text {
+        font-size: 14px;
+    }
+
+    .slider-part .left-btn {
+        top: 17%;
+    }
+
+    .slider-part .right-btn {
+        top: 17%;
+    }
+
+    .slider-part .slider-card {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .technology-section {
+        margin: 0px 0px 40px 0px;
+        overflow: hidden;
+    }
+
+    .technology-section .technology-row .technology img {
+        width: 60% !important;
+    }
+}
+
+@media screen and (max-width:690px) {
+    .processSection p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .processScrollSection .subProcessPart h6 {
+        width: 30%;
+        font-size: 12px;
+    }
+
+    .processSection .processScrollSection h3 {
+        font-size: 16px;
+    }
+
+    .scaleUp {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .removeScale {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .processScrollSection .subProcessPart .subProcessImg {
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 621px) {
+    .technology .technology-text {
+        margin-top: 12px;
+        font-size: 12px;
+    }
+
+    .technology-section {
+        margin-top: 0px;
+    }
+
+    .technology-section .technology-row {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .slider-part .left-btn {
+        top: 28%;
+    }
+
+    .slider-part .right-btn {
+        top: 28%;
+    }
+
+    .slider-part .slider-card {
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .showcaseSliderSection .slider-item {
+        h6 {
+            font-size: 14px;
+        }
+    }
+
+    .mainheading {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .bannerPrimaryText {
+        font-size: 20px;
+        margin: 30px 0;
+        padding-left: 0px;
+    }
+
+    .bannerSecondaryText {
+        font-size: 14px;
+    }
+
+    .processSection h3 {
+        margin-bottom: 16px;
+    }
+
+    .landingPageSection .landingPageImg img {
+        width: 280px !important;
+        height: 200px !important;
+    }
+
+    .processSection p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .slider-part {
+        margin-top: 30px;
+    }
+
+    .technology-section .technology-row {
+        gap: 0px;
+    }
+
+    .technology .technology-text {
+        margin-top: 8px;
+        font-size: 10px;
+    }
+
+    .technology-section .technology-row .technology {
+        min-width: 16vw;
+    }
+
+    .slider-part .left-btn {
+        top: 22%;
+    }
+
+    .slider-part .right-btn {
+        top: 22%;
+    }
+
+    .slider-card .slider-text-part .slider-text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .slider-card .slider-text-part {
+        min-height: 150px;
+    }
+
+}
+
+@media screen and (max-width:420px) {
+    .colorPalette {
+        height: 300px;
+    }
+
+    .processScrollSection .subProcessPart h6 {
+        width: 35%;
+        font-size: 10px;
+    }
+
+    .processSection .processScrollSection h3 {
+        font-size: 12px;
+    }
+
+    .scaleUp {
+        width: 70px !important;
+        height: 70px !important;
+    }
+
+    .removeScale {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .processScrollSection .subProcessPart .subProcessImg {
+        width: 35px;
+        height: 35px;
+    }
+
+    .landingPageSection .landingPage::after {
+        font-size: 50px;
+    }
+
+    .landingPageSection .landingPage::before {
+        font-size: 50px;
+    }
+
+    .landingPageSection .landingPage {
+        padding: 70px 0px;
+    }
+}

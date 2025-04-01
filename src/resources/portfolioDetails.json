@@ -1,0 +1,811 @@
+{
+    "projectPairs": [
+        {
+            "id": "animate",
+            "title": "VAID",
+            "href": "/Vaid",
+            "imgSrc": "/work/2024/Vaid.png",
+            "category": [
+                "design",
+                "app"
+            ],
+            "tech": [
+                {
+                    "src": "/work/technology-icons/uiux.svg",
+                    "name": "UI-UX"
+                },
+                {
+                    "src": "/work/technology-icons/reactnative.svg",
+                    "name": "React Native"
+                },
+                {
+                    "src": "/work/technology-icons/firebase.svg",
+                    "name": "Firebase"
+                },
+                {
+                    "src": "/work/technology-icons/firestore.svg",
+                    "name": "Firestore"
+                },
+                {
+                    "src": "/work/technology-icons/mysql.svg",
+                    "name": "My SQL"
+                }
+            ]
+        },
+        {
+            "id": "animate1",
+            "title": "Camelab",
+            "href": "/Camelab",
+            "imgSrc": "/work/2024/Camelab.png",
+            "category": [
+                "web",
+                "app"
+            ],
+            "tech": [
+                {
+                    "src": "/work/technology-icons/uiux.svg",
+                    "name": "UI-UX"
+                },
+                {
+                    "src": "/work/technology-icons/react.svg",
+                    "name": "React"
+                },
+                {
+                    "src": "/work/technology-icons/reactnative.svg",
+                    "name": "React Native"
+                },
+                {
+                    "src": "/work/technology-icons/firebase.svg",
+                    "name": "Firebase"
+                },
+                {
+                    "src": "/work/technology-icons/mysql.svg",
+                    "name": "My SQL"
+                },
+                {
+                    "src": "/work/technology-icons/paypal.svg",
+                    "name": "Paypal"
+                }
+            ]
+        },
+        {
+            "id": "animate13",
+            "title": "FeelingBetterNow",
+            "href": "/FBN",
+            "imgSrc": "/work/2024/FellingBetterNow.png",
+            "category": [
+                "design",
+                "web"
+            ],
+            "tech": [
+                {
+                    "src": "/work/technology-icons/uiux.svg",
+                    "name": "UI-UX"
+                },
+                {
+                    "src": "/work/technology-icons/nextjs.svg",
+                    "name": "NextJS"
+                },
+                {
+                    "src": "/work/technology-icons/firebase.svg",
+                    "name": "Firebase"
+                },
+                {
+                    "src": "/work/technology-icons/firestore.svg",
+                    "name": "Firestore"
+                },
+                {
+                    "src": "/work/technology-icons/redux.svg",
+                    "name": "Redux"
+                },
+                {
+                    "src": "/work/technology-icons/aws.svg",
+                    "name": "AWS"
+                },
+                {
+                    "src": "/work/technology-icons/express.svg",
+                    "name": "ExpressJS"
+                }
+            ]
+        },
+        {
+            "id": "animate14",
+            "title": "Directory",
+            "href": "/Directory",
+            "imgSrc": "/work/2024/Directory.png",
+            "category": [
+                "design",
+                "web",
+                "app"
+            ],
+            "tech": [
+                {
+                    "src": "/work/technology-icons/uiux.svg",
+                    "name": "UI-UX"
+                },
+                {
+                    "src": "/work/technology-icons/react.svg",
+                    "name": "React"
+                },
+                {
+                    "src": "/work/technology-icons/reactnative.svg",
+                    "name": "React Native"
+                },
+                {
+                    "src": "/work/technology-icons/pwa.svg",
+                    "name": "PWA"
+                },
+                {
+                    "src": "/work/technology-icons/firebase.svg",
+                    "name": "Firebase"
+                },
+                {
+                    "src": "/work/technology-icons/redux.svg",
+                    "name": "Redux"
+                },
+                {
+                    "src": "/work/technology-icons/mysql.svg",
+                    "name": "MySQL"
+                }
+            ]
+        },
+        {
+            "id": "animate5",
+            "title": "Schenk",
+            "href": "/Schenk",
+            "imgSrc": "/work/2024/Schenk.png",
+            "category": [
+                "web"
+            ],
+            "tech": [
+                {
+                    "src": "/work/technology-icons/uiux.svg",
+                    "name": "UI-UX"
+                },
+                {
+                    "src": "/work/technology-icons/firebase.svg",
+                    "name": "Firebase"
+                },
+                {
+                    "src": "/work/technology-icons/html.svg",
+                    "name": "HTML"
+                },
+                {
+                    "src": "/work/technology-icons/css.svg",
+                    "name": "CSS"
+                },
+                {
+                    "src": "/work/technology-icons/bootstrap.svg",
+                    "name": "Bootstrap"
+                }
+            ]
+        },
+        {
+            "id": "animate12",
+            "title": "Snbla",
+            "href": "/Snbla",
+            "imgSrc": "/work/2024/Snbla.png",
+            "category": [
+                "web"
+            ],
+            "tech": [
+                {
+                    "src": "/work/technology-icons/uiux.svg",
+                    "name": "UI-UX"
+                },
+                {
+                    "src": "/work/technology-icons/html.svg",
+                    "name": "HTML"
+                },
+                {
+                    "src": "/work/technology-icons/wordpress.svg",
+                    "name": "Wordpress"
+                },
+                {
+                    "src": "/work/technology-icons/elementor.svg",
+                    "name": "Elementor"
+                }
+            ]
+        },
+        {
+            "id": "animate16",
+            "title": "JV Construction",
+            "href": "/JVConstruction",
+            "imgSrc": "/work/2024/jv.png",
+            "category": [
+                "design"
+            ],
+            "tech": [
+                {
+                    "src": "/work/technology-icons/uiux.svg",
+                    "name": "UI-UX"
+                },
+                {
+                    "src": "/work/technology-icons/html.svg",
+                    "name": "HTML"
+                },
+                {
+                    "src": "/work/technology-icons/css.svg",
+                    "name": "CSS"
+                },
+                {
+                    "src": "/work/technology-icons/bootstrap.svg",
+                    "name": "Bootstrap"
+                },
+                {
+                    "src": "/work/technology-icons/js.svg",
+                    "name": "JavaScript"
+                }
+            ]
+        },
+        {
+            "id": "animate17",
+            "title": "Proper Sky",
+            "href": "/ProperSky",
+            "imgSrc": "/work/2024/ProperSky.png",
+            "category": [
+                "design"
+            ],
+            "tech": [
+                {
+                    "src": "/work/technology-icons/uiux.svg",
+                    "name": "UI-UX"
+                },
+                {
+                    "src": "/work/technology-icons/html.svg",
+                    "name": "HTML"
+                },
+                {
+                    "src": "/work/technology-icons/scss.svg",
+                    "name": "SCSS"
+                }
+            ]
+        },
+        {
+            "id": "animate18",
+            "title": "Wordwell",
+            "href": "/WordWell",
+            "imgSrc": "/work/2024/Wordwell.png",
+            "category": [
+                "design"
+            ],
+            "tech": [
+                {
+                    "src": "/work/technology-icons/uiux.svg",
+                    "name": "UI-UX"
+                },
+                {
+                    "src": "/work/technology-icons/html.svg",
+                    "name": "HTML"
+                },
+                {
+                    "src": "/work/technology-icons/scss.svg",
+                    "name": "SCSS"
+                }
+            ]
+        },
+        {
+            "id": "animate21",
+            "title": "The Estes Law Firm",
+            "href": "/Law",
+            "imgSrc": "/work/2024/TheEstesLawFirm.png",
+            "category": [
+                "design"
+            ],
+            "tech": [
+                {
+                    "src": "/work/technology-icons/uiux.svg",
+                    "name": "UI-UX"
+                },
+                {
+                    "src": "/work/technology-icons/html.svg",
+                    "name": "HTML"
+                },
+                {
+                    "src": "/work/technology-icons/scss.svg",
+                    "name": "SCSS"
+                }
+            ]
+        }
+    ],
+    "techdata": {
+        "vaid": [
+            {
+                "name": " UI/UX",
+                "icon": "/work/2024/tech-icons/UIUX.svg"
+            },
+            {
+                "name": "React Native",
+                "icon": "/work/2024/tech-icons/ReactNative.svg"
+            },
+            {
+                "name": "Firebase",
+                "icon": "/work/2024/tech-icons/Firebase.svg"
+            },
+            {
+                "name": "MySQL",
+                "icon": "/work/2024/tech-icons/MySQL.svg"
+            }
+        ],
+        "camelab": [
+            {
+                "name": "React",
+                "icon": "/work/2024/tech-icons/React.svg"
+            },
+            {
+                "name": "MySQL",
+                "icon": "/work/2024/tech-icons/MySQL.svg"
+            },
+            {
+                "name": "Redux",
+                "icon": "/work/2024/tech-icons/Redux.svg"
+            },
+            {
+                "name": "MUI Theme",
+                "icon": "/work/2024/tech-icons/MUITheme.svg"
+            },
+            {
+                "name": "Firebase",
+                "icon": "/work/2024/tech-icons/Firebase.svg"
+            },
+            {
+                "name": "React Native",
+                "icon": "/work/2024/tech-icons/ReactNative.svg"
+            }
+        ],
+        "FBN": [
+            {
+                "name": "Next JS",
+                "icon": "/work/2024/tech-icons/NextJS.svg"
+            },
+            {
+                "name": "Firebase",
+                "icon": "/work/2024/tech-icons/Firebase.svg"
+            },
+            {
+                "name": "Redux",
+                "icon": "/work/2024/tech-icons/Redux.svg"
+            },
+            {
+                "name": "AWS",
+                "icon": "/work/2024/tech-icons/AWS.svg"
+            },
+            {
+                "name": "Express JS",
+                "icon": "/work/2024/tech-icons/ExpressJS.svg"
+            },
+            {
+                "name": "Material UI",
+                "icon": "/work/2024/tech-icons/MaterialUI.svg"
+            },
+            {
+                "name": "React Native",
+                "icon": "/work/2024/tech-icons/ReactNative.svg"
+            },
+            {
+                "name": "React",
+                "icon": "/work/2024/tech-icons/React.svg"
+            },
+            {
+                "name": "MongoDB",
+                "icon": "/work/2024/tech-icons/MongoDB.svg"
+            },
+            {
+                "name": "Azure",
+                "icon": "/work/2024/tech-icons/Azure.svg"
+            },
+            {
+                "name": "Pdfmake",
+                "icon": "/work/2024/tech-icons/Pdfmake.svg"
+            },
+            {
+                "name": "Node",
+                "icon": "/work/2024/tech-icons/Node.svg"
+            },
+            {
+                "name": "Styled Components",
+                "icon": "/work/2024/tech-icons/StyledComponents.svg"
+            },
+            {
+                "name": "Redis",
+                "icon": "/work/2024/tech-icons/Redis.svg"
+            },
+            {
+                "name": "Chart JS",
+                "icon": "/work/2024/tech-icons/ChartJS.svg"
+            },
+            {
+                "name": "MySQL",
+                "icon": "/work/2024/tech-icons/MySQL.svg"
+            },
+            {
+                "name": "Kubernetes",
+                "icon": "/work/2024/tech-icons/Kubernetes.svg"
+            },
+            {
+                "name": "Sequelize",
+                "icon": "/work/2024/tech-icons/Sequelize.svg"
+            },
+            {
+                "name": "Git",
+                "icon": "/work/2024/tech-icons/Git.svg"
+            }
+        ],
+        "jv": [
+            {
+                "name": "UI/UX",
+                "icon": "/work/2024/tech-icons/UIUX.svg"
+            },
+            {
+                "name": "Figma",
+                "icon": "/work/2024/tech-icons/Figma.svg"
+            },
+            {
+                "name": "Adobe Illustrator",
+                "icon": "/work/2024/tech-icons/AdobeIllustrator.svg"
+            },
+            {
+                "name": "Adobe XD",
+                "icon": "/work/2024/tech-icons/AdobeXD.svg"
+            }
+        ],
+        "schenk": [
+            {
+                "name": "ScrollJS",
+                "icon": "/work/2024/tech-icons/ScrollJS.svg"
+            },
+            {
+                "name": "UI/UX",
+                "icon": "/work/2024/tech-icons/UIUX.svg"
+            },
+            {
+                "name": "Bootstrap",
+                "icon": "/work/2024/tech-icons/Bootstrap.svg"
+            },
+            {
+                "name": "Firebase",
+                "icon": "/work/2024/tech-icons/Firebase.svg"
+            },
+            {
+                "name": "CanvasJS",
+                "icon": "/work/2024/tech-icons/CanvasJS.svg"
+            }
+        ],
+        "snbla": [
+            {
+                "name": "UI/UX",
+                "icon": "/work/2024/tech-icons/UIUX.svg"
+            },
+            {
+                "name": "HTML",
+                "icon": "/work/2024/tech-icons/HTML.svg"
+            },
+            {
+                "name": "Wordpress",
+                "icon": "/work/2024/tech-icons/Wordpress.svg"
+            },
+            {
+                "name": "Elementor",
+                "icon": "/work/2024/tech-icons/Elementor.svg"
+            }
+        ],
+        "directory": [
+            {
+                "name": "UI/UX",
+                "icon": "/work/2024/tech-icons/UIUX.svg"
+            },
+            {
+                "name": "Firebase",
+                "icon": "/work/2024/tech-icons/Firebase.svg"
+            },
+            {
+                "name": "Redux",
+                "icon": "/work/2024/tech-icons/Redux.svg"
+            },
+            {
+                "name": "React",
+                "icon": "/work/2024/tech-icons/React.svg"
+            },
+            {
+                "name": "MySQL",
+                "icon": "/work/2024/tech-icons/MySQL.svg"
+            },
+            {
+                "name": "PWA",
+                "icon": "/work/2024/tech-icons/PWA.svg"
+            }
+        ],
+        "integra": [
+            {
+                "name": "UI/UX",
+                "icon": "/work/2024/tech-icons/UIUX.svg"
+            },
+            {
+                "name": "Figma",
+                "icon": "/work/2024/tech-icons/Figma.svg"
+            },
+            {
+                "name": "Adobe Illustrator",
+                "icon": "/work/2024/tech-icons/AdobeIllustrator.svg"
+            },
+            {
+                "name": "Adobe XD",
+                "icon": "/work/2024/tech-icons/AdobeXD.svg"
+            }
+        ],
+        "amendSoil": [
+            {
+                "name": "UI/UX",
+                "icon": "/work/2024/tech-icons/UIUX.svg"
+            },
+            {
+                "name": "Figma",
+                "icon": "/work/2024/tech-icons/Figma.svg"
+            },
+            {
+                "name": "Adobe Illustrator",
+                "icon": "/work/2024/tech-icons/AdobeIllustrator.svg"
+            },
+            {
+                "name": "Adobe XD",
+                "icon": "/work/2024/tech-icons/AdobeXD.svg"
+            }
+        ],
+        "datasync": [
+            {
+                "name": "React",
+                "icon": "/work/2024/tech-icons/React.svg"
+            },
+            {
+                "name": "Material ",
+                "icon": "/work/2024/tech-icons/MaterialUI.svg"
+            },
+            {
+                "name": "Firebase",
+                "icon": "/work/2024/tech-icons/Firebase.svg"
+            },
+            {
+                "name": "Github",
+                "icon": "/work/2024/tech-icons/Github.svg"
+            }
+        ],
+        "hontrel": [
+            {
+                "name": "Wordpress",
+                "icon": "/work/2024/tech-icons/Wordpress.svg"
+            },
+            {
+                "name": "Elementor ",
+                "icon": "/work/2024/tech-icons/Elementor.svg"
+            },
+            {
+                "name": "Godaddy",
+                "icon": "/work/2024/tech-icons/Godaddy.svg"
+            }
+        ]
+    },
+    "sliderdata": {
+        "camelab": [
+            {
+                "image": "/work/2024/camelab/camelabSliderImg1.png",
+                "text": "Camelab admin dashboard provides comprehensive insights into creator submissions and brand selections of User-Generated Content (UGC). It tracks video uploads, categorization, brand engagements, and creator payments seamlessly."
+            },
+            {
+                "image": "/work/2024/camelab/camelabSliderImg2.png",
+                "text": "The Camelab mobile app's detail page offers brands a comprehensive view of uploaded Content. It showcases video details, creator information, and engagement metrics, facilitating seamless selection and collaboration with creators for impactful brand campaigns."
+            },
+            {
+                "image": "/work/2024/camelab/camelabSliderImg3.png",
+                "text": "Creating a new campaign on Camelab involves brands outlining their campaign goals and target audience demographics. They then specify criteria for desired Content and set a budget."
+            },
+            {
+                "image": "/work/2024/camelab/camelabSliderImg4.png",
+                "text": "The Camelab mobile dashboard empowers creators with filters to manage submissions, track uploads and earnings, view brand selections, and handle rejections, ensuring streamlined and transparent engagement."
+            }
+        ],
+        "FBN": [
+            {
+                "image": "/work/2024/fbn/fbnSliderImg1.png",
+                "text": "FeelingBetterNow® offers a gold-standard, easy-to-use online mental health risk assessment with instant results. Ensure your privacy while accessing personalized self-care plans and mental health resources. Revisit anytime to monitor your progress."
+            },
+            {
+                "image": "/work/2024/fbn/fbnSliderImg2.png",
+                "text": "With FeelingBetterNow®, you can view your mental health assessment results instantly. This immediate feedback allows you to quickly understand your mental well-being and take prompt action with personalized self-care plans and resources."
+            },
+            {
+                "image": "/work/2024/fbn/fbnSliderImg3.png",
+                "text": "Start by completing the online mental health risk assessment with easy-to-answer questions. Once submitted, view your results instantly for a clear overview of your mental well-being. Use the insights to access personalized self-care plans and resources, and revisit the assessment as needed to track your progress."
+            },
+            {
+                "image": "/work/2024/fbn/fbnSliderImg4.png",
+                "text": "After viewing your results, you'll receive a personalized self-care plan with actionable steps, resources, and medication guidance tailored to your needs. This plan helps you improve your mental well-being, including recommendations for medications if necessary."
+            }
+        ],
+        "schenk": [
+            {
+                "image": "/work/2024/schenk/schenkSliderImg1.png",
+                "text": "Our website design for Schenk Construction Group features a clean, modern layout that highlights our services and projects. With intuitive navigation and clear calls to action, it offers a seamless user experience and showcases our commitment to quality."
+            },
+            {
+                "image": "/work/2024/schenk/schenkSliderImg2.png",
+                "text": "This About Us page design showcases our team's expertise and commitment through a clean layout and engaging visuals, highlighting our mission and services in a clear, professional manner."
+            },
+            {
+                "image": "/work/2024/schenk/schenkSliderImg3.png",
+                "text": "This Our Latest Project page features a visually engaging layout that highlights our most recent work. With high-quality images and concise project details, it effectively showcases our capabilities and the success of our latest endeavors."
+            },
+            {
+                "image": "/work/2024/schenk/schenkSliderImg4.png",
+                "text": "This Our Team page design offers a professional and inviting look, featuring team members’ profiles with high-quality photos and brief bios. It highlights each member's expertise and role, giving visitors insight into the skilled professionals behind Schenk Construction Group."
+            }
+        ],
+        "snbla": [
+            {
+                "image": "/work/2024/snbla/snblaSliderImg1.png",
+                "text": "Choose a savings plan that fits your schedule by depositing money into your account once or repeatedly. Adjust the deposit amount as needed—speed up, slow down, or pause the process according to your purchasing plan. Create an account and start saving today!"
+            },
+            {
+                "image": "/work/2024/snbla/snblaSliderImg2.png",
+                "text": "While saving to buy later, you receive cash rewards from brands directly into your Sunbulah account to help you pay for purchases faster. Get a reward and accelerate your savings!"
+            },
+            {
+                "image": "/work/2024/snbla/snblaSliderImg3.png",
+                "text": "Achieving your shopping goals becomes closer with the support of relatives and friends. Invite your family and friends to join and contribute to your purchasing goals, accelerating your achievement. The more you cooperate, the more rewards you'll all benefit from on purchases. Share with everyone and enjoy the benefits together!"
+            },
+            {
+                "image": "/work/2024/snbla/snblaSliderImg4.png",
+                "text": "When you reach your goal, you'll incur no fees, additional amounts, or financial penalties for delaying or changing the plan. Once you confirm your purchase, you'll receive a financial reward from the brand and can cancel the purchase without any financial penalty. Buy whenever you want and enjoy the flexibility!"
+            }
+        ],
+        "hontrel": [
+            {
+                "image": "/work/2024/hontrel/hontrelSliderImg1.png",
+                "text": "The product design for the Hontel website focuses on clean, modern layouts that highlight key product features with high-quality images and clear descriptions. The design ensures intuitive navigation, making it easy for users to explore products seamlessly across all devices."
+            },
+            {
+                "image": "/work/2024/hontrel/hontrelSliderImg2.png",
+                "text": "The service page design for the Hontel website features clean, engaging layouts that highlight each service with concise descriptions and visuals. The design ensures easy navigation and clear call-to-actions, providing a seamless experience across all devices."
+            },
+            {
+                "image": "/work/2024/hontrel/hontrelSliderImg3.png",
+                "text": "The marketing page design for the Hontel website focuses on delivering impactful visuals paired with concise messaging to communicate key marketing strategies. The layout guides users through the offerings with clear calls-to-action, ensuring an engaging and informative experience across all devices."
+            },
+            {
+                "image": "/work/2024/hontrel/hontrelSliderImg4.png",
+                "text": "The design for the latest blog section on the Hontel website features a modern, clean layout that highlights recent posts with engaging visuals and brief summaries. Each blog post is easily accessible with clear navigation, ensuring users can quickly explore content."
+            }
+        ]
+    },
+    "ShowCaseData":{
+        "mvintage":[
+            {
+                "image": "/work/2024/mvinTage/sliderImg1.svg",
+                "text": "The new MVINTAGE header is designed with simplicity and clarity in mind. Categories like rings, bracelets, and earrings are clearly displayed for effortless navigation. With intuitive dropdown menus and bold visuals, finding your desired jewelry piece is quick and easy. Each product type is highlighted in a unique, eye-catching way, ensuring that you can browse and explore our collections with minimal effort, all while enjoying a smooth and luxurious shopping experience."
+            },
+            {
+                "image": "/work/2024/mvinTage/sliderImg2.svg",
+                "text": "The 'Let's Stay Connected' section offers easy access to newsletters, social media, and contact options for seamless communication. The 'Mobile Application' section highlights the app’s features and benefits, making it simple for users to stay connected and experience our brand's offerings."
+            },
+            {
+                "image": "/work/2024/mvinTage/sliderImg3.svg",
+                "text": "The 'Shop by Category' section features clear, intuitive navigation with visually distinct categories for easy browsing. The 'Our Favourite' section highlights top selections with elegant visuals and detailed descriptions, showcasing how models are used in a dynamic slider to present our best pieces effectively."
+            },
+            {
+                "image": "/work/2024/mvinTage/sliderImg4.svg",
+                "text": "In the 'Review' section, customers share their experiences and photos from their purchases, providing valuable insights into their shopping journey. This section allows new customers to easily understand and relate to the positive experiences of others, helping them make informed decisions about their own purchases."
+            }
+        ],
+        "law" : [
+            {
+                "image": "/work/2024/law/sliderImg1.svg",
+                "text": "Our circular design showcases our services with clarity and ease. Personal Injury Claims address car accidents and brain trauma, Wrongful Death focuses on compensation for loss due to negligence, and Labor and Employment covers workplace injuries and wage disputes. Navigate through our services effortlessly with this visually engaging layout."
+            },
+            {
+                "image": "/work/2024/law/sliderImg2.svg",
+                "text": "Our design for this screen features a clean, user-friendly layout that emphasizes our commitment to superior personal service. The section highlights our decades of experience, our flexibility to work around your needs, and our dedication to pursuing the full compensation you deserve. Each point is presented clearly, ensuring users can easily understand how we can help their claim succeed."
+            },
+            {
+                "image": "/work/2024/law/sliderImg3.svg",
+                "text": "Our Contact Us page is designed for your convenience, offering a straightforward way to get in touch. Fill out the fields below to reach out to us, and view our available timings and address information to plan your visit or call. Whether you have questions or need to schedule a consultation, we&apos;re here to assist you efficiently and effectively."
+            }
+        ],
+        "hyperstack" : [
+            {
+                "image": "/work/2024/hyperstack/sliderImg1.svg",
+                "text": "In the first version of the Hyperstack Cloud signup page, all required information is gathered on a single screen for a streamlined experience. New users are asked to provide their basic details, including name, email, password, company name, industry, and country. This approach simplifies the signup process, allowing users to complete registration quickly without navigating through multiple steps, ensuring a smooth onboarding experience."
+            },
+            {
+                "image": "/work/2024/hyperstack/sliderImg2.svg",
+                "text": "At Hyperstack Cloud, our second version of the signup process for the client focuses on simplicity and ease of use. When a new customer arrives, we start by asking for basic details like name, email, company name, industry, and country. After gathering this information, the user is taken to a new screen where they are prompted to create a secure password. This streamlined process ensures a smooth and efficient user experience, helping new users get started quickly while maintaining security."
+            },
+            {
+                "image": "/work/2024/hyperstack/sliderImg3.svg",
+                "text": "The second version of the Hyperstack Cloud login screen is designed for simplicity and improved user experience. It only asks for the essentials: email or username and password. This streamlined approach ensures that users can quickly log in without unnecessary steps, making the process faster and more intuitive."
+            }
+        ],
+        "amendSoil" : [
+            {
+                "image": "/work/2024/amend-soil/sliderImg1.png",
+                "text": "This section outlines the core mission of 'Amending the Soil,' emphasizing our commitment to promoting soil health and sustainable practices. It provides a clear overview of our initiatives, educational resources, and how the community can engage with us. The design prioritizes simplicity and accessibility, making it easy for users to understand our goals and participate in upcoming events."
+            },
+            {
+                "image": "/work/2024/amend-soil/sliderImg2.png",
+                "text": "We have designed the events section with two viewing options to enhance user experience. The first option allows users to select specific dates to view events organized accordingly. The second option displays all upcoming events in one section, featuring essential details such as time, date, photo, main heading, short description, and location. This flexible design approach ensures that users can easily find and register for events that interest them."
+            },
+            {
+                "image": "/work/2024/amend-soil/sliderImg3.png",
+                "text": "We have designed the speakers section with two versions. The first version includes photos of the speakers alongside a concise overview of who will be attending the event, providing minimal details for quick reference. The second version features the same photos but adds interactivity; when users hover over a speaker's photo, their social media links are revealed, facilitating easy connections. This dual approach enhances user engagement while keeping the information easily accessible."
+            },
+            {
+                "image": "/work/2024/amend-soil/sliderImg4.png",
+                "text": "We have designed the location section with two versions. The first version features a direction button for easy navigation, accompanied by a map displayed beside the location details, phone number, and email. This layout allows users to quickly find directions while accessing contact information. The second version maintains the same details but positions the map below the information, providing a clear view of both the contact details and the map. This flexible design ensures that users can easily navigate and access relevant information."
+            }
+        ]
+    },
+    "previewSliderData": {
+        "jv": [
+            {
+                "src": "/work/2024/JV-construction/landingPageImg.png",
+                "alt": "JV Construction Landing"
+            },
+            {
+                "src": "/work/2024/JV-construction/landingPageImg2.svg",
+                "alt": "JV Construction Landing"
+            },
+            {
+                "src": "/work/2024/JV-construction/landingPageImg3.svg",
+                "alt": "JV Construction Landing"
+            },
+            {
+                "src": "/work/2024/JV-construction/landingPageImg4.svg",
+                "alt": "JV Construction Landing"
+            },
+            {
+                "src": "/work/2024/JV-construction/landingPageImg5.svg",
+                "alt": "JV Construction Landing"
+            }
+        ],
+        "ProperSky": [
+            {
+                "src": "/work/2024/propersky/landingPageImg1.png",
+                "alt": "ProperSky Landing"
+            },
+            {
+                "src": "/work/2024/propersky/landingPageImg2.png",
+                "alt": "ProperSky Landing"
+            },
+            {
+                "src": "/work/2024/propersky/landingPageImg3.png",
+                "alt": "ProperSky Landing"
+            },
+            {
+                "src": "/work/2024/propersky/landingPageImg4.png",
+                "alt": "ProperSky Landing"
+            },
+            {
+                "src": "/work/2024/propersky/landingPageImg5.png",
+                "alt": "ProperSky Landing"
+            }
+        ]
+    },
+    "clientCarouselData": [
+        {
+            "logo": "/work/2024/clients/camelab.svg"
+        },
+        {
+            "logo": "/work/2024/clients/commbitz.svg"
+        },
+        {
+            "logo": "/work/2024/clients/feeling-better-now.svg"
+        },
+        {
+            "logo": "/work/2024/clients/payday.svg"
+        },
+        {
+            "logo": "/work/2024/clients/snbla.svg"
+        },
+        {
+            "logo": "/work/2024/clients/vaid.svg"
+        }
+    ]
+}

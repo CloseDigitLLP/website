@@ -568,6 +568,20 @@
                 "name": "Github",
                 "icon": "/work/2024/tech-icons/Github.svg"
             }
+        ],
+        "hontrel": [
+            {
+                "name": "Wordpress",
+                "icon": "/work/2024/tech-icons/Wordpress.svg"
+            },
+            {
+                "name": "Elementor ",
+                "icon": "/work/2024/tech-icons/Elementor.svg"
+            },
+            {
+                "name": "Godaddy",
+                "icon": "/work/2024/tech-icons/Godaddy.svg"
+            }
         ]
     },
     "sliderdata": {
@@ -641,6 +655,24 @@
             {
                 "image": "/work/2024/snbla/snblaSliderImg4.png",
                 "text": "When you reach your goal, you'll incur no fees, additional amounts, or financial penalties for delaying or changing the plan. Once you confirm your purchase, you'll receive a financial reward from the brand and can cancel the purchase without any financial penalty. Buy whenever you want and enjoy the flexibility!"
+            }
+        ],
+        "hontrel": [
+            {
+                "image": "/work/2024/hontrel/hontrelSliderImg1.png",
+                "text": "The product design for the Hontel website focuses on clean, modern layouts that highlight key product features with high-quality images and clear descriptions. The design ensures intuitive navigation, making it easy for users to explore products seamlessly across all devices."
+            },
+            {
+                "image": "/work/2024/hontrel/hontrelSliderImg2.png",
+                "text": "The service page design for the Hontel website features clean, engaging layouts that highlight each service with concise descriptions and visuals. The design ensures easy navigation and clear call-to-actions, providing a seamless experience across all devices."
+            },
+            {
+                "image": "/work/2024/hontrel/hontrelSliderImg3.png",
+                "text": "The marketing page design for the Hontel website focuses on delivering impactful visuals paired with concise messaging to communicate key marketing strategies. The layout guides users through the offerings with clear calls-to-action, ensuring an engaging and informative experience across all devices."
+            },
+            {
+                "image": "/work/2024/hontrel/hontrelSliderImg4.png",
+                "text": "The design for the latest blog section on the Hontel website features a modern, clean layout that highlights recent posts with engaging visuals and brief summaries. Each blog post is easily accessible with clear navigation, ensuring users can quickly explore content."
             }
         ]
     },

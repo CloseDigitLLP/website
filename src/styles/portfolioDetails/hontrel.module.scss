@@ -1,0 +1,125 @@
+.hontrel-page {
+  margin-top: 100px;
+}
+
+.mainHeadingSpan {
+  color: #673AB7;
+}
+
+.codecraft-section {
+  .codecraft-content {
+    margin-top: 64px;
+
+    @media (max-width: 1025px) {
+      display: none;
+    }
+
+    .text-part {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 90px 0;
+      height: 100%;
+
+      .codecraft-text {
+        font-family: "Poppins";
+        font-size: 20px;
+        font-weight: 400;
+        text-align: left;
+        color: #212529;
+      }
+    }
+
+    .image-part {
+      height: 200vh;
+
+      .sticky-laptop {
+        position: sticky;
+        top: 35%;
+
+        @media (max-width: 1280px) {
+          top: 24%;
+        }
+      }
+
+      .laptop-screens {
+        position: relative;
+
+        .code-craft-image {
+          opacity: 0;
+          transition: opacity 0.5s ease;
+          position: absolute;
+          top: -340px;
+          left: 53px;
+
+          &:nth-child(1) {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.codecraft-mobile-section {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  display: none;
+
+  @media (max-width: 1024px) {
+    display: flex;
+  }
+
+  @media (max-width: 520px) {
+    gap: 24px;
+  }
+
+  p {
+    font-size: 16px;
+
+    @media (max-width: 520px) {
+      font-size: 12px;
+    }
+  }
+
+  .codecraft-mobile-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .code-craft-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center !important;
+
+    @media (max-width: 620px) {
+      flex-direction: column;
+
+      &:nth-child(2) {
+        flex-direction: column-reverse;
+      }
+    }
+
+    .codecraft-img-part {
+      width: 50%;
+
+      @media (max-width: 620px) {
+        width: 100%;
+      }
+    }
+
+    .codecraft-text-part {
+      width: 50%;
+      padding-left: 20px;
+
+      @media screen and (max-width: 620px) {
+        width: 100%;
+        margin-top: 30px;
+        padding-left: 0;
+      }
+    }
+  }
+}

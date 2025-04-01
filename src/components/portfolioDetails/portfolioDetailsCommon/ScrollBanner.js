@@ -111,7 +111,7 @@ export default function BannerSection({ laptopImg_Src = '/work/2024/camelab/came
                 </div>
             </div>
 
-            <div className={`${portfolioDetailsCommon.scrollSection} scrollSection`}>
+            <div  className={`${portfolioDetailsCommon.scrollSection} scrollSection`}>
                 <img
                     className={`${portfolioDetailsCommon.bannerLaptopImg} left`}
                     src={laptopImg_Src}

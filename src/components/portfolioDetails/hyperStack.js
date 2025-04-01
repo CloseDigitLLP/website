@@ -51,15 +51,14 @@ export default function HyperStack() {
 
   return (
     <div className={portfolioDetailsCommon.mainSection}>
-
       <div className={HyperStackStyle.bannerSection}>
         <div className="container">
           <div className={`${HyperStackStyle.sectionContent}`}>
             <h3 data-aos="slide-left" className={portfolioDetailsCommon.bannerPrimaryText}>Access Your Cloud Account :
-             <span className={HyperStackStyle.mainheadingSpan}> Hyperstack</span>
+              <span className={HyperStackStyle.mainheadingSpan}> Hyperstack</span>
             </h3>
             <div data-aos="flip-up" className={HyperStackStyle.bannerImg}>
-            <img src="/work/2024/hyperstack/laptop-mockup.svg" alt="laptop-mockup" width="70%" />
+              <img src="/work/2024/hyperstack/laptop-mockup.svg" alt="laptop-mockup" width="70%" />
             </div>
             <p className={portfolioDetailsCommon.bannerSecondaryText}>At Hyperstack Cloud, we&apos;ve made it easy for new users to join and get started. When you arrive at our login and signup page, you can quickly sign in or create a new account. For new users, you&apos;ll be asked to choose between two options: Personal or Professional. This allows us to tailor the experience specifically to your needs. Once you select your category, we&apos;ll provide pre-filled details and customized features that are suited to your profile, ensuring a seamless and efficient start on Hyperstack Cloud.</p>
           </div>
@@ -67,7 +66,7 @@ export default function HyperStack() {
       </div>
 
 
-   
+
 
       {/* DesignProcess */}
       <DesignProcess
@@ -78,7 +77,7 @@ export default function HyperStack() {
       <div className={`${HyperStackStyle['colorPalletContainer']}`}>
         <div className="container">
           <h3 data-aos="slide-left" className={portfolioDetailsCommon['mainheading']}>
-          Color Palette presentation for 
+            Color Palette presentation for
             <br /><span className={HyperStackStyle.mainheadingSpan}>Hperstack</span>
           </h3>
           <p>The design of the Hyperstack Cloud website features a thoughtfully curated color palette that enhances the user experience. A crisp white background creates a clean and modern atmosphere, while accents of vibrant purple add energy and innovation. Soft gray tones bring balance and professionalism, while deeper shades provide depth and sophistication, creating a cohesive and engaging environment. This color scheme reflects Hyperstack Cloud&apos;s commitment to cutting-edge technology and connectivity, fostering an inviting and visually appealing experience for users.</p>
@@ -94,17 +93,17 @@ export default function HyperStack() {
 
 
 
-         {/* sliderSection */}
+      {/* sliderSection */}
 
-        <div className={HyperStackStyle.sliderSection}>
+      <div className={HyperStackStyle.sliderSection}>
         <div className="container">
           <h3 data-aos="slide-left" className={portfolioDetailsCommon['mainheading']}>
-          Innovative design solution for Website: 
-          <br /><span className={HyperStackStyle.mainheadingSpan}>Hyperstack</span>Showcase
+            Innovative design solution for Website:
+            <br /><span className={HyperStackStyle.mainheadingSpan}>Hyperstack</span>Showcase
           </h3>
         </div>
-        </div>
-        <ShowcaseSlider slides={data.ShowCaseData.hyperstack}/>
+      </div>
+      <ShowcaseSlider slides={data.ShowCaseData.hyperstack} />
     </div>
   );
 }

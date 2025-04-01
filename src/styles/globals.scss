@@ -1,6 +1,80 @@
 @import './fonts.module.scss';
 @import './variable.module.scss';
 @import "../../node_modules/bootstrap/scss/bootstrap";
+/* styles/Home.module.css */
+/* Global Styles */
+.mainWrapper {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.scroll-section {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%; /* Initially set to 100%, will be modified by gsap */
+}
+
+.list {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.item {
+  display: flex;
+  width: 100vw; /* Each item takes up full width of viewport */
+  height: 100vh;
+  position: relative;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  overflow: hidden;
+}
+
+.item_content {
+  padding: 3rem;
+  flex: 1;
+  color: #292929;
+  background-color: #fff;
+}
+
+.item_media {
+  object-fit: cover;
+  width: 50%;
+  height: 100%;
+}
+
+.item_number {
+  position: absolute;
+  top: 6rem;
+  left: 3rem;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 3rem 0;
+}
+
+@media (max-width: 768px) {
+  .item_media {
+    width: 100%;
+  }
+}
+
+
+
 
 
 body {

@@ -25,8 +25,8 @@ export default function DataSync() {
   useEffect(() => {
     AOS.init({
       duration: 1200,
-      once: true, 
-      offset: 0, 
+      once: true,
+      offset: 0,
     });
   }, []);
 
@@ -74,95 +74,133 @@ export default function DataSync() {
           </div>
         </div>
       </div>
+
+
+      {/* innovative Design Section */}
+      <div className={dataSyncStyle.innovativeDesignSection}>
+        <div className="container">
+          <h3 data-aos="slide-left" className={portfolioDetailsCommon.mainheading}>Innovative design solution: <br />
+            <span className={dataSyncStyle.mainheadingSpan}>Data Sync</span>
+          </h3>
+          <div className={dataSyncStyle.innovativeContent}>
+            <Image src="/work/2024/dataSync/laptop-img.svg" width={400} height={400} layout='responsive' alt="img" />
+          </div>
+          <p className={portfolioDetailsCommon.bannerSecondaryText}>We design with user-friendliness in mind, ensuring our solutions are easy to navigate and intuitive. Our portfolio includes references from satisfied clients, showcasing our commitment to quality. We are proud to be solution partners with leading technology providers, enabling us to deliver exceptional services that meet the evolving needs of e-commerce businesses.</p>
+        </div>
+      </div>
+
+
+      {/* window Section */}
       <div className={dataSyncStyle.windowSection}>
-    <div className='container'>
-      <div className={dataSyncStyle.windowPart}>
-        <div className={dataSyncStyle.leftWindow}>
-          <img src="/work/2024/dataSync/windowImg1.svg" alt="" />
-        </div>
-        <div className={dataSyncStyle.rightWindow}>
-          <img src="/work/2024/dataSync/windowImg2.svg" alt="" />
-        </div>
-      </div>
-        <p className={portfolioDetailsCommon.bannerSecondaryText}>We design a user-friendly dual-option switch that allows brands and sellers to view and manage their information simultaneously. This innovative feature enhances workflow efficiency, enabling easy toggling between perspectives and quick access to essential data.</p>
-      </div>
-    </div>
-      <TechnologySection data={data.techdata.datasync} />
-    
-      {/* sliderSection */}
-    
-          <section className={dataSyncStyle['sliderSection']}>
-            <div className="container">
-              <h3 data-aos="slide-left" className={portfolioDetailsCommon['mainheading']}>
-              Innovative Features in <br /><span className={dataSyncStyle.mainheadingSpan}>Data Sync</span>
-              </h3>
+        <div className='container'>
+          <div className={dataSyncStyle.windowPart}>
+            <div className={dataSyncStyle.leftWindow}>
+              <img src="/work/2024/dataSync/windowImg1.svg" alt="" />
             </div>
-            <OwlCarousel data-aos="slide-up" className={`${dataSyncStyle['owlcarousel']} ${dataSyncStyle['review-owlcarousel']}`} navText={["", ""]}  {...options}>
-              <div className={`${dataSyncStyle['slider-item']}`}>
-                <div className="row">
-                  <div className="col-lg-6">
-                    <div className={dataSyncStyle['imgPart']}>
-                      <Image
-                        src='/work/2024/vaid/sliderImg1.png'
-                        alt="Animated"
-                        width={230}
-                        height={316}
-                      />
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <h6>
-                      <span>Client Detail Page</span> <br />
-                      it shows the client&apos;s location and project details for efficient management. It also features to create threads and submit evidence for streamlined communication and updates.
-                    </h6>
-                  </div>
+            <div className={dataSyncStyle.rightWindow}>
+              <img src="/work/2024/dataSync/windowImg2.svg" alt="" />
+            </div>
+          </div>
+          <p className={portfolioDetailsCommon.bannerSecondaryText}>We design a user-friendly dual-option switch that allows brands and sellers to view and manage their information simultaneously. This innovative feature enhances workflow efficiency, enabling easy toggling between perspectives and quick access to essential data.</p>
+        </div>
+      </div>
+      <TechnologySection data={data.techdata.datasync} />
+
+      {/* Codecraft section*/}
+      <div className={dataSyncStyle.codecraftSection}>
+        <div className='container'>
+          <h3 className={portfolioDetailsCommon.bannerPrimaryText}>
+            Codecraft: <br /><span className={dataSyncStyle.mainheadingSpan}>Data Sync</span> journey in Development
+          </h3>
+          <div className={dataSyncStyle.contentPart}>
+            <div className='row g-4'>
+              <div className="col-lg-6">
+                <img src="/work/2024/dataSync/code-craft.png" alt="img" width='100%' />
+              </div>
+              <div className="col-lg-6">
+                <div className='d-flex align-items-center h-100'>
+                  <p className={portfolioDetailsCommon.bannerSecondaryText}>We design with a focus on data synchronization, utilizing vectors to illustrate the seamless flow of information. Our approach ensures that brands and sellers can effortlessly access and manage their data in real-time. This empowers businesses to enhance efficiency, improve decision-making, and maintain accurate inventory across platforms.</p>
                 </div>
               </div>
-              <div className={`${dataSyncStyle['slider-item']}`}>
-                <div className="row">
-                  <div className="col-lg-6">
-                    <h6>
-                      <span>Submit Evidencewhere</span> <br /> where you can click to add photos, show location on the photos, and include descriptions so client can easily know about the work.
-                    </h6>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className={dataSyncStyle['imgPart']}>
-                      <Image
-                        src='/work/2024/vaid/sliderImg2.png'
-                        alt="Animated"
-                        width={230}
-                        height={316}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className={`${dataSyncStyle['slider-item']}`}>
-                <div className="row">
-                  <div className="col-lg-6">
-                    <div className={dataSyncStyle['imgPart']}>
-                      <Image
-                        src='/work/2024/vaid/sliderImg1.png'
-                        alt="Animated"
-                        width={230}
-                        height={316}
-                      />
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <h6>
-                      <span>Timer</span> <br />
-                      function for employees allows them to select a client and start a timer. It tracks all in and out times according to the timer, providing a detailed log of work hours.
-                    </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* slider Section */}
+      <section className={dataSyncStyle['sliderSection']}>
+        <div className="container">
+          <h3 data-aos="slide-left" className={portfolioDetailsCommon['mainheading']}>
+            Innovative Features in <br /><span className={dataSyncStyle.mainheadingSpan}>Data Sync</span>
+          </h3>
+
+          <OwlCarousel data-aos="slide-up" className={`${dataSyncStyle['owlcarousel']} ${dataSyncStyle['review-owlcarousel']}`} navText={["", ""]}  {...options}>
+            <div className={`${dataSyncStyle['slider-item']}`}>
+              <div className="row">
+                <div className="col-lg-6">
+                  <div className={dataSyncStyle['imgPart']}>
+                    <Image
+                      src='/work/2024/dataSync/sliderImg1.png'
+                      alt="Animated"
+                      width={350}
+                      height={274}
+                      layout='responsive'
+                    />
                   </div>
                 </div>
+                <div className="col-lg-6">
+                  <h6>
+                    <span>Client Detail Page</span> <br />
+                    it shows the client&apos;s location and project details for efficient management. It also features to create threads and submit evidence for streamlined communication and updates.
+                  </h6>
+                </div>
               </div>
-            </OwlCarousel>
-          </section>
+            </div>
+            <div className={`${dataSyncStyle['slider-item']}`}>
+              <div className="row">
+                <div className="col-lg-6">
+                  <div className={dataSyncStyle['imgPart']}>
+                    <Image
+                      src='/work/2024/dataSync/sliderImg2.png'
+                      alt="Animated"
+                      width={350}
+                      height={274}
+                      layout='responsive'
+                    />
+                  </div>
+                </div>
+                <div className="col-lg-6">
+                  <h6>
+                    <span>Submit Evidencewhere</span> <br /> where you can click to add photos, show location on the photos, and include descriptions so client can easily know about the work.
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div className={`${dataSyncStyle['slider-item']}`}>
+              <div className="row">
+                <div className="col-lg-6">
+                  <div className={dataSyncStyle['imgPart']}>
+                    <Image
+                      src='/work/2024/dataSync/sliderImg3.png'
+                      alt="Animated"
+                      width={350}
+                      height={274}
+                      layout='responsive'
+                    />
+                  </div>
+                </div>
+                <div className="col-lg-6">
+                  <h6>
+                    <span>Timer</span> <br />
+                    function for employees allows them to select a client and start a timer. It tracks all in and out times according to the timer, providing a detailed log of work hours.
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </OwlCarousel>
+        </div>
+      </section>
 
     </div>
   );
 }
-
-
 

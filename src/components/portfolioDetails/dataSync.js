@@ -46,7 +46,7 @@ export default function DataSync() {
       0: { items: 1.2 },
       700: { items: 2 },
       1200: { items: 2.2 },
-      1800: { items: 3 }
+      1800: { items: 2.5 }
     },
   };
 

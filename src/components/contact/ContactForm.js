@@ -34,12 +34,13 @@ export default function ContactData() {
     const onSubmit = async (data) => {
         setIsLoading(true)
         try {
+            data.created_at = new Date();
             const docRef = await addDoc(collection(db, "users"), data)
             await axios.post('/api/nodemailer', data).then((response) => {
-                console.log(response.data); toast.success("Message sent successfully!")
+                console.log(response.data);
             })
-            formRef.current.reset()
             toast.success("Message sent successfully!")
+            formRef.current.reset()
         } catch (e) {
             console.log(e)
             toast.error("Can not send message")

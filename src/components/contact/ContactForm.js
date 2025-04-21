@@ -4,7 +4,7 @@ import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
 import 'yup-phone'
 import { db } from '../../../firebase'
-import { addDoc, collection } from 'firebase/firestore'
+import { addDoc, collection, getDoc, getDocs } from 'firebase/firestore'
 import { useRef, useState } from 'react'
 import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify'
@@ -30,6 +30,7 @@ export default function ContactData() {
         resolver: yupResolver(schema)
     });
 
+
     const onSubmit = async (data) => {
         setIsLoading(true)
         try {
@@ -38,6 +39,7 @@ export default function ContactData() {
                 console.log(response.data); toast.success("Message sent successfully!")
             })
             formRef.current.reset()
+            toast.success("Message sent successfully!")
         } catch (e) {
             console.log(e)
             toast.error("Can not send message")

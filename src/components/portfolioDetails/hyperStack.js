@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import HyperStackStyle from '../../styles/portfolioDetails/HyperStackStyle.module.scss'
 import React, { useEffect } from 'react';
 import portfolioDetailsCommon from '../../styles/portfolioDetails/portfolioDetailsCommon.module.scss';
@@ -99,7 +100,7 @@ export default function HyperStack() {
         <div className="container">
           <h3 data-aos="slide-left" className={portfolioDetailsCommon['mainheading']}>
             Innovative design solution for Website:
-            <br /><span className={HyperStackStyle.mainheadingSpan}>Hyperstack</span>Showcase
+            <br /><span className={HyperStackStyle.mainheadingSpan}>Hyperstack</span>{" "}Showcase
           </h3>
         </div>
       </div>

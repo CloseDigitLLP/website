@@ -7,7 +7,7 @@
 }
 
 .mainHeadingSpan {
-  color: #673AB7;
+  color: #D29999;
 }
 
 
@@ -15,7 +15,9 @@
   // overflow: hidden;
 
   br {
-    display: none;
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
   }
 
   .bannerContainer {

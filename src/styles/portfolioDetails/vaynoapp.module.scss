@@ -1,0 +1,422 @@
+.mainheadingSpan {
+    color: #7429F5;
+}
+
+.bannerSection {
+    margin-top: 150px;
+    overflow: hidden;
+    margin-bottom: 150px;
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 80px;
+    }
+
+    @media screen and (max-width: 520px) {
+        margin-bottom: 40px;
+        margin-top: 120px;
+    }
+
+    h3 {
+        margin: 0;
+
+        @media screen and (max-width: 520px) {
+            br {
+                display: none;
+            }
+        }
+
+    }
+
+    p {
+        margin-top: 64px;
+
+        @media screen and (max-width: 768px) {
+            margin-top: -64px;
+        }
+
+        @media screen and (max-width: 768px) {
+            &.webBannerText {
+                margin-top: 40px;
+            }
+        }
+
+
+    }
+
+    .bannerImage {
+        margin-top: 64px;
+    }
+
+    .bannerImageWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        padding-top: 64px;
+
+        @media screen and (max-width: 768px) {
+            scale: 0.7;
+            overflow: visible;
+        }
+
+        @media screen and (max-width: 540px) {
+            scale: 0.5;
+            padding-top: 0;
+            margin-top: -64px;
+        }
+
+        .bannerItem {
+            opacity: 0;
+            transform: scale(0.9);
+            animation: fadeIn 2s ease forwards, comeCloser 1s ease forwards;
+            animation-delay: var(--delay), calc(var(--delay) + 1.2s);
+            position: relative;
+            z-index: 3;
+
+            &:nth-child(4) {
+                z-index: 2;
+            }
+
+            &:nth-child(5) {
+                z-index: 1;
+            }
+        }
+    }
+
+}
+
+
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes comeCloser {
+    to {
+        transform: scale(1) translateX(var(--shift, 0));
+    }
+}
+
+/* Delay for each image fade-in */
+.delay1 {
+    --delay: 0s;
+    --shift: 160px;
+}
+
+.delay2 {
+    --delay: 0.3s;
+    --shift: 80px;
+}
+
+.delay3 {
+    --delay: 0.6s;
+    --shift: 0px;
+}
+
+.delay4 {
+    --delay: 0.9s;
+    --shift: -80px;
+}
+
+.delay5 {
+    --delay: 1.2s;
+    --shift: -160px;
+}
+
+.sliderSection {
+    overflow: hidden;
+
+    h3 {
+        @media screen and (max-width: 520px) {
+            br {
+                display: none;
+            }
+        }
+    }
+
+    .slider-part {
+        margin-top: 64px;
+
+        .slider-card {
+            margin-right: 10px;
+            width: 98% !important;
+
+            .slider-img-part {
+                background-color: #F4F4F4;
+                min-height: 500px;
+                border-radius: 32px;
+                position: relative;
+                overflow: clip;
+
+                @media screen and (max-width: 1025px) {
+                    min-height: 300px;
+                }
+
+                @media screen and (max-width: 520px) {
+                    max-height: 400px;
+                }
+
+                .back-image {
+                    position: absolute;
+                    right: 30px;
+                    bottom: 0;
+                    z-index: 1;
+                }
+
+                .lottie-animation-container {
+                    position: relative;
+                    height: fit-content;
+                    width: fit-content;
+                    z-index: 2;
+                    bottom: -100px;
+                    left: 40px;
+                    transition: transform 0.4s ease;
+
+                    &.active {
+                        transform: translateY(-50px);
+                    }
+                }
+            }
+
+            .slider-title {
+                font-family: 'Poppins';
+                font-weight: 500;
+                font-size: 24px;
+                color: #212529;
+                margin-top: 32px;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 18px;
+                }
+
+                @media screen and (max-width: 520px) {
+                    font-size: 16px;
+                }
+            }
+
+            .slider-text {
+                font-family: 'Poppins';
+                font-weight: 400;
+                font-size: 16px;
+                color: #919EAB;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 14px;
+                }
+
+            }
+        }
+    }
+}
+
+// color pallet
+.colorPalletContainer {
+    padding-top: 70px;
+    overflow: hidden;
+
+    @media screen and (max-width:768px) {
+        padding-top: 0;
+    }
+
+    p {
+        font-family: "Poppins";
+        font-size: 18px;
+        font-weight: 400;
+        color: #919EAB;
+
+        @media screen and(max-width: 520px) {
+            font-size: 14px;
+        }
+    }
+
+    .colorPalette1 .imageContainer::before {
+        content: "Blue Violet";
+
+    }
+
+    .colorPalette2 .imageContainer::before {
+        content: "Medium Purple";
+    }
+
+    .colorPalette3 .imageContainer::before {
+        content: "Cetacean Blue";
+    }
+
+    .colorPalette4 .imageContainer::before {
+        content: "Cultured";
+        color: black;
+    }
+}
+
+.toolSection {
+    padding: 120px 0;
+    background-color: #F5F5F7;
+    margin-top: 80px;
+    overflow: hidden;
+
+    .accordion {
+        flex: 1;
+
+        .accordionItem {
+            border-bottom: 1px solid #ddd;
+
+            .accordionButton {
+                background: none;
+                border: none;
+                width: 100%;
+                text-align: left;
+                font-size: 24px;
+                font-weight: 500;
+                padding: 16px 0;
+                cursor: pointer;
+                color: #919EAB;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: #212529;
+                }
+
+                &.active {
+                    color: #212529;
+                }
+
+                @media screen and (max-width:768px) {
+                    font-size: 18px;
+                }
+
+                @media screen and (max-width:520px) {
+                    font-size: 16px;
+                }
+            }
+
+            .accordionContent {
+                color: #919EAB;
+                font-size: 16px;
+                font-weight: 400;
+                margin-top: -8px;
+
+                @media screen and (max-width:520px) {
+                    font-size: 14px;
+                }
+            }
+        }
+
+    }
+
+    .imageWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF;
+        border-radius: 16px;
+    }
+
+}
+
+.designSection {
+    .designImageWrapper {
+        background-color: #F4F4F4;
+        border-radius: 32px;
+        width: 100%;
+        min-height: 536px;
+        position: relative;
+        overflow: clip;
+        margin-top: 48px;
+        display: flex;
+        justify-content: center;
+
+        @media screen and (max-width: 768px) {
+            min-height: 400px;
+        }
+
+        @media screen and (max-width: 540px) {
+            min-height: 280px;
+            border-radius: 16px;
+            margin-top: 24px;
+        }
+
+        @media screen and (max-width: 420px) {
+            min-height: 170px;
+        }
+
+        &.small {
+            min-height: 472px;
+
+            @media screen and (max-width: 768px) {
+                min-height: 360px;
+            }
+
+            @media screen and (max-width: 540px) {
+                min-height: 240px;
+            }
+
+            @media screen and (max-width: 420px) {
+                min-height: 150px;
+            }
+        }
+
+        img {
+            position: absolute;
+            transition: all 0.3s ease;
+            max-width: 80%;
+            height: auto;
+        }
+
+        &:first-of-type:hover .designImage1 {
+            left: -24px;
+            top: -64px;
+        }
+
+        &:first-of-type:hover .designImage2 {
+            right: -24px;
+            bottom: -50px;
+        }
+
+        &.secondCard:hover .designImage3 {
+            bottom: -40px;
+        }
+
+        &.thirdCard:hover .designImage4 {
+            top: -50px;
+        }
+
+        .designImage1 {
+            left: -40px;
+            top: -90px;
+        }
+
+        .designImage2 {
+            bottom: -90px;
+            right: -40px;
+        }
+
+        .designImage3 {
+            bottom: -80px;
+        }
+
+        .designImage4 {
+            top: -80px;
+        }
+    }
+
+    p {
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 20px;
+        color: #919EAB;
+        margin-top: 32px;
+        width: 80%;
+
+        @media screen and (max-width: 768px) {
+            font-size: 16px;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 520px) {
+            font-size: 14px;
+        }
+    }
+}

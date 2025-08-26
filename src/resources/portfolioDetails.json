@@ -582,6 +582,78 @@
                 "name": "Godaddy",
                 "icon": "/work/2024/tech-icons/Godaddy.svg"
             }
+        ],
+        "vaynoApp": [
+            {
+                "name": "UI/UX",
+                "icon": "/work/2024/tech-icons/UIUX.svg"
+            },
+            {
+                "name": "Figma ",
+                "icon": "/work/2024/tech-icons/Figma.svg"
+            },
+            {
+                "name": "React Native",
+                "icon": "/work/2024/tech-icons/ReactNative.svg"
+            },
+            {
+                "name": "Next JS",
+                "icon": "/work/2024/tech-icons/NextJS.svg"
+            },
+            {
+                "name": "MongoDB",
+                "icon": "/work/2024/tech-icons/MongoDB.svg"
+            }
+        ],
+        "vaynoWeb": [
+            {
+                "name": "UI/UX",
+                "icon": "/work/2024/tech-icons/UIUX.svg"
+            },
+            {
+                "name": "Figma ",
+                "icon": "/work/2024/tech-icons/Figma.svg"
+            },
+            {
+                "name": "Next JS",
+                "icon": "/work/2024/tech-icons/NextJS.svg"
+            },
+            {
+                "name": "MongoDB",
+                "icon": "/work/2024/tech-icons/MongoDB.svg"
+            }
+        ],
+        "tonightBand": [
+            {
+                "name": "Wordpress",
+                "icon": "/work/2024/tech-icons/Wordpress.svg"
+            },
+            {
+                "name": "Elementor ",
+                "icon": "/work/2024/tech-icons/Elementor.svg"
+            }
+        ],
+        "guptaGroup": [
+            {
+                "name": "UI/UX",
+                "icon": "/work/2024/tech-icons/UIUX.svg"
+            },
+            {
+                "name": "HTML ",
+                "icon": "/work/2024/tech-icons/HTML.svg"
+            },
+            {
+                "name": "Github ",
+                "icon": "/work/2024/tech-icons/Github.svg"
+            },
+            {
+                "name": "Tailwind ",
+                "icon": "/work/2024/tech-icons/Tailwind.svg"
+            },
+            {
+                "name": "MailChimp ",
+                "icon": "/work/2024/tech-icons/MailChimp.svg"
+            }
         ]
     },
     "sliderdata": {
@@ -673,6 +745,42 @@
             {
                 "image": "/work/2024/hontrel/hontrelSliderImg4.png",
                 "text": "The design for the latest blog section on the Hontel website features a modern, clean layout that highlights recent posts with engaging visuals and brief summaries. Each blog post is easily accessible with clear navigation, ensuring users can quickly explore content."
+            }
+        ],
+        "vayno": [
+            {
+                "image": "/work/2024/vayno/vaynoSliderImg1.png",
+                "text": "The product design for the Vanyo web application includes a clean and intuitive chat module that enhances communication between property owners and potential buyers or renters.Users can chat in real-time directly from the property detail page, making it easy to inquire, negotiate, and schedule visits—all within a smooth and accessible interface."
+            },
+            {
+                "image": "/work/2024/vayno/vaynoSliderImg2.png",
+                "text": "The appointment section in the Vanyo application is designed with clarity and convenience in mind. When a user requests to buy or rent a property and the request is approved, they can view and manage scheduled visits through a calendar view. The design highlights upcoming, today's, and past appointments—offering a clean timeline for users and property owners to coordinate visits easily and avoid scheduling conflicts."
+            },
+            {
+                "image": "/work/2024/vayno/vaynoSliderImg3.png",
+                "text": "The property listing page in the Vanyo application is designed to provide a seamless browsing experience with all essential actions just a click away. Users can explore multiple properties for sale, view detailed information, compare prices, initiate chats with owners, and directly schedule visits. The clean layout ensures effortless navigation, helping users find the right property quickly and efficiently."
+            },
+            {
+                "image": "/work/2024/vayno/vaynoSliderImg4.png",
+                "text": "The services section in the Vanyo application is designed to showcase available paid services in a clean and accessible layout. Property seekers can view and access these services directly from the mobile app—whether they are browsing or planning to buy. Once a new service provider is added, it instantly becomes visible in the app, allowing users to explore and book services with ease."
+            }
+        ],
+        "guptaGroup": [
+            {
+                "image": "/work/2024/gupta-group/guptaGroupSliderimg1.png",
+                "text": "We design our products in an easy-to-navigate grid layout, allowing customers to view clear images and concise descriptions effortlessly. This setup ensures a smooth shopping experience, making it simple to explore and add items to the cart."
+            },
+            {
+                "image": "/work/2024/gupta-group/guptaGroupSliderimg2.png",
+                "text": "We’ve designed a dedicated section for our hair products that is both easy to navigate and simple to add items. The layout ensures customers can quickly browse through detailed product images and descriptions for a seamless shopping experience."
+            },
+            {
+                "image": "/work/2024/gupta-group/guptaGroupSliderimg3.png",
+                "text": "We've designed a special section to make it easy for customers to donate hair, ensuring a smooth and supportive process. This dedicated area highlights the donation steps clearly, helping donors understand how their contribution can make a meaningful impact."
+            },
+            {
+                "image": "/work/2024/gupta-group/guptaGroupSliderimg4.png",
+                "text": "We’ve designed a dedicated section for our foundation, making it easy to donate hair and support various causes. It also provides clear information on the groups we help and the organizations we partner with."
             }
         ]
     },

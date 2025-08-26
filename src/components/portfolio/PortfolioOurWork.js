@@ -103,3 +103,115 @@ export default function OurWorkContent() {
         </>
     )
 }
+
+
+
+// import React, { useState } from 'react';
+// import Lottie from 'lottie-react';
+// import animation1 from "../../../public/work/lottie-files/Map.json";
+// import animation2 from "../../../public/work/lottie-files/Owner-Track-View.json";
+// import animation3 from "../../../public/work/lottie-files/Schedule_Visit_All.json";
+// import animation4 from "../../../public/work/lottie-files/Search.json";
+// import styles from '../../styles/portfolioDetails/vaynoapp.module.scss';
+// // import 'slick-carousel/slick/slick.css';
+// // import 'slick-carousel/slick/slick-theme.css';
+// import Image from 'next/image';
+// import dynamic from 'next/dynamic';
+// var $ = require('jquery');
+// if (typeof window !== 'undefined') {
+//     window.$ = window.jQuery = require('jquery');
+// }
+
+// import 'owl.carousel/dist/assets/owl.carousel.css';
+
+// const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
+//     ssr: false,
+// });
+
+// const VaynoApp = () => {
+//     const [activeSlide, setActiveSlide] = useState(0);
+
+//     const settings = {
+//         dots: false,
+//         arrows: true,
+//         infinite: true,
+//         autoplay: true,
+//         speed: 1000,
+//         slidesToShow: 2,
+//         slidesToScroll: 1,
+//         beforeChange: (_, next) => setActiveSlide(next),
+//     };
+
+//     const slides = [
+//         { id: 0, animation: animation1, text: "This is Lottie 1" },
+//         { id: 1, animation: animation2, text: "This is Lottie 2" },
+//         { id: 2, animation: animation3, text: "This is Lottie 3" },
+//         { id: 3, animation: animation4, text: "This is Lottie 3" }
+//     ];
+
+//     return (
+//         <div className='container'>
+//             <div className={styles['slider-part']}>
+//                 <OwlCarousel
+//                     loop
+//                     nav={false}
+//                     autoplay={true}
+//                     // responsive={{
+//                     //     0: {
+//                     //         items: 3,
+//                     //         margin: 30
+//                     //     },
+//                     //     600: {
+//                     //         items: 3,
+//                     //         margin: 30
+//                     //     },
+//                     //     1000: {
+//                     //         items: 4
+//                     //     }
+//                     // }}
+//                     items={2}
+//                     autoPlay={false}
+//                     dots={false}
+//                     autoplayTimeout={2000}
+//                     autoplaySpeed={2000}
+//                     autoplayHoverPause={false}
+                    
+//                 >
+//                     {slides.map((slide, index) => (
+//                         <div
+//                             key={slide.id}
+//                             className={`${styles['slider-card']} ${index === activeSlide ? styles['active'] : ''
+//                                 }`}
+//                         >
+//                             <div className={styles['slider-img-part']}>
+//                                 <div className={`${styles['lottie-animation-container']} ${index === activeSlide ? styles['active'] : ''
+//                                     }`}>
+//                                     <div style={{ position: 'absolute', top: 11, left: 12, width: '100%', height: '100%' }}>
+//                                         <div style={{ width: '92%', height: 'auto', borderRadius: '40px' }}>
+//                                             <Lottie animationData={slide.animation} autoplay={index === activeSlide} loop={index === activeSlide} />
+//                                         </div>
+//                                     </div>
+//                                     <Image
+//                                         src='/work/2024/tonight-band/mobile-mockup.png'
+//                                         alt="Animated"
+//                                         width={300}
+//                                         height={620}
+//                                     />
+//                                 </div>
+//                                 <div className={styles['back-image']}>
+//                                     <Image src="/work/2024/vayno/slider-img-1.png" alt='slider image' width={312} height={440} />
+//                                 </div>
+//                             </div>
+//                             <div className={styles['slider-text-part']}>
+//                                 <p className={styles['slider-text']}>{slide.text}</p>
+//                             </div>
+//                         </div>
+//                     ))}
+//                 </OwlCarousel>
+//             </div>
+//         </div>
+//     );
+// };
+
+// export default VaynoApp;
+

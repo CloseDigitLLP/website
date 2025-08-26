@@ -1,0 +1,214 @@
+.TonightBandPage {
+    padding-top: 140px;
+
+    @media screen and (max-width: 768px) {
+        padding-top: 100px;
+    }
+
+    @media screen and (max-width: 540px) {
+        padding-top: 80px;
+    }
+}
+
+.mainHeadingSpan {
+    color: #277475;
+}
+
+.bannerSection {
+    .LaptopContainer {
+        margin: 64px auto;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        @media screen and (max-width: 540px) {
+            margin: 32px auto;
+        }
+
+        .laptopMockup {
+            width: 100%;
+        }
+
+        .videoContainer {
+            position: absolute;
+            top: 26px;
+            width: 80%;
+        }
+    }
+
+    .bannerTextContainer {
+        width: 90%;
+        margin: 0 auto;
+
+        @media screen and (max-width: 1025px) {
+            width: 100%;
+        }
+    }
+}
+
+.designSection {
+    margin-top: 144px;
+
+    @media screen and (max-width: 1025px) {
+        margin-top: 100px;
+    }
+
+    @media screen and (max-width: 540px) {
+        margin-top: 60px;
+    }
+
+    .designImageWrapper {
+        background-color: #F4F4F4;
+        border-radius: 32px;
+        width: 100%;
+        min-height: 500px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        overflow: clip;
+
+        @media screen and (max-width: 540px) {
+            min-height: 280px;
+        }
+
+        @media screen and (max-width: 420px) {
+            min-height: 200px;
+        }
+
+        &:hover img {
+            bottom: -80px;
+
+            @media screen and (max-width: 540px) {
+                bottom: -20px;
+            }
+        }
+
+        img {
+            position: absolute;
+            transition: all 0.3s ease;
+            bottom: -120px;
+
+            @media screen and (max-width: 540px) {
+                max-width: 90%;
+                height: auto;
+                bottom: -40px;
+            }
+        }
+
+    }
+
+    p {
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 20px;
+        color: #919EAB;
+        margin-top: 32px;
+        width: 82%;
+        margin-bottom: 64px;
+
+        @media screen and (max-width: 1280px) {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 0;
+            font-size: 16px;
+        }
+
+        @media screen and (max-width: 540px) {
+            font-size: 14px;
+        }
+    }
+}
+
+.codeCraftSection {
+    p {
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 20px;
+        color: #6E6E73EE;
+
+        @media screen and (max-width: 768px) {
+            font-size: 16px;
+        }
+
+        @media screen and (max-width: 540px) {
+            font-size: 14px;
+        }
+    }
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+.featureSection {
+    margin-top: 100px;
+    padding: 80px 0;
+    background-color: #F5F5F7;
+
+    @media screen and (max-width: 768px) {
+        margin-top: 60px;
+        padding: 60px 0;
+    }
+
+    @media screen and (max-width: 540px) {
+        margin-top: 40px;
+        padding: 40px 0;
+    }
+
+    .featureCard {
+        background-color: #FFFFFF;
+        box-shadow: 0px 12px 24px -4px #919EAB1F;
+        border-radius: 16px;
+        padding-top: 80px;
+        padding-left: 60px;
+        padding-right: 60px;
+        min-height: 340px;
+        overflow: clip;
+        margin-top: 32px;
+
+        @media screen and (max-width: 1025px) {
+            padding-top: 40px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        @media screen and (max-width: 1025px) {
+            padding-top: 24px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        p {
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 20px;
+            color: #6E6E73EE;
+
+            @media screen and (max-width: 1025px) {
+                margin-bottom: 20px;
+            }
+
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+            }
+
+            @media screen and (max-width: 768px) {
+                font-size: 14px;
+            }
+        }
+
+        .featureImage {
+            margin-bottom: -160px;
+
+            @media screen and (max-width: 1025px) {
+                width: 100%;
+                height: auto;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -3,12 +3,12 @@ import Slider from "./portfolioDetailsCommon/slider";
 import data from '../../resources/portfolioDetails.json'
 import TechnologySection from "./portfolioDetailsCommon/technologySection";
 import { useRef, useState, useEffect } from "react";
-import hontrelStyles from '../../styles/portfolioDetails/hontrel.module.scss';
+import GuptaGroupStyles from '../../styles/portfolioDetails/guptaGroup.module.scss';
 import portfolioCommonStyles from '../../styles/portfolioDetails/portfolioDetailsCommon.module.scss';
 
-export default function Hontrel() {
+export default function GuptaGroup() {
 
-    const text = 'Innovative Features in Hontrel';
+    const text = 'Innovative Features in Gupta Group';
     const [displayedText, setDisplayedText] = useState('');
     const [textLength, setTextLength] = useState(0);
     const [typingStarted, setTypingStarted] = useState(false);
@@ -176,21 +176,21 @@ export default function Hontrel() {
 
     return (
         <>
-            <div className={hontrelStyles['hontrel-page']}>
-                <section className={`${hontrelStyles['banner-section']} ${portfolioCommonStyles.mainSection}`}>
+            <div className={GuptaGroupStyles['hontrel-page']}>
+                <section className={`${GuptaGroupStyles['banner-section']} ${portfolioCommonStyles.mainSection}`}>
                     <div className="container">
                         <h2 className={portfolioCommonStyles.bannerPrimaryText}>
-                            Sustainable Engineering Practices by <br />
-                            <span className={hontrelStyles.mainHeadingSpan}>Hontrel</span>
+                            Excellence in Indian Human Hair <br />
+                            <span className={GuptaGroupStyles.mainHeadingSpan}>Gupta Group</span>
                         </h2>
-                        <div className={hontrelStyles.bannerContainer} id="bannerContainer">
+                        <div className={GuptaGroupStyles.bannerContainer} id="bannerContainer">
                             <div style={{ position: 'sticky', top: '20%' }}>
-                                <div className={hontrelStyles.tabletContainer}>
-                                    <div className={hontrelStyles.tabletScreen} ref={tabletScreenRef}>
+                                <div className={GuptaGroupStyles.tabletContainer}>
+                                    <div className={GuptaGroupStyles.tabletScreen} ref={tabletScreenRef}>
                                         <img
-                                            src="/work/2024/hontrel/hontrel-banner.png"
+                                            src="/work/2024/gupta-group/guptagroup-banner.png"
                                             alt="Website Screenshot"
-                                            className={hontrelStyles.websiteImage}
+                                            className={GuptaGroupStyles.websiteImage}
                                             ref={websiteImageRef}
                                             style={{ transform: `translateY(-${scrollOffset}px)` }}
                                         />
@@ -200,24 +200,23 @@ export default function Hontrel() {
                         </div>
                         <div>
                             <p className={portfolioCommonStyles.bannerSecondaryText}>
-                                We designed and developed Hontrel&#39;s website to reflect their cutting-edge approach to digital engineering and technology. Focused on continuously applying advanced technologies to rethink conventional engineering methods, Hontrel delivers innovative, sustainable solutions. Our design emphasizes their mission to add value for customers and stakeholders, while the development ensures a seamless user experience that showcases their expertise in driving progress and improving the human experience.
-                            </p>
+                                With 25 years of expertise, we specialize in manufacturing, exporting, and supplying premium Indian Human Hair, including Blonde, Black, Natural, and Silky varieties, while also being one of India&#39;s largest Sandalwood product exporters, led by our Managing Partner, Mr. Gupta, the Secretary of the South India Sandalwood Products Dealers and Exporters Association.                            </p>
                         </div>
                     </div>
                 </section>
 
-                <div className={hontrelStyles.showcaseSection}>
+                <div className={GuptaGroupStyles.showcaseSection}>
                     <div className='container'>
                         <h3 data-aos="slide-left" className={portfolioCommonStyles.mainheading}>Innovative design solution: <br />
-                            <span className={hontrelStyles.mainHeadingSpan}> Hontrel </span>
+                            <span className={GuptaGroupStyles.mainHeadingSpan}>  Gupta Group </span>
                         </h3>
                     </div>
-                    <Slider slides={data.sliderdata.hontrel} />
+                    <Slider slides={data.sliderdata.guptaGroup} />
                 </div>
 
-                <TechnologySection data={data.techdata.hontrel} />
+                <TechnologySection data={data.techdata.guptaGroup} />
                 {/* code craft section */}
-                <div className={hontrelStyles["codecraft-section"]}>
+                <div className={GuptaGroupStyles["codecraft-section"]}>
                     <div className="container">
                         <div
                             className={["codecraft-heading-section"]}
@@ -225,58 +224,56 @@ export default function Hontrel() {
                         >
                             <h2 className={`${portfolioCommonStyles.bannerPrimaryText} ps-0`}>
                                 Codecraft: <br />
-                                <span className={hontrelStyles.mainHeadingSpan}>Hontrel&#39;s</span> journey in Development
+                                <span className={GuptaGroupStyles.mainHeadingSpan}>Gupta Group&#39;s</span> journey in Development
                             </h2>
                         </div>
 
-                        <div className={hontrelStyles["codecraft-content"]}>
+                        <div className={GuptaGroupStyles["codecraft-content"]}>
                             <div className="row">
                                 <div className="col-lg-6">
-                                    <div className={hontrelStyles["text-part"]}>
+                                    <div className={GuptaGroupStyles["text-part"]}>
                                         <div id="codecraftText1">
-                                            <p className={hontrelStyles['codecraft-text']}>
-                                                We incorporate root-themed imagery in our design sections to enhance understanding and create a visually engaging experience. These images symbolize growth and connection, making complex concepts easier to grasp while fostering intuitive interactions with the content.
+                                            <p className={GuptaGroupStyles['codecraft-text']}>
+                                                In our &quot;About Us&quot; section, we highlight our commitment to quality and community impact, ensuring our products meet your needs while supporting charitable initiatives. We blend tradition with innovation to make a positive difference in people&#39;s lives.
                                             </p>
                                         </div>
                                         <div id="codecraftText2">
-                                            <p className={hontrelStyles['codecraft-text']}>
-                                                The &quot;About Us&quot; section features a drop-down menu design for easy navigation and enhanced visibility of our content. This layout allows users to quickly access information about our mission, values, and team, promoting a seamless exploration of our story.
-                                            </p>
+                                            <p className={GuptaGroupStyles['codecraft-text']}>
+                                                The Gupta Foundation is designed to embody our commitment to social responsibility and community support. Our user-friendly layout emphasizes our mission, showcases our charitable initiatives, and highlights how individuals can get involved and make a meaningful impact.                                            </p>
                                         </div>
                                         <div id="codecraftText3">
-                                            <p className={hontrelStyles['codecraft-text']}>
-                                                The design uses a cloud image surrounding all information, creating a visually cohesive and easy-to-understand layout. This approach adds clarity to the content, helping users quickly grasp the information while providing a soft, engaging visual element.
-                                            </p>
+                                            <p className={GuptaGroupStyles['codecraft-text']}>
+                                                Our contact page is designed for ease of use, allowing customers to reach out effortlessly. With clear contact information, a simple form, and quick access to support, we ensure that inquiries and feedback can be submitted with just a few clicks.                                            </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
-                                    <div className={hontrelStyles["image-part"]}>
-                                        <div className={hontrelStyles["sticky-laptop"]} id="stickyLaptop">
+                                    <div className={GuptaGroupStyles["image-part"]}>
+                                        <div className={GuptaGroupStyles["sticky-laptop"]} id="stickyLaptop">
                                             <img
                                                 src="/work/2024/camelab/blankLaptop.png"
                                                 alt="code craft image"
-                                                className={hontrelStyles["laptop-screen"]}
+                                                className={GuptaGroupStyles["laptop-screen"]}
                                                 id="blankLaptop"
                                             />
-                                            <div className={hontrelStyles["laptop-screens"]}>
+                                            <div className={GuptaGroupStyles["laptop-screens"]}>
                                                 <img
-                                                    src="/work/2024/hontrel/codecraft1.png"
+                                                    src="/work/2024/gupta-group/codecraft1.png"
                                                     alt='code Craft Img1'
                                                     id="craftImg1"
-                                                    className={hontrelStyles['code-craft-image']}
+                                                    className={GuptaGroupStyles['code-craft-image']}
                                                 />
                                                 <img
-                                                    src="/work/2024/hontrel/codecraft2.png"
+                                                    src="/work/2024/gupta-group/codecraft2.png"
                                                     alt='code Craft Img2'
                                                     id="craftImg2"
-                                                    className={hontrelStyles['code-craft-image']}
+                                                    className={GuptaGroupStyles['code-craft-image']}
                                                 />
                                                 <img
-                                                    src="/work/2024/hontrel/codecraft3.png"
+                                                    src="/work/2024/gupta-group/codecraft3.png"
                                                     alt='code Craft Img3'
                                                     id="craftImg3"
-                                                    className={hontrelStyles['code-craft-image']}
+                                                    className={GuptaGroupStyles['code-craft-image']}
                                                 />
                                             </div>
 
@@ -286,49 +283,49 @@ export default function Hontrel() {
                             </div>
                         </div>
 
-                        <div className={hontrelStyles["codecraft-mobile-section"]}>
-                            <div className={hontrelStyles["code-craft-section"]}>
-                                <div className={hontrelStyles["codecraft-img-part"]}>
-                                    <div className={hontrelStyles["codecraft-mobile-img"]}>
+                        <div className={GuptaGroupStyles["codecraft-mobile-section"]}>
+                            <div className={GuptaGroupStyles["code-craft-section"]}>
+                                <div className={GuptaGroupStyles["codecraft-img-part"]}>
+                                    <div className={GuptaGroupStyles["codecraft-mobile-img"]}>
                                         <img
-                                            src="/work/2024/hontrel/codecraft-mobile1.png"
+                                            src="/work/2024/gupta-group/codecraft-mobile1.png"
                                             alt="code-craft image"
                                         />
                                     </div>
                                 </div>
-                                <div className={hontrelStyles["codecraft-text-part"]}>
-                                    <p className={hontrelStyles["codecraft-text"]}>
-                                        We incorporate root-themed imagery in our design sections to enhance understanding and create a visually engaging experience. These images symbolize growth and connection, making complex concepts easier to grasp while fostering intuitive interactions with the content.
+                                <div className={GuptaGroupStyles["codecraft-text-part"]}>
+                                    <p className={GuptaGroupStyles["codecraft-text"]}>
+                                        In our &quot;About Us&quot; section, we highlight our commitment to quality and community impact, ensuring our products meet your needs while supporting charitable initiatives. We blend tradition with innovation to make a positive difference in people&#39;s lives.
                                     </p>
                                 </div>
                             </div>
-                            <div className={hontrelStyles["code-craft-section"]}>
-                                <div className={hontrelStyles["codecraft-text-part"]}>
-                                    <p className={hontrelStyles["codecraft-text"]}>
-                                        The &quot;About Us&quot; section features a drop-down menu design for easy navigation and enhanced visibility of our content. This layout allows users to quickly access information about our mission, values, and team, promoting a seamless exploration of our story.
+                            <div className={GuptaGroupStyles["code-craft-section"]}>
+                                <div className={GuptaGroupStyles["codecraft-text-part"]}>
+                                    <p className={GuptaGroupStyles["codecraft-text"]}>
+                                        The Gupta Foundation is designed to embody our commitment to social responsibility and community support. Our user-friendly layout emphasizes our mission, showcases our charitable initiatives, and highlights how individuals can get involved and make a meaningful impact.
                                     </p>
                                 </div>
-                                <div className={hontrelStyles["codecraft-img-part"]}>
-                                    <div className={hontrelStyles["codecraft-mobile-img"]}>
+                                <div className={GuptaGroupStyles["codecraft-img-part"]}>
+                                    <div className={GuptaGroupStyles["codecraft-mobile-img"]}>
                                         <img
-                                            src="/work/2024/hontrel/codecraft-mobile2.png"
+                                            src="/work/2024/gupta-group/codecraft-mobile2.png"
                                             alt="code-craft image"
                                         />
                                     </div>
                                 </div>
                             </div>
-                            <div className={hontrelStyles["code-craft-section"]}>
-                                <div className={hontrelStyles["codecraft-img-part"]}>
-                                    <div className={hontrelStyles["codecraft-mobile-img"]}>
+                            <div className={GuptaGroupStyles["code-craft-section"]}>
+                                <div className={GuptaGroupStyles["codecraft-img-part"]}>
+                                    <div className={GuptaGroupStyles["codecraft-mobile-img"]}>
                                         <img
-                                            src="/work/2024/hontrel/codecraft-mobile3.png"
+                                            src="/work/2024/gupta-group/codecraft-mobile3.png"
                                             alt="code-craft image"
                                         />
                                     </div>
                                 </div>
-                                <div className={hontrelStyles["codecraft-text-part"]}>
-                                    <p className={hontrelStyles["codecraft-text"]}>
-                                        The design uses a cloud image surrounding all information, creating a visually cohesive and easy-to-understand layout. This approach adds clarity to the content, helping users quickly grasp the information while providing a soft, engaging visual element.
+                                <div className={GuptaGroupStyles["codecraft-text-part"]}>
+                                    <p className={GuptaGroupStyles["codecraft-text"]}>
+                                        Our contact page is designed for ease of use, allowing customers to reach out effortlessly. With clear contact information, a simple form, and quick access to support, we ensure that inquiries and feedback can be submitted with just a few clicks.
                                     </p>
                                 </div>
                             </div>
@@ -337,20 +334,16 @@ export default function Hontrel() {
                 </div>
 
                 {/* feature section  */}
-                <div className={hontrelStyles["feature-section"]}>
+                <div className={GuptaGroupStyles["feature-section"]}>
                     <div className="container">
                         <h2 className={portfolioCommonStyles.mainheading} id="feature-heading">
                             {displayedText}
-                            <span className={hontrelStyles.blinkingCursor}>|</span>
+                            <span className={GuptaGroupStyles.blinkingCursor}>|</span>
                         </h2>
-                        <div className={hontrelStyles["feature-content"]}>
-                            <div className={hontrelStyles["feature-card"]}>
-                                <img src="/work/2024/hontrel/featureImg1.png" alt="Feature 1" className="mt-sm-4" />
-                                <p>We create vector images to make complex concepts easier to understand. These scalable graphics maintain clarity at any size, ensuring that information is communicated effectively and visually across all platforms.</p>
-                            </div>
-                            <div className={hontrelStyles["feature-card"]}>
-                                <p>We use WordPress, Elementor, and GoDaddy as key tools in our website development process. These platforms allow us to create visually appealing, user-friendly websites with efficient workflows and reliable hosting, ensuring seamless functionality and ease of management.</p>
-                                <img src="/work/2024/hontrel/featureImg2.png" alt="Feature 2" className="mt-sm-4" />
+                        <div className={GuptaGroupStyles["feature-content"]}>
+                            <div className={GuptaGroupStyles["feature-card"]}>
+                                <img src="/work/2024/gupta-group/featureImage.png" alt="Feature 1" className="mt-sm-4" />
+                                <p>The Gupta Group Foundation page features an innovative layout that consolidates all our initiatives in one place, making it easy to view and add information. This streamlined design ensures effortless navigation and encourages engagement with our charitable programs.</p>
                             </div>
                         </div>
                     </div>

@@ -62,7 +62,7 @@ const Slider = ({ slides }) => {
   return (
     <div data-aos="fade-up" className={styles['slider-part']}>
       <OwlCarousel className={`${styles['owlcarousel']} ${styles['review-owlcarousel']}`} {...options}>
-        {slides.map((slide, index) => (
+        {slides?.map((slide, index) => (
           <div key={index} className={styles['slider-card']}>
             <div className={styles['slider-img-part']}>
               <img

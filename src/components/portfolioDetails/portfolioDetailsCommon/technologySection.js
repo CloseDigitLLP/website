@@ -22,7 +22,7 @@ const TechnologySection = ({ data }) => {
     <div className={CommonStyle['technology-section']} id="technology-section">
       <div  className="container">
         <div className={CommonStyle['technology-heading-section']}>
-          <h2 data-aos="zoom-out" className={CommonStyle['main-heading']}>Tools & Technology</h2>
+          <h2 data-aos="zoom-out" className={CommonStyle.mainheading}>Tools & Technology</h2>
         </div>
         <div data-aos="zoom-in" className={CommonStyle['technology-row']}>
           {data.map((tech, index) => (

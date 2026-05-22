@@ -49,7 +49,7 @@ export default function FBN() {
                 <section className={fbnStyles['vaidCardsSection']}>
                     <div className="container">
                         <div>
-                            <h3 data-aos="slide-left" className={portfolioDetailsCommon['mainheading']}>Codecraft: <br /><span>FellingBetterNow</span> journey in Development</h3>
+                            <h3 data-aos="slide-left" className={portfolioDetailsCommon['mainheading']}>Codecraft: <br /><span>FeelingBetterNow</span> journey in Development</h3>
                         </div>
                         <div className={fbnStyles['vaidcards']}>
                             <div data-aos="zoom-in-left" className={`${fbnStyles.cardbody}`}>
@@ -93,7 +93,7 @@ export default function FBN() {
                 <section className={fbnStyles['innovativeSection']}>
                     <div className="container">
                         <div>
-                            <h3 data-aos="slide-left" className={portfolioDetailsCommon['mainheading']}>Innovative Features in <br /><span>FellingBetterNow</span></h3>
+                            <h3 data-aos="slide-left" className={portfolioDetailsCommon['mainheading']}>Innovative Features in <br /><span>FeelingBetterNow</span></h3>
                         </div>
 
                         <div className={`${fbnStyles.innovativeCard}`}>
